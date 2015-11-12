@@ -1,0 +1,54 @@
+.section {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	padding: 0 rem(15);
+
+	&--full {
+		min-height: 100vh;
+	}
+
+	&--intro {
+		color: $white;
+
+		@media #{$medium} {
+			background-image: url('/images/video-bg.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+
+	&--how-it-works {
+		padding-top: rem(80);
+		padding-bottom: rem(50);
+
+		@media #{$xsmall} {
+			min-height: auto;
+		}
+	}
+
+	&--subscribe {
+		@media #{$xsmall} {
+			min-height: 930px;
+		}
+	}
+
+	&--promo {
+		background: url('/images/dark-bg.png') no-repeat;
+		background-size: cover;
+		background-position: center center;
+		padding-bottom: rem(60);
+	}
+
+	&__center-content {
+		left: 0;
+		right: 0;
+		position: absolute;
+		margin: 0 auto;
+		max-width: rem(940);
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		padding: 0 rem(15);
+	}
+}
