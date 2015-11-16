@@ -1,3 +1,14 @@
 .intro-section-headline {
 	margin-bottom: rem(55);
 }
+
+.intro-splash-image {
+	position: absolute;
+	right: rem(63);
+	bottom: 0;
+	width: rem(203);
+
+	@media #{$xsmall} {
+		display: none;
+	}
+}
