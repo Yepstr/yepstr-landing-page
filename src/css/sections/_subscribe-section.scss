@@ -46,6 +46,10 @@
 
 .subscribe-step-input {
 	margin-bottom: rem(25);
+	&:focus{
+		outline:none;
+		background: rgba(43, 44, 61, 0.15);
+	}
 }
 
 .subscribe-btn-wrapper {

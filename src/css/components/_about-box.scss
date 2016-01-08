@@ -1,5 +1,5 @@
 .about-box-wrapper {
-	margin-bottom: rem(80);
+	margin-bottom: rem(50);
 	display: flex;
 
 	@media #{$xsmall} {
@@ -12,8 +12,8 @@
 	border: solid 1px $lightGrey;
 	border-radius: 2px;
 	box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.05);
-	margin: 0 rem(15);
-	width: 33.33%;
+	margin: 0 .5%;
+	width: 32.33%;
 
 	@media #{$xsmall} {
 		margin: 0 0 rem(15) 0;
@@ -26,7 +26,7 @@
 	}
 
 	&__text {
-		padding: rem(35) rem(40);
+		padding: rem(30) rem(40);
 
 		@media #{$small} {
 			padding: rem(35) rem(20);

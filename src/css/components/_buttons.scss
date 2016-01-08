@@ -43,10 +43,12 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 		transition: transform 200ms ease-out;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		&:after {
 			transform: translateY(10px);
 		}
+		outline: none;
 	}
 }
 
@@ -63,8 +65,10 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 	height: rem(60);
 	width: rem(60);
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: rgba(255, 155, 37, 1);
+		outline: none;
 	}
 }
 
@@ -89,9 +93,11 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 			background-image: url(#{$btn-arrow-white});
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: $white;
 			color: $darkBlue;
+			outline: none;
 		}
 	}
 
@@ -103,9 +109,11 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 			background-image: url(#{$btn-arrow-blue});
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: $darkBlue;
 			color: $white;
+			outline: none;
 		}
 	}
 
@@ -118,7 +126,8 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 		border-color: $lightOrange;
 		color: $white;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background: rgba(255, 155, 37, 1);
 		}
 	}
@@ -128,7 +137,8 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 		border-color: transparent;
 		color: $white;
 
-		&:hover {
+		&:hover,
+		&:focus  {
 			background: rgba(108, 183, 106, 1);
 		}
 	}
