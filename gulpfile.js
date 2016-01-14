@@ -114,7 +114,7 @@ var tasks = {
         gulp.src(paths.images.input)
             .pipe(gulp.dest(paths.images.output))
         gulp.src(paths.videos.input)
-            .pipe(gulp.dest(paths.videos.output))    
+            .pipe(gulp.dest(paths.videos.output))
         gulp.src(paths.fonts.input)
             .pipe(gulp.dest(paths.fonts.output))
     },
