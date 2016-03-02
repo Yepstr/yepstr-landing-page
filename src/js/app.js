@@ -25,7 +25,10 @@ var app = {
         	trigger.addEventListener('click', app.scrollToTarget);
         });
 
-        app.openRegisterBtn.addEventListener('click', _registerForm.openModal);
+        if(app.openRegisterBtn){
+            app.openRegisterBtn.addEventListener('click', _registerForm.openModal);    
+        }
+        
 
     },
     

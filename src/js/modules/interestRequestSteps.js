@@ -12,7 +12,7 @@ var FormSteps = function() {
 	};
 
 	function init() {
-		
+		if(stepWrappers.length == 0) return;
 		stepWrappers.forEach(function(step, i) {
 			steps[i] = {
 				el: step,

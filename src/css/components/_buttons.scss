@@ -133,7 +133,7 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 	}
 
 	&--green {
-		background: rgba(108, 183, 106, 0.8);
+		background: $green;
 		border-color: transparent;
 		color: $white;
 
