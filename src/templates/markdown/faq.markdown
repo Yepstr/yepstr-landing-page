@@ -1,3 +1,11 @@
+##Är Yepstr lagligt?
+Absolut - en privatperson får betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras och det finns ingen gräns för hur många relationer man kan ha. Mer information finns i SKV448.
+
+##Finns appen för både Android och iOS?
+Jamen!
+
+##Måste man ladda ner en app?
+Nejdå - det går väldigt bra att använda app.yepstr.com direkt från din dator
 
 ##Vad kostar det att anlita en Yep (ungdom) via Yepstr?
 Mellan 70 och 110kr/h totalt – inklusive allt (försäkring, moms etc). Priset beror på Yeppens ålder och erfarenhet.
@@ -23,6 +31,21 @@ För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdra
 5. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga för ungdomar
 6. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
 7. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 515190 00
+
+##Kan jag intervjua ungdomen innan jag bestämmer mig?
+Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i beskrivningen att du vill använda tillfället för en  intervju istället!
+
+##Kan jag som företag hitta ambitiösa ungdomar?
+
+Snart! I dagsläget så är Yepstr endast till för privatpersoner, men när vi fått tillräckligt med intresseanmälningar så lägger vi till den funktionaliteten. Är du intresserad? Maila oss på [hej@yepstr.com](mailto:hej@yepstr.com)
+
+##Vad innebär det att uppdraget är försäkrat?
+
+Alla uppdrag som utförs genom Yepstr (bokas och betalas) är också försäkrade (olycksfall, egendom och ansvar) genom IF.
+
+Mer detaljer finns här [länk]. I korthet kan nämnas att uppdragstagaren är täckt av en ansvarsförsäkring utifall någonting skulle skadas eller stjälas under arbetet. Den här försäkringen täcker skador på upp till 10 miljoner kronor och självrisken (som bekostas av ungdomen) är på 1.500kr.
+
+Sedan finns även egendom- samt olycksfallsförsäkring i det fall att ungdomen skulle skada sig under arbetet eller på väg till arbetet.
 
 ##Vem är arbetsgivare?
 
@@ -59,18 +82,6 @@ Yepstr vill hjälpa dig med detta så att det blir enklare att göra rätt genom
 
 Inte i dagsläget. Vi räknar dock med att kunna erbjuda den funktionaliteten redan under 2016!
 
-##Kan jag som företag hitta ambitiösa ungdomar?
-
-Snart! I dagsläget så är Yepstr endast till för privatpersoner, men när vi fått tillräckligt med intresseanmälningar så lägger vi till den funktionaliteten. Är du intresserad? Maila oss på [hej@yepstr.com](mailto:hej@yepstr.com)
-
-##Vad innebär det att uppdraget är försäkrat?
-
-Alla uppdrag som utförs genom Yepstr (bokas och betalas) är också försäkrade (olycksfall, egendom och ansvar) genom IF.
-
-Mer detaljer finns här [länk]. I korthet kan nämnas att uppdragstagaren är täckt av en ansvarsförsäkring utifall någonting skulle skadas eller stjälas under arbetet. Den här försäkringen täcker skador på upp till 10 miljoner kronor och självrisken (som bekostas av ungdomen) är på 1.500kr.
-
-Sedan finns även egendom- samt olycksfallsförsäkring i det fall att ungdomen skulle skada sig under arbetet eller på väg till arbetet.
-
 ##Varför tar ni en avgift?
 
 I Yepstrs avgift på mellan 5-20% så ingår moms, heltäckande försäkring, transaktionsavgift samt assistans med deklarationen. Dessutom så bygger du ungdomens CV så att hen kan få mer jobb i framtiden.
@@ -82,9 +93,3 @@ Vi hoppas att du vill vara med på den resan!
 ##Hur stor är avgiften?
 
 Det första bokade uppdraget påförs en avgift på 20%. Uppdrag därefter (med samma ungdom) påförs en avgift på 5%.
-
-##Finns appen för både Android och iOS?
-Jamen!
-
-##Måste man ladda ner en app?
-Nejdå - det går väldigt bra att använda app.yepstr.com direkt från din dator
