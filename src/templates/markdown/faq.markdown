@@ -1,42 +1,38 @@
 
-##Vad kostar det att anlita en ungdom via Yepstr?
-Mellan 65 och 110kr/h totalt – inklusive allt (försäkring, moms etc)
+##Vad kostar det att anlita en Yep (ungdom) via Yepstr?
+Mellan 70 och 110kr/h totalt – inklusive allt (försäkring, moms etc). Priset beror på Yeppens ålder och erfarenhet.
 
 ##Vad kan jag tjäna som ungdom på Yepstr?
 Desto fler uppdrag och desto högre betyg du lyckas få desto mer kommer du kunna tjäna!
-När du kommer in som helt ny så tjänar du som 13-åring 60kr/h och som 19-åring 90kr/h.
+När du kommer in som helt ny så tjänar du som 15-åring 70kr/h och som 19-åring 90kr/h.
 
 ##Vad händer med pengarna?
-Pengarna förs över till
+Vi arbetar kontinuerligt med att göra utbetalningarna så snabbt som möjligt. Inom kort kommer vi kunna garantera att pengarna landar på Yeppens (ungdomens) konto inom 2 dagar från betalningen. Har du inte fått dina pengar efter 7 dagar från betalningen gjordes så ring oss på 08-5151 9000.
 
 ##Är Yepstr säkert?
-För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi sex saker som skiljer sig från andra marknadsplatser:
+För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi sex saker som skiljer oss från andra marknadsplatser:
 
-1. Ytterligare en person följer alltid med till det första uppdraget. Om inte ungdomens egen förälder eller nära vän kan följa med så följer en representant från yepstr med, eller så ombokas uppdraget.
-2. Ungdomar måste lämna sina föräldrars kontaktuppgifter så att vi kan hålla dem uppdaterade
-3. Vi ställer exceptionellt höga krav på nya medlemmar:
-    - Det krävs en personlig inbjudan för att kunna registrera sig på Yepstr. Har du ingen inbjudan så måste vi träffa dig först. Inga undantag.
+1. Vi har som mål att man som Yep aldrig skall vara ensam på sitt första uppdrag (eller på ett uppdrag med en ny kund). Vi notifierar föräldrarna om uppdragets detaljer och ber dem följa med. Kan inte föräldrarna så ringer vi upp Yeppen vid schemalagd tid för att stämma av att allt går som planerat.
+2. Ungdomar måste lämna sina föräldrars kontaktuppgifter så att vi kan hålla dem uppdaterade
+3. Vi ställer exceptionellt höga krav på nya medlemmar:
+    - Det krävs en inbjudan för att kunna registrera sig på Yepstr. Vi har personligen intervjuat våra första 500 användare.
     - Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret
     - Konton måste länkas till en existerande Facebook-profil. Ingen Facebook ingen Yepstr
     - Uppdragsgivare måste spara ett fungerande betalkort för att kunna komma i kontakt med nya uppdragstagare (vi använder kortet i verifieringssyfte)
-4. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer frånvarandra kopplas ihop
+4. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra kopplas ihop
 5. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga för ungdomar
-6. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
-7. Vi har en servicetelefon  tillgänglig dygnet runt, året om
+6. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
+7. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 515190 00
 
 ##Vem är arbetsgivare?
 
-Eftersom det handlar om uppdrag som utförs av privatpersoner åt privatpersoner så finns det ingen arbetsgivare i ”traditionell mening”, dvs ingen som behöver administrera arbetsgivaravgifter, sjuklön etc.
-Den person som betalar betraktas istället som en typ av tillfällig privat arbetsgivare.
+Så länge en enskild person inte betalar en ungdom 10.000kr eller mer under ett år så finns det ingen arbetsgivarrelation i traditionell mening och alltså inga arbetsgivaravgifter. Obs att den här gränsen på 10.000kr gäller per relation, så det är fullt möjligt att betala flera ungdomar upp till 9.999kr var per år, och för ungdomarna att tjäna upp till 9.999kr från flera kunder.
+
+Den som betalar betraktas istället som en typ av privat, tillfällig arbetsgivare.
 
 ##Vad innebär det att vara en sån här privat arbetsgivare – måste jag trassla med en massa skatt och papper?
 
-Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i SKV448 [länk], men kan kort
-sammanfattas:
-
-- Om du betalar en ungdom under 1.000kr under ett år behöver du inte göra något
-- Om du betalar en ungdom över 1.000kr under ett år skall du skicka in en kontrolluppgift
-- Om du betalar en ungdom över 10.000kr under ett år behöver påföra arbetsgivaravgifter
+Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i SKV448 [länk], men i korthet så räcker det med en kontrolluppgift om du betalar en ungdom 1.000kr eller mer under ett år. 
 
 Viktigt att notera dock att det yttersta ansvaret alltid ligger på en själv att deklarera rätt. I slutändan så väljer man alltid själv!
 
@@ -55,7 +51,7 @@ Använd gärna utvärderingen i slutet av uppdraget för att ge ungdomen konstru
 
 Allt arbete på Yepstr är ”inkomst av tjänst”. 
 
-När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt!
+När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg här där du kan räkna ut vad du kommer att betala: http://www.hurmycketskatt.se/ tänk på att du skall skriva in ungefär vad du tjänar i månaden!
 
 Yepstr vill hjälpa dig med detta så att det blir enklare att göra rätt genom att automatiskt fylla i din deklarationsblankett. Vi planerar att vara färdiga med den här funktionaliteten under 2016.
 
@@ -86,3 +82,9 @@ Vi hoppas att du vill vara med på den resan!
 ##Hur stor är avgiften?
 
 Det första bokade uppdraget påförs en avgift på 20%. Uppdrag därefter (med samma ungdom) påförs en avgift på 5%.
+
+##Finns appen för både Android och iOS?
+Jamen!
+
+##Måste man ladda ner en app?
+Nejdå - det går väldigt bra att använda app.yepstr.com direkt från din dator
