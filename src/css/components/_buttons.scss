@@ -136,13 +136,13 @@ $btn-app-store: '../images/app-store-btn.svg';
 	}
 
 	&--orange {
-		background: rgba(255, 155, 37, 0.8);
+		background: rgba(255, 155, 37, 1);
 		border-color: $lightOrange;
 		color: $white;
 
 		&:hover,
 		&:focus {
-			background: rgba(255, 155, 37, 1);
+			background: rgba(255, 155, 37, 0.8);
 		}
 	}
 

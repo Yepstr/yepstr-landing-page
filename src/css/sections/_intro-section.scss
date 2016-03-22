@@ -1,14 +1,41 @@
-.intro-section-headline {
-	margin-bottom: rem(55);
-}
-
-.intro-splash-image {
-	position: absolute;
-	right: rem(63);
-	bottom: 0;
-	width: rem(203);
-
-	@media #{$xsmall} {
-		display: none;
-	}
+.section--intro {
+  .intro-section-headline {
+    margin-bottom: rem(55);
+  }
+  .intro-splash-image {
+    position: absolute;
+    right: rem(63);
+    bottom: 0;
+    width: rem(203);
+  }
+  .btn {
+    margin: 10px 10px 0 0;
+  }
+  .scroll-icon {
+    display: block;
+    width: 31px;
+    height: 94px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -15px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/scroll-icon.svg');
+  }
+  @media #{$xsmall} {
+    .intro-section-headline {
+      margin-bottom: rem(20);
+      h1 {
+        font-size: rem(36);
+      }
+      h4 {
+        font-size: rem(28);
+      }
+    }
+    .scroll-icon {
+      display: none;
+    }
+  }
 }
