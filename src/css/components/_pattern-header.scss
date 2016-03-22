@@ -1,0 +1,28 @@
+.pattern-header{
+  color: $white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .text-wrapper{
+    max-width: 800px;
+    margin:0 auto;
+    text-align: center;
+    padding:150px 30px 100px;
+  }
+  &.orange{
+    background-color: $darkOrange;
+    background-image: url("../images/patterns/bg-yellow.png");
+  }
+  &.blue{
+    background-color: $lightBlue;
+    background-image: url("../images/patterns/bg-blue.png"); 
+  }
+  &.darkblue{
+    background-color: $darkBlue;
+    background-image: url("../images/patterns/bg-dark.png");
+  }
+  &.gradient{
+    background-color: $lightBlue;
+    background-image: url("../images/patterns/bg-gradient.png"); 
+  }
+}

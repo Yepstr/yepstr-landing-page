@@ -1,6 +1,8 @@
-$btn-arrow-white: '/images/btn-arrow-white.svg';
-$btn-arrow-blue: '/images/btn-arrow-blue.svg';
-$btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
+$btn-arrow-white: '../images/btn-arrow-white.svg';
+$btn-arrow-blue: '../images/btn-arrow-blue.svg';
+$btn-arrow-right-white: '../images/btn-arrow-right-white.svg';
+$btn-google-play: '../images/google-play-btn.svg';
+$btn-app-store: '../images/app-store-btn.svg';
 
 %btn-defaults {
 	background: transparent;
@@ -101,6 +103,18 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 		}
 	}
 
+	&--white-no-arrow {
+		border-color: $white;
+		color: $white;
+
+		&:hover,
+		&:focus {
+			background-color: $white;
+			color: $darkBlue;
+			outline: none;
+		}
+	}
+
 	&--blue {
 		border-color: $darkBlue;
 		color: $darkBlue;
@@ -142,4 +156,21 @@ $btn-arrow-right-white: '/images/btn-arrow-right-white.svg';
 			background: rgba(108, 183, 106, 1);
 		}
 	}
+}
+.download-app-btn{
+	display:inline-block;
+	width: 140px;
+	height: 47px;
+	text-indent: -9999em; 
+	margin-right: 10px;
+	margin-top: 10px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&--google-play{
+		background-image: url(#{$btn-google-play});
+	}	
+	&--app-store{
+		background-image: url(#{$btn-app-store});
+	}	
 }

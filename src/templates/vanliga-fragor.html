@@ -1,0 +1,14 @@
+@@include('./shared/_head.html') 
+<div class="pattern-header darkblue">
+  @@include('./shared/_header.html') 
+  <div class="text-wrapper">
+    @@include(markdown('./markdown/header-vanliga-fragor.markdown'))
+  </div>
+</div>
+<section id="details" class="section section--faq nice-type">
+
+@@include(markdown('./markdown/faq.markdown')) 
+
+</section>
+
+@@include('./shared/_footer.html') 

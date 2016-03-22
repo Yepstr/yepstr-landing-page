@@ -8,6 +8,8 @@ var RegisterForm = (function() {
     var form = document.querySelector('.register-form');
     var msg = document.querySelector('.js-register-yep-msg');
 
+    if(!form) return false;
+
     function RegisterForm() {
         self = this;
         this.setEventListeners();

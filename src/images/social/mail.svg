@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Mail Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="www" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mail-Copy">
+            <path d="M0.1522158,20 C0.1522158,8.95430446 9.11946,0 20.1811175,0 C31.2427751,0 40.2100193,8.95430446 40.2100193,20 C40.2100193,31.0456955 31.2427751,40 20.1811175,40 C9.11946,40 0.1522158,31.0456955 0.1522158,20 Z" id="Mail" fill="#FFFFFF"></path>
+            <path d="M23.7482708,21.0922671 L32,27.0509509 L32,13.3333333 L23.7482708,21.0922671 Z M9.33333333,13.3333333 L9.33333333,27.0509509 L17.5848854,21.0914327 L9.33333333,13.3333333 Z M20.6666667,23.9896594 L18.6965703,22.1376811 L9.33333333,28 L32,28 L22.6365417,22.1376811 L20.6666667,23.9896594 Z M31.32,13.3333333 L10.0133333,13.3333333 L20.6666667,21.6366203 L31.32,13.3333333 Z" id="Shape" fill="#333333"></path>
+        </g>
+    </g>
+</svg>

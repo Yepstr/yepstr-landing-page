@@ -1,46 +1,61 @@
-h1, h2, h3 {
-	font-weight: 600;
-	line-height: 130%;
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 130%;
 }
 
 h1 {
-	font-size: rem(56);
-
-    @media #{$xsmall} {
-    	font-size: rem(48);
-    }
+  font-size: rem(56);
+  margin-bottom: rem(10);
+  @media #{$xsmall} {
+    font-size: rem(48);
+  }
 }
 
 h2 {
-	font-size: rem(48);
-	margin-bottom: rem(30);
-
-    @media #{$xsmall} {
-    	font-size: rem(40);
-		margin-bottom: rem(20);
-    }
+  font-size: rem(42);
+  margin-bottom: rem(30);
+  @media #{$xsmall} {
+    font-size: rem(40);
+    margin-bottom: rem(20);
+  }
 }
 
 h3 {
-	font-size: rem(36);
-	line-height: rem(42);
-	margin-bottom: rem(10);
+  font-size: rem(28);
+  margin-bottom: rem(20);
 }
 
 h4 {
-	font-size: rem(32);
-	line-height: 130%;
+  font-size: rem(32);
+  line-height: 130%;
 }
 
 h5 {
-	font-size: rem(24);
-	line-height: 130%;
+  font-size: rem(24);
+  line-height: 130%;
 }
 
 p {
-	font-size: 18px;
+  font-size: rem(20);
+  margin-bottom: rem(30);
 }
 
 a {
-	font-weight: 600;
+  font-weight: 600;
+}
+
+.nice-type {
+  ul,
+  ol {
+    li {
+      font-size: rem(20);
+      margin-bottom: rem(15);
+      margin-left: 1.5em;
+      ul,ol{
+        margin-top: rem(15);
+      }
+    }
+  }
 }

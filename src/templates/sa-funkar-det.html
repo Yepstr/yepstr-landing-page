@@ -1,0 +1,53 @@
+@@include('./shared/_head.html')
+<div class="pattern-header orange">
+  @@include('./shared/_header.html')
+  <div class="text-wrapper">
+    @@include(markdown('./markdown/header-sa-funkar-det.markdown'))
+  </div>
+</div>
+<div class="bg-container">
+  <section id="how-it-works" class="section section--full section--how-it-works">
+    <div>
+      <h2 class="hiw-section-headline">Det är otroligt enkelt!</h2>
+      <div class="about-box-wrapper">
+        <div class="about-box">
+          <img class="about-box__image" src="images/promo-1.jpg">
+          <div class="about-box__text">
+            <p><strong>En minut</strong> - så har du skapat ett uppdrag!</strong>
+            </p>
+          </div>
+        </div>
+        <div class="about-box">
+          <img class="about-box__image" src="images/promo-2.jpg">
+          <div class="about-box__text">
+            <p><strong>En minut till</strong> - så har du svar från duktiga ungdomar i ditt område!</strong>
+            </p>
+          </div>
+        </div>
+        <div class="about-box">
+          <img class="about-box__image" src="images/promo-3.jpg">
+          <div class="about-box__text">
+            <p>Välj vem som ska rädda din vardag -<strong> betala med ett klick!</strong></p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn--primary btn--blue js-scroll-to-section" data-target="details">Lite mer i detalj</button>
+    </div>
+  </section>
+</div>
+<hr />
+<section id="details" class="section section--article nice-type">
+  <h2 class="hiw-section-headline">Lite mer i detalj</h2>
+  <div class="row">
+    <div class="col col--4 col--md-12">
+      @@include(markdown('./markdown/sa-funkar-det-yeppar.markdown'))
+    </div>
+    <div class="col col--4 col--md-12">
+      @@include(markdown('./markdown/sa-funkar-det-kunder.markdown'))
+    </div>
+    <div class="col col--4 col--md-12">
+      @@include(markdown('./markdown/sa-funkar-det-foraldrar.markdown'))
+    </div>
+  </div>
+</section> 
+@@include('./shared/_footer.html')

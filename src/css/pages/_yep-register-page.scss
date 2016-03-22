@@ -1,5 +1,5 @@
 .section.yep-register-page {
-    background-image: url('/images/bg-grey.png');
+    background-image: url('../images/bg-grey.png');
     padding-bottom: 0;
     @media #{$xsmall} {
         overflow:auto;
@@ -35,7 +35,7 @@
     line-height: 1;
     margin: 0 rem(-55) rem(45);
     padding: rem(20) 0;
-    background-image: url('/images/bg-yellow.png');
+    background-image: url('../images/bg-yellow.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

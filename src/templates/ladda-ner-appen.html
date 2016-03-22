@@ -1,0 +1,34 @@
+@@include('./shared/_head.html')
+<div class="pattern-header gradient">
+  @@include('./shared/_header.html')
+  <div class="text-wrapper">
+    @@include(markdown('./markdown/header-ladda-ner-appen.markdown'))
+  </div>
+</div>
+<section class="section section--download-app nice-type">
+  <div class="inner">
+    <div class="row">
+      <div class="col col--6 col--md-12">
+        <div class="text-wrap">
+          @@include(markdown('./markdown/ladda-ner-appen.markdown'))
+          <a href="#" class="download-app-btn download-app-btn--google-play">Get it on Google Play</a>
+          <a href="#" class="download-app-btn download-app-btn--app-store">Availible on the App Store</a>
+        </div>
+      </div>
+      <div class="col col--6 col--md-12">
+        <div class="img-wrap">
+          <img src="images/app-splash-big.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr/>
+<section class="section section--cta background background--grey-pattern">
+  <div class="inner">
+    <h2>Har du ingen inbjudningskod?</h2>
+    <p>Hör av dig till oss så fixar vi det så snabbt vi kan</p>
+    <a href="mailto:hej@yepstr" class="btn btn--orange btn--inline">Kontakta oss</a>
+  </div>
+</section>
+@@include('./shared/_footer.html')

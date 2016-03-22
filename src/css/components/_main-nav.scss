@@ -1,0 +1,101 @@
+.main-nav-wrapper {
+  z-index: 100;
+  // position: static;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 95%);
+  transition: background-color .3s cubic-bezier(.55, 0, .1, 1);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .site-logo {
+    transition: color .2s cubic-bezier(.55, 0, .1, 1);
+    color: $white;
+    text-decoration: none;
+  }
+  .site-logo:hover {
+    color: $lightGrey;
+  }
+  .main-nav {
+    height: 51px; // Need this so the menu dont collaps when no items are visible
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(.55, 0, .1, 1);
+    .okayNav__menu-toggle {
+      position:static;
+    }
+    &.loaded {
+      opacity: 1;
+      .okayNav__menu-toggle {
+        position:relative;
+      }
+    }
+  }
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      color: $lightGrey;
+    }
+  }
+  .okayNav__menu-toggle span {
+    transition: background-color .2s cubic-bezier(.55, 0, .1, 1);
+    background: $white;
+  }
+  .okayNav__menu-toggle.icon--active span {
+    background: $darkBlue;
+  }
+  .okayNav__nav--invisible a {
+    color: $darkBlue;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+// menu inverted
+.main-nav-wrapper {
+  &.is-inverted {
+    background: $white;
+    .site-logo {
+      color: $darkBlue;
+    }
+    .main-nav a {
+      color: $darkBlue;
+    }
+  }
+}
+
+@media #{$small} {
+  .main-nav-wrapper,
+  {
+    background: rgba(255, 255, 255, 0.65);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    &:hover {
+      background: rgba(255, 255, 255, 0.65);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+    &.is-inverted:hover {
+      background: $white;
+    }
+    .site-logo {
+      color: $darkBlue;
+    }
+    .main-nav a {
+      color: $darkBlue;
+    }
+    .okayNav__nav--invisible a {
+      background: transparent;
+    }
+  }
+  .main-nav-wrapper .okayNav__menu-toggle span {
+    background: $darkBlue;
+  }
+}

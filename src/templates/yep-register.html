@@ -1,0 +1,57 @@
+@@include('./shared/_head.html')
+<section id="promo" class="section section--full section--promo yep-register-page">
+  <div class="center-content">
+    <div class="register-form-wrapper">
+      <header class="register-form-header">
+        <h1 class="yep-register-page-logo">yepstr</h1>
+        <h3>Yep registrering</h3>
+        <p>Berätta lite mer om dig själv, så hör vi av oss så fort vi har plats!</p>
+      </header>
+      <form id="register-form" class="register-form">
+        <div class="container container--no-gutter">
+          <div class="row register-form-row">
+            <div class="col col--6 col--xs-12 register-form-col">
+              <input type="text" name="firstname" class="input-field input-field--clean register-form-input" placeholder="Förnamn" required>
+            </div>
+            <div class="col col--6 col--xs-12 register-form-col">
+              <input type="text" name="lastname" class="input-field input-field--clean register-form-input" placeholder="Efternamn" required>
+            </div>
+          </div>
+          <div class="row register-form-row">
+            <div class="col col--6 col--xs-12 register-form-col">
+              <select name="age" class="register-form-input">
+                <option value="" disabled selected>Hur gammal är du?</option>
+                <option value="under 13">Under 13</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="over 19">Över 19</option>
+              </select>
+            </div>
+            <div class="col col--6 col--xs-12 register-form-col">
+              <input type="email" name="email" class="input-field input-field--clean register-form-input" placeholder="Emailadress" required>
+            </div>
+          </div>
+          <div class="row register-form-row">
+            <div class="col col--6 col--xs-12 register-form-col">
+              <input type="number" name="phonenumber" pattern="\d*" / class="input-field input-field--clean register-form-input" placeholder="Telefonnummer (frivilligt)">
+            </div>
+            <div class="col col--6 col--xs-12 register-form-col">
+              <input type="number" name="zipcode" min="10000" max="99999" pattern="\d*" / class="input-field input-field--clean register-form-input" placeholder="Postkod (frivilligt)">
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="fromEvent" value="true">
+        <div class="register-form-submit-wrapper">
+          <button type="submit" class="btn btn--green btn--inline">Jag vill bli en yep</button>
+        </div>
+      </form>
+      <p class="success-msg js-register-yep-msg">Tack, vi hör av oss!</p>
+    </div>
+  </div>
+</section>
+@@include('./shared/_footer.html')

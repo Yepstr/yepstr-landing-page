@@ -1,4 +1,5 @@
 .section {
+	// background-color: $white;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -12,7 +13,7 @@
 		color: $white;
 
 		@media #{$medium} {
-			background-image: url('/images/video-bg.jpg');
+			background-image: url('../images/video-bg.jpg');
 			background-size: cover;
 			background-position: center center;
 		}
@@ -34,7 +35,7 @@
 	}
 
 	&--promo {
-		background: url('/images/dark-bg.png') no-repeat;
+		background: url('../images/dark-bg.png') no-repeat;
 		background-size: cover;
 		background-position: center center;
 		padding-bottom: rem(60);
