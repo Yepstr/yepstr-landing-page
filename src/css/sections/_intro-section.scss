@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../images/scroll-icon.svg');
+    cursor: pointer;
   }
   @media #{$xsmall} {
     .intro-section-headline {

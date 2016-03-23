@@ -42,7 +42,6 @@ var app = {
     },
     
     scrollToTarget: function(e) {
-        console.log(e);
     	var clicked = e.currentTarget;
     	var target = clicked.getAttribute('data-target');
     	var targetEl = document.getElementById(target);

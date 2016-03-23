@@ -14,9 +14,18 @@
     <a class="btn btn--primary btn--white-no-arrow btn--inline" href="ladda-ner-appen.html">Ladda ner appen</a>
   </div>
   <!--<img class="intro-splash-image" src="/images/app-splash.png">-->
-  <div class="scroll-icon"></div>
+  <div class="scroll-icon js-scroll-to-section" data-target="how-it-works"></div>
 </section>
-<div class="bg-container" style="background-position: bottom center;">
+<section id="how-it-works" class="section section--cta">
+  <div class="inner margin-v-lg">
+     @@include(markdown('./markdown/header-sa-funkar-det.markdown'))
+    <div class="button-case">
+      <a href="/sa-funkar-det.html" class="btn btn--orange btn--inline">Läs mer</a>
+    </div>
+  </div>
+</section>
+<hr />
+<div id="promo" class="bg-container" style="background-position: bottom center;">
   <section id="subscribe" class="section section--full section--subscribe">
     <div class="subscribe-step subscribe-step--1 js-subscribe-step js-subscribe-step-0">
       <h2 class="subscribe-step-headline">Se om yepstr finns i ditt område!</h2>
@@ -31,15 +40,24 @@
       </svg>
     </div>
     <div class="subscribe-step subscribe-step--3 js-subscribe-step js-subscribe-step-2">
-      <h5 class="subscribe-step-headline">Tyvärr! yepstr är inte lanserat i ditt område ännu</h5>
-      <h3 class="subscribe-step-headline">Lämna din email så notifierar vi så fort vi är igång!</h3>
+      <div class="js-not-found-zipcode">
+        <h5 class="subscribe-step-headline">Tyvärr! yepstr är inte lanserat i ditt område ännu</h5>
+        <h3 class="subscribe-step-headline">Lämna din email så notifierar vi så fort vi är igång!</h3>
+      </div>
+      <div class="js-found-zipcode" style="display: none;">
+        <h5 class="subscribe-step-headline">Yes! Du bor i ett av våra testområden.</h5>
+        <h3 class="subscribe-step-headline">Lämna email och ladda ner appen Yepstr så skickar vi en invite-kod omedelbums.</h3>
+      </div>
       <form id="form-step-3">
         <input type="email" name="email" class="input-field subscribe-step-input" placeholder="Din epostadress" required>
-        <button type="submit" class="btn btn--orange">Hör av er!</button>
+        <div class="subscribe-form-step-3-btn-wrapper">
+          <button type="submit" class="btn btn--orange" data-role="customer">Jag vill ha hjälp</button>  
+          <button type="submit" class="btn btn--orange" data-role="yep">Jag vill arbeta <small>Du måste vara under 20 år</small></button>
+        </div>
       </form>
     </div>
     <div class="subscribe-step subscribe-step--4 js-subscribe-step js-subscribe-step-3">
-      <h2 class="">Tack - vi hör av oss så fort det närmar sig!</h2>
+      <h2 class="">Tack!</h2>
       <div class="container">
         <div class="row">
           <div class="col col--6 col--xs-12">
@@ -54,12 +72,12 @@
         </div>
       </div>
     </div>
-    <div class="subscribe-btn-wrapper">
+    <!-- <div class="subscribe-btn-wrapper">
       <button type="button" class="btn btn--primary btn--blue js-scroll-to-section" data-target="yep-register">Jag vill jobba!</button>
-    </div>
+    </div> -->
   </section>
 </div>
-<section id="yep-register" class="section section--full section--yep-register background background--dark-blue-pattern">
+<!-- <section class="section section--full section--yep-register background background--dark-blue-pattern">
   <div class="inner">
     <h2 class="hiw-section-headline">Vill du bli en yep (young entrepreneur)?</h2>
     <div class="register-form-wrapper">
@@ -112,7 +130,7 @@
       <p class="success-msg js-register-yep-msg">Tack, vi hör av oss!</p>
     </div>
   </div>
-</section>
+</section> -->
 <!-- <section id="promo" class="section section--full section--promo">
   <div class="center-content">
     <div>
