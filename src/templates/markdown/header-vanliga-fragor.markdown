@@ -1,2 +1,2 @@
 #Vanliga frågor
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Här har vi försökt samla de vanligaste frågorna vi hört från våra användare. Någon fråga du saknar? Kontakta oss via email-länken längst ner så får du svar direkt!
