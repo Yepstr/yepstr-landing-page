@@ -1,2 +1,2 @@
 #Hur fungerar Yepstr?
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Yepstr är en digital marknadsplats för ambitiösa tonåringar att komma i kontakt med grannar som behöver hjälp. Yepstr tar hand om allt det jobbiga: schemaläggning, utbetalning, skatter och försäkringar så att det finns mer tid för dig att ha kul!
