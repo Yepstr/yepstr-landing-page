@@ -20,16 +20,16 @@ Vi arbetar kontinuerligt med att göra utbetalningarna så snabbt som möjligt. 
 ##Är Yepstr säkert?
 För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi sex saker som skiljer oss från andra marknadsplatser:
 
-1. Vi har som mål att man som Yep aldrig skall vara ensam på sitt första uppdrag (eller på ett uppdrag med en ny kund). Vi notifierar föräldrarna om uppdragets detaljer och ber dem följa med. Kan inte föräldrarna så ringer vi upp Yeppen vid schemalagd tid för att stämma av att allt går som planerat.
-2. Ungdomar måste lämna sina föräldrars kontaktuppgifter så att vi kan hålla dem uppdaterade
-3. Vi ställer exceptionellt höga krav på nya medlemmar:
+1. På Yepstr är man aldrig ensam på sitt första uppdrag (eller på ett uppdrag med en ny kund). Vi notifierar föräldrarna om uppdragets detaljer så att de kan följa med. Kan inte föräldrarna så ringer vi upp Yeppen vid schemalagd tid för att stämma av att allt går som planerat.
+2. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
+3. Ungdomar måste lämna sina föräldrars kontaktuppgifter så att vi kan hålla dem uppdaterade
+4. Vi ställer exceptionellt höga krav på nya medlemmar:
     - Det krävs en inbjudan för att kunna registrera sig på Yepstr. Vi har personligen intervjuat våra första 500 användare.
     - Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret
     - Konton måste länkas till en existerande Facebook-profil. Ingen Facebook ingen Yepstr
     - Uppdragsgivare måste spara ett fungerande betalkort för att kunna komma i kontakt med nya uppdragstagare (vi använder kortet i verifieringssyfte)
-4. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra kopplas ihop
-5. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga för ungdomar
-6. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
+5. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra kopplas ihop
+6. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga för ungdomar
 7. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 515190 00
 
 ##Kan jag intervjua ungdomen innan jag bestämmer mig?
@@ -53,7 +53,7 @@ Så länge en enskild person inte betalar en ungdom 10.000kr eller mer under ett
 
 Den som betalar betraktas istället som en typ av privat, tillfällig arbetsgivare.
 
-Yepstr är en digital marknadsplats som förmedlar betalningen och möjliggör en smidig transaktion mellan parterna. Yepstr är alltså inte arbetsgivare åt dessa tusentals ungdomar. För mer information se våra allmänna villkor [länk].
+Yepstr är en digital marknadsplats som förmedlar betalningen och möjliggör en smidig transaktion mellan parterna. Yepstr är alltså inte arbetsgivare åt dessa tusentals ungdomar. För mer information se våra [allmänna villkor](http://app.yepstr.com/termsOfUse).
 
 ##Vad innebär det att vara en sån här privat arbetsgivare – måste jag trassla med en massa skatt och papper?
 
@@ -86,12 +86,8 @@ Inte i dagsläget. Vi räknar dock med att kunna erbjuda den funktionaliteten re
 
 ##Varför tar ni en avgift?
 
-I Yepstrs avgift på mellan 5-20% så ingår moms, heltäckande försäkring, transaktionsavgift samt assistans med deklarationen. Dessutom så bygger du ungdomens CV så att hen kan få mer jobb i framtiden.
+På ungdomens lön adderas en avgift på mellan 5-20% för att täcka moms, försäkring, transaktionsavgifter samt deklarationsassistans. Dessutom så bygger du ungdomens CV så att hen kan få mer jobb i framtiden. Avgiften minskar desto mer du använder Yepstr.
 
 Som du säkert kan räkna ut själv så blir det inte så värst mycket över till Yepstr – vilket vi är medvetna om. Vi bygger det här för att det behövs ett ställe för ambitiösa ungdomar att få sin första arbetslivserfarenhet och för att vi tror att samhället blir bättre när man lär känna sina grannar. Det är först när vi är riktigt stora och finns över hela världen som vi kan börja fundera på att bli lönsamma.
 
 Vi hoppas att du vill vara med på den resan!
-
-##Hur stor är avgiften?
-
-Det första bokade uppdraget påförs en avgift på 20%. Uppdrag därefter (med samma ungdom) påförs en avgift på 5%.
