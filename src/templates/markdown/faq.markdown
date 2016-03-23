@@ -1,5 +1,5 @@
 ##Är Yepstr lagligt?
-Absolut - en privatperson får betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i SKV448.
+Absolut - en privatperson får betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i [SKV448](http://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf).
 
 ##Finns appen för både Android och iOS?
 Jamen!
@@ -43,7 +43,7 @@ Snart! I dagsläget så är Yepstr endast till för privatpersoner, men när vi 
 
 Alla uppdrag som utförs genom Yepstr (bokas och betalas) är också försäkrade (olycksfall, egendom och ansvar) genom IF.
 
-Mer detaljer finns här [länk]. I korthet kan nämnas att uppdragstagaren är täckt av en ansvarsförsäkring utifall någonting skulle skadas eller stjälas under arbetet. Den här försäkringen täcker skador på upp till 10 miljoner kronor och självrisken (som bekostas av ungdomen) är på 1.500kr.
+Mer detaljer finns [här](https://app.yepstr.com/public/content/sv/villkorsbrev.pdf). I korthet kan nämnas att uppdragstagaren är täckt av en ansvarsförsäkring utifall någonting skulle skadas eller stjälas under arbetet. Den här försäkringen täcker skador på upp till 10 miljoner kronor och självrisken (som bekostas av ungdomen) är på 1.500kr.
 
 Sedan finns även egendom- samt olycksfallsförsäkring i det fall att ungdomen skulle skada sig under arbetet eller på väg till arbetet.
 
@@ -57,7 +57,7 @@ Yepstr är en digital marknadsplats som förmedlar betalningen och möjliggör e
 
 ##Vad innebär det att vara en sån här privat arbetsgivare – måste jag trassla med en massa skatt och papper?
 
-Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i SKV448 [länk], men i korthet så räcker det med en kontrolluppgift om du betalar en ungdom 1.000kr eller mer under ett år. 
+Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i [SKV448](http://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf), men i korthet så räcker det med en kontrolluppgift om du betalar en ungdom 1.000kr eller mer under ett år. 
 
 Viktigt att notera dock att det yttersta ansvaret alltid ligger på en själv att deklarera rätt. I slutändan så väljer man alltid själv!
 
@@ -76,7 +76,7 @@ Använd gärna utvärderingen i slutet av uppdraget för att ge ungdomen konstru
 
 Allt arbete på Yepstr är ”inkomst av tjänst”. 
 
-När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg här där du kan räkna ut vad du kommer att betala: http://www.hurmycketskatt.se/ tänk på att du skall skriva in ungefär vad du tjänar i månaden!
+När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg [här](http://www.hurmycketskatt.se/) där du kan räkna ut vad du kommer att betala tänk på att du skall skriva in ungefär vad du tjänar i månaden!
 
 Yepstr vill hjälpa dig med detta så att det blir enklare att göra rätt genom att automatiskt fylla i din deklarationsblankett. Vi planerar att vara färdiga med den här funktionaliteten under 2016.
 
