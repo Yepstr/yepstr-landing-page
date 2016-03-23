@@ -1,2 +1,2 @@
-#Ladda ner appen
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+#Redo att komma igång?
+Genom att använda vår app så kan du boka lokala ungdomar med bara ett par knapptryckningar. Är du en ambitiös tonåring som vill jobba så notifierar appen dig automatiskt när ett nytt uppdrag finns i ditt närområde!
