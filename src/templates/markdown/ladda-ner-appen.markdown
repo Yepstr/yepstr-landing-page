@@ -1,2 +1,4 @@
-##Frånga Donec sed odio dui. Integer posuere erat a antee.
-Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.
+##Känner du dig modern? Använd vår app!
+Genom att använda vår app så kan du boka lokala ungdomar med bara ett par knapptryckningar. 
+
+Är du en ambitiös tonåring som vill jobba så notifieras du automatiskt när det dyker upp ett nytt uppdrag i ditt närområde!
