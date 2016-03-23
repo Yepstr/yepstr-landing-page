@@ -53,6 +53,8 @@ Så länge en enskild person inte betalar en ungdom 10.000kr eller mer under ett
 
 Den som betalar betraktas istället som en typ av privat, tillfällig arbetsgivare.
 
+Yepstr är en digital marknadsplats som förmedlar betalningen och möjliggör en smidig transaktion mellan parterna. Yepstr är alltså inte arbetsgivare åt dessa tusentals ungdomar. För mer information se våra allmänna villkor [länk].
+
 ##Vad innebär det att vara en sån här privat arbetsgivare – måste jag trassla med en massa skatt och papper?
 
 Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i SKV448 [länk], men i korthet så räcker det med en kontrolluppgift om du betalar en ungdom 1.000kr eller mer under ett år. 
