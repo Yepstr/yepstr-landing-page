@@ -1,5 +1,5 @@
 ##Är Yepstr lagligt?
-Absolut - en privatperson får betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras och det finns ingen gräns för hur många relationer man kan ha. Mer information finns i SKV448.
+Absolut - en privatperson får betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i SKV448.
 
 ##Finns appen för både Android och iOS?
 Jamen!
