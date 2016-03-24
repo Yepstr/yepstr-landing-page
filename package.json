@@ -39,7 +39,10 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "*",
-    "yargs": "*"
+    "yargs": "*",
+    "magnific-popup": "*",
+    "markdown": "*",
+    "gulp-file-include": "*"
   },
   "browserify": {
     "transform": [
