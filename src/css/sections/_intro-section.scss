@@ -11,6 +11,12 @@
   .btn {
     margin: 10px 10px 0 0;
   }
+  .to-download-app-btn {
+    display: none;
+    @media #{$xsmall} {
+      display: inline-block;
+    }
+  }
   .scroll-icon {
     display: block;
     width: 31px;
@@ -35,7 +41,8 @@
         font-size: rem(28);
       }
     }
-    .scroll-icon {
+    .scroll-icon,
+    .intro-splash-image {
       display: none;
     }
   }
