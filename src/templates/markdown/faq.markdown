@@ -18,7 +18,7 @@ När du kommer in som helt ny så tjänar du som 15-åring 70kr/h och som 19-år
 Vi arbetar kontinuerligt med att göra utbetalningarna så snabbt som möjligt. Inom kort kommer vi kunna garantera att pengarna landar på Yeppens (ungdomens) konto inom 2 dagar från betalningen. Har du inte fått dina pengar efter 7 dagar från betalningen gjordes så ring oss på 08-5151 9000.
 
 ##Är Yepstr säkert?
-För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi sex saker som skiljer oss från andra marknadsplatser:
+För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi sju saker som skiljer oss från andra marknadsplatser:
 
 1. På Yepstr är man aldrig ensam på sitt första uppdrag (eller på ett uppdrag med en ny kund). Vi notifierar föräldrarna om uppdragets detaljer så att de kan följa med. Kan inte föräldrarna så ringer vi upp Yeppen vid schemalagd tid för att stämma av att allt går som planerat.
 2. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
@@ -26,11 +26,11 @@ För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdra
 4. Vi ställer exceptionellt höga krav på nya medlemmar:
     - Det krävs en inbjudan för att kunna registrera sig på Yepstr. Vi har personligen intervjuat våra första 500 användare.
     - Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret
-    - Konton måste länkas till en existerande Facebook-profil. Ingen Facebook ingen Yepstr
+    - Konton måste länkas till en existerande Facebook-profil. Ingen Facebook ingen Yepstr [under utveckling]
     - Uppdragsgivare måste spara ett fungerande betalkort för att kunna komma i kontakt med nya uppdragstagare (vi använder kortet i verifieringssyfte)
 5. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra kopplas ihop
 6. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga för ungdomar
-7. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 515190 00
+7. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 5151 9000
 
 ##Kan jag intervjua ungdomen innan jag bestämmer mig?
 Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i beskrivningen att du vill använda tillfället för en  intervju istället!
@@ -43,9 +43,9 @@ Snart! I dagsläget så är Yepstr endast till för privatpersoner, men när vi 
 
 Alla uppdrag som utförs genom Yepstr (bokas och betalas) är också försäkrade (olycksfall, egendom och ansvar) genom IF.
 
-Mer detaljer finns [här](https://app.yepstr.com/public/content/sv/villkorsbrev.pdf). I korthet kan nämnas att uppdragstagaren är täckt av en ansvarsförsäkring utifall någonting skulle skadas eller stjälas under arbetet. Den här försäkringen täcker skador på upp till 10 miljoner kronor och självrisken (som bekostas av ungdomen) är på 1.500kr.
+Mer detaljer finns [här](https://app.yepstr.com/public/content/sv/villkorsbrev.pdf). I korthet kan nämnas att uppdragstagaren är täckt av en ansvarsförsäkring utifall någonting skulle hända under arbetet. Den här försäkringen täcker skador på upp till 10 miljoner kronor och självrisken (som bekostas av ungdomen) är på 1.500kr.
 
-Sedan finns även egendom- samt olycksfallsförsäkring i det fall att ungdomen skulle skada sig under arbetet eller på väg till arbetet.
+Sedan inkluderas även egendom- samt olycksfallsförsäkring i det fall att ungdomen skulle skada sig (eller sin utrustning) under arbetet eller på väg till arbetet.
 
 ##Vem är arbetsgivare?
 
