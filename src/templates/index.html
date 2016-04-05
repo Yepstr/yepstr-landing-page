@@ -49,7 +49,8 @@
         <h3 class="subscribe-step-headline">Lämna email och ladda ner appen Yepstr så skickar vi en invite-kod omedelbums.</h3>
       </div>
       <form id="form-step-3">
-        <input type="email" name="email" class="input-field subscribe-step-input" placeholder="Din epostadress" required>
+        <input id="subscribe-email-input" type="email" name="email" class="input-field subscribe-step-input" placeholder="Din epostadress" required>
+        <p class="js-email-error-msg text-center text-danger" style="display: none;">Du måste skriva in en korrekt epostadress</p>
         <div class="subscribe-form-step-3-btn-wrapper">
           <button type="submit" class="btn btn--orange" data-role="customer">Jag vill ha hjälp</button>  
           <button type="submit" class="btn btn--orange" data-role="yep">Jag vill arbeta <small>Du måste vara under 20 år</small></button>
