@@ -14,7 +14,7 @@ var FormSteps = function() {
     role: null,
   };
   var stockholmZipCodeMin = 100;
-  var stockholmZipCodeMax = 175;
+  var stockholmZipCodeMax = 200;
 
   function init() {
     if (stepWrappers.length == 0) return;
@@ -90,7 +90,7 @@ var FormSteps = function() {
         }else{
           $errorMsg.hide();
         }
-        
+
       	var role = $(this).data('role')
       	onFormSubmit(role);
       });
