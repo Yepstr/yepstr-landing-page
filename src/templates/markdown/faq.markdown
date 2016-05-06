@@ -16,7 +16,7 @@
 ### Kan jag anlita flera Yeppar samtidigt för ett större uppdrag?
 
 
-[### Lag och skatt - hur funkar det?]
+### Lag och skatt - hur funkar det?
 I Sverige får en privatperson betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i [SKV448](http://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf).
 
 ### Finns appen för både Android och iOS?
