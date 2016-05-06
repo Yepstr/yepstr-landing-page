@@ -1,4 +1,4 @@
-### [Lag och skatt, hur funkar det?](##-lag-och-skatt)
+### [Lag och skatt, hur funkar det?](##lag-och-skatt)
 ### Finns appen för både Android och iOS?
 ### Måste man ladda ner en app?
 ### Vad kostar det att anlita en Yep (ungdom) via Yepstr?
