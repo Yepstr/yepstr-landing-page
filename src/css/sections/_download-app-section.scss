@@ -9,7 +9,13 @@
   margin-bottom: -100px;
   .text-wrap {
     max-width: 550px;
-    margin-top: 300px;
+    margin-top: 240px;
+  }
+  .divider-or{
+    text-align: center;
+    max-width: 293px;
+    margin: 0;
+    padding-top: 10px;
   }
   @media #{$medium} {
     max-width: 600px;
@@ -17,7 +23,7 @@
     margin-bottom: 0;
     .text-wrap {
       max-width: 550px;
-      margin: 50px 0;
+      margin: 50px auto;
     }
   }
 }

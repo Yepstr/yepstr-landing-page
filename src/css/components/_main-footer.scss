@@ -28,6 +28,7 @@
   }
   .social-links {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     li a {
       text-indent: -9999em;
@@ -50,6 +51,20 @@
       &.mail {
         background-image: url('../images/social/monokrom/mail.svg');
       }
+      &.phone {
+        background-color: #fff;
+        background-image: url('../images/phone.svg');
+        background-repeat: no-repeat;
+        background-position: 10px;
+        background-size: 26px;
+        width: auto;
+        text-indent: 0;
+        line-height: 44px;
+        font-size: 16px;
+        color: $darkBlue;
+        padding: 0 10px 0 40px;
+        border-radius: 22px;
+      }
     }
   }
 }
@@ -59,7 +74,13 @@
     .left {
       display: block;
     }
+    .social-links {
+      li a{
+        margin-top: 20px;
+      }
+    }
   }
+  
 }
 
 @media #{$small} {
