@@ -5,7 +5,7 @@ I Sverige får en privatperson betala en annan upp till 10.000kr (per år) för 
 Jamen!
 
 ##Måste man ladda ner en app?
-Nejdå - det går väldigt bra att använda [app.yepstr.com](app.yepstr.com) direkt från din dator
+Nejdå - det går väldigt bra att använda [app.yepstr.com](https://app.yepstr.com/) direkt från din dator
 
 ##Vad kostar det att anlita en Yep (ungdom) via Yepstr?
 Mellan 70 och 110kr/h totalt – inklusive allt (försäkring, moms etc). Priset beror på Yeppens ålder och erfarenhet.
