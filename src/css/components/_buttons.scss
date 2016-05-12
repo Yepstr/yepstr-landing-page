@@ -3,6 +3,7 @@ $btn-arrow-blue: '../images/btn-arrow-blue.svg';
 $btn-arrow-right-white: '../images/btn-arrow-right-white.svg';
 $btn-google-play: '../images/google-play-btn.svg';
 $btn-app-store: '../images/app-store-btn.svg';
+$btn-web-browser: '../images/use-app-in-browser-btn.svg';
 %btn-defaults {
   background: transparent;
   border: 0;
@@ -157,5 +158,9 @@ $btn-app-store: '../images/app-store-btn.svg';
   }
   &--app-store {
     background-image: url(#{$btn-app-store});
+  }
+  &--web-browser {
+    width:293px;
+    background-image: url(#{$btn-web-browser});
   }
 }

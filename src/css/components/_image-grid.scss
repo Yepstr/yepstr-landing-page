@@ -1,0 +1,74 @@
+.image-grid {
+  overflow: hidden;
+  margin: 0 -10px;
+  .image {
+    float: left;
+    figure {
+      padding: 10px;
+    }
+    figcaption {
+      color: $darkBlue;
+      padding: 5px 0;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  .image:hover {
+    figcaption {
+      text-decoration: underline;
+    }
+  }
+  &--grayscale-filter {
+    .image {
+      figure {
+        img {
+          transition: filter .5s;
+          filter: grayscale(100%);
+        }
+      }
+    }
+    .image:hover {
+      figure {
+        img {
+          filter: none;
+        }
+      }
+    }
+  }
+  &--2-col {
+    .image {
+      width: 100%;
+    }
+  }
+  &--2-col {
+    .image {
+      width: 50%;
+    }
+  }
+  &--3-col {
+    .image {
+      width: 33.33333%;
+    }
+  }
+  &--4-col {
+    .image {
+      width: 25%;
+    }
+  }
+  @media #{$xsmall} {
+    &--grayscale-filter {
+      .image {
+        figure {
+          img {
+            filter: none;
+          }
+        }
+      }
+    }
+    &--2-col .image,
+    &--3-col .image,
+    &--4-col .image {
+      width: 100%;
+    }
+  }
+}

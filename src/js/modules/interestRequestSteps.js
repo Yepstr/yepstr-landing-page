@@ -14,7 +14,7 @@ var FormSteps = function() {
     role: null,
   };
   var stockholmZipCodeMin = 100;
-  var stockholmZipCodeMax = 175;
+  var stockholmZipCodeMax = 200;
 
   function init() {
     if (stepWrappers.length == 0) return;
@@ -71,7 +71,9 @@ var FormSteps = function() {
     },
     step2: function() {
       var $form = $('#form-step-3');
-      var form = document.getElementById('form-step-1');
+      var form = document.getElementById('form-step-3');
+      var $subscribeEmailInput = $form.find('#subscribe-email-input');
+      var $errorMsg = $form.find('.js-email-error-msg');
 
       function onFormSubmit(role) {
       	interestRequestObj.role = role;
@@ -81,10 +83,23 @@ var FormSteps = function() {
 
       $form.find('.btn').on('click', function(e) {
       	e.preventDefault();
+
+        if($subscribeEmailInput.val() === '' || !$subscribeEmailInput[0].checkValidity()){
+          $errorMsg.show();
+          return false;
+        }else{
+          $errorMsg.hide();
+        }
+
       	var role = $(this).data('role')
       	onFormSubmit(role);
       });
-      // form.addEventListener('submit', onFormSubmit);
+
+      $form.bind('keypress', function(e){
+        if ( e.keyCode == 13 ) {
+          return false;
+        }
+      });
     },
     step3: function() {
       parseHelper.pushInterestRequest(interestRequestObj);

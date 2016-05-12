@@ -1,81 +1,84 @@
 @@include('./shared/_head.html') @@include('./shared/_header.html')
 <section class="section section--full section--intro">
-  <video class="full-screen-video js-full-screen-video" poster="images/video-bg.jpg" autoplay loop>
-    <source src="videos/video-bg.mp4" type="video/mp4">
-    <source src="videos/video-bg.webm" type="video/webm">
-  </video>
-  <div class="full-screen-video-raster"></div>
-  <div class="section__center-content">
-    <div class="intro-section-headline">
-      <h1>yepstr är här för att ge dig mer fritid</h1>
-      <h4>- samtidigt som du hjälper ungdomar in i arbetslivet</h4>
+    <video class="full-screen-video js-full-screen-video" poster="images/video-bg.jpg" autoplay loop>
+        <source src="videos/video-bg.mp4" type="video/mp4">
+        <source src="videos/video-bg.webm" type="video/webm">
+    </video>
+    <div class="full-screen-video-raster"></div>
+    <div class="section__center-content">
+        <div class="intro-section-headline">
+            <h1>Yepstr är här för att ge dig mer fritid</h1>
+            <h4>- samtidigt som du hjälper ungdomar in i arbetslivet</h4>
+        </div>
+        <a class="btn btn--primary btn--white-no-arrow btn--inline js-popup-video-button" href="http://www.youtube.com/watch?v=0EtlUOMbdPk">Visa video</a>
+        <a class="btn btn--primary btn--white-no-arrow btn--inline to-download-app-btn" href="ladda-ner-appen.html">Ladda ner appen</a>
     </div>
-    <a class="btn btn--primary btn--white-no-arrow btn--inline js-popup-video-button" href="http://www.youtube.com/watch?v=0EtlUOMbdPk">Visa video</a>
-    <a class="btn btn--primary btn--white-no-arrow btn--inline to-download-app-btn" href="ladda-ner-appen.html">Ladda ner appen</a>
-  </div>
-  <a href="ladda-ner-appen.html"><img class="intro-splash-image" src="/images/app-splash.png"></a>
-  <div class="scroll-icon js-scroll-to-section" data-target="how-it-works"></div>
+    <a href="ladda-ner-appen.html"><img class="intro-splash-image" src="/images/app-splash.png"></a>
+    <div class="scroll-icon js-scroll-to-section" data-target="how-it-works"></div>
 </section>
 <section id="how-it-works" class="section section--cta">
-  <div class="inner margin-v-lg">
-     @@include(markdown('./markdown/header-sa-funkar-det.markdown'))
-    <div class="button-case">
-      <a href="/sa-funkar-det.html" class="btn btn--orange btn--inline">Läs mer</a>
+    <div class="inner margin-v-lg">
+        <h1>Vad är Yepstr?</h1>
+        <p>Yepstr är en app som kopplar ihop dig som är behov av hjälp med enkla uppgifter (såsom trädgårdsarbete eller hundpassning) med den ambitiösa tonåringen precis nedför gatan.</p>
+        <p>Yepstr hjälper till med allt från betalning, försäkring och skatt så att du får mer fritid över till annat!</p>
+        <div class="button-case">
+            <a href="/sa-funkar-det.html" class="btn btn--orange btn--inline">Läs mer</a>
+        </div>
     </div>
-  </div>
 </section>
 <hr />
 <div id="promo" class="bg-container" style="background-position: bottom center;">
-  <section id="subscribe" class="section section--full section--subscribe">
-    <div class="subscribe-step subscribe-step--1 js-subscribe-step js-subscribe-step-0">
-      <h2 class="subscribe-step-headline">Se om yepstr finns i ditt område!</h2>
-      <form id="form-step-1">
-        <input type="number" name="zipcode" min="10000" max="99999" pattern="\d*" / class="input-field subscribe-step-input" placeholder="Skriv in ditt postnummer" required>
-        <button type="submit" class="btn btn--continue"></button>
-      </form>
-    </div>
-    <div class="subscribe-step subscribe-step--2 js-subscribe-step js-subscribe-step-1">
-      <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-      </svg>
-    </div>
-    <div class="subscribe-step subscribe-step--3 js-subscribe-step js-subscribe-step-2">
-      <div class="js-not-found-zipcode">
-        <h5 class="subscribe-step-headline">Tyvärr! yepstr är inte lanserat i ditt område ännu</h5>
-        <h3 class="subscribe-step-headline">Lämna din email så notifierar vi så fort vi är igång!</h3>
-      </div>
-      <div class="js-found-zipcode" style="display: none;">
-        <h5 class="subscribe-step-headline">Yes! Du bor i ett av våra testområden.</h5>
-        <h3 class="subscribe-step-headline">Lämna email och ladda ner appen Yepstr så skickar vi en invite-kod omedelbums.</h3>
-      </div>
-      <form id="form-step-3">
-        <input type="email" name="email" class="input-field subscribe-step-input" placeholder="Din epostadress" required>
-        <div class="subscribe-form-step-3-btn-wrapper">
-          <button type="submit" class="btn btn--orange" data-role="customer">Jag vill ha hjälp</button>  
-          <button type="submit" class="btn btn--orange" data-role="yep">Jag vill arbeta <small>Du måste vara under 20 år</small></button>
+    <section id="subscribe" class="section section--full section--subscribe">
+        <div class="subscribe-step subscribe-step--1 js-subscribe-step js-subscribe-step-0">
+            <h2 class="subscribe-step-headline">Se om Yepstr finns i ditt område!</h2>
+            <form id="form-step-1">
+                <input type="number" name="zipcode" min="10000" max="99999" pattern="\d*" / class="input-field subscribe-step-input" placeholder="Skriv in ditt postnummer" required>
+                <button type="submit" class="btn btn--continue"></button>
+            </form>
         </div>
-      </form>
-    </div>
-    <div class="subscribe-step subscribe-step--4 js-subscribe-step js-subscribe-step-3">
-      <h2 class="">Tack!</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col col--6 col--xs-12">
-            <a href="https://www.youtube.com/watch?v=0EtlUOMbdPk" class="btn btn--orange subscribe-step-yt-link">Se filmen</a>
-            <iframe class="subscribe-step-yt-video" width="560" height="315" src="https://www.youtube.com/embed/0EtlUOMbdPk" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col col--6 col--xs-12">
-            <p class="subscribe-step-paragraph">Som du förstått är vi i färd med att skapa något alldeles speciellt - något vi tror kan förända världen. På yepstr är vi övertygade om att de första småjobben, sommarjobben och extraknäcken är långt viktigare än man idag ger sken av. Det är där de första professionella relationerna byggs som många av livets viktigaste läxor lärs ut. Det är där många livslånga mentorskap uppstår. När det återigen är vanligt att ungdomar, vid sidan av skolan, har ett extrajobb är vi övertygade om att vi kommer slå tillbaka ungdomsarbetslösheten och utanförskapet. På riktigt.
-              <br>
-              <br> Vad kul att du vill vara med på resan!</p>
-          </div>
+        <div class="subscribe-step subscribe-step--2 js-subscribe-step js-subscribe-step-1">
+            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
         </div>
-      </div>
-    </div>
-    <!-- <div class="subscribe-btn-wrapper">
+        <div class="subscribe-step subscribe-step--3 js-subscribe-step js-subscribe-step-2">
+            <div class="js-not-found-zipcode">
+                <h5 class="subscribe-step-headline">Tyvärr! Yepstr är inte lanserat i ditt område ännu</h5>
+                <h3 class="subscribe-step-headline">Lämna din email så notifierar vi så fort vi är igång!</h3>
+            </div>
+            <div class="js-found-zipcode" style="display: none;">
+                <h5 class="subscribe-step-headline">Yes! Du bor i ett av våra testområden.</h5>
+                <h3 class="subscribe-step-headline">Lämna email så skickar vi en invite-kod inom ett par veckor.</h3>
+            </div>
+            <form id="form-step-3">
+                <input id="subscribe-email-input" type="email" name="email" class="input-field subscribe-step-input" placeholder="Din epostadress" required>
+                <p class="js-email-error-msg text-center text-danger" style="display: none;">Du måste skriva in en korrekt epostadress</p>
+                <div class="subscribe-form-step-3-btn-wrapper">
+                    <button type="submit" class="btn btn--orange" data-role="customer">Jag vill ha hjälp</button>
+                    <button type="submit" class="btn btn--orange" data-role="yep">Jag vill arbeta <small>Du måste vara under 20 år</small></button>
+                </div>
+            </form>
+        </div>
+        <div class="subscribe-step subscribe-step--4 js-subscribe-step js-subscribe-step-3">
+            <h2 class="">Tack!</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col col--6 col--xs-12">
+                        <a href="https://www.youtube.com/watch?v=0EtlUOMbdPk" class="btn btn--orange subscribe-step-yt-link">Se filmen</a>
+                        <iframe class="subscribe-step-yt-video" width="560" height="315" src="https://www.youtube.com/embed/0EtlUOMbdPk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col col--6 col--xs-12">
+                        <p class="subscribe-step-paragraph">Som du förstått är vi i färd med att skapa något alldeles speciellt - något vi tror kan förända världen. På Yepstr är vi övertygade om att de första småjobben, sommarjobben och extraknäcken är långt viktigare än man idag ger sken av. Det är där de första professionella relationerna byggs som många av livets viktigaste läxor lärs ut. Det är där många livslånga mentorskap uppstår. När det återigen är vanligt att ungdomar, vid sidan av skolan, har ett extrajobb är vi övertygade om att vi kommer slå tillbaka ungdomsarbetslösheten och utanförskapet. På riktigt.
+                            <br>
+                            <br> Vad kul att du vill vara med på resan!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="subscribe-btn-wrapper">
       <button type="button" class="btn btn--primary btn--blue js-scroll-to-section" data-target="yep-register">Jag vill jobba!</button>
     </div> -->
-  </section>
+    </section>
 </div>
 <!-- <section class="section section--full section--yep-register background background--dark-blue-pattern">
   <div class="inner">
