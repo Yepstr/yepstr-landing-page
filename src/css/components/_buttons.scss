@@ -120,12 +120,13 @@ $btn-web-browser: '../images/use-app-in-browser-btn.svg';
     display: inline-block;
   }
   &--orange {
-    background: rgba(255, 155, 37, 1);
-    border-color: $lightOrange;
+    background: $darkOrange;
+    border-color: $darkOrange;
     color: $white;
+    border-width: 2px;
     &:hover,
     &:focus {
-      background: rgba(255, 155, 37, 0.8);
+      background: darken( $darkOrange, 10% );
     }
   }
   &--green {
