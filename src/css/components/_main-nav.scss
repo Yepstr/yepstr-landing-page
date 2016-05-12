@@ -19,12 +19,12 @@
     opacity: 0;
     transition: opacity .3s cubic-bezier(.55, 0, .1, 1);
     .okayNav__menu-toggle {
-      position:static;
+      position: static;
     }
     &.loaded {
       opacity: 1;
       .okayNav__menu-toggle {
-        position:relative;
+        position: relative;
       }
     }
   }
@@ -39,6 +39,12 @@
   .main-nav a {
     text-decoration: none;
     color: $white;
+    &.highlight {
+      color: $darkOrange;
+      &:hover {
+        color: darken( $darkOrange, 20% );
+      }
+    }
     &:hover {
       color: $lightGrey;
     }
@@ -77,7 +83,7 @@
     background: rgba(255, 255, 255, 0.65);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    border-bottom:1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     &:hover {
       background: rgba(255, 255, 255, 0.65);
       -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -91,6 +97,12 @@
     }
     .main-nav a {
       color: $darkBlue;
+        &.highlight {
+        color: $darkOrange;
+        &:hover {
+          color: darken( $darkOrange, 20% );
+        }
+      }
     }
     .okayNav__nav--invisible a {
       background: transparent;
