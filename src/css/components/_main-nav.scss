@@ -34,7 +34,13 @@
   }
   .main-nav ul li {
     margin: 0;
-    padding: 0;
+    padding: 10px 15px;
+    > a {
+      padding: 5px 0;
+    }
+    &.is-active a {
+      border-bottom: 3px solid;
+    }
   }
   .main-nav a {
     text-decoration: none;
@@ -42,7 +48,7 @@
     &.highlight {
       color: $darkOrange;
       &:hover {
-        color: darken( $darkOrange, 20% );
+        color: darken( $darkOrange, 20%);
       }
     }
     &:hover {
@@ -56,10 +62,18 @@
   .okayNav__menu-toggle.icon--active span {
     background: $darkBlue;
   }
-  .okayNav__nav--invisible a {
-    color: $darkBlue;
-    &:hover {
-      color: $black;
+  .main-nav .okayNav__nav--invisible {
+    a {
+      color: $darkBlue;
+      &:hover {
+        color: $black;
+      }
+    }
+    li.is-active {
+      background: $lightGrey;
+    }
+    li.is-active a {
+      border-bottom: none;
     }
   }
 }
@@ -97,10 +111,13 @@
     }
     .main-nav a {
       color: $darkBlue;
-        &.highlight {
+      &:hover {
+        color: darken( $darkBlue, 20%);
+      }
+      &.highlight {
         color: $darkOrange;
         &:hover {
-          color: darken( $darkOrange, 20% );
+          color: darken( $darkOrange, 20%);
         }
       }
     }

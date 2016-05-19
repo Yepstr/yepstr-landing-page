@@ -2,7 +2,9 @@
   "title": "Så funkar det"
 })
 <div class="pattern-header background background--orange-pattern">
-  @@include('./shared/_header.html')
+  @@include('./shared/_header.html', {
+      "active-page": "sa-funkar-det"
+  })
   <div class="text-wrapper">
     @@include(markdown('./markdown/header-sa-funkar-det.markdown'))
   </div>

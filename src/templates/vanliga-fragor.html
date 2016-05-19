@@ -2,7 +2,9 @@
   "title": "Vanliga frågor"
 })
 <div class="pattern-header background background--orange-pattern">
-  @@include('./shared/_header.html')
+  @@include('./shared/_header.html', {
+      "active-page": "vanliga-fragor"
+  })
   <div class="text-wrapper">
     @@include(markdown('./markdown/header-vanliga-fragor.markdown'))
   </div>
