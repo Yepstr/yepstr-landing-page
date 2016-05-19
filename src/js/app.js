@@ -13,7 +13,7 @@ require('modules/magnificPopup.js');
 var app = {
 	scrollToSectionTriggers: Array.prototype.slice.call(document.querySelectorAll('.js-scroll-to-section')),
     openRegisterBtn: document.querySelector('.js-open-register-btn'),
-    
+
     init: function() {
         parseHelper.initialize();
         interestRequestSteps();
@@ -22,25 +22,25 @@ var app = {
         app.setUpOkayNav();
         app.setUpMagnificPopupVideo();
     },
-    
+
     setEventListeners: function() {
 
         if(registerForm){
-            var _registerForm = new registerForm();    
+            var _registerForm = new registerForm();
         }
-        
-        
+
+
         if(app.scrollToSectionTriggers){
             app.scrollToSectionTriggers.forEach(function(trigger) {
                 trigger.addEventListener('click', app.scrollToTarget);
-            });    
-        }        
-        
+            });
+        }
+
         if(app.openRegisterBtn){
-            app.openRegisterBtn.addEventListener('click', _registerForm.openModal);    
+            app.openRegisterBtn.addEventListener('click', _registerForm.openModal);
         }
     },
-    
+
     scrollToTarget: function(e) {
     	var clicked = e.currentTarget;
     	var target = clicked.getAttribute('data-target');
@@ -52,6 +52,16 @@ var app = {
     setUpOkayNav: function(e) {
         var $wrapper = $('.js-main-nav-wrapper');
         if ( $wrapper.length == 0 ) return;
+
+        var $navMain = $wrapper.find('.js-nav-main');
+        var $activePage = $navMain.data('active-page');
+        var $navMainItems = $wrapper.find('li');
+        $navMainItems.each(function(index, el) {
+            if($(el).data('active-key') == $activePage){
+                $(el).addClass('is-active');
+            }
+        });
+
         var beforeOpen = function(){
             $wrapper.addClass('is-inverted');
         }
@@ -60,7 +70,7 @@ var app = {
             $wrapper.removeClass('is-inverted');
         }
 
-        var $navMain = $wrapper.find('.js-nav-main').okayNav({
+        $navMain.okayNav({
             parent : '', // will call nav's parent() by default
             toggle_icon_class : 'okayNav__menu-toggle',
             toggle_icon_content: '<span /><span /><span />',
@@ -97,7 +107,7 @@ var app = {
             fixedContentPos: false,
             callbacks: {
                 beforeOpen: beforeOpen,
-                beforeClose: beforeClose,    
+                beforeClose: beforeClose,
             },
         });
     },

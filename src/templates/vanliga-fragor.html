@@ -1,14 +1,16 @@
-@@include('./shared/_head.html') 
+@@include('./shared/_head.html', {
+  "title": "Vanliga frågor"
+})
 <div class="pattern-header background background--orange-pattern">
-  @@include('./shared/_header.html') 
+  @@include('./shared/_header.html')
   <div class="text-wrapper">
     @@include(markdown('./markdown/header-vanliga-fragor.markdown'))
   </div>
 </div>
 <section id="details" class="section section--faq nice-type">
 
-@@include(markdown('./markdown/faq.markdown')) 
+@@include(markdown('./markdown/faq.markdown'))
 
 </section>
 
-@@include('./shared/_footer.html') 
+@@include('./shared/_footer.html')

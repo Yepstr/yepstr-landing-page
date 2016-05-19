@@ -1,4 +1,6 @@
-@@include('./shared/_head.html')
+@@include('./shared/_head.html', {
+  "title": "Så funkar det"
+})
 <div class="pattern-header background background--orange-pattern">
   @@include('./shared/_header.html')
   <div class="text-wrapper">
@@ -49,5 +51,5 @@
       @@include(markdown('./markdown/sa-funkar-det-foraldrar.markdown'))
     </div>
   </div>
-</section> 
+</section>
 @@include('./shared/_footer.html')
