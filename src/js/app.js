@@ -10,18 +10,15 @@ var app = require('magnific-popup');
 require('modules/okayNav.js');
 require('modules/magnificPopup.js');
 
-var globals = {
+var app = {
+  scrollToSectionTriggers: Array.prototype.slice.call(document.querySelectorAll('.js-scroll-to-section')),
+  openRegisterBtn: document.querySelector('.js-open-register-btn'),
   breakpoints: {
     xsmall: 640,
     small: 800,
     medium: 1100,
     large: 1400,
   },
-}
-
-var app = {
-  scrollToSectionTriggers: Array.prototype.slice.call(document.querySelectorAll('.js-scroll-to-section')),
-  openRegisterBtn: document.querySelector('.js-open-register-btn'),
 
   init: function() {
     parseHelper.initialize();
@@ -30,6 +27,7 @@ var app = {
     app.setEventListeners();
     app.setUpOkayNav();
     app.setUpMagnificPopupVideo();
+    app.makeScrollToNav();
   },
 
   setEventListeners: function() {
@@ -58,6 +56,40 @@ var app = {
 
     $('html, body').animate({ scrollTop: offset + 'px' }, 700, 'swing');
   },
+
+  makeScrollToNav: function(e) {
+    var $wrapper = $('.js-scroll-to-nav');
+    var $scrollToNavContent = $('.js-scroll-to-nav-content');
+    if ($wrapper.length == 0 || $scrollToNavContent.length == 0) return;
+
+    var $list = $wrapper.find('.js-scroll-to-nav-list');
+    var $item = $wrapper.find('.js-scroll-to-nav-item').remove().clone();
+    var $headlines = $scrollToNavContent.find('h1, h2, h3');
+
+    var scrollToTarget = function() {
+      var $t = $(this);
+      var target = $t.data('target');
+      var $target = $('#' + target);
+
+      var offset = $target.offset().top - 100; // Adjusting the offset to make room for the menu
+      $('html, body').animate({ scrollTop: offset + 'px' }, 700, 'swing');
+    };
+
+    $headlines.each(function(index, el) {
+      var $el = $(el);
+      var scrollToKey = "scroll-to-" + index;
+      var $itemClone = $item.clone();
+
+      $el.attr('id', scrollToKey);
+      $itemClone
+        .text($(el).text())
+        .data('target', scrollToKey)
+        .on('click', scrollToTarget)
+        .appendTo($list);
+    });
+    $wrapper.addClass('is-loaded')
+  },
+
   setUpOkayNav: function(e) {
     var $wrapper = $('.js-main-nav-wrapper');
     if ($wrapper.length == 0) return;
@@ -105,7 +137,7 @@ var app = {
     var $popupVideoButton = $('.js-popup-video-button');
     if ($popupVideoButton.length == 0) return;
 
-    var isMobile = $(window).width() < globals.breakpoints.medium;
+    var isMobile = $(window).width() < app.breakpoints.medium;
     var $backgroundVideo = $('.js-full-screen-video');
 
     var beforeOpen = function() {

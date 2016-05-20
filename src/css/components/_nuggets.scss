@@ -112,6 +112,18 @@
 }
 
 .text {
+  &--left {
+    text-align: left;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--white {
+    color: $white;
+  }
   &--orange {
     color: $darkOrange;
   }
