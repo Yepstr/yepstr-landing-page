@@ -63,6 +63,8 @@ var app = {
     if ($wrapper.length == 0) return;
 
     var $navMain = $wrapper.find('.js-nav-main');
+
+    // Set active page in menu
     var $activePage = $navMain.data('active-page');
     var $navMainItems = $wrapper.find('li');
     $navMainItems.each(function(index, el) {
@@ -92,6 +94,11 @@ var app = {
       afterClose: function() {}, // Will trigger after the nav gets closed
       itemHidden: function() {}, // Will trigger after an item moves to the hidden navigation
       itemDisplayed: function() {}, // Will trigger after an item moves to the visible navigation
+    });
+
+    //Fix jumping menu on mobile
+    $window.on('load.okayNav', function(e) {
+      $wrapper.addClass('is-loaded');
     });
   },
   setUpMagnificPopupVideo: function(e) {

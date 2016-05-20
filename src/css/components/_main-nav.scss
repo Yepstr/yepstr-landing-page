@@ -2,7 +2,11 @@
   z-index: 100;
   // position: static;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 95%);
-  transition: background-color .3s cubic-bezier(.55, 0, .1, 1);
+  opacity: 0;
+  transition: background-color .3s cubic-bezier(.55, 0, .1, 1), opacity .3s cubic-bezier(.55, 0, .1, 1);
+  &.is-loaded {
+    opacity: 1;
+  }
   &:hover {
     background-color: rgba(0, 0, 0, 0.4);
   }
@@ -16,17 +20,6 @@
   }
   .main-nav {
     height: 51px; // Need this so the menu dont collaps when no items are visible
-    opacity: 0;
-    transition: opacity .3s cubic-bezier(.55, 0, .1, 1);
-    .okayNav__menu-toggle {
-      position: static;
-    }
-    &.loaded {
-      opacity: 1;
-      .okayNav__menu-toggle {
-        position: relative;
-      }
-    }
   }
   .main-nav ul {
     margin: 0;
@@ -55,9 +48,12 @@
       color: $lightGrey;
     }
   }
-  .okayNav__menu-toggle span {
-    transition: background-color .2s cubic-bezier(.55, 0, .1, 1);
-    background: $white;
+  .okayNav__menu-toggle {
+    position: relative;
+    span {
+      transition: background-color .2s cubic-bezier(.55, 0, .1, 1);
+      background: $white;
+    }
   }
   .okayNav__menu-toggle.icon--active span {
     background: $darkBlue;
