@@ -8,44 +8,49 @@ Jamen!
 Nejdå - det går väldigt bra att använda [app.yepstr.com](app.yepstr.com) direkt från din dator
 
 ## Vad kostar det att anlita en Yep (ungdom) via Yepstr?
-Mellan 70 och 110kr/h totalt – inklusive allt (försäkring, moms etc). Priset beror på Yeppens ålder och erfarenhet.
+Yeppar tar ungefär mellan 70 och 110kr/h beroende på ålder och erfarenhet. För uppdragsgivaren tillkommer 20% på första uppdraget och därefter 5% (om man bokar samma ungdom) som täcker försäkring, transaktionsavgift, moms etc. 
 
-## Vad tar Yepstr i avgift?
-
-Vi gör vårt yttersta för att hålla nere våra kostnader så att så mycket som möjligt går direkt till ungdomen. Idag går 85-95% av den total summan till ungdomen. Avgiften täcker moms, försäkring, transaktionsavgifter samt assistans med deklarationen.
-
-Jämför gärna detta med jultidningsföretag, barnpassning- och hundpassningstjänster där ungdomar endast får 25-50% av det totala beloppet!
-
-Som du säkert kan räkna ut själv så blir det inte så värst mycket över till Yepstr – vilket vi är medvetna om. Vi bygger det här för att det behövs ett ställe för ambitiösa ungdomar att få sin första arbetslivserfarenhet och för att vi tror att samhället blir bättre när man lär känna sina grannar. Det är först när vi är riktigt stora och finns över hela världen som vi kan börja fundera på att bli lönsamma.
-
-Vi hoppas att du vill vara med på den resan!
+Som du säkert kan räkna ut själv så blir det inte så värst mycket över till Yepstr – vilket vi är medvetna om. Vi bygger det här för att det behövs ett ställe för ambitiösa ungdomar att få sin första arbetslivserfarenhet. Det är först när vi är riktigt stora och finns över hela världen som vi kan börja fundera på att bli lönsamma.
 
 ## Vad kan jag tjäna som ungdom på Yepstr?
 Precis som i riktiga livet, så desto fler uppdrag och desto högre betyg du lyckas få desto mer kan du ta betalt!
-När du kommer in som helt ny så tjänar du som 16-åring 80kr/h och som 19-åring 110kr/h.
+När du kommer in som helt ny så kan du som 16-åring ta betalt omkring 80kr/h och som 19-åring 110kr/h.
 
 ## Hur fungerar betalningen?
-Pengarna dras från kundens bankkort och förs över till ungdomens konto inom sju bankdagar. Inom kort kommer vi kunna garantera att pengarna landar på Yeppens (ungdomens) konto inom 2 dagar från betalningen. Har du inte fått dina pengar efter 7 dagar från betalningen gjordes så ring oss på 08-5151 9000.
+Betalning på Yepstr sker via bankkort och som uppdragsgivare har man alltid möjlighet att stämma av kostnaden innan man godkänner.
+
+I mer detalj:
+1. Efter utfört uppdrag så skickas en summering till uppdragsgivaren där det står överenskommen timkostnad samt hur många timmar uppdraget tog.
+2. Är det första gången lägger man här till sitt betalkort, och har möjlighet att öka summan (om man vill) innan man trycker på "betala"
+2. Pengarna dras sedan från kundens bankkort och förs över till ungdomens konto inom sju bankdagar. Inom kort kommer vi kunna garantera att pengarna landar på Yeppens (ungdomens) konto inom 2 dagar från betalningen.
+
+## Vad händer om man är oense om betalningen?
+Hittills har vi inte haft ett enda fall, men någon gång kommer säkert vara den första!
+
+Genom Yepstrs process så är alltid timpriset bestämt innan uppdraget kan startas. Råder det någon oenighet om antalet arbetade timmar så kan man alltid diskutera detta efter uppdraget och modifiera kostnaden. Kan man inte komma överens så kontakta oss, så hjälper vi till att hitta en lösning.
+
+Är man osäker på om Yeppen (ungdomen) kommer lyckas utföra uppdraget till belåtenhet så kan man alltid tacka nej och skicka hem personen inom 30 min utan kostnad.  
 
 ## Behöver jag be mina föräldrar om tillåtelse?
 Om du är under 18 år så måste du ha dina föräldrar (eller din målsmans) tillåtelse för att få jobba. Det är nämligen deras plikt att se till att ditt arbete inte går ut över exempelvis skolgången! Mer info finns i [föräldrabalken kapitel 6, paragraf 12](https://lagen.nu/1949:381#K6P12S1)
 
 ## Hur arbetar Yepstr med säkerhet?
-För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi sju saker som skiljer oss från andra marknadsplatser:
+För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi ett flertal saker som skiljer oss från andra marknadsplatser:
 
-1. På Yepstr är man aldrig ensam på sitt första uppdrag (eller på ett uppdrag med en ny kund). Vi notifierar föräldrarna om uppdragets detaljer så att de kan följa med. Kan inte föräldrarna så ringer vi upp Yeppen vid schemalagd tid för att stämma av att allt går som planerat.
-2. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
-3. Ungdomar måste lämna sina föräldrars kontaktuppgifter så att vi kan hålla dem uppdaterade
-4. Vi ställer exceptionellt höga krav på nya medlemmar:
-    - Det krävs en inbjudan för att kunna registrera sig på Yepstr. Vi har personligen intervjuat våra första 500 användare.
-    - Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret
-    - Konton måste länkas till en existerande Facebook-profil. Ingen Facebook ingen Yepstr [under utveckling]
-    - Uppdragsgivare måste spara ett fungerande betalkort för att kunna komma i kontakt med nya uppdragstagare (vi använder kortet i verifieringssyfte)
-5. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra kopplas ihop
-6. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga för ungdomar
-7. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 5151 9000
+1. Vi notifierar föräldrarna (via email) om uppdragets detaljer så att de kan kontakta uppdragsgivaren direkt, samt uppmanas att följa med och säga hej om det är första gången
+2. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra
+3. Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret
+4. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
+5. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga
+6. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 5151 9000
+7. Ytterligare funktioner under utveckling (beräknad release under 2016)
+    - Facebook-verifiering
+    - Kontokorts-verifiering
+    - Bank-ID verifiering
+    - Telefon och address-verifiering
+    - Körkorts-verifiering
 
-## Kan jag intervjua ungdomen innan jag bestämmer mig?
+## Kan jag intervjua Yeppen (ungdomen) innan jag bestämmer mig?
 Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i beskrivningen att du vill använda tillfället för en  intervju istället!
 
 ## Vad gäller för ungdomar som är under 16 år?
