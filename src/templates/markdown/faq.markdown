@@ -97,10 +97,13 @@ Använd gärna utvärderingen i slutet av uppdraget för att ge ungdomen konstru
 
 Allt arbete på Yepstr är ”inkomst av tjänst”. 
 
-När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg [här](http://www.hurmycketskatt.se/) där du kan räkna ut vad du kommer att betala. Tänk på att du skall skriva in ungefär vad du tjänar i månaden!
+När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg [här](https://www.skatteverket.se/omoss/omskatteverket/temasvartpavitt/sabeskattasdinlon) där du kan räkna ut vad du kommer att betala. Tänk på att du skall skriva in ungefär vad du tjänar i månaden!
 
 Yepstr vill hjälpa dig med detta så att det blir enklare att göra rätt genom att automatiskt fylla i din deklarationsblankett. Vi planerar att vara färdiga med den här funktionaliteten under 2016.
 
 ## Kan jag anlita flera Yeppar samtidigt för ett större uppdrag?
 
 Inte i dagsläget. Vi räknar dock med att kunna erbjuda den funktionaliteten redan under 2016!
+
+## Hur tar jag bort mitt konto?
+Skicka oss ett mail så löser vi det omedelbums: [admin@yepstr.com](mailto:admin@yepstr.com)
