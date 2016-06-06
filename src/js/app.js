@@ -172,7 +172,7 @@ var app = {
 
     $('.ga-outbound-link').on('click', function(e) {
       e.preventDefault();
-      ga('send', 'event', 'outbound', 'click', e.target.href, {
+      ga('send', 'event', 'Outbound link', 'click', e.target.href, {
         'transport': 'beacon',
         'hitCallback': function() {
           document.location = e.target.href;
@@ -181,7 +181,7 @@ var app = {
     });
 
     $('.ga-contact-footer-link').on('click', function(e) {
-      var type = $(this).date('type');
+      var type = $(this).data('type');
       ga('send', 'event', 'Contact footer link', 'click', type);
     });
 
