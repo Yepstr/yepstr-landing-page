@@ -1,9 +1,23 @@
-.pattern-header{
+.pattern-header {
+  position: relative;
   color: $white;
-  .text-wrapper{
+  &--full {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-wrapper {
     max-width: 800px;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: center;
-    padding:150px 30px 100px;
+    padding: 150px 30px 100px;
+    &--lg-padding {
+      max-width: 900px;
+      padding: 300px 30px 250px;
+      @media #{$xsmall} {
+        padding: 150px 30px 100px;
+      }
+    }
   }
 }

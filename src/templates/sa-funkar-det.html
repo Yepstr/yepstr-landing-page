@@ -1,8 +1,14 @@
-@@include('./shared/_head.html')
+@@include('./shared/_head.html', {
+  "title": "Så funkar det"
+})
 <div class="pattern-header background background--orange-pattern">
-  @@include('./shared/_header.html')
+  @@include('./shared/_header.html', {
+      "active-page": "sa-funkar-det"
+  })
   <div class="text-wrapper">
     @@include(markdown('./markdown/header-sa-funkar-det.markdown'))
+    <br />
+    <a class="btn btn--primary btn--white-no-arrow btn--inline js-popup-video-button" href="http://www.youtube.com/watch?v=0EtlUOMbdPk">Se video</a>
   </div>
 </div>
 <div class="bg-container">
@@ -49,5 +55,5 @@
       @@include(markdown('./markdown/sa-funkar-det-foraldrar.markdown'))
     </div>
   </div>
-</section> 
+</section>
 @@include('./shared/_footer.html')

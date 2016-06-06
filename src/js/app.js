@@ -28,8 +28,6 @@ var app = {
     app.setUpOkayNav();
     app.setUpMagnificPopupVideo();
     app.makeScrollToNav();
-
-    helpers.googleAnalytics.playVideo();
   },
 
   setEventListeners: function() {
@@ -164,9 +162,6 @@ var app = {
         beforeClose: beforeClose,
       },
     });
-  },
-  setUpGoogleAnalyticsEventTracking: function(e) {
-
   },
 };
 

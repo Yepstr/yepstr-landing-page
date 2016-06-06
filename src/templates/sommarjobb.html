@@ -1,0 +1,51 @@
+@@include('./shared/_head.html', {
+  "title": "Sommarjobb"
+})
+<div class="pattern-header pattern-header--full background background--summer-job">
+  @@include('./shared/_header.html', {
+      "active-page": "sommarjobb"
+  })
+  <div class="text-wrapper text-wrapper--lg-padding">
+    <h1>Jobba enligt dina villkor i sommar!</h1>
+    <p>Hos Yepstr hittar du extraknäck, lokalt hela sommaren!</p>
+    <br />
+    <a class="btn btn--primary btn--white-no-arrow btn--inline" href="/ladda-ner-appen.html">Bli en Yep!</a>
+  </div>
+  <div class="scroll-icon js-scroll-to-section" data-target="how-it-works"></div>
+</div>
+<section>
+  <div id="how-it-works" class="step-box-wrapper">
+    <div class="step-box background--orange">
+      <div class="step-box__inner">
+        <div class="step-box__ball text--orange">1</div>
+        <h2 class="step-box__title">Ladda hem appen & registrera dig</h2>
+        <p class="step-box__text">Appen finns både till <a href="/ladda-ner-appen.html">iOS och Android</a></p>
+      </div>
+    </div>
+    <div class="step-box background--darkblue">
+      <div class="step-box__inner">
+        <div class="step-box__ball text--darkblue">2</div>
+        <h2 class="step-box__title">Snart kommer jobben direkt i fickan</h2>
+        <p class="step-box__text">Du får ett meddelande när någon i ditt område behöver hjälp</p>
+      </div>
+    </div>
+    <div class="step-box background--blue">
+      <div class="step-box__inner">
+        <div class="step-box__ball text--blue">3</div>
+        <h2 class="step-box__title">Lön rakt till ditt bankkonto!</h2>
+        <p class="step-box__text">Kunden betalar direkt via appen till ditt konto</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--cta">
+  <div class="inner margin-v-lg">
+    <h1>Yepstr är...</h1>
+    <p>......en digital marknadsplats där ambitiösa tonåringar kan komma i kontakt med grannar som behöver hjälp. Vi tar tar hand om allt det jobbiga: schemaläggning, utbetalning, skatter och försäkringar så att det finns mer tid för dig att ha kul! Som Yep blir du din egen chef, en ung entreprenör, och arbetar så mycket du kan.</p>
+    <div class="button-case">
+      <a href="/ladda-ner-appen.html" class="btn btn--orange btn--inline margin-sm">Bli en Yep!</a>
+      <a href="http://yepstr.com/blog/2016/05/20/sommarjobb" class="btn btn--blue btn--inline margin-sm">Läs mer om sommarjobb</a>
+    </div>
+  </div>
+</section>
+@@include('./shared/_footer.html')
