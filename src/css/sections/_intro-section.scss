@@ -17,20 +17,6 @@
       display: inline-block;
     }
   }
-  .scroll-icon {
-    display: block;
-    width: 31px;
-    height: 94px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -15px;
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../images/scroll-icon.svg');
-    cursor: pointer;
-  }
   @media #{$xsmall} {
     .intro-section-headline {
       margin-bottom: rem(20);
@@ -41,7 +27,6 @@
         font-size: rem(28);
       }
     }
-    .scroll-icon,
     .intro-splash-image {
       display: none;
     }
