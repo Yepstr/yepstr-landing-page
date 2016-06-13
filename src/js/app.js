@@ -28,6 +28,7 @@ var app = {
     app.setUpOkayNav();
     app.setUpMagnificPopupVideo();
     app.makeScrollToNav();
+    app.setUpGoogleAnalyticsEventTracking();
   },
 
   setEventListeners: function() {
@@ -161,6 +162,37 @@ var app = {
         beforeOpen: beforeOpen,
         beforeClose: beforeClose,
       },
+    });
+  },
+  setUpGoogleAnalyticsEventTracking: function() {
+
+    $('.ga-play-video').on('click', function(e) {
+      ga('send', 'event', 'Video', 'Play', document.title);
+    });
+
+    $('.ga-outbound-link').on('click', function(e) {
+      e.preventDefault();
+      ga('send', 'event', 'Outbound link', 'click', e.target.href, {
+        'transport': 'beacon',
+        'hitCallback': function() {
+          document.location = e.target.href;
+        }
+      });
+    });
+
+    $('.ga-contact-footer-link').on('click', function(e) {
+      var type = $(this).data('type');
+      ga('send', 'event', 'Contact footer link', 'click', type);
+    });
+
+    $('.ga-scroll-to-link').on('click', function(e) {
+      var linkTitle = $(this).text();
+      ga('send', 'event', 'Scroll to link', 'click', linkTitle);
+    });
+
+    $('.ga-faq-link').on('click', function(e) {
+      var linkTitle = $(this).text();
+      ga('send', 'event', 'FAQ link', 'click', linkTitle);
     });
   },
 };
