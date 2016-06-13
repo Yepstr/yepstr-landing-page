@@ -1,14 +1,17 @@
 ## Lag och skatt - hur funkar det?
-I Sverige får en privatperson betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i [SKV448](http://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf).
+I Sverige får en privatperson betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i [SKV448](https://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf).
 
 ## Finns appen för både Android och iOS?
 Jamen!
+
+## Finns det någon åldersgräns för ungdomar (Yeppar)?
+För att vara en Yep (Young Entrepreneur) så måste man vara mellan 15 och 21 år gammal.
 
 ## Måste man ladda ner en app?
 Nejdå - det går väldigt bra att använda [app.yepstr.com](app.yepstr.com) direkt från din dator
 
 ## Vad kostar det att anlita en Yep (ungdom) via Yepstr?
-Yeppar tar ungefär mellan 70 och 110kr/h beroende på ålder och erfarenhet. För uppdragsgivaren tillkommer 20% på första uppdraget och därefter 5% (om man bokar samma ungdom) som täcker försäkring, transaktionsavgift, moms etc. 
+Yeppar tar ungefär mellan 70 och 110kr/h beroende på ålder och erfarenhet. För uppdragsgivaren tillkommer 20% på första uppdraget och därefter 5% (om man bokar samma ungdom) som täcker försäkring, transaktionsavgift, moms etc.
 
 Som du säkert kan räkna ut själv så blir det inte så värst mycket över till Yepstr – vilket vi är medvetna om. Vi bygger det här för att det behövs ett ställe för ambitiösa ungdomar att få sin första arbetslivserfarenhet. Det är först när vi är riktigt stora och finns över hela världen som vi kan börja fundera på att bli lönsamma.
 
@@ -20,9 +23,10 @@ När du kommer in som helt ny så kan du som 16-åring ta betalt omkring 80kr/h 
 Betalning på Yepstr sker via bankkort och som uppdragsgivare har man alltid möjlighet att stämma av kostnaden innan man godkänner.
 
 I mer detalj:
+
 1. Efter utfört uppdrag så skickas en summering till uppdragsgivaren där det står överenskommen timkostnad samt hur många timmar uppdraget tog.
 2. Är det första gången lägger man här till sitt betalkort, och har möjlighet att öka summan (om man vill) innan man trycker på "betala"
-2. Pengarna dras sedan från kundens bankkort och förs över till ungdomens konto inom sju bankdagar. Inom kort kommer vi kunna garantera att pengarna landar på Yeppens (ungdomens) konto inom 2 dagar från betalningen.
+3. Pengarna dras sedan från kundens bankkort och förs över till ungdomens konto inom sju bankdagar. Inom kort kommer vi kunna garantera att pengarna landar på Yeppens (ungdomens) konto inom 2 dagar från betalningen.
 
 ## Vad händer om man är oense om betalningen?
 Hittills har vi inte haft ett enda fall, men någon gång kommer säkert vara den första!
@@ -35,14 +39,14 @@ Genom Yepstrs process så är alltid timpriset bestämt innan uppdraget kan star
 Om du är under 18 år så måste du ha dina föräldrar (eller din målsmans) tillåtelse för att få jobba. Det är nämligen deras plikt att se till att ditt arbete inte går ut över exempelvis skolgången! Mer info finns i [föräldrabalken kapitel 6, paragraf 12](https://lagen.nu/1949:381#K6P12S1)
 
 ## Hur arbetar Yepstr med säkerhet?
-För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdrag så gör vi ett flertal saker som skiljer oss från andra marknadsplatser:
+Vår vision är att bli världens tryggaste marknadsplats för den här typen av uppdrag. Såhär arbetar Yepstr idag med säkerhet:
 
 1. Vi notifierar föräldrarna (via email) om uppdragets detaljer så att de kan kontakta uppdragsgivaren direkt, samt uppmanas att följa med och säga hej om det är första gången
-2. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra
+2. Endast uppdragsgivare och uppdragstagare inom maximalt fem kilometer från varandra kan komma i kontakt. Vi kallar det "cykelavstånd", och är tänkt att minska risker för olyckor på väg till uppdrag.
 3. Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret
 4. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
-5. Alla uppdrag kontrolleras av Yepstr för att säkerställa att de är lämpliga
-6. Vi har en servicetelefon tillgänglig dygnet runt, året om 08 - 5151 9000
+5. Uppdragsbeskrivningar kontrolleras av Yepstr för att säkerställa att de är lämpliga
+6. Vi har en servicetelefon tillgänglig 8-23, året om 08 - 5151 9000
 7. Ytterligare funktioner under utveckling (beräknad release under 2016)
     - Facebook-verifiering
     - Kontokorts-verifiering
@@ -54,7 +58,7 @@ För att kunna vara Sveriges säkraste digitala marknadsplats för lokala uppdra
 Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i beskrivningen att du vill använda tillfället för en  intervju istället!
 
 ## Vad gäller för ungdomar som är under 16 år?
-Ungdomar som är 13-16 år ("äldre barn") bör endast ha ett lätt och ofarligt arbete och får till exempel inte utföra tunga lyft. Mer info finns i Arbetsmiljöverkets broschyr ["Så får barn och ungdomar arbeta"](https://www.av.se/globalassets/filer/publikationer/broschyrer/sa-far-barn-och-ungdomar-arbeta-broschyr-adi043.pdf)
+Ungdomar under 16 år ("äldre barn") bör endast ha ett lätt och ofarligt arbete och får till exempel inte utföra tunga lyft. Mer info finns i Arbetsmiljöverkets broschyr ["Så får barn och ungdomar arbeta"](https://www.av.se/globalassets/filer/publikationer/broschyrer/sa-far-barn-och-ungdomar-arbeta-broschyr-adi043.pdf)
 
 ## Kan jag som företag hitta ambitiösa ungdomar?
 
@@ -74,11 +78,11 @@ Så länge en enskild person inte betalar en ungdom 10.000kr eller mer under ett
 
 Den som betalar betraktas istället som en typ av privat, tillfällig arbetsgivare.
 
-Yepstr är en digital marknadsplats som förmedlar betalningen och möjliggör en smidig transaktion mellan parterna. Yepstr är alltså inte arbetsgivare åt dessa tusentals ungdomar. För mer information se våra [allmänna villkor](http://app.yepstr.com/termsOfUse).
+Yepstr är en digital marknadsplats som förmedlar betalningen och möjliggör en smidig transaktion mellan parterna. Yepstr är alltså inte arbetsgivare åt dessa tusentals ungdomar. För mer information se våra [allmänna villkor](https://app.yepstr.com/termsOfUse).
 
 ## Vad innebär det att vara en privat arbetsgivare – måste jag trassla med en massa skatt och papper?
 
-Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i [SKV448](http://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf), men i korthet så räcker det med en kontrolluppgift om du betalar en ungdom 1.000kr eller mer under ett år. 
+Nej. Yepstr kommer att ha automatiserat allt detta åt dig innan 2016 är slut. Skatteverkets krav är tydliga och finns att läsa i [SKV448](https://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf), men i korthet så räcker det med en kontrolluppgift om du betalar en ungdom 1.000kr eller mer under ett år.
 
 Viktigt att notera dock att det yttersta ansvaret alltid ligger på en själv att deklarera rätt. I slutändan så väljer man alltid själv!
 
@@ -95,7 +99,7 @@ Använd gärna utvärderingen i slutet av uppdraget för att ge ungdomen konstru
 
 ## Jag som är tonåring – vad har jag för krav på mig att betala skatt?
 
-Allt arbete på Yepstr är ”inkomst av tjänst”. 
+Allt arbete på Yepstr är ”inkomst av tjänst”.
 
 När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg [här](https://www.skatteverket.se/omoss/omskatteverket/temasvartpavitt/sabeskattasdinlon) där du kan räkna ut vad du kommer att betala. Tänk på att du skall skriva in ungefär vad du tjänar i månaden!
 
