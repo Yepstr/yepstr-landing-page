@@ -2,9 +2,9 @@
 
 Har du frågor eller behöver mer information? Kontakta gärna Jacob så berättar han mer.
 
-**Jacob Rudbäck:** +46 70 961 5151
+**Jacob Rudbäck:** +46 723 36 26 66
 
-[jacob@yepstr.com](mailto:jacob@yepstr.com)
+[press@yepstr.com](mailto:press@yepstr.com)
 
 ##Om Yepstr
 
