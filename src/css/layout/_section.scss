@@ -11,12 +11,6 @@
 
 	&--intro {
 		color: $white;
-
-		@media #{$medium} {
-			background-image: url('../images/video-bg.jpg');
-			background-size: cover;
-			background-position: center center;
-		}
 	}
 
 	&--how-it-works {
@@ -51,5 +45,10 @@
 		transform: translateY(-50%);
 		width: 100%;
 		padding: 0 rem(15);
+	}
+	.section-headline{
+		&--light{
+			color: $white;
+		}
 	}
 }

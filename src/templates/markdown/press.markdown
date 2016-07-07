@@ -1,14 +1,23 @@
-##Har du frågor? Hör gärna av dig!
+##Pressinformation
+* **Juni 2016 - ** [Ny tjänst för ungdomsjobb lanseras i Sverige efter test (.pdf)](/press/Yepstr-160615.pdf)
 
-Har du frågor eller behöver mer information? Kontakta gärna Jacob så berättar han mer.
+##Presskontakt
+**Jacob Rudbäck, vd**
 
-**Jacob Rudbäck:** +46 723 36 26 66
+[press@yepstr.com](mailto:press@yepstr.com), +46 723 36 26 66
 
-[press@yepstr.com](mailto:press@yepstr.com)
+##Yepstr i media
 
-##Om Yepstr
+* **Di Digital -** [Miljardär-mentor går in i småjobbsapp](http://digital.di.se/artikel/miljardar-mentor-gar-in-i-smajobbsapp) 
+* **Breakit -** [Stena-chefen Dan Sten Olsson går in i bemmaningsappen Yepstr](http://www.breakit.se/artikel/3804/stena-chefen-dan-sten-olsson-gar-in-i-bemmaningsappen-yepstr)
+* **Dagensanalys -** [Yepstr satsar på att bli virala](http://www.dagensanalys.se/2016/06/yepstr-satsar-pa-att-bli-virala/) 
+* **Dagensopinion -** [Open Friday: Apputvecklare vill lösa arbetsmarknadsproblem](http://www.dagensopinion.se/open-friday-apputvecklare-vill-l%C3%B6sa-arbetsmarknadsproblem) 
+* **Ehandel.se -** [Från gräsklippning i tonåren till app för ungdomsjobb](http://www.ehandel.se/Fran-grasklippning-i-tonaren-till-app-for-ungdomsjobb,8074.html)
+* **The Stockholmer Podcast -** [The entrepreneur bringing back the neighbourhood kid](https://www.acast.com/thestockholmer/theentrepreneurbringingbacktheneighbourhoodkid) 
 
-Yepstr grundades i Sverige 2015. Här kan du läsa om vilka vi är, hur idén kom till och hur vi rullat ut Yepstr i Stockholm.  
+##Pressbilder
 
-[Ny tjänst för ungdomsjobb lanseras i Sverige efter test (.pdf)](/press/Yepstr-160615.pdf)
+Bilder och illustrationer för nedladdning och fri publicering. 
+
+
 

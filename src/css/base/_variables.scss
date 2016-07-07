@@ -6,19 +6,22 @@ $white: #ffffff;
 $black: #000000;
 $lightBlue: #58b2d8;
 $darkBlue: #2b2c3d;
-$darkGrey: #333333;
+$darkGrey: #9FA0A8;
 $lightGrey: #e0e0e0;
+$lightestGrey: #eee;
 $lightOrange: #f5ad4e;
 $darkOrange: #f59b25;
 $green: #6cb76a;
 $red: #d54544;
 
 /* Break Points */
+$xxsmall: "screen and (max-width: 350px)";
 $xsmall: "screen and (max-width: 640px)";
 $small: "screen and (max-width: 800px)";
 $medium: "screen and (max-width: 1100px)";
 $large: "screen and (max-width: 1440px)";
 
+$xxsmallMin: "screen and (min-width: 351px)";
 $xsmallMin: "screen and (min-width: 641px)";
 $smallMin: "screen and (min-width: 801px)";
 $mediumMin: "screen and (min-width: 1101px)";

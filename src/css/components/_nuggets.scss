@@ -136,6 +136,9 @@
   &--grey {
     color: $lightGrey;
   }
+  &--dark-grey {
+    color: $darkGrey;
+  }
   &--warm-grey {
     color: $lightGrey;
   }
@@ -144,5 +147,13 @@
   }
   &--red {
     color: $green;
+  }
+}
+
+.reset-list {
+  list-style: none outside none;
+  li {
+    margin: 0;
+    padding: 0;
   }
 }

@@ -103,6 +103,15 @@ $btn-web-browser: '../images/use-app-in-browser-btn.svg';
       outline: none;
     }
   }
+  &--white-link {
+    border-color: transparent;
+    color: $white;
+    &:hover,
+    &:focus {
+      background-color: rgba( $white, .1 );
+      outline: none;
+    }
+  }
   &--blue {
     border-color: $darkBlue;
     color: $darkBlue;
@@ -149,13 +158,13 @@ $btn-web-browser: '../images/use-app-in-browser-btn.svg';
   width: 140px;
   height: 47px;
   text-indent: -9999em;
-  margin-right: 10px;
   margin-top: 10px;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   &--google-play {
     background-image: url(#{$btn-google-play});
+    margin-right: 10px;
   }
   &--app-store {
     background-image: url(#{$btn-app-store});
