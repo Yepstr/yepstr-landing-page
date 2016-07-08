@@ -11,12 +11,6 @@
 
 	&--intro {
 		color: $white;
-
-		@media #{$medium} {
-			background-image: url('../images/video-bg.jpg');
-			background-size: cover;
-			background-position: center center;
-		}
 	}
 
 	&--how-it-works {
@@ -35,9 +29,6 @@
 	}
 
 	&--promo {
-		background: url('../images/dark-bg.png') no-repeat;
-		background-size: cover;
-		background-position: center center;
 		padding-bottom: rem(60);
 	}
 
@@ -51,5 +42,10 @@
 		transform: translateY(-50%);
 		width: 100%;
 		padding: 0 rem(15);
+	}
+	.section-headline{
+		&--light{
+			color: $white;
+		}
 	}
 }

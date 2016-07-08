@@ -1,0 +1,66 @@
+  .section--in-the-media {
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1410px;
+    }
+    .logo-list {
+      display: flex;
+      flex: 0 1 auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      &__item {
+        flex: 1 1 25%;
+        font-size: rem(20);
+        font-weight: 600;
+        @media #{$small} {
+          flex-basis: 50%;
+        }
+        @media #{$xxsmall} {
+          flex-basis: 100%;
+        }
+        a {
+          display: block;
+          :hover{
+            background: rgba( $white, .5 );
+          }
+        }
+      }
+    }
+    .podcast-splash {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1100px;
+      min-height: 140px;
+      border-radius: 10px;
+      &__image {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        @media #{$small} {
+          position: static;
+          margin: 30px 10px 0;
+          text-align: center;
+        }
+      }
+      &__text {
+        position: absolute;
+        top: 0;
+        left: 140px;
+        right: 20px;
+        bottom: 0;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        @media #{$small} {
+          position: static;
+          padding: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }

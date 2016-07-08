@@ -1,23 +1,35 @@
 .pattern-header {
   position: relative;
   color: $white;
-  &--full {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .text-wrapper {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
     padding: 150px 30px 100px;
+    @media #{$xsmall} {
+      padding: 100px 30px 100px;
+    }
+    &--lg {
+      max-width: 1260px;
+    }
+    &--860 {
+      // Shame shame shame
+      max-width: 860px;
+    }
     &--lg-padding {
-      max-width: 900px;
       padding: 300px 30px 250px;
       @media #{$xsmall} {
         padding: 150px 30px 100px;
       }
+    }
+  }
+  &--full {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text-wrapper {
+      margin: 0;
     }
   }
 }

@@ -1,5 +1,25 @@
 .main-footer {
   background-color: $darkBlue;
+  .link-collection {
+    margin-top: 5px;
+    li{
+      font-size: 1.4rem;
+      display: inline-block;
+      padding: 10px 30px 10px 0;
+      a{
+        color: $white;
+      }
+    }
+  }
+  .download-app-btn{
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  hr{
+    margin: 0 auto;
+    max-width: 1380px;
+    border-top-color: #60606E;
+  }
   .inner {
     display: flex;
     justify-content: space-between;
@@ -71,16 +91,29 @@
 
 @media #{$medium} {
   .main-footer {
+    .link-collection {
+      margin-top: 5px;
+      li{
+        display: block;
+        padding: 10px 0;
+      }
+    }
+    .download-app-btn{
+      margin-right: 10px;
+      margin-left: 0;
+    }
+    hr{
+      margin: 0 30px;
+    }
     .left {
       display: block;
     }
     .social-links {
-      li a{
+      li a {
         margin-top: 20px;
       }
     }
   }
-  
 }
 
 @media #{$small} {

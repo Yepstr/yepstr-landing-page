@@ -27,13 +27,17 @@
   }
   .main-nav ul li {
     margin: 0;
-    padding: 10px 15px;
+    padding: 5px 10px;
     > a {
-      padding: 5px 0;
+      padding: 10px;
     }
     &.is-active a {
       border-bottom: 3px solid;
     }
+  }
+  .highlight-border {
+    border-radius: 5px;
+    border: 2px solid $white;
   }
   .main-nav a {
     text-decoration: none;
@@ -72,6 +76,9 @@
       border-bottom: none;
     }
   }
+  .okay-invisible {
+    display: none;
+  }
 }
 
 // menu inverted
@@ -88,16 +95,12 @@
 }
 
 @media #{$small} {
-  .main-nav-wrapper,
-  {
-    background: rgba(255, 255, 255, 0.65);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+  .main-nav-wrapper {
+    background: $white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-right: 10px;
     &:hover {
-      background: rgba(255, 255, 255, 0.65);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      backdrop-filter: saturate(180%) blur(20px);
+      background: $white;
     }
     &.is-inverted:hover {
       background: $white;
@@ -105,8 +108,17 @@
     .site-logo {
       color: $darkBlue;
     }
+    .main-nav ul li {
+      padding: 5px;
+      > a {
+        padding: 8px;
+      }
+    }
     .main-nav a {
       color: $darkBlue;
+      &.highlight-border {
+        border-color: $darkBlue;
+      }
       &:hover {
         color: darken( $darkBlue, 20%);
       }
@@ -119,6 +131,9 @@
     }
     .okayNav__nav--invisible a {
       background: transparent;
+      &.highlight-border {
+        border: none;
+      }
     }
   }
   .main-nav-wrapper .okayNav__menu-toggle span {

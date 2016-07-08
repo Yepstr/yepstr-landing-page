@@ -2,6 +2,23 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  // Helpers (add more as we need them)
+  &--pos-left{
+    background-position: center left;
+  }
+  &--pos-right{
+    background-position: center right;
+  }
+  &--pos-top{
+    background-position: center top;
+  }
+  &--pos-bottom{
+    background-position: center bottom;
+  }
+  // backgrounds
+  &--white{
+    background-color: $white;
+  }
   &--orange{
     background-color: $darkOrange;
   }
@@ -13,6 +30,12 @@
   }
   &--grey{
     background-color: $lightGrey;
+  }
+  &--dark-grey{
+    background-color: $darkGrey;
+  }
+  &--lightest-grey{
+    background-color: $lightestGrey;
   }
   &--warm-grey{
     background-color: $lightGrey;
@@ -48,8 +71,20 @@
     background-color: $lightBlue;
     background-image: url("../images/patterns/bg-gradient.png");
   }
+  &--map-pattern{
+    background-color: $lightGrey;
+    background-image: url("../images/bg.jpg");
+  }
   &--summer-job{
     background-color: $darkBlue;
     background-image: url("../images/summer-job.jpg");
+  }
+  &--customer-hero{
+    background-color: $darkBlue;
+    background-image: url("../images/customer-hero.jpg");
+  }
+  &--yep-hero{
+    background-color: $darkBlue;
+    background-image: url("../images/yep-hero.jpg");
   }
 }

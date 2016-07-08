@@ -11,6 +11,11 @@
   margin: rem(25);
 }
 
+.margin-v-xlg {
+  margin-top: rem(200);
+  margin-bottom: rem(200);
+}
+
 .margin-v-lg {
   margin-top: rem(100);
   margin-bottom: rem(100);
@@ -136,6 +141,9 @@
   &--grey {
     color: $lightGrey;
   }
+  &--dark-grey {
+    color: $darkGrey;
+  }
   &--warm-grey {
     color: $lightGrey;
   }
@@ -144,5 +152,13 @@
   }
   &--red {
     color: $green;
+  }
+}
+
+.reset-list {
+  list-style: none outside none;
+  li {
+    margin: 0;
+    padding: 0;
   }
 }

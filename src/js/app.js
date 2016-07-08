@@ -98,13 +98,13 @@ var app = {
     var $navMain = $wrapper.find('.js-nav-main');
 
     // Set active page in menu
-    var $activePage = $navMain.data('active-page');
-    var $navMainItems = $wrapper.find('li');
-    $navMainItems.each(function(index, el) {
-      if ($(el).data('active-key') == $activePage) {
-        $(el).addClass('is-active');
-      }
-    });
+    // var $activePage = $navMain.data('active-page');
+    // var $navMainItems = $wrapper.find('li');
+    // $navMainItems.each(function(index, el) {
+    //   if ($(el).data('active-key') == $activePage) {
+    //     $(el).addClass('is-active');
+    //   }
+    // });
 
     var beforeOpen = function() {
       $wrapper.addClass('is-inverted');
@@ -172,10 +172,11 @@ var app = {
 
     $('.ga-outbound-link').on('click', function(e) {
       e.preventDefault();
-      ga('send', 'event', 'Outbound link', 'click', e.target.href, {
+      var href = $(this).attr('href');
+      ga('send', 'event', 'Outbound link', 'click', href, {
         'transport': 'beacon',
         'hitCallback': function() {
-          document.location = e.target.href;
+          document.location = href;
         }
       });
     });
