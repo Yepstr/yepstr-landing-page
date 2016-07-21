@@ -1,14 +1,7 @@
 var express = require('express');
 var app = express();
 
-// redirect users to https address to avoid cross domain issues & keep users safe
-var forceSSL = function(req, res, next) {
-  // x-forward-proto is a heroku tag that is added to all requests
-  if (req.headers['x-forwarded-proto'] !== 'https') {
-    return res.redirect(301, ['https://', req.get('Host'), req.url].join(''));
-  }
-  return next(); /* Continue to other routes if we're not redirecting */
-};
+// Redirect if not using www domain
 var forceWWW = function(req, res, next) {
   var host = req.get('Host');
   // If we are not visiting the site from www, redirect to www
@@ -17,6 +10,16 @@ var forceWWW = function(req, res, next) {
     return res.redirect(301, ['https://www.', req.get('Host'), req.url].join(''));
   }
   return next();
+};
+
+
+// redirect users to https address to avoid cross domain issues & keep users safe
+var forceSSL = function(req, res, next) {
+  // x-forward-proto is a heroku tag that is added to all requests
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect(301, ['https://', req.get('Host'), req.url].join(''));
+  }
+  return next(); /* Continue to other routes if we're not redirecting */
 };
 
 if (process.env.NODE_ENV === 'production') {
