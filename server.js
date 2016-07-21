@@ -10,7 +10,10 @@ var forceSSL = function(req, res, next) {
   return next(); /* Continue to other routes if we're not redirecting */
 };
 var forceWWW = function(req, res, next) {
-  if (req.headers.host.slice(0, 3) !== 'www') {
+  var host = req.get('Host');
+  // If we are not visiting the site from www, redirect to www
+  // unless we visit the herokuapp domain
+  if (host.substr(0, 3) !== 'www' && host.substr(-13) !== 'herokuapp.com') {
     return res.redirect(301, ['https://www.', req.get('Host'), req.url].join(''));
   }
   return next();
