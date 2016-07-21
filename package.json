@@ -59,5 +59,9 @@
     "postinstall": "npm run production",
     "production": "gulp build --production",
     "start": "node server"
+  },
+  "engines": {
+    "node": "4.2.3",
+    "npm": "3.8.9"
   }
 }
