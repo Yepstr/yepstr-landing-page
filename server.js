@@ -16,10 +16,10 @@ var forceWWW = function(req, res, next) {
   return next();
 };
 
-if (true || process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
   // only use in production environment
-  // app.use('*', forceWWW);
-  // app.use('*', forceSSL);
+  app.use('*', forceWWW);
+  app.use('*', forceSSL);
 }
 
 app.use(express.static(__dirname + '/build'));
