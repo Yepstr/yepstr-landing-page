@@ -14,11 +14,11 @@
       <li class="task-list__item task-list__item--household">Hushåll</li>
       <li class="task-list__item task-list__item--misc">Övrigt</li>
     </ul>
-    <a class="btn btn--primary btn--orange btn--inline ga-outbound-link" href="https://app.yepstr.com/movement/customer?backTarget=movement-start" target="_blank">Hur kan vi hjälpa dig?</a>
+    <a class="btn btn--primary btn--orange btn--inline js-scroll-to-section" data-target="download-app">Kom igång!</a>
     <br />
     <a class="btn btn--primary btn--white-link btn--inline js-popup-video-button ga-play-video" href="http://www.youtube.com/watch?v=0EtlUOMbdPk">Se vår video</a>
   </div>
-  <a href="ladda-ner-appen.html"><img class="intro-splash-image" src="images/app-splash.png"></a>
+  <div class="js-scroll-to-section" data-target="download-app"><img class="intro-splash-image" src="images/app-splash.png"></div>
   <div class="scroll-icon js-scroll-to-section" data-target="in-the-media"></div>
 </div>
 <section id="in-the-media" class="section section--in-the-media background background--map-pattern background--pos-top">
@@ -55,7 +55,7 @@
     <div class="promo-box promo-box--md-height promo-box--align-center">
       <div class="promo-box__text">
         <h3 class="promo-box__text__headline">Vad är Yepstr?</h3>
-        <p class="promo-box__text__paragraph">Appen Yepstr kopplar ihop hushåll med enkla uppgifter (som trädgårdsarbete eller hundpassning) med den drivna tonåringen precis nedför gatan.</p>
+        <p class="promo-box__text__paragraph">Appen Yepstr kopplar ihop hushåll i behov av hjälp med enkla uppgifter (som trädgårdsarbete eller hundpassning) med drivna tonåringar i grannskapet.</p>
         <a href="sa-funkar-det.html" class="btn btn--blue btn--inline">Så funkar det</a>
       </div>
       <div class="promo-box__image promo-box__image--right" style="background-image:url(images/promo-images/how-it-works.jpg)"></div>
@@ -104,7 +104,7 @@
     </div>
   </div>
 </section>
-<section class="section section--download-app nice-type">
+<section id="download-app" class="section section--download-app nice-type">
   <div class="inner">
     <div class="row">
       <div class="col col--6 col--md-12">
@@ -128,11 +128,10 @@
 <section class="section section--cta background background--map-pattern background--pos-top">
   <div class="inner margin-v-lg">
     <h2>Vill du veta mer?</h2>
-    <p>Vi har samla de vanligaste frågorna vi hört från våra användare.</p>
     <div class="button-case">
-      <a href="vanliga-fragor.html" target="_blank" class="btn btn--orange btn--inline ga-outbound-link">Läs vanliga frågor</a>
+      <a href="sa-funkar-det.html" class="btn btn--orange btn--inline margin-sm">Så funkar det</a>
+      <a href="vanliga-fragor.html" class="btn btn--orange btn--inline margin-sm">Vanliga frågor</a>
     </div>
-    <p class="margin-v-sm">Redo att komma igång? <a href="sa-funkar-det.html">Då kör vi!</a></p>
   </div>
 </section>
 @@include('./shared/_footer.html')
