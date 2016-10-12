@@ -187,8 +187,8 @@ var app = {
     });
 
     $('.ga-scroll-to-link').on('click', function(e) {
-      var linkTitle = $(this).text();
-      ga('send', 'event', 'Scroll to link', 'click', linkTitle);
+      var scrollToTarget = $(this).data('target');
+      ga('send', 'event', 'Scroll to link', 'click', scrollToTarget);
     });
 
     $('.ga-faq-link').on('click', function(e) {
