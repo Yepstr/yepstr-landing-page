@@ -13,7 +13,7 @@ Nejdå - det går väldigt bra att använda [app.yepstr.com](app.yepstr.com) dir
 ## Vad kostar det att anlita en Yep (ungdom) via Yepstr?
 Yeppar tar ungefär mellan 70 och 110kr/h beroende på ålder och erfarenhet. För uppdragsgivaren tillkommer 20% på första uppdraget och därefter 5% (om man bokar samma ungdom) som täcker försäkring, transaktionsavgift, moms etc.
 
-Som du säkert kan räkna ut själv så blir det inte så värst mycket över till Yepstr – vilket vi är medvetna om. Vi bygger det här för att det behövs ett ställe för ambitiösa ungdomar att få sin första arbetslivserfarenhet. Det är först när vi är riktigt stora och finns över hela världen som vi kan börja fundera på att bli lönsamma.
+Som du säkert kan räkna ut själv så blir det inte så värst mycket över till Yepstr – vilket vi är medvetna om. Vi bygger det här för att det behövs ett ställe för drivna ungdomar att få sin första arbetslivserfarenhet. Det är först när vi är riktigt stora och finns över hela världen som vi kan börja fundera på att bli lönsamma.
 
 ## Vad kan jag tjäna som ungdom på Yepstr?
 Precis som i riktiga livet, så desto fler uppdrag och desto högre betyg du lyckas få desto mer kan du ta betalt!
@@ -60,7 +60,7 @@ Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i be
 ## Vad gäller för ungdomar som är under 16 år?
 Ungdomar under 16 år ("äldre barn") bör endast ha ett lätt och ofarligt arbete och får till exempel inte utföra tunga lyft. Mer info finns i Arbetsmiljöverkets broschyr ["Så får barn och ungdomar arbeta"](https://www.av.se/globalassets/filer/publikationer/broschyrer/sa-far-barn-och-ungdomar-arbeta-broschyr-adi043.pdf)
 
-## Kan jag som företag hitta ambitiösa ungdomar?
+## Kan jag som företag hitta drivna ungdomar?
 
 Snart! I dagsläget så är Yepstr endast till för privatpersoner, men när vi fått tillräckligt med intresseanmälningar så lägger vi till den funktionaliteten. Är du intresserad? Maila oss på [hej@yepstr.com](mailto:hej@yepstr.com)
 
