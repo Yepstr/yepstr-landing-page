@@ -1,5 +1,5 @@
 ##Pressinformation
-* **Juni 2016 - ** [Ny tjänst för ungdomsjobb lanseras i Sverige efter test (.pdf)](/press/Yepstr-160615.pdf)
+* **Oktober 2016 - ** [Yepstr på Skolforum: Vi gör unga redo för arbetslivet](http://www.mynewsdesk.com/se/yepstr/pressreleases/yepstr-paa-skolforum-vi-goer-unga-redo-foer-arbetslivet-1594142)
 
 ##Presskontakt
 **Jacob Rudbäck, vd**
