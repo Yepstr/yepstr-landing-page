@@ -41,20 +41,23 @@ Genom Yepstrs process så är alltid timpriset bestämt innan uppdraget kan star
 Är man osäker på om Yeppen (ungdomen) kommer lyckas utföra uppdraget till belåtenhet så kan man alltid tacka nej och skicka hem personen inom 30 min utan kostnad.  
 
 
-## Säkerhet - Hur arbetar Yepstr med säkerhet?
-Vår vision är att bli världens tryggaste marknadsplats för den här typen av uppdrag. Idag jobbar Yepst med säkerhet så här:
+## Säkerhet - Hur vet vi att våra användare är de som de utger sig för att vara?
+- Verifiering av personnummer och kontaktuppgifter
+- Krav på betalkort eller svenskt bankkonto
+- Facebook-koppling
+- _(Snart) utdrag ur brottsregistret, Bank-ID, fotografering av ID etc._
 
-1. Vid registrering krävs personnummer och namn - som kontrolleras för en match genom folkbokföringsregistret. Vi verifierar även våra användare genom Facebook och kontokort.
-2. Alla uppdragsbeskrivningar kontrolleras av Yepstr för att säkerställa att de är lämpliga.
-3. Endast uppdragsgivare och uppdragstagare inom maximalt 10 kilometer från varandra kan komma i kontakt. Vi kallar det "cykelavstånd", och är tänkt att minska risker för olyckor på väg till uppdrag.
-4. Vi notifierar föräldrarna (via email) om uppdragets detaljer så att de kan kontakta uppdragsgivaren direkt, samt uppmanas att följa med och säga hej om det är första gången
-5. Försäkring (olycksfall, egendom och ansvar) inkluderas alltid i priset
-6. Vi har en servicetelefon tillgänglig 8-23, året om 08 - 5151 9000
-7. Ytterligare funktioner under utveckling (beräknad release under 2016)
-    - Bank-ID verifiering
-    - Telefon och address-verifiering
-    - Körkorts-verifiering
+## Säkerhet - Hur ser vi till att vi har rätt användare?
+- Antal tidigare uppdrag samt utvärderingar visas
+- Kontaktpunkter som gemensam idrottsförening eller skola framgår
+- Övervakad kommunikation genom Yepstr
+- _(Snart) Ni har X gemensamma kontakter (Facebook, Linkedin etc.)_
 
+## Säkerhet - Vad gör vi när uppdraget är bokat?
+- Uppdragstagarens föräldrar får all information via email och uppmanas
+ta kontakt/komma förbi och säga hej
+- Ta med en vän på uppdrag för en ny uppdragsgivare
+- _(Snart) Lokal ambassadör träffar alla på sitt första uppdrag_
 
 ## Säkerhet - Vad innebär det att uppdraget är försäkrat?
 Alla uppdrag som utförs genom Yepstr (bokas och betalas) är också försäkrade (olycksfall, egendom och ansvar) genom IF.
@@ -65,7 +68,10 @@ Sedan inkluderas även egendom- samt olycksfallsförsäkring i det fall att ungd
 
 
 ## Lag och skatt - hur funkar det?
-I Sverige får en privatperson betala en annan upp till 10.000kr (per år) för den här typen av småuppdrag utan att arbetsgivaravgifter etc. behöver påföras. Vidare finns det ingen gräns för antalet relationer. Det är alltså fullt möjligt att betala 20 ungdomar 9.000kr var under ett år, samt att en ungdom tjänar 9.000kr från över 20 arbetsgivare. Mer information finns i [SKV448](https://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf).
+- En privatperson får betala andra privatperson upp till 9 999 kr (per år) för den här typen av uppdrag utan arbetsgivaravgifter
+- Det finns ingen gräns för antalet relationer – man kan ta hjälp/betalt av obegränsat antal personer
+- Yepstr är byggt för att hjälpa ungdomar hitta ströjobb vid sidan av skolan. Så länge det inte är en varaktig sysselsättning är det inte näringsverksamhet
+- Mer information finns i [SKV448](https://www.skatteverket.se/download/18.3810a01c150939e893f20d5d/1453376648748/forenklad-arbetsgivardeklaration-for-privata-tjanster-skv448-utgava20.pdf).
 
 
 ## Lag och skatt - Vad gäller för ungdomar som är under 16 år?
