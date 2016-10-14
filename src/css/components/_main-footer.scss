@@ -2,20 +2,20 @@
   background-color: $darkBlue;
   .link-collection {
     margin-top: 5px;
-    li{
+    li {
       font-size: 1.4rem;
       display: inline-block;
       padding: 10px 30px 10px 0;
-      a{
+      a {
         color: $white;
       }
     }
   }
-  .download-app-btn{
+  .download-app-btn {
     margin-right: 0;
     margin-left: 10px;
   }
-  hr{
+  hr {
     margin: 0 auto;
     max-width: 1380px;
     border-top-color: #60606E;
@@ -25,7 +25,7 @@
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1440px;
-    padding: 60px 30px 30px;
+    padding: 60px 30px 10px;
   }
   .left {
     display: flex;
@@ -87,22 +87,29 @@
       }
     }
   }
+  .footer-org {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 10px 30px 30px;
+    color: #60606E;
+    font-size: 14px;
+  }
 }
 
 @media #{$medium} {
   .main-footer {
     .link-collection {
       margin-top: 5px;
-      li{
+      li {
         display: block;
         padding: 10px 0;
       }
     }
-    .download-app-btn{
+    .download-app-btn {
       margin-right: 10px;
       margin-left: 0;
     }
-    hr{
+    hr {
       margin: 0 30px;
     }
     .left {
