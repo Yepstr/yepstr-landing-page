@@ -22,6 +22,17 @@ var forceSSL = function(req, res, next) {
   return next(); /* Continue to other routes if we're not redirecting */
 };
 
+// This route is needed for creating SSL certs for the app
+var letsEncryptChallenge = process.env.LETSENCRYPT_CHALLENGE;
+if (letsEncryptChallenge) {
+  console.log('setting up letsencrypt route at', letsEncryptChallenge);
+  app.get(['/.well-known/acme-challenge/', letsEncryptChallenge].join(''),
+    function (request, response) {
+      response.send(process.env.LETSENCRYPT_CONTENT);
+    });
+}
+
+
 if (process.env.NODE_ENV === 'production') {
   // only use in production environment
   app.use('*', forceWWW);
