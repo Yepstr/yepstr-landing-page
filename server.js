@@ -32,11 +32,22 @@ if (letsEncryptChallenge) {
     });
 }
 
+const BLOG_LOCATION = 'http://blog.yepstr.com';
+var redirectBlog = function(req, res, next) {
+  if (req.url.indexOf('/blog') === 0) {
+    const blogUrl = req.url.substr(5); // remove "/blog" from the url
+    res.redirect(301, [BLOG_LOCATION, blogUrl].join(''));
+  } else {
+    next();
+  }
+};
+
 if (process.env.NODE_ENV === 'production') {
   // only use in production environment
   app.use('*', forceWWW);
   app.use('*', forceSSL);
 }
 
+app.use(redirectBlog);
 app.use(express.static(__dirname + '/build', { 'extensions': ['html'] }));
 app.listen(process.env.PORT || 8000);
