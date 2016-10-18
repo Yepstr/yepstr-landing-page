@@ -32,12 +32,11 @@ if (letsEncryptChallenge) {
     });
 }
 
-
 if (process.env.NODE_ENV === 'production') {
   // only use in production environment
   app.use('*', forceWWW);
   app.use('*', forceSSL);
 }
 
-app.use(express.static(__dirname + '/build'));
+app.use(express.static(__dirname + '/build', { 'extensions': ['html'] }));
 app.listen(process.env.PORT || 8000);
