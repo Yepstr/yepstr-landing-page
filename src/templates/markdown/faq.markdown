@@ -12,11 +12,11 @@ När du kommer in som helt ny så kan du som 16-åring ta betalt omkring 80kr/h 
 
 
 ## Jag som är ungdom – Vad har jag för krav på mig att betala skatt?
-Allt arbete på Yepstr är ”inkomst av tjänst”.
+Arbete på Yepstr är ”inkomst av tjänst” som vanligtvis är skattefritt när man tjänar under 18.739 kr under ett år (för 2016). 
 
-När det är dags att deklarera så fyller du alltså i vad du tjänat på Yepstr och så räknar Skatteverket ut om du behöver betala någon skatt. Tjänar du över 18.739 kr under ett år så är det dags att börja betala skatt! Det finns ett enkelt verktyg [här](https://www.skatteverket.se/omoss/omskatteverket/temasvartpavitt/sabeskattasdinlon) där du kan räkna ut vad du kommer att betala. Tänk på att du skall skriva in ungefär vad du tjänar i månaden!
+Men! Skatt i Sverige är en komplicerad affär och många gånger vet Skatteverket själva knappt hur mycket och vad man skall betala. Därför är vårt generella tips att alltid spara alltid undan cirka en tredjedel av allt du tjänar upp till 18.739kr (2016). Bra träning inför framtiden :)
 
-Yepstr vill hjälpa dig med detta så att det blir enklare att göra rätt genom att automatiskt fylla i din deklarationsblankett. Vi planerar att vara färdiga med den här funktionaliteten under 2016.
+Tjänar du mer än 18.739kr under ett år på Yepstr så skickar vi dig ett mail med lite tips om hur du kan räkna ut hur mycket du bör spara undan framöver. Mer information finner du hos Skatteverket [här](htttp://www.skatteverket.se) alternativt ring Skatteupplysningen direkt på 0771–567 567!
 
 
 ## Jag som uppdragsgivare - Vad kostar det att anlita en Yep (ungdom) via Yepstr?
@@ -26,7 +26,7 @@ Som du säkert kan räkna ut själv så blir det inte så värst mycket över ti
 
 
 ## Jag som uppdragsgivare - Kan jag intervjua Yeppen (ungdomen) innan jag bestämmer mig?
-Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i beskrivningen att du vill använda tillfället för en  intervju istället!
+Det går absolut bra. Lägg upp uppdraget som ett vanligt uppdrag men skriv i beskrivningen att du vill använda tillfället för en  intervju istället! Det är kutym att man betalar för en intervju på Yepstr.
 
 
 ## Betalningar - Hur fungerar det?
