@@ -16,7 +16,7 @@ Arbete på Yepstr är ”inkomst av tjänst” som vanligtvis är skattefritt n�
 
 Men! Skatt i Sverige är en komplicerad affär och många gånger vet Skatteverket själva knappt hur mycket och vad man skall betala. Därför är vårt generella tips att alltid spara alltid undan cirka en tredjedel av allt du tjänar upp till 18.739kr (2016). Bra träning inför framtiden :)
 
-Tjänar du mer än 18.739kr under ett år på Yepstr så skickar vi dig ett mail med lite tips om hur du kan räkna ut hur mycket du bör spara undan framöver. Mer information finner du hos Skatteverket [här](htttp://www.skatteverket.se) alternativt ring Skatteupplysningen direkt på 0771–567 567!
+Tjänar du mer än 18.739kr under ett år på Yepstr så skickar vi dig ett mail med lite tips om hur du kan räkna ut hur mycket du bör spara undan framöver. Mer information finner du hos [Skatteverket](http://www.skatteverket.se) alternativt ring Skatteupplysningen direkt på 0771–567 567!
 
 
 ## Jag som uppdragsgivare - Vad kostar det att anlita en Yep (ungdom) via Yepstr?
