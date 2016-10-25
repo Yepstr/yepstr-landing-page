@@ -9,29 +9,6 @@
 		min-height: 100vh;
 	}
 
-	&--intro {
-		color: $white;
-	}
-
-	&--how-it-works {
-		padding-top: rem(50);
-		padding-bottom: rem(50);
-
-		@media #{$xsmall} {
-			min-height: auto;
-		}
-	}
-
-	&--subscribe {
-		@media #{$xsmall} {
-			min-height: 930px;
-		}
-	}
-
-	&--promo {
-		padding-bottom: rem(60);
-	}
-
 	&__center-content {
 		left: 0;
 		right: 0;
@@ -43,8 +20,9 @@
 		width: 100%;
 		padding: 0 rem(15);
 	}
-	.section-headline{
-		&--light{
+
+	.section-headline {
+		&--light {
 			color: $white;
 		}
 	}

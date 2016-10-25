@@ -51,7 +51,8 @@
   },
   "aliasify": {
     "aliases": {
-      "modules": "./src/js/modules"
+      "modules": "./src/js/modules",
+      "vendor": "./src/js/vendor"
     }
   },
   "scripts": {

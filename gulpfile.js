@@ -184,24 +184,6 @@ var tasks = {
       // give it a file and save
       .pipe(gulp.dest(paths.styles.output));
   },
-
-  browserifyOutdatedBrowser: function() {
-    var bundler = browserify('./src/js/oldbrowser.js', {
-      debug: !production
-    });
-    var bundle = function() {
-      return bundler.bundle()
-        .on('error', function(err) {
-          handleError('Browserify', err);
-          this.emit('end');
-        })
-        .pipe(source('oldbrowser.js'))
-        .pipe(gulpif(production, buffer()))
-        .pipe(gulpif(production, uglify()))
-        .pipe(gulp.dest(paths.scripts.output));
-    };
-    return bundle();
-  },
   // --------------------------
   // Browserify
   // --------------------------
@@ -318,12 +300,11 @@ gulp.task('browserify', req, tasks.browserify);
 gulp.task('lint:js', tasks.lintjs);
 gulp.task('optimize', tasks.optimize);
 gulp.task('test', tasks.test);
-gulp.task('browserifyOutdatedBrowser', req, tasks.browserifyOutdatedBrowser);
 
 // --------------------------
 // DEV/WATCH TASK
 // --------------------------
-gulp.task('watch', ['assets', 'templates', 'sass', 'browserify', 'browser-sync', 'browserifyOutdatedBrowser'], function() {
+gulp.task('watch', ['assets', 'templates', 'sass', 'browserify', 'browser-sync'], function() {
 
   // --------------------------
   // watch:sass
@@ -354,8 +335,7 @@ gulp.task('build', [
   'templates',
   'assets',
   'sass',
-  'browserify',
-  'browserifyOutdatedBrowser'
+  'browserify'
 ]);
 
 gulp.task('default', ['watch']);
