@@ -47,5 +47,5 @@ built-*.js*
 test-build
 
 # Grav CMS files
-cache/
-tmp/
+cache/*
+tmp/*
