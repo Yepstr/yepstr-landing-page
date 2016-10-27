@@ -18,7 +18,7 @@ home:
   alias: /home
   hide_in_urls: false
 pages:
-  theme: antimatter
+  theme: yepstr
   order:
     by: default
     dir: asc
@@ -109,7 +109,7 @@ errors:
   display: true
   log: true
 debugger:
-  enabled: false
+  enabled: true
   shutdown:
     close_connection: true
   twig: true

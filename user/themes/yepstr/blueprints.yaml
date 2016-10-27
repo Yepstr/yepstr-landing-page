@@ -1,11 +1,15 @@
 name: Yepstr
-version: 1.0.0
-description: ""
-icon: y-combinator
+version: 0.1.0
+description: A theme for yepstr
+icon: rebel
 author:
-  name: Yepstr
-  email: hej@yepstr.com
-  url: https://www.yepstr.com
+  name: Karl Löfholm
+  email: karl@yepstr.com
+homepage: https://github.com/karl-l-fholm/grav-theme-yepstr
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/karl-l-fholm/grav-theme-yepstr/issues
+readme: https://github.com/karl-l-fholm/grav-theme-yepstr/blob/develop/README.md
 license: MIT
 
 form:
@@ -13,7 +17,7 @@ form:
   fields:
     dropdown.enabled:
         type: toggle
-        label: Dropdown in navbar
+        label: Dropdown in Menu
         highlight: 1
         default: 1
         options:
