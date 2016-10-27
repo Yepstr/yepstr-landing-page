@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/karllofholm/Dev/apache/yepstr-landing-page/user/config/system.yaml',
-    'modified' => 1477549229,
+    'modified' => 1477553546,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
