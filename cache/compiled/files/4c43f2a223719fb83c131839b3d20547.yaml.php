@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/karllofholm/Dev/apache/yepstr-landing-page/user/config/system.yaml',
-    'modified' => 1477496837,
+    'modified' => 1477549229,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -28,7 +28,7 @@ return [
             'hide_in_urls' => false
         ],
         'pages' => [
-            'theme' => 'antimatter',
+            'theme' => 'yepstr',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'
@@ -175,7 +175,7 @@ return [
             'releases' => 'stable',
             'proxy_url' => NULL,
             'method' => 'auto',
-            'verify_peer' => true
+            'verify_peer' => false
         ]
     ]
 ];
