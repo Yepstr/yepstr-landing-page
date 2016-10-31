@@ -1,76 +1,168 @@
 .main-footer {
-  background-color: $darkBlue;
-  .link-collection {
-    margin-top: 5px;
-    li {
-      font-size: 1.4rem;
-      display: inline-block;
-      padding: 10px 30px 10px 0;
-      a {
-        color: $white;
+  &--top {
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      position: relative;
+      @media #{$large} {
+        padding-bottom: 100px;
+      }
+      @media #{$medium} {
+        padding-bottom: 60px;
       }
     }
   }
-  .download-app-btn {
-    margin-right: 0;
-    margin-left: 10px;
+
+  .cta-buttons {
+    @media #{$large} {
+      padding-top: 40px;
+    }
+    @media #{$medium} {
+      padding-top: 0;
+      text-align: center;
+    }
+
+    .btn {
+      margin-right: 30px;
+      @media #{$medium} {
+        margin: 10px 15px;
+      }
+    }
   }
-  hr {
-    margin: 0 auto;
-    max-width: 1380px;
-    border-top-color: #60606E;
+
+  .promo-image {
+    position: absolute;
+    right: 0;
+    max-width: 369px;
+    width: 100%;
+    @media #{$medium} {
+      margin: 0 auto;
+      position: static;
+    }
+
+    figcaption {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-right: 40px;
+      font-size: rem(16);
+      @media #{$medium} {
+        padding-right: 0;
+      }
+    }
   }
-  .inner {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 60px 30px 10px;
+
+  .company-info {
+    max-width: 310px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    float: left;
+    @media #{$xsmall} {
+      float: none;
+      max-width: none;
+      text-align: center;
+      margin: 0 20px 40px;
+    }
+
+    .site-logo {
+      text-decoration: none;
+      color: $white;
+      font-size: rem(56);
+      line-height: 1;
+      position: relative;
+      font-weight: 600;
+      padding-bottom: 20px;
+      display: inline-block;
+    }
+
+    .footer-copy {
+      color: $white;
+      font-size: rem(16);
+    }
   }
-  .left {
-    display: flex;
-    justify-content: space-between;
+
+  .main-navigation {
+    margin-top: 5px;
+    float: left;
+    @media #{$xsmall} {
+      float: none;
+      text-align: center;
+    }
+
+    > ul {
+      > li {
+        min-width: 180px;
+        margin-right: 50px;
+        float: left;
+        @media #{$medium} {
+          margin-right: 20px;
+          min-width: 160px;
+          margin-bottom: 20px;
+        }
+        @media #{$xsmall} {
+          float: none;
+          margin-right: 0;
+        }
+      }
+    }
+
+    ul {
+      strong {
+        display: block;
+        font-size: rem(16);
+        padding-top: 10px;
+        color: $white;
+      }
+
+      li {
+        font-size: rem(16);
+        padding-top: 10px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
   }
-  .site-logo {
-    text-decoration: none;
-    color: $white;
-    font-size: 56px;
-    line-height: 1;
-    margin-right: 20px;
-    position: relative;
-    top: -10px;
-  }
-  .footer-copy {
-    color: $white;
-    max-width: 300px;
-    font-size: 14px;
-    margin-right: 20px;
-  }
+
   .social-links {
-    display: flex;
-    flex-wrap: wrap;
+    float: left;
     list-style: none;
-    li a {
+    vertical-align: middle;
+    @media #{$medium} {
+      float: none;
+    }
+    @media #{$xsmall} {
+      text-align: center;
+    }
+
+    a {
       text-indent: -9999em;
       display: inline-block;
       width: 44px;
       height: 44px;
       margin-right: 20px;
+      margin-bottom: 20px;
       background-repeat: no-repeat;
       background-position: top left;
       background-size: cover;
+      vertical-align: middle;
+
       &.facebook {
         background-image: url('../images/social/monokrom/facebook.svg');
       }
+
       &.twitter {
         background-image: url('../images/social/monokrom/twitter.svg');
       }
+
       &.instagram {
         background-image: url('../images/social/monokrom/instagram.svg');
       }
+
       &.mail {
         background-image: url('../images/social/monokrom/mail.svg');
       }
+
       &.phone {
         background-color: #fff;
         background-image: url('../images/phone.svg');
@@ -84,52 +176,30 @@
         color: $darkBlue;
         padding: 0 10px 0 40px;
         border-radius: 22px;
+        font-weight: 600;
       }
     }
   }
-  .footer-org {
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 10px 30px 30px;
-    color: #60606E;
-    font-size: 14px;
-  }
-}
 
-@media #{$medium} {
-  .main-footer {
-    .link-collection {
-      margin-top: 5px;
-      li {
-        display: block;
-        padding: 10px 0;
-      }
-    }
-    .download-app-btn {
-      margin-right: 10px;
-      margin-left: 0;
-    }
-    hr {
-      margin: 0 30px;
-    }
-    .left {
-      display: block;
-    }
-    .social-links {
-      li a {
-        margin-top: 20px;
-      }
-    }
-  }
-}
-
-@media #{$small} {
-  .main-footer {
-    .inner {
-      display: block;
-    }
-    .right {
+  .app-links {
+    float: right;
+    @media #{$medium} {
       margin-top: 40px;
+      float: none;
+    }
+    @media #{$xsmall} {
+      text-align: center;
+    }
+
+    .download-app-btn,
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 20px 20px;
+      @media #{$medium} {
+        margin-right: 20px;
+        margin-left: 0;
+      }
     }
   }
 }

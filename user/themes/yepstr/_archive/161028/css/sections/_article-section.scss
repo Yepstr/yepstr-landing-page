@@ -1,0 +1,16 @@
+.section--article {
+  text-align: left;
+  padding-top: rem(100);
+  padding-bottom: rem(100);
+  max-width: 1440px;
+  margin: 0 auto;
+  .hiw-section-headline {
+    text-align: center;
+    margin-bottom: rem(50);
+  }
+  @media #{$medium} {
+    h3{
+      margin-top:rem(40);
+    }
+  }
+}

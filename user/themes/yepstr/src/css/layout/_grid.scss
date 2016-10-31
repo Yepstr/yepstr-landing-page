@@ -4,35 +4,39 @@ $gutter: 30px;
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1410px;
+  max-width: 1500px;
   padding: 0 $gutter;
-
   @media #{$xsmall} {
-    padding: 0 0;
+    padding: 0;
   }
 
   &--no-gutter {
-    padding: 0;    
+    padding: 0;
+  }
+
+  &--no-grid {
+    padding: 0 ($gutter + ($gutter / 2));
+    @include clearfix();
+    @media #{$xsmall} {
+      padding: $gutter / 2;
+    }
   }
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+  @include clearfix();
+
+  .row {
+    margin-left: - ($gutter / 2);
+    margin-right: - ($gutter / 2);
+  }
 }
 
 .col {
   width: 100%;
   float: left;
   padding: 0 $gutter / 2;
-
-  @media #{$xsmall} {
-    padding: 0 7.5px;
-  }
-
   @for $i from 1 through $no-col {
-
     &--#{$i} {
       width: calc((100% / #{$no-col}) * #{$i});
     }
@@ -44,11 +48,24 @@ $gutter: 30px;
     &--offset-0 {
       margin-left: 0;
     }
-
   }
+  @media #{$large} {
+     @for $i from 1 through $no-col{
+      &--lg-#{$i} {
+        width: calc(((100% / #{$no-col}) * #{$i}));
+      }
 
+      &--lg-offset-#{$i} {
+        margin-left: calc((100% / #{$no-col}) * #{$i});
+      }
+
+      &--lg-offset-0 {
+        margin-left: 0;
+      }
+    }
+  }
   @media #{$medium} {
-    @for $i from 1 through $no-col {
+     @for $i from 1 through $no-col{
       &--md-#{$i} {
         width: calc(((100% / #{$no-col}) * #{$i}));
       }
@@ -62,9 +79,8 @@ $gutter: 30px;
       }
     }
   }
-
   @media #{$small} {
-    @for $i from 1 through $no-col {
+     @for $i from 1 through $no-col{
       &--sm-#{$i} {
         width: calc(((100% / #{$no-col}) * #{$i}));
       }
@@ -76,12 +92,10 @@ $gutter: 30px;
       &--sm-offset-0 {
         margin-left: 0;
       }
-
     }
   }
-
   @media #{$xsmall} {
-    @for $i from 1 through $no-col {
+     @for $i from 1 through $no-col{
       &--xs-#{$i} {
         width: calc(((100% / #{$no-col}) * #{$i}));
       }
@@ -93,8 +107,6 @@ $gutter: 30px;
       &--xs-offset-0 {
         margin-left: 0;
       }
-
     }
   }
 }
-

@@ -1,0 +1,41 @@
+@@include('./shared/_head.html', {
+  "title": "Komma igång!"
+})
+<div class="pattern-header background background--orange-pattern">
+  @@include('./shared/_header.html', {
+      "active-page": "ladda-ner-appen"
+  })
+  <div class="text-wrapper">
+    @@include(markdown('./markdown/header-ladda-ner-appen.markdown'))
+  </div>
+</div>
+<section class="section section--download-app nice-type">
+  <div class="inner">
+    <div class="row">
+      <div class="col col--6 col--md-12">
+        <div class="text-wrap">
+          @@include(markdown('./markdown/ladda-ner-appen.markdown'))
+          <a href="https://play.google.com/store/apps/details?id=com.yepstr.android" class="download-app-btn download-app-btn--google-play ga-outbound-link">Get it on Google Play</a>
+          <a href="https://itunes.apple.com/se/app/yepstr/id1069311381?mt=8" class="download-app-btn download-app-btn--app-store ga-outbound-link">Availible on the App Store</a>
+          <p class="divider-or">eller</p>
+          <a href="https://app.yepstr.com/userRoleCrossroads" target="_blank" class="download-app-btn download-app-btn--web-browser ga-outbound-link">Availible on the App Store</a>
+        </div>
+      </div>
+      <div class="col col--6 col--md-12">
+        <div class="img-wrap">
+          <img src="images/app-splash-big.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--cta background background--map-pattern background--pos-top">
+  <div class="inner margin-v-lg">
+    <h2>Behöver du veta lite mer först?</h2>
+    <div class="button-case">
+      <a href="sa-funkar-det.html" target="_blank" class="btn btn--orange btn--inline ga-outbound-link margin-sm">Så funkar det</a>
+      <a href="vanliga-fragor.html" target="_blank" class="btn btn--orange btn--inline ga-outbound-link margin-sm">Vanliga frågor</a>
+    </div>
+  </div>
+</section>
+@@include('./shared/_footer.html')

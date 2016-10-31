@@ -1,0 +1,190 @@
+// clearfix
+
+.clearfix {
+  &:after,
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+//Margins and padding
+
+.margin-lg {
+  margin: rem(100);
+}
+
+.margin-md {
+  margin: rem(50);
+}
+
+.margin-sm {
+  margin: rem(25);
+}
+
+.margin-v-xlg {
+  margin-top: rem(200);
+  margin-bottom: rem(200);
+}
+
+.margin-v-lg {
+  margin-top: rem(100);
+  margin-bottom: rem(100);
+}
+
+.margin-v-md {
+  margin-top: rem(50);
+  margin-bottom: rem(50);
+}
+
+.margin-v-sm {
+  margin-top: rem(25);
+  margin-bottom: rem(25);
+}
+
+.margin-h-lg {
+  margin-left: rem(100);
+  margin-right: rem(100);
+}
+
+.margin-h-md {
+  margin-left: rem(50);
+  margin-right: rem(50);
+}
+
+.margin-h-sm {
+  margin-left: rem(25);
+  margin-right: rem(25);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-v-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.no-h-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-lg {
+  margin: rem(100);
+}
+
+.margin-md {
+  margin: rem(50);
+}
+
+.margin-sm {
+  margin: rem(25);
+}
+
+.padding-v-lg {
+  padding-top: rem(100);
+  padding-bottom: rem(100);
+}
+
+.padding-v-md {
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+}
+
+.padding-v-sm {
+  padding-top: rem(25);
+  padding-bottom: rem(25);
+}
+
+.padding-h-lg {
+  padding-left: rem(100);
+  padding-right: rem(100);
+}
+
+.padding-h-md {
+  padding-left: rem(50);
+  padding-right: rem(50);
+}
+
+.padding-h-sm {
+  padding-left: rem(25);
+  padding-right: rem(25);
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-v-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.no-h-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--orange {
+    color: $darkOrange;
+  }
+
+  &--blue {
+    color: $lightBlue;
+  }
+
+  &--darkblue {
+    color: $darkBlue;
+  }
+
+  &--grey {
+    color: $lightGrey;
+  }
+
+  &--dark-grey {
+    color: $darkGrey;
+  }
+
+  &--warm-grey {
+    color: $lightGrey;
+  }
+
+  &--green {
+    color: $green;
+  }
+
+  &--red {
+    color: $green;
+  }
+}
+
+.reset-list {
+  list-style: none outside none;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,221 @@
+.main-footer {
+  &--inner {
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+  }
+
+  &--top {
+    .main-footer--inner {
+      padding: 60px 15px;
+      @media #{$large} {
+        padding-bottom: 100px;
+      }
+      @media #{$medium} {
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+  &--middle {
+    background-color: $darkBlue;
+
+    .main-footer--inner {
+      padding: 60px 15px;
+    }
+  }
+
+  &--bottom {
+    background-color: $darkBlue;
+
+    .main-footer--inner {
+      padding: 0 15px 60px;
+    }
+  }
+
+  .cta-buttons {
+    @media #{$large} {
+      padding-top: 40px;
+    }
+    @media #{$medium} {
+      padding-top: 0;
+      text-align: center;
+    }
+
+    .btn {
+      margin-right: 30px;
+      @media #{$medium} {
+        margin: 10px 15px;
+      }
+    }
+  }
+
+  .promo-image {
+    position: absolute;
+    right: 0;
+    max-width: 369px;
+    width: 100%;
+    @media #{$medium} {
+      margin: 0 auto;
+      position: static;
+    }
+
+    figcaption {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-right: 40px;
+      font-size: rem(16);
+      @media #{$medium} {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .company-info {
+    max-width: 310px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    float: left;
+    @media #{$xsmall} {
+      float: none;
+      max-width: none;
+      text-align: center;
+      margin: 0 20px 40px;
+    }
+
+    .site-logo {
+      text-decoration: none;
+      color: $white;
+      font-size: rem(56);
+      line-height: 1;
+      position: relative;
+      font-weight: 600;
+      padding-bottom: 20px;
+      display: inline-block;
+    }
+
+    .footer-copy {
+      color: $white;
+      font-size: rem(16);
+    }
+  }
+
+  .main-navigation {
+    margin-top: 5px;
+    float: left;
+    @media #{$xsmall} {
+      float: none;
+      text-align: center;
+    }
+
+    > ul {
+      > li {
+        min-width: 180px;
+        margin-right: 50px;
+        float: left;
+        @media #{$xsmall} {
+          float: none;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    ul {
+      strong {
+        display: block;
+        font-size: rem(16);
+        padding-top: 10px;
+        color: $white;
+      }
+
+      li {
+        font-size: rem(16);
+        padding-top: 10px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    float: left;
+    list-style: none;
+    vertical-align: middle;
+    @media #{$medium} {
+      float: none;
+    }
+    @media #{$xsmall} {
+      text-align: center;
+    }
+
+    a {
+      text-indent: -9999em;
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: cover;
+      vertical-align: middle;
+
+      &.facebook {
+        background-image: url('../images/social/monokrom/facebook.svg');
+      }
+
+      &.twitter {
+        background-image: url('../images/social/monokrom/twitter.svg');
+      }
+
+      &.instagram {
+        background-image: url('../images/social/monokrom/instagram.svg');
+      }
+
+      &.mail {
+        background-image: url('../images/social/monokrom/mail.svg');
+      }
+
+      &.phone {
+        background-color: #fff;
+        background-image: url('../images/phone.svg');
+        background-repeat: no-repeat;
+        background-position: 10px;
+        background-size: 26px;
+        width: auto;
+        text-indent: 0;
+        line-height: 44px;
+        font-size: 16px;
+        color: $darkBlue;
+        padding: 0 10px 0 40px;
+        border-radius: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .app-links {
+    float: right;
+    @media #{$medium} {
+      margin-top: 40px;
+      float: none;
+    }
+    @media #{$xsmall} {
+      text-align: center;
+    }
+
+    .download-app-btn,
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 20px 20px;
+      @media #{$medium} {
+        margin-right: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+}

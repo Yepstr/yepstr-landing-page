@@ -1,4 +1,10 @@
+// clearfix
+
+.clearfix {
+  @include clearfix();
+}
 //Margins and padding
+
 .margin-lg {
   margin: rem(100);
 }
@@ -120,36 +126,47 @@
   &--left {
     text-align: left;
   }
+
   &--center {
     text-align: center;
   }
+
   &--right {
     text-align: right;
   }
+
   &--white {
     color: $white;
   }
+
   &--orange {
     color: $darkOrange;
   }
+
   &--blue {
     color: $lightBlue;
   }
+
   &--darkblue {
     color: $darkBlue;
   }
+
   &--grey {
     color: $lightGrey;
   }
+
   &--dark-grey {
     color: $darkGrey;
   }
+
   &--warm-grey {
     color: $lightGrey;
   }
+
   &--green {
     color: $green;
   }
+
   &--red {
     color: $green;
   }
@@ -157,6 +174,7 @@
 
 .reset-list {
   list-style: none outside none;
+
   li {
     margin: 0;
     padding: 0;
