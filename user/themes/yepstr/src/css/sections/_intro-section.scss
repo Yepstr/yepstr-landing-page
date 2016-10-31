@@ -6,21 +6,25 @@
     cursor: pointer;
     width: rem(203);
   }
+
   .btn {
     margin: 10px 10px 0 0;
   }
+
   .to-download-app-btn {
     display: none;
     @media #{$xsmall} {
       display: inline-block;
     }
   }
-  .task-list{
+
+  .task-list {
     display: flex;
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    &__item{
+
+    &__item {
       flex: 1 1 16.6666667%;
       font-size: rem(20);
       font-weight: 600;
@@ -30,31 +34,38 @@
       @media #{$xxsmall} {
         flex-basis: 50%;
       }
-      &:before{
+
+      &:before {
         display: block;
-        margin:0 auto;
-        width:100px;
-        height:80px;
-        content:"";
-        background-image: url(../images/task-icon-sprite.svg);
+        margin: 0 auto;
+        width: 100px;
+        height: 80px;
+        content: "";
+        background-image: url("../images/icons/task-icon-sprite.svg");
         background-repeat: no-repeat;
       }
-      &--babysitting:before{
+
+      &--babysitting:before {
         background-position: 0 0;
       }
-      &--event-helper:before{
+
+      &--event-helper:before {
         background-position: -100px 0;
       }
-      &--dog-walking:before{
+
+      &--dog-walking:before {
         background-position: -200px 0;
       }
-      &--gardening:before{
+
+      &--gardening:before {
         background-position: -300px 0;
       }
-      &--household:before{
+
+      &--household:before {
         background-position: -400px 0;
       }
-      &--misc:before{
+
+      &--misc:before {
         background-position: -500px 0;
       }
     }
@@ -62,13 +73,16 @@
   @media #{$xsmall} {
     .intro-section-headline {
       margin-bottom: rem(20);
+
       h1 {
         font-size: rem(36);
       }
+
       h4 {
         font-size: rem(22);
       }
     }
+
     .intro-splash-image {
       display: none;
     }
