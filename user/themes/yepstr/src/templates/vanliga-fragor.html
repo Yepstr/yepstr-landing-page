@@ -1,20 +1,11 @@
-@@include('./shared/_head.html', { "title": "Vanliga frågor" })
-<div class="pattern-header background background--orange-pattern">
-  @@include('./shared/_header.html', { "active-page": "vanliga-fragor" })
-  <div class="text-wrapper">
-    @@include(markdown('./markdown/header-vanliga-fragor.markdown'))
-  </div>
-</div>
-  <div class="js-scroll-to-nav scroll-to-nav nice-type">
-    <h2 class="margin-v-md">Hoppa till...</h2>
-    <ul class="js-scroll-to-nav-list scroll-to-nav-list text--blue">
-      <li class="js-scroll-to-nav-item scroll-to-nav-item ga-faq-link"></li>
-    </ul>
-  </div>
-<hr />
-<section id="details" class="section section--faq nice-type">
-  <div class="js-scroll-to-nav-content">
-    @@include(markdown('./markdown/faq.markdown'))
-  </div>
-</section>
+@@include('./shared/_head.html', { "title": "Start" })
+<!--  -->
+@@include('./shared/_header.html')
+<!--  -->
+@@include('./partials/intro-header-color.html')
+<!--  -->
+@@include('./partials/faq-index.html')
+<!--  -->
+@@include('./partials/faq-page.html')
+<!--  -->
 @@include('./shared/_footer.html')

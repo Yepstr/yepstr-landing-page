@@ -56,13 +56,13 @@
     display: block;
     padding-bottom: rem(10);
     @media #{$small} {
-      padding-left: rem(100);
+      padding-left: rem(80);
     }
   }
 
   &--step-text {
     @media #{$small} {
-      padding-left: rem(100);
+      padding-left: rem(80);
     }
   }
 

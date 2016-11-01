@@ -16,6 +16,40 @@
   }
 }
 
+.promo-big {
+  &--content {
+    position: relative;
+    @media #{$largeMin} {
+      padding-top: rem(100);
+    }
+  }
+
+  &--headline {
+    @media #{$mediumMin} {
+      padding-right: 200px;
+    }
+  }
+
+  &--text {
+    @media #{$mediumMin} {
+      padding-right: 200px;
+    }
+  }
+
+  &--image {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: rem(75);
+    @media #{$large} {
+      top: rem(15);
+    }
+    @media #{$medium} {
+      display: none;
+    }
+  }
+}
+
 .promo-box-wrapper {
   margin-top: 0;
   margin-bottom: 0;

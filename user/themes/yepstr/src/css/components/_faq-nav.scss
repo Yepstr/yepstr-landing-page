@@ -1,0 +1,18 @@
+.faq-nav {
+  &--item {
+    margin-bottom: rem(15);
+
+    a {
+      font-size: rem(16);
+      color: $darkBlue;
+
+      &:hover {
+        color: $darkOrange;
+      }
+    }
+
+    &.is-active a {
+      color: $darkOrange;
+    }
+  }
+}

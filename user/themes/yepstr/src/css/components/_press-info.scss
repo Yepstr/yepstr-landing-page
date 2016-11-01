@@ -1,0 +1,45 @@
+$bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
+
+.press-info {
+  &--bubble {
+    background-color: $darkOrange;
+    border-radius: 10px;
+    color: $white;
+    position: relative;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    @media #{$medium} {
+      margin-top: rem(25);
+      min-height: auto;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-30px);
+      height: 20px;
+      width: 60px;
+      background-image: url($bubble-point-bg-yep);
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--headline {
+    font-size: rem(36);
+  }
+
+  &--text {
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.faq-index {
+  &--list {
+    @include clearfix();
+  }
+
+  &--item {
+    margin: rem(15);
+  }
+
+  &--link {
+    padding: rem(25);
+    min-height: 180px;
+    width: 23%;
+    margin: 1%;
+    float: left;
+    display: block;
+    color: $white;
+    background: $darkOrange;
+    transition: background 200ms linear;
+    @media #{$large} {
+      width: 31%;
+      margin: 1%;
+    }
+    @media #{$medium} {
+      width: 48%;
+      margin: 1%;
+    }
+    @media #{$xsmall} {
+      width: 100%;
+      margin: rem(10) 0;
+      min-height: auto;
+    }
+
+    &:hover {
+      background: darken( $darkOrange, 10% );
+    }
+  }
+}

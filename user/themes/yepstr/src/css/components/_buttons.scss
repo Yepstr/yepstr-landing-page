@@ -92,6 +92,17 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
     }
   }
 
+  &--link {
+    border-color: transparent;
+    color: $darkOrange;
+
+    &:focus,
+    &:hover {
+      background-color: rgba( $white, .1 );
+      outline: none;
+    }
+  }
+
   &--white-link {
     border-color: transparent;
     color: $white;

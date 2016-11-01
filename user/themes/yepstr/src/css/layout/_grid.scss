@@ -22,7 +22,7 @@ $max-width-sm: 800px;
     padding: 0 ($gutter + ($gutter / 2));
     @include clearfix();
     @media #{$xsmall} {
-      padding: $gutter / 2;
+      padding: 0 ($gutter / 2);
     }
   }
 

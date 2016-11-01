@@ -3,10 +3,34 @@
 .clearfix {
   @include clearfix();
 }
+
+.display--none {
+  display: none;
+}
+
+.display--inline {
+  display: inline;
+}
+
+.display--block {
+  display: block;
+}
+
+.display--inline-block {
+  display: inline-block;
+}
 //Margins and padding
 .center-content {
+  //Need ONE child div in a container with height
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.center-v-content {
+  //Need ONE child div in a container with height
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -25,6 +49,10 @@
 
 .margin-sm {
   margin: rem(25);
+}
+
+.margin-xs {
+  margin: rem(12.5);
 }
 
 .margin-v-xl {
@@ -47,6 +75,11 @@
   margin-bottom: rem(25);
 }
 
+.margin-v-xs {
+  margin-top: rem(12.5);
+  margin-bottom: rem(12.5);
+}
+
 .margin-h-lg {
   margin-left: rem(100);
   margin-right: rem(100);
@@ -60,6 +93,11 @@
 .margin-h-sm {
   margin-left: rem(25);
   margin-right: rem(25);
+}
+
+.margin-h-xs {
+  margin-left: rem(12.5);
+  margin-right: rem(12.5);
 }
 
 .no-margin {
@@ -184,14 +222,24 @@
   &--red {
     color: $green;
   }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
 }
 
 .reset-list {
   list-style: none outside none;
 
   li {
-    margin: 0;
-    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 // Responsive embeds
@@ -239,4 +287,64 @@
 
 .img--circle {
   border-radius: 50%;
+}
+// responsive hide and show
+.hidden-xs {
+  @media #{ $xsmall } {
+    display: none;
+  }
+}
+
+.hidden-sm {
+  @media #{ $small } {
+    display: none;
+  }
+}
+
+.hidden-md {
+  @media #{ $medium } {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  @media #{ $large } {
+    display: none;
+  }
+}
+
+.hidden-xl {
+  @media #{ $xlarge } {
+    display: none;
+  }
+}
+
+.visible-xs {
+  @media #{ $xsmallMin } {
+    display: none;
+  }
+}
+
+.visible-sm {
+  @media #{ $smallMin } {
+    display: none;
+  }
+}
+
+.visible-md {
+  @media #{ $mediumMin } {
+    display: none;
+  }
+}
+
+.visible-lg {
+  @media #{ $largeMin } {
+    display: none;
+  }
+}
+
+.visible-xl {
+  @media #{ $xlargeMin } {
+    display: none;
+  }
 }
