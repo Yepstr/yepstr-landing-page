@@ -19,6 +19,7 @@ html {
 
 body {
   position: relative;
+
   &.no-scroll {
     overflow: hidden;
   }
@@ -35,26 +36,8 @@ img {
 }
 
 a {
-  color: $lightBlue;
+  color: $darkOrange;
   text-decoration: none;
-}
-
-.bg-container {
-  background: url('../images/bg.jpg') no-repeat;
-  background-size: cover;
-}
-
-.video-disclaimer {
-  color: #9fa0a8;
-}
-
-.success-msg {
-  opacity: 0;
-  margin-top: 10px;
-  transition: opacity 400ms;
-  &.show {
-    opacity: 1;
-  }
 }
 
 hr {

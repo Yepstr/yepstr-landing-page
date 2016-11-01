@@ -1,10 +1,14 @@
 $no-col: 12;
 $gutter: 30px;
+$max-width-xl: 1800px;
+$max-width-lg: 1500px;
+$max-width-md: 1100px;
+$max-width-sm: 800px;
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: $max-width-lg;
   padding: 0 $gutter;
   @media #{$xsmall} {
     padding: 0;
@@ -20,6 +24,22 @@ $gutter: 30px;
     @media #{$xsmall} {
       padding: $gutter / 2;
     }
+  }
+
+  &--xl {
+    max-width: $max-width-xl;
+  }
+
+  &--lg {
+    max-width: $max-width-lg;
+  }
+
+  &--md {
+    max-width: $max-width-md;
+  }
+
+  &--sm {
+    max-width: $max-width-sm;
   }
 }
 

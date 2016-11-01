@@ -1,6 +1,5 @@
-.intro-header {
+.section--intro-header {
   position: relative;
-  color: $white;
 
   .text-wrapper {
     max-width: 800px;
@@ -36,6 +35,31 @@
 
     .text-wrapper {
       margin: 0;
+    }
+  }
+
+  .intro-header-headline {
+    @media #{$xsmall} {
+      margin-bottom: rem(20);
+
+      h1 {
+        font-size: rem(36);
+      }
+
+      h4 {
+        font-size: rem(22);
+      }
+    }
+  }
+
+  .intro-splash-image {
+    position: absolute;
+    right: rem(63);
+    bottom: 0;
+    cursor: pointer;
+    width: rem(203);
+    @media #{$xsmall} {
+      display: none;
     }
   }
 }

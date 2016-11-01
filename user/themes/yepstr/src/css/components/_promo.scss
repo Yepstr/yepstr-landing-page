@@ -1,3 +1,21 @@
+.promo-small {
+  &--image {
+    margin-bottom: rem(15);
+  }
+
+  &--headline {
+    font-size: rem(20);
+    margin: 0 0 rem(15);
+  }
+
+  &--text {
+    margin: 0;
+  }
+  @media #{$medium} {
+    margin: rem(25) 0;
+  }
+}
+
 .promo-box-wrapper {
   margin-top: 0;
   margin-bottom: 0;
@@ -7,9 +25,11 @@
   background: $white;
   display: flex;
   position: relative;
+
   &--align-center {
     align-items: center;
   }
+
   &--md-height {
     min-height: 500px;
   }
@@ -17,6 +37,7 @@
     flex-direction: column;
     margin-bottom: rem(30);
   }
+
   &__image {
     background-size: cover;
     background-position: center;
@@ -26,7 +47,8 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    &--right{
+
+    &--right {
       right: 0;
     }
     @media #{$medium} {
@@ -39,6 +61,7 @@
       min-height: 250px;
     }
   }
+
   &__text {
     background: $white;
     padding: rem(35) rem(60);
@@ -50,36 +73,43 @@
       order: 2;
     }
     @media #{$small} {
-      padding-left:rem(20);
-      padding-right:rem(20);
+      padding-left: rem(20);
+      padding-right: rem(20);
       text-align: left;
     }
-    &--right{
-			margin-left: 50%;
-			@media #{$medium} {
-	      margin-left: 0;
-	    }
+
+    &--right {
+      margin-left: 50%;
+      @media #{$medium} {
+        margin-left: 0;
+      }
     }
+
     &__headline {
       font-size: rem(40);
     }
+
     &__paragraph {
       margin-bottom: rem(35);
     }
+
     &__blockquote {
       font-size: rem(22);
       font-style: italic;
       margin-bottom: rem(20);
     }
+
     &__sec-headline {
       font-weight: 600;
       margin-bottom: rem(20);
     }
-    &__list{
+
+    &__list {
       @media #{$medium} {
         list-style: none;
       }
-      li{
+
+      li {
         font-size: rem(20);
         margin-bottom: rem(15);
         margin-left: 1.5em;

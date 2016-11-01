@@ -1,0 +1,91 @@
+$col-one-icon: '../images/graphics/promo-questionmark.svg';
+$col-two-icon: '../images/graphics/promo-lock.svg';
+
+.section--two-col-promo {
+  &--wrapper {
+    display: flex;
+    flex-direction: row;
+    @media #{$medium} {
+      flex-direction: column;
+    }
+
+  }
+
+  .promo-col {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 104px;
+      height: 104px;
+      position: absolute;
+      top: -60px;
+      left: rem(50);
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    &--left {
+      width: 40%;
+
+      &:before {
+        background-image: url($col-one-icon);
+      }
+      @media #{$large} {
+        width: 45%;
+      }
+      @media #{$medium} {
+        width: 100%;
+      }
+    }
+
+    &--right {
+      width: 60%;
+
+      &:before {
+        background-image: url($col-two-icon);
+      }
+      @media #{$large} {
+        width: 55%;
+      }
+      @media #{$medium} {
+        margin-top: rem(100);
+        width: 100%;
+      }
+
+      .promo-col--text {
+        @media #{$largeMin} {
+          margin-right: 180px;
+        }
+      }
+
+      .promo-col--image {
+        position: absolute;
+        top: rem(50);
+        right: rem(50);
+        width: 150px;
+        @media #{$large} {
+          display: none;
+        }
+      }
+    }
+
+    &--text {
+      max-width: 700px;
+
+      ol li,
+      p,
+      ul li {
+        font-size: rem(20);
+      }
+    }
+
+    &--content {}
+
+    &--headline {}
+
+  }
+
+}

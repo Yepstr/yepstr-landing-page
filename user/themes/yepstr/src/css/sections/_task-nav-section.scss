@@ -1,1 +1,99 @@
-.section--task-nav {}
+.section--task-nav {
+  .task-list {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+      flex: 1 1 14.285%;
+      font-size: rem(18);
+      @media #{$medium} {
+        flex-basis: 33.333333%;
+      }
+      @media #{$xxsmall} {
+        flex-basis: 50%;
+      }
+    }
+
+    &__link {
+      font-weight: 600;
+      text-align: center;
+      display: block;
+      color: $darkBlue;
+      transition: color 0.3s;
+
+      &:before {
+        display: block;
+        content: "";
+        margin: 0 auto;
+        width: 100px;
+        height: 80px;
+        background-image: url("../images/icons/task-icon-sprite.svg");
+        background-repeat: no-repeat;
+        background-size: 700px 200px;
+      }
+
+      &--general:before {
+        background-position: 0 0;
+      }
+
+      &--babysitting:before {
+        background-position: -100px 0;
+      }
+
+      &--event-helper:before {
+        background-position: -200px 0;
+      }
+
+      &--dog-walking:before {
+        background-position: -300px 0;
+      }
+
+      &--gardening:before {
+        background-position: -400px 0;
+      }
+
+      &--household:before {
+        background-position: -500px 0;
+      }
+
+      &--misc:before {
+        background-position: -600px 0;
+      }
+      //Active states
+      &.is-active,
+      &:hover {
+        color: $darkOrange;
+      }
+
+      &--general.is-active:before {
+        background-position: 0 -100px;
+      }
+
+      &--babysitting.is-active:before {
+        background-position: -100px -100px;
+      }
+
+      &--event-helper.is-active:before {
+        background-position: -200px -100px;
+      }
+
+      &--dog-walking.is-active:before {
+        background-position: -300px -100px;
+      }
+
+      &--gardening.is-active:before {
+        background-position: -400px -100px;
+      }
+
+      &--household.is-active:before {
+        background-position: -500px -100px;
+      }
+
+      &--misc.is-active:before {
+        background-position: -600px -100px;
+      }
+    }
+  }
+}
