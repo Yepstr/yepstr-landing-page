@@ -38,17 +38,17 @@
     }
   }
 
-  .intro-header-headline {
+  .intro-header--headline {
     @media #{$xsmall} {
-      margin-bottom: rem(20);
+      font-size: rem(36);
+    }
+  }
 
-      h1 {
-        font-size: rem(36);
-      }
-
-      h4 {
-        font-size: rem(22);
-      }
+  .intro-header--sub-headline {
+    font-weight: 400;
+    font-size: rem(24);
+    @media #{$xsmall} {
+      font-size: rem(22);
     }
   }
 

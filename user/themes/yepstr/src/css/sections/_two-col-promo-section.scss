@@ -3,6 +3,7 @@ $col-two-icon: '../images/graphics/promo-lock.svg';
 
 .section--two-col-promo {
   &--wrapper {
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
     @media #{$medium} {
