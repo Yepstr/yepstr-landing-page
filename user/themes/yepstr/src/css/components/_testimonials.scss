@@ -4,7 +4,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
 .testimonial {
   text-align: center;
   @media #{$medium} {
-    margin: rem(50) 0;
+    margin-bottom: rem(50);
   }
 
   &--bubble {
