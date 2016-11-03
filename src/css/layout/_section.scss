@@ -1,0 +1,24 @@
+.section {
+	position: relative;
+
+	&--full {
+		min-height: 100vh;
+	}
+
+	&__center-content {
+		left: 0;
+		right: 0;
+		position: absolute;
+		margin: 0 auto;
+		max-width: rem(940);
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		padding: 0 rem(15);
+	}
+}
+
+.main--content .section:first-child,
+.main--content .section:first-child div:first-child {
+	margin-top: 0 !important;
+}

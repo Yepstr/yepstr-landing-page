@@ -1,0 +1,36 @@
+<section class="section margin-v-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col col--5 col--md-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/0EtlUOMbdPk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col col--7 col--md-12">
+        <div class="row">
+          <div class="col col--4 col--sm-12">
+            <div class="promo-small">
+              <div class="promo-small--image">{{ page.find('/images').media[page.header.content.promo_one_image] }}</div>
+              <h2 class="promo-small--headline">{{ page.header.content.promo_one_headline }}</h2>
+              <p class="promo-small--text">{{ page.header.content.promo_one_text }}</p>
+            </div>
+          </div>
+          <div class="col col--4 col--sm-12">
+            <div class="promo-small">
+              <div class="promo-small--image">{{ page.find('/images').media[page.header.content.promo_two_image] }}</div>
+              <h2 class="promo-small--headline">{{ page.header.content.promo_two_headline }}</h2>
+              <p class="promo-small--text">{{ page.header.content.promo_two_text }}</p>
+            </div>
+          </div>
+          <div class="col col--4 col--sm-12">
+            <div class="promo-small">
+              <div class="promo-small--image">{{ page.find('/images').media[page.header.content.promo_three_image] }}</div>
+              <h2 class="promo-small--headline">{{ page.header.content.promo_three_headline }}</h2>
+              <p class="promo-small--text">{{ page.header.content.promo_three_text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

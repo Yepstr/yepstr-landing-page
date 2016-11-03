@@ -1,0 +1,44 @@
+title: Promo 1
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/promo-1
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/promo-1
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.promo_one_headline:
+              type: text
+              label: Promo 1 Headline
+
+            header.content.promo_one_text:
+              type: textbox
+              label: Promo 1 text

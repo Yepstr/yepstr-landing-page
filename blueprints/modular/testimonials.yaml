@@ -1,0 +1,21 @@
+title: Testimonials
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/testimonials
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/testimonials
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'

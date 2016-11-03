@@ -1,0 +1,18 @@
+{% extends 'shared/base.html.twig' %}
+
+{% block content %}
+  <div class="section--intro-header background background--red">
+    <div class="text-wrapper text-wrapper--lg text--white">
+      <h1 class="intro-header--headline">Woops. Här ska du inte vara...</h1>
+      <h2 class="intro-header--sub-headline">{{ 'ERROR'|t }}
+        {{ page.header.http_response_code }}</h2>
+    </div>
+  </div>
+  <section class="section margin-v-md">
+    <div class="container container--no-grid container--sm margin-v-sm">
+      <div class="nice-type">
+        {{ page.content }}
+      </div>
+    </div>
+  </section>
+{% endblock %}

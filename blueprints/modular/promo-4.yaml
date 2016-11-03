@@ -1,0 +1,21 @@
+title: Promo 4
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/promo-4
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/promo-4
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'

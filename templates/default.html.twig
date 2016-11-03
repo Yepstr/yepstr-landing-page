@@ -1,0 +1,15 @@
+{% extends 'shared/base.html.twig' %}
+{% block content %}
+  <div class="section--intro-header background background--orange">
+    <div class="text-wrapper text-wrapper--lg text--white">
+      <h1 class="intro-header--headline">{{ page.title }}</h1>
+    </div>
+  </div>
+  <section class="section margin-v-md">
+    <div class="container container--no-grid container--sm margin-v-sm">
+      <div class="nice-type">
+        {{ page.content }}
+      </div>
+    </div>
+  </section>
+{% endblock %}
