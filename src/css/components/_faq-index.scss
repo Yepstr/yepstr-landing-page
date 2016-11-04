@@ -9,18 +9,14 @@
 
   &--link {
     padding: rem(25);
-    min-height: 180px;
-    width: 23%;
+    min-height: 200px;
+    width: 31%;
     margin: 1%;
     float: left;
     display: block;
-    color: $white;
-    background: $darkOrange;
+    color: $darkBlue;
+    background: $lightGrey;
     transition: background 200ms linear;
-    @media #{$large} {
-      width: 31%;
-      margin: 1%;
-    }
     @media #{$medium} {
       width: 48%;
       margin: 1%;
@@ -32,7 +28,7 @@
     }
 
     &:hover {
-      background: darken( $darkOrange, 10% );
+      background: darken( $lightGrey, 10% );
     }
   }
 }

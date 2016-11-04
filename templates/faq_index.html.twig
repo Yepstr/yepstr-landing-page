@@ -1,0 +1,33 @@
+{% extends 'shared/base.html.twig' %}
+{% block content %}
+  <!--  -->
+  {{ include('partials/intro-header.html.twig') }}
+  <!--  -->
+
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">{{ page.header.content.page_headline }}</h2>
+    </div>
+    {% if page.content %}
+      <div class="container container--no-grid container--sm margin-v-sm">
+        <div class="nice-type">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="container container--no-grid">
+      <nav role="navigation" class="faq-index">
+        <ul class="reset-list faq-index--list">
+          {% for link in page.header.content.faq_links %}
+            <li class="faq-index--item">
+              <a class="faq-index--link" href="{{ base_url }}/foretaget/vanliga-fragor/{{ link.href }}">
+                <h3>{{ link.headline }}</h3>
+                <p>{{ link.text }}</p>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </section>
+{% endblock %}

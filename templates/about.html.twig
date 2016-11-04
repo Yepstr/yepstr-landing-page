@@ -1,23 +1,62 @@
 {% extends 'shared/base.html.twig' %}
 {% block content %}
-  <div class="section--intro-header background background--yep-hero background--pos-left">
-    <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
-      <h1 class="intro-header--headline">{{ page.title }}</h1>
-    </div>
-  </div>
-  <section class="section margin-v-md">
+  <!--  -->
+  {{ include('partials/intro-header.html.twig') }}
+  <!--  -->
+  <section class="section margin-v-lg">
     <div class="container container--no-grid container--lg margin-v-sm">
-      <h2 class="section-headline text--center">{{ page.header.headline }}</h2>
+      <h2 class="section-headline text--center">{{ page.header.content.page_headline }}</h2>
     </div>
-    <div class="container container--no-grid container--sm margin-v-sm">
-      <div class="nice-type">
-        <p>
+    <div class="container container--no-grid container--md margin-v-sm">
+      <div class="col col--8 col--md-12">
+        <div class="nice-type">
           {{ page.content }}
-        </p>
+        </div>
+      </div>
+      <div class="col col--4 col--md-12">
+        <div class="press-info">
+          <div class="press-info--bubble padding-sm center-content">
+            <div class="press-info--content" href="#">
+              <h2 class="press-info--headline">{{ page.header.content.press.headline }}</h2>
+              <div class="press-info--text">
+                <p>
+                  {{ page.header.content.press.text }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  {% for module in page.collection( ) %}
-    {{ module.content }}
-  {% endfor %}
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">
+        {{ page.header.content.contact_cards_headline }}
+      </h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        {% for card in page.header.content.contact_cards %}
+          <div class="col col--3 col--lg-4 col--md-6 col--xs-12">
+            <div class="contact-card">
+              <div class="contact-card--image">
+                {{ page.find('/images').media[card.image].html('','','img--circle') }}
+              </div>
+              <div class="contact-card--name">{{ card.name }}</div>
+              <div class="contact-card--title">{{ card.title }}</div>
+              <div class="contact-card--phone">{{ card.phone }}</div>
+              <div class="contact-card--email">
+                <a href="mailto:{{ card.email }}">{{ card.email }}</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  {{ include('partials/in-the-media.html.twig') }}
+  <!--  -->
 {% endblock %}

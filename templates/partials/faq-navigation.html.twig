@@ -1,0 +1,16 @@
+{% set faq_index_page = page.parent( ) %}
+
+<div class="faq-nav">
+  <nav role="navigation" class="hidden-sm">
+    <ul class="reset-list faq-nav--list">
+      {% for link in faq_index_page.header.content.faq_links %}
+        <li class="faq-nav--item">
+          <a href="{{ faq_index_page.url }}/{{ link.href }}">
+            {{ link.headline }}
+          </a>
+        </li>
+      {% endfor %}
+
+    </ul>
+  </nav>
+</div>
