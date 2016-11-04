@@ -34,7 +34,7 @@
         background-size: 700px 200px;
       }
 
-      &--general:before {
+      &--how-to:before {
         background-position: 0 0;
       }
 
@@ -58,7 +58,7 @@
         background-position: -500px 0;
       }
 
-      &--misc:before {
+      &--tutoring:before {
         background-position: -600px 0;
       }
       //Active states
@@ -67,7 +67,7 @@
         color: $darkOrange;
       }
 
-      &--general.is-active:before {
+      &--how-to.is-active:before {
         background-position: 0 -100px;
       }
 
@@ -91,7 +91,7 @@
         background-position: -500px -100px;
       }
 
-      &--misc.is-active:before {
+      &--tutoring.is-active:before {
         background-position: -600px -100px;
       }
     }

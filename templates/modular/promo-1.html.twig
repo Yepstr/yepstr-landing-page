@@ -1,3 +1,5 @@
+{% set phc = page.header.content %}
+
 <section class="section margin-v-lg">
   <div class="container">
     <div class="row">
@@ -10,23 +12,23 @@
         <div class="row">
           <div class="col col--4 col--sm-12">
             <div class="promo-small">
-              <div class="promo-small--image">{{ page.find('/images').media[page.header.content.promo_one_image] }}</div>
-              <h2 class="promo-small--headline">{{ page.header.content.promo_one_headline }}</h2>
-              <p class="promo-small--text">{{ page.header.content.promo_one_text }}</p>
+              <div class="promo-small--image">{{ page.find('/images').media[phc.promo_one.image] }}</div>
+              <h2 class="promo-small--headline">{{ phc.promo_one.headline }}</h2>
+              <p class="promo-small--text">{{ phc.promo_one.text }}</p>
             </div>
           </div>
           <div class="col col--4 col--sm-12">
             <div class="promo-small">
-              <div class="promo-small--image">{{ page.find('/images').media[page.header.content.promo_two_image] }}</div>
-              <h2 class="promo-small--headline">{{ page.header.content.promo_two_headline }}</h2>
-              <p class="promo-small--text">{{ page.header.content.promo_two_text }}</p>
+              <div class="promo-small--image">{{ page.find('/images').media[phc.promo_two.image] }}</div>
+              <h2 class="promo-small--headline">{{ phc.promo_two.headline }}</h2>
+              <p class="promo-small--text">{{ phc.promo_two.text }}</p>
             </div>
           </div>
           <div class="col col--4 col--sm-12">
             <div class="promo-small">
-              <div class="promo-small--image">{{ page.find('/images').media[page.header.content.promo_three_image] }}</div>
-              <h2 class="promo-small--headline">{{ page.header.content.promo_three_headline }}</h2>
-              <p class="promo-small--text">{{ page.header.content.promo_three_text }}</p>
+              <div class="promo-small--image">{{ page.find('/images').media[phc.promo_three.image] }}</div>
+              <h2 class="promo-small--headline">{{ phc.promo_three.headline }}</h2>
+              <p class="promo-small--text">{{ phc.promo_three.text }}</p>
             </div>
           </div>
         </div>

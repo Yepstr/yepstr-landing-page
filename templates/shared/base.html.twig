@@ -1,5 +1,5 @@
 {{ include('shared/head.html.twig') }}
-<body id="top" class="{{ page.header.body_classes }}">
+<body id="top" class="{{ page.header.body_classes }}" data-page="{{ page.slug() }}">
   {{ include('shared/header.html.twig') }}
   {% block body %}
     <main id="body" class="main--content {{ class }}">

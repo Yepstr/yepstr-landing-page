@@ -24,8 +24,5 @@ form:
             uploads:
               type: ignore
 
-            content:
-              type: ignore
-
             header.process:
               type: ignore
