@@ -1,7 +1,7 @@
 title: Start
 @extends:
-    type: default
-    context: blueprints://pages
+  type: default
+  context: blueprints://pages
 
 form:
   fields:
@@ -27,11 +27,11 @@ form:
               title: Page content
               underline: true
 
-            header.content.intro_header_headline:
+            header.content.intro.headline:
               type: text
               label: Intro headline
 
-            header.content.intro_header_sub_headline:
+            header.content.intro.sub_headline:
               type: text
               label: Intro subheadline
 

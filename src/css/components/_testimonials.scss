@@ -57,6 +57,11 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   &--image {
     margin-top: rem(40);
     margin-bottom: rem(20);
+
+    img {
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
 
   &--text {

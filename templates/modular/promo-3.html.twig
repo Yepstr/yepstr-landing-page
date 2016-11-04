@@ -1,9 +1,9 @@
-<section class="section padding-v-md backgound background--lightest-grey">
+<section class="section padding-v-lg backgound background--lightest-grey">
   <div class="container">
     <div class="row">
       <div class="col col--4 col--xs-12">
         <div class="margin-sm">
-          <img class="img--circle" src="http://placehold.it/1000x1000" alt="">
+          {{ page.find('/images').media['promo-insurance.jpg'].html('', '', 'img--circle') }}
         </div>
       </div>
       <div class="col col--8 col--xs-12">
@@ -18,7 +18,7 @@
               </ol>
             </div>
             <div class="promo-big--image">
-              <img src="images/graphics/promo-if-iphone.png" alt="" />
+              {{ page.find('/images').media['promo-if-iphone.png'] }}
             </div>
           </div>
         </div>

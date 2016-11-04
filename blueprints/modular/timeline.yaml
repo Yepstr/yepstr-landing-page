@@ -19,3 +19,33 @@ form:
                 header.template:
                   default: modular/timeline
                   '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+        steps:
+          type: tab
+          title: Timeline
+          fields:
+            header.steps:
+              name: steps
+              type: list
+              label: Steps
+
+              fields:
+                .header:
+                  type: text
+                  label: Header
+                .text:
+                  type: textarea
+                  label: Text
+                .image:
+                  type: text
+                  label: Image

@@ -1,8 +1,9 @@
 {% extends 'shared/base.html.twig' %}
 {% block content %}
-  <div class="section--intro-header background background--yep-hero background--pos-left">
+  <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ base_url }}/user/pages/images/{{ page.header.content.intro.image }}) ;">
     <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
-      <h1 class="intro-header--headline">{{ page.title }}</h1>
+      <h1 class="intro-header--headline">{{ page.header.content.intro.headline }}</h1>
+      <h2 class="intro-header--sub-headline">{{ page.header.content.intro.sub_headline }}</h2>
     </div>
   </div>
   <!--  -->
@@ -10,7 +11,7 @@
   <!--  -->
   <section class="section margin-v-md">
     <div class="container container--no-grid container--lg margin-v-sm">
-      <h2 class="section-headline text--center">{{ page.header.headline }}</h2>
+      <h2 class="section-headline text--center">{{ page.header.content.page_headline }}</h2>
     </div>
     <div class="container container--no-grid container--sm margin-v-sm">
       <div class="nice-type">

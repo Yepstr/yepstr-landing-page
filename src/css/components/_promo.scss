@@ -1,6 +1,7 @@
 .promo-small {
   &--image {
     margin-bottom: rem(15);
+    min-height: 100px;
   }
 
   &--headline {
@@ -151,7 +152,6 @@
           margin-left: 0;
         }
       }
-
     }
   }
 }

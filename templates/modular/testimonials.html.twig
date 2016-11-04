@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col col--4 col--md-12">
-        <div class="testimonial testimonial--customer">
+        <div class="testimonial testimonial--{{ page.header.content.testimonial_one_type }}">
           <div class="testimonial--bubble padding-sm center-content">
             <div>
               {{ page.header.content.testimonial_one_text }}
@@ -15,29 +15,29 @@
         </div>
       </div>
       <div class="col col--4 col--md-12">
-        <div class="testimonial testimonial--customer">
+        <div class="testimonial testimonial--{{ page.header.content.testimonial_two_type }}">
           <div class="testimonial--bubble padding-sm center-content">
             <div>
-              {{ page.header.content.testimonial_one_text }}
+              {{ page.header.content.testimonial_two_text }}
             </div>
           </div>
           <div class="testimonial--image">
-            {{ page.find('/images').media[page.header.content.testimonial_one_image].html('', '', 'img--circle') }}
+            {{ page.find('/images').media[page.header.content.testimonial_two_image].html('', '', 'img--circle') }}
           </div>
-          <h2 class="testimonial--text">{{ page.header.content.testimonial_one_title }}</h2>
+          <h2 class="testimonial--text">{{ page.header.content.testimonial_two_title }}</h2>
         </div>
       </div>
       <div class="col col--4 col--md-12">
-        <div class="testimonial testimonial--customer">
+        <div class="testimonial testimonial--{{ page.header.content.testimonial_three_type }}">
           <div class="testimonial--bubble padding-sm center-content">
             <div>
-              {{ page.header.content.testimonial_one_text }}
+              {{ page.header.content.testimonial_three_text }}
             </div>
           </div>
           <div class="testimonial--image">
-            {{ page.find('/images').media[page.header.content.testimonial_one_image].html('', '', 'img--circle') }}
+            {{ page.find('/images').media[page.header.content.testimonial_three_image].html('', '', 'img--circle') }}
           </div>
-          <h2 class="testimonial--text">{{ page.header.content.testimonial_one_title }}</h2>
+          <h2 class="testimonial--text">{{ page.header.content.testimonial_three_title }}</h2>
         </div>
       </div>
 

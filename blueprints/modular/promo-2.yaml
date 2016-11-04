@@ -19,3 +19,13 @@ form:
                 header.template:
                   default: modular/promo-2
                   '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore

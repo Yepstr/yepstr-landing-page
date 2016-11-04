@@ -12,25 +12,86 @@
         </figure>
       </div>
       <div class="cta-buttons">
-        <a class="btn btn--orange btn--inline" href="#">Skapa konto</a>
-        <a class="btn btn--orange-ghost btn--inline" href="#">Hur går det till?</a>
+        <a class="btn btn--orange btn--inline" href="https://app.yepstr.com/userRoleCrossroads">Skapa konto</a>
+        <a class="btn btn--orange-ghost btn--inline" href="{{ base_url }}/uppdragsgivare/sa-funkar-det">Hur går det till?</a>
       </div>
     </div>
   </div>
   <div class="main-footer--middle background background--darkblue">
     <div class="container container--no-grid padding-v-md">
       <div class="company-info">
-        <a class="site-logo" href="/">yepstr</a>
+        <a class="site-logo" href="{{ base_url }}">yepstr</a>
         <p class="footer-copy">
           Yepstr är en app-baserad marknadsplats där hushåll kan få hjälp av ungdomar i sitt kvarter!
           <br><br>Organisationsnummer 556997-9817
         </p>
+        {% block footer_navigation %}
+          <nav class="main-navigation" role="navigation">
+            {% include 'shared/navigation.html.twig' %}
+          </nav>
+        {% endblock %}
       </div>
-      {% block footer_navigation %}
-        <nav class="main-navigation" role="navigation">
-          {% include 'shared/navigation.html.twig' %}
-        </nav>
-      {% endblock %}
+      <nav class="main-navigation" role="navigation">
+        <ul class="reset-list">
+          <li>
+            <strong>Ungdomar</strong>
+            <ul class="reset-list">
+              <li>
+                <a href="{{ base_url }}/ungdomar/jag-vill-jobba">Bli en Yep!</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/ungdomar/for-foraldrar">För föräldrar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Uppdragsgivare</strong>
+            <ul class="reset-list">
+              <li>
+                <a href="{{ base_url }}/uppdragsgivare/sa-funkar-det">Så funkar det</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/uppdragsgivare/barnpassning">Barnpassning</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/uppdragsgivare/hundvakt">Hundvakt</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/uppdragsgivare/eventhjalp">Eventhjälp</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/uppdragsgivare/tradgard">Trädgård</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/uppdragsgivare/laxhjalp">Läxhjälp</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Företaget</strong>
+            <ul class="reset-list">
+              <li>
+                <a href="{{ base_url }}/foretaget/om-oss">Om oss</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/foretaget/vanliga-fragor">Vanliga frågor</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/foretaget/sakerhet">Säkerhet</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/foretaget/skatter-och-ansvar">Skatter & ansvar</a>
+              </li>
+              <li>
+                <a href="http://www.mynewsdesk.com/se/yepstr" target="_blank">Press</a>
+              </li>
+              <li>
+                <a href="http://yepstr.com/blog" target="_blank">Blogg</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
   <div class="main-footer--bottom background background--darkblue">
