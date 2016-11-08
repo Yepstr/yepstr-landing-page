@@ -1,4 +1,4 @@
-{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% set theme_config = attribute( config.themes, config.system.pages.theme ) %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
   <head>
@@ -24,13 +24,13 @@
         property="og:description"
         content="På Yepstr kan hushåll få kontakt med drivna ungdomar i grannskapet för enklare uppdrag (gräsklippning, hundpassning etc.). Genom att använda Yepstr är du med och bygger ungdomarnas första riktiga CV. Praktisk erfarenhet utanför skolan leder ofta till det där första sommarjobbet, vilket leder till större chans att få praktik under universitetsstudierna vilket ökar chansen att få det där första riktiga jobbet."/>
       <meta property="og:url" content="http://yepstr.com"/>
-      <meta property="og:image" content=" {{ url('theme://build/images/fb-image.png') }} "/>
+      <meta property="og:image" content=" {{ url('theme://build/images/facebook/fb-image.png') }} "/>
       <meta property="og:type" content="website"/>
       <meta name="msapplication-TileColor" content="">
       <meta name="msapplication-TileImage" content="">
 
       <!-- Safari, Chrome, Firefox, Opera -->
-      <link rel="icon" type="image/png" href=" {{ url('theme://build/images/favicon.png') }} "/>
+      <link rel="icon" type="image/png" href=" {{ url('theme://build/images/icons/favicon.png') }} "/>
       <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
       <!-- or, set /favicon.ico for IE10 win -->
       <link rel="canonical" href="{{ page.url(true, true) }}"/>
@@ -40,7 +40,7 @@
       <!-- Grav CSS hock  -->
       {% block stylesheets %}
         {% do
-          assets.addCss('theme://build/css/styles.css') %}
+          assets.addCss( 'theme://build/css/styles.css' ) %}
       {% endblock %}
       {{ assets.css() }}
       <!-- Icons & Favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
@@ -51,28 +51,34 @@
 
       <!-- Facebook Pixel Code -->
       <script>
-        !function(f, b, e, v, n, t, s) {
-          if (f.fbq)
+        !function ( f, b, e, v, n, t, s ) {
+          if ( f.fbq )
             return;
-          n = f.fbq = function() {
+          n = f.fbq = function ( ) {
             n.callMethod
-              ? n.callMethod.apply(n, arguments)
-              : n.queue.push(arguments)
+              ? n
+                .callMethod
+                .apply( n, arguments )
+              : n
+                .queue
+                .push( arguments )
           };
-          if (!f._fbq)
+          if ( !f._fbq )
             f._fbq = n;
           n.push = n;
           n.loaded = !0;
           n.version = '2.0';
-          n.queue = [];
-          t = b.createElement(e);
+          n.queue = [ ];
+          t = b.createElement( e );
           t.async = !0;
           t.src = v;
-          s = b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t, s)
-        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '181024245632288');
-        fbq('track', 'PageView');
+          s = b.getElementsByTagName( e )[ 0 ];
+          s
+            .parentNode
+            .insertBefore( t, s )
+        }( window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js' );
+        fbq( 'init', '181024245632288' );
+        fbq( 'track', 'PageView' );
       </script>
       <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=181024245632288&ev=PageView&noscript=1"/></noscript>
       <!-- DO NOT MODIFY -->

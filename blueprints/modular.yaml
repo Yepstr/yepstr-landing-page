@@ -32,6 +32,16 @@ form:
               type: text
               label: Intro subheadline
 
+            header.content.intro.image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Intro background image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
             header.content.page_headline:
               type: text
               label: Page headline

@@ -5,6 +5,9 @@ var ActivePageHighlight = {
     var pageId = $('body').data('page');
     var isActiveClass = 'is-active';
     var $highlightEls = $('.js-highlight');
+
+
+
     if($highlightEls.length == 0 || !pageId){
         return;
     }
@@ -13,6 +16,8 @@ var ActivePageHighlight = {
 
       var $t = $(this);
       var pageKey = $t.data('key');
+      console.log(pageId);
+      console.log(pageKey);
       if(pageKey === pageId){
         $t.addClass(isActiveClass);
       }

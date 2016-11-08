@@ -6,7 +6,7 @@
       <ul class="task-list reset-list">
         {% for link in home_page.header.content.task_links %}
           <li class="task-list__item">
-            <a data-key="{{link.href}}" class="js-highlight task-list__link task-list__link--{{ link.icon }}" href="{{ base_url }}{{ link.href }}">
+            <a data-key="{{ base_url }}{{link.href}}" class="js-highlight task-list__link task-list__link--{{ link.icon }}" href="{{ base_url }}{{ link.href }}">
               {{ link.text }}
             </a>
           </li>
