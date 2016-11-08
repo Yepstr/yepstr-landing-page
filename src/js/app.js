@@ -18,10 +18,16 @@ var app = {
     scrollToTarget.init();
     popupVideo.init();
     activePageHighlight.init();
+  },
+  load: function() {
     introMap.init();
   },
 };
 
-$(document).ready(function() {
+$( document ).ready(function() {
     app.init();
+});
+
+$( window ).load(function() {
+    app.load();
 });

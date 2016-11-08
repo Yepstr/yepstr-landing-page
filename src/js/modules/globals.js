@@ -2,8 +2,9 @@ var Globals = {
   breakpoints: {
     xsmall: 640,
     small: 800,
-    medium: 1100,
-    large: 1400,
+    medium: 970,
+    large: 1440,
+    xlarge: 1700,
   },
 };
 

@@ -27,6 +27,60 @@ form:
               title: Page content
               underline: true
 
+            header.content.task_nav_headline:
+              type: text
+              label: Task nav headline
+
+            animated_headline:
+              type: section
+              title: Animated headline
+              underline: true
+
+            header.content.intro.headline:
+              type: text
+              label: Intro headline
+
+            header.content.intro.sub_headline_start:
+              type: text
+              label: Animated headline start
+
+            header.content.intro.sub_headline_middle_area_1:
+              type: text
+              label: Animated headline area 1
+
+            header.content.intro.sub_headline_middle_area_2:
+              type: text
+              label: Animated headline area 2
+
+            header.content.intro.sub_headline_middle_area_3:
+              type: text
+              label: Animated headline area 3
+
+            header.content.intro.sub_headline_middle_area_4:
+              type: text
+              label: Animated headline area 4
+
+            header.content.intro.sub_headline_end:
+              type: text
+              label: Animated headline end
+
+            header.content.intro.animation_duration:
+              type: text
+              label: Animation duration (ms)
+
+            header.content.intro.animation_duration_long:
+              type: text
+              label: Animation duration long (ms) (the end of the animation)
+
+            header.content.intro.button_text:
+              type: text
+              label: CTA Button text
+
+            header.content.intro.button_href:
+              type: text
+              label: CTA Button link
+
+
 
         module_settings:
           type: tab

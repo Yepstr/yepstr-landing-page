@@ -1,10 +1,11 @@
 var $ = require('jquery');
+var globals = require('modules/globals');
 
 var IntroMap = {
   init: function() {
-    var animationDelay = 2500,
+    var firstAnimationDelay = 2500,
       //type effect
-      typeLettersDelay = 100,
+      typeLettersDelay = 80,
       selectionDuration = 500,
       typeAnimationDelay = selectionDuration + 800;
 
@@ -15,9 +16,13 @@ var IntroMap = {
       return;
     }
 
-    singleLetters($('.cd-headline.letters').find('b'));
-    //initialise headline animation
-    animateHeadline($('.cd-headline'));
+    var isMobile = $(window).width() < globals.breakpoints.medium;
+
+    if(!isMobile){
+      singleLetters($typeHeadline.find('b'));
+      //initialise headline animation
+      animateHeadline($typeHeadline);
+    }
 
     function singleLetters($words) {
       $words.each(function() {
@@ -37,59 +42,49 @@ var IntroMap = {
     }
 
     function animateHeadline($headlines) {
-      var duration = animationDelay;
-
       $headlines.each(function() {
         var headline = $(this);
+        var $firstWord = headline.find('.is-visible').eq(0);
         //trigger animation
         setTimeout(function() {
-          hideWord(headline.find('.is-visible').eq(0))
-        }, duration);
+          hideWord($firstWord)
+        }, firstAnimationDelay);
       });
     }
 
     function hideWord($word) {
       var nextWord = takeNext($word);
-      if ($word.parents('.cd-headline').hasClass('type')) {
-        var parentSpan = $word.parent('.cd-words-wrapper');
-        parentSpan.addClass('selected').removeClass('waiting');
-        setTimeout(function() {
-          parentSpan.removeClass('selected');
-          $word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
-        }, selectionDuration);
-        setTimeout(function() {
-          showWord(nextWord, typeLettersDelay, nextWord.data('background'))
-        }, typeAnimationDelay);
-
-      }
+      var parentSpan = $word.parent('.cd-words-wrapper');
+      parentSpan.addClass('selected').removeClass('waiting');
+      setTimeout(function() {
+        parentSpan.removeClass('selected');
+        $word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
+      }, selectionDuration);
+      setTimeout(function() {
+        showWord(nextWord, typeLettersDelay, nextWord.data('background'))
+      }, typeAnimationDelay);
     }
 
     function showWord($word, $duration, background) {
-      $introHeaderMap.css('background-image', 'url(' + background + ')');
-      if ($word.parents('.cd-headline').hasClass('type')) {
-        showLetter($word.find('i').eq(0), $word, false, $duration);
-        $word.addClass('is-visible').removeClass('is-hidden');
-      }
+      var changeBackgroundDelay = ($word.text().length - 10) * $duration;
+      setTimeout(function() {
+        $introHeaderMap.css('background-image', 'url(' + background + ')');
+      }, changeBackgroundDelay)
+      showLetter($word.find('i').eq(0), $word, $duration);
+      $word.addClass('is-visible').removeClass('is-hidden');
     }
 
-    function showLetter($letter, $word, $bool, $duration) {
+    function showLetter($letter, $word, $duration) {
       $letter.addClass('in').removeClass('out');
 
       if (!$letter.is(':last-child')) {
         setTimeout(function() {
-          showLetter($letter.next(), $word, $bool, $duration);
+          showLetter($letter.next(), $word, $duration);
         }, $duration);
       } else {
-        if ($word.parents('.cd-headline').hasClass('type')) {
-          setTimeout(function() {
-            $word.parents('.cd-words-wrapper').addClass('waiting');
-          }, 200);
-        }
-        if (!$bool) {
-          setTimeout(function() {
-            hideWord($word)
-          }, animationDelay)
-        }
+        setTimeout(function() {
+          hideWord($word)
+        }, $word.data('animationdelay'))
       }
     }
 

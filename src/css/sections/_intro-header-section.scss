@@ -59,7 +59,7 @@ $raster: '../images/graphics/raster.png';
 
   .intro-header--headline {
     @media #{$xsmall} {
-      font-size: rem(36);
+      font-size: rem(32);
     }
   }
 
@@ -90,6 +90,15 @@ $raster: '../images/graphics/raster.png';
     transition: background 1000ms;
     background-position: center;
     background-size: cover;
+
+    .intro-header--headline {
+      @media #{$large} {
+        font-size: rem(48);
+      }
+      @media #{$xsmall} {
+        font-size: rem(32);
+      }
+    }
 
     .intro-header--sub-headline {
 

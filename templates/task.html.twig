@@ -1,4 +1,5 @@
 {% extends 'shared/base.html.twig' %}
+{% set phc = page.header.content %}
 {% block content %}
   <!--  -->
   {{ include('partials/intro-header.html.twig') }}
@@ -7,7 +8,7 @@
   <!--  -->
   <section class="section margin-v-md">
     <div class="container container--no-grid container--lg margin-v-sm">
-      <h2 class="section-headline text--center">{{ page.header.content.page_headline }}</h2>
+      <h2 class="section-headline text--center">{{ phc.page_headline }}</h2>
     </div>
     <div class="container container--no-grid container--sm margin-v-sm">
       <div class="nice-type">

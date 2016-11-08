@@ -18,7 +18,7 @@
               {{ step.text }}
               {% if step.read_more_href and step.read_more_href != '/' %}
                 <br>
-                <a href="{{ step.read_more_href }}">{{ page.header.content.read_more_text }}</a>
+                <a href="{{ base_url }}{{ step.read_more_href }}">{{ page.header.content.read_more_text }}</a>
               {% endif %}
             </p>
             {% if step.image %}
