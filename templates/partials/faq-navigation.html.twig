@@ -5,7 +5,7 @@
     <ul class="reset-list faq-nav--list">
       {% for link in faq_index_page.header.content.faq_links %}
         <li class="js-highlight faq-nav--item" data-key="{{ link.href }}">
-          <a href="{{ faq_index_page.url }}/{{ link.href }}">
+          <a href="{{ base_url }}{{ link.href }}">
             {{ link.headline }}
           </a>
         </li>

@@ -5,7 +5,7 @@
   height: image-height($img);
 }
 /* Create prefixed keyframes */
-@mixin keyframe ($animation_name) {
+@mixin keyframes ($animation_name) {
    @-webkit-keyframes $animation_name{
     @content;
   }
@@ -19,6 +19,14 @@
      @content;
   }
 }
+@mixin transform ($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
 /* Create prefixed animation */
 @mixin animation ($delay, $duration, $animation) {
   -webkit-animation-delay: $delay;
@@ -48,5 +56,24 @@
 
   &:after {
     clear: both;
+  }
+}
+@mixin center($xy:xy) {
+   @if $xy == xy{
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
   }
 }

@@ -1,0 +1,35 @@
+title: Start
+@extends:
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            header.title:
+              type: ignore
+
+            header.redirect:
+              type: pages
+              size: medium
+              classes: fancy
+              label: Redirect to page
+              show_root: true
+              show_all: false
+              default: '/'

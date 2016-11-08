@@ -1,6 +1,6 @@
 {% set phc = page.header.content %}
 
-<section class="section margin-v-md padding-v-md background-color background--warm-grey">
+<section class="section margin-v-md padding-v-md background-color background--lightest-grey">
   <div class="container container--no-grid container--lg margin-v-sm">
     <h2 class="section-headline text--center">{{ phc.headline }}</h2>
   </div>
@@ -9,7 +9,7 @@
       <div class="col col--4 col--md-12">
         <div class="margin-sm hidden-md">
           <div style="max-width:300px; margin:0 auto;">
-            {{ page.find('/images').media[phc.headline].html('', '', 'img-circle') }}
+            {{ page.find('/images').media[phc.big_image].html('', '', 'img-circle') }}
           </div>
         </div>
       </div>

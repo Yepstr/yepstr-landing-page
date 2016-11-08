@@ -1,0 +1,56 @@
+title: Task
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.content.pages:
+              type: pages
+              size: medium
+              classes: fancy
+              label: PLUGIN_ADMIN.HOME_PAGE
+              show_all: true
+              help: PLUGIN_ADMIN.HOME_PAGE_HELP
+
+            header.content.filepicker:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Select a file
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+                - .svg
+
+            header.content.editor:
+              type: editor
+              label: PLUGIN_ADMIN.FRONTMATTER
+              codemirror:
+                mode: 'html'
+
+            header.conetent.list:
+              name: buttons
+              type: list
+              style: vertical
+              label: Buttons
+              fields:
+                .text:
+                  type: editor
+                  label: Editor
+                .url:
+                  type: text
+                  label: URL

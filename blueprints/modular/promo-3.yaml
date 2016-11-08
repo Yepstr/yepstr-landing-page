@@ -26,3 +26,34 @@ form:
 
             header.process:
               type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.headline:
+              type: text
+              label: Headline
+
+            header.content.left_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Left image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+                - .svg
+
+            header.content.right_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Right Image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+                - .svg

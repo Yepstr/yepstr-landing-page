@@ -27,18 +27,11 @@ form:
               title: Page content
               underline: true
 
-            header.content.intro.headline:
-              type: text
-              label: Intro headline
 
-            header.content.intro.sub_headline:
-              type: text
-              label: Intro subheadline
-
-            module_settings:
-              type: section
-              title: Module settings
-              underline: true
+        module_settings:
+          type: tab
+          title: Modules
+          fields:
 
             header.content.items:
               type: select
@@ -64,3 +57,95 @@ form:
               options:
                 asc: PLUGIN_ADMIN.ASCENDING
                 desc: PLUGIN_ADMIN.DESCENDING
+
+        task_nav:
+          type: tab
+          title: Task nav
+          fields:
+
+            header.content.task_links:
+              name: Task nav links
+              type: list
+              label: Task links
+
+              fields:
+                .icon:
+                  type: text
+                  label: Icon
+
+                .text:
+                  type: text
+                  label: text
+
+                .href:
+                  type: pages
+                  size: medium
+                  classes: fancy
+                  label: Href
+                  show_all: true
+                  default: '/'
+
+        media_logos:
+          type: tab
+          title: Media logos
+          fields:
+
+            header.content.media_logos.mitti_logo_path:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Mitt i
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.media_logos.thestockholmer_logo_path:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: thestockholmer
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.media_logos.entreprenor_logo_path:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: entreprenor
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.media_logos.ehandel_logo_path:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: ehandel
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.media_logos.digital_logo_path:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: digital
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.media_logos.breakit_logo_path:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: breakit
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg

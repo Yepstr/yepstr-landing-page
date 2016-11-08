@@ -1,7 +1,7 @@
-title: Start
+title: Modular
 @extends:
-  type: default
-  context: blueprints://pages
+    type: default
+    context: blueprints://pages
 
 form:
   fields:
@@ -14,9 +14,6 @@ form:
           fields:
 
             uploads:
-              type: ignore
-
-            content:
               type: ignore
 
             header.process:
@@ -35,10 +32,14 @@ form:
               type: text
               label: Intro subheadline
 
-            module_settings:
-              type: section
-              title: Module settings
-              underline: true
+            header.content.page_headline:
+              type: text
+              label: Page headline
+
+        module_settings:
+          type: tab
+          title: Modules
+          fields:
 
             header.content.items:
               type: select

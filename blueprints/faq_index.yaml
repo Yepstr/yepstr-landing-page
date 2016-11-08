@@ -1,0 +1,66 @@
+title: Faq Index
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.intro.headline:
+              type: text
+              label: Intro headline
+
+            header.content.intro.sub_headline:
+              type: text
+              label: Intro subheadline
+
+            header.content.page_headline:
+              type: text
+              label: Page headline
+
+            header.content.faq_index_back.text:
+              type: text
+              label: Faq index back link text
+
+            header.content.faq_links:
+              name: Faq nav links
+              type: list
+              label: Faq nav links
+
+              fields:
+                .headline:
+                  type: text
+                  label: Headline
+
+                .text:
+                  type: text
+                  label: Text
+
+                .href:
+                  type: pages
+                  size: medium
+                  classes: fancy
+                  label: Href
+                  show_all: false
+                  default: '/'

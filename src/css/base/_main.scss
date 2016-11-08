@@ -12,9 +12,6 @@ html {
   @media #{$small} {
     font-size: 11px;
   }
-  @media #{$xsmall} {
-    font-size: 10px;
-  }
 }
 
 body {

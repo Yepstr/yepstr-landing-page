@@ -1,10 +1,24 @@
 $bubble-point-bg-customer: '../images/graphics/bubble-point-customer.svg';
 $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
 
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  @media #{$medium} {
+    flex-direction: column;
+  }
+}
+
 .testimonial {
   text-align: center;
+  padding: 0 rem(15);
+  width: 100%;
+  max-width: 50%;
   @media #{$medium} {
     margin-bottom: rem(50);
+    max-width: 100%;
   }
 
   &--bubble {
@@ -14,7 +28,6 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
     font-size: rem(20);
     font-style: italic;
     position: relative;
-    min-height: 260px;
     @media #{$medium} {
       min-height: auto;
     }
@@ -51,6 +64,16 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
       &:after {
         background-image: url($bubble-point-bg-yep);
       }
+
+      span {
+        &:after {
+          content: "&quot;";
+        }
+
+        &:before {
+          content: "&quot;";
+        }
+      }
     }
   }
 
@@ -64,7 +87,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
     }
   }
 
-  &--text {
+  &--name {
     font-size: rem(24);
   }
 

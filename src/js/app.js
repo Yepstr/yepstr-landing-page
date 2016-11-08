@@ -9,6 +9,7 @@ var scrollToNav = require('modules/scrollToNav');
 var googleAnalyticsEventTracking = require('modules/googleAnalyticsEventTracking');
 var popupVideo = require('modules/popupVideo');
 var activePageHighlight = require('modules/activePageHighlight');
+var introMap = require('modules/introMap');
 
 var app = {
   init: function() {
@@ -17,6 +18,7 @@ var app = {
     scrollToTarget.init();
     popupVideo.init();
     activePageHighlight.init();
+    introMap.init();
   },
 };
 

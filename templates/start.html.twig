@@ -1,19 +1,45 @@
 {% extends 'shared/base.html.twig' %}
 {% block content %}
 
-  <div class="section--intro-header section--intro-header--full background background--darkBlue background--pos-center" style="background-image: url({{ base_url }}/user/pages/images/hero-start.jpg) ;">
-    <div class="text-wrapper text-wrapper--lg text--white">
-      <h1 class="intro-header--headline">{{ page.header.content.intro.headline }}</h1>
-      <h2 class="intro-header--sub-headline">{{ page.header.content.intro.sub_headline }}</h2>
+  <div class="section--intro-header section--intro-header--map-animation section--intro-header--raster js-intro-header--map-animation" style="background-image:url(/yepstr/user/themes/yepstr-landing-page/build/images/hero/hero-map-1.png);">
+    <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
+      <h1 class="intro-header--headline">Hur kan våra Yeppar hjälpa dig?</h1>
+      <h2 class="intro-header--sub-headline cd-headline js-type-headline letters type">
+        <span>
+          Vi har över
+        </span>
+        <span class="cd-words-wrapper">
+          <b data-background="/yepstr/user/themes/yepstr-landing-page/build/images/hero/hero-map-1.png" class="is-visible">450 drivna ungdomar i Stockholm</b>
+          <b data-background="/yepstr/user/themes/yepstr-landing-page/build/images/hero/hero-map-3.png">200 drivna ungdomar på Lidingö</b>
+          <b data-background="/yepstr/user/themes/yepstr-landing-page/build/images/hero/hero-map-2.png">150 drivna ungdomar i Täby</b>
+          <b data-background="/yepstr/user/themes/yepstr-landing-page/build/images/hero/hero-map-4.png">1000 drivna ungdomar</b>
+        </span>
+        <span>
+          som vill hjälpa sina grannar!
+        </span>
+      </h2>
       <div class="margin-v-sm">
         <a href="{{ base_url }}/bestallare/sa-funkar-det" class="btn btn--primary btn--orange btn--inline js-scroll-to-section ga-scroll-to-link" data-target="download-app">Kom igång!</a>
       </div>
     </div>
-    <div class="js-scroll-to-section ga-scroll-to-link" data-target="download-app"><img class="intro-splash-image" src="{{ url('theme://build/images/graphics/app-splash.png') }}"></div>
+    <div class="js-scroll-to-section ga-scroll-to-link" data-target="download-app"><img class="intro-splash-image" src="{{ url('theme://build/images/graphics/phone-mocks.png') }}"></div>
   </div>
-  <!--  -->
-  {{ include('partials/task_navigation.html.twig') }}
-  <!--  -->
+  <section class="section section--task-nav margin-v-md">
+    <div class="container container--no-grid container--md">
+      <h2 class="section-headline text--center">{{ page.header.content.page_headline }}</h2>
+      <nav role="navigation">
+        <ul class="task-list reset-list">
+          {% for link in page.header.content.task_links %}
+            <li class="task-list__item">
+              <a data-key="{{link.href}}" class="js-highlight task-list__link task-list__link--{{ link.icon }}" href="{{ base_url }}{{ link.href }}">
+                {{ link.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </section>
   {% for module in page.collection( ) %}
     {{ module.content }}
   {% endfor %}

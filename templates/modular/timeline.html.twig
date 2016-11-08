@@ -1,7 +1,9 @@
+{% set phc = page.header.content %}
+
 <section class="section margin-v-lg">
   <div class="container container--no-grid container--sm">
     <div class="timeline">
-      {% for step in page.header.steps %}
+      {% for step in phc.steps %}
         <div class="timeline--step">
           <div class="timeline--content">
             <h3 class="timeline--step-headline">
@@ -14,6 +16,10 @@
             </h3>
             <p class="timeline--step-text">
               {{ step.text }}
+              {% if step.read_more_href and step.read_more_href != '/' %}
+                <br>
+                <a href="{{ step.read_more_href }}">{{ page.header.content.read_more_text }}</a>
+              {% endif %}
             </p>
             {% if step.image %}
               <div class="timeline--step-image">

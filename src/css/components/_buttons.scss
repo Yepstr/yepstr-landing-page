@@ -67,7 +67,8 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
 
     &:focus,
     &:hover {
-      background: darken( $darkOrange, 10% );
+      border-color: darken( $darkOrange, 7% );
+      background: darken( $darkOrange, 7% );
     }
   }
 

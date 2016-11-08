@@ -10,7 +10,7 @@ $raster: '../images/graphics/raster.png';
     margin: 0 auto;
     text-align: center;
     padding: 150px 30px 100px;
-    @media #{$xsmall} {
+    @media #{$small} {
       padding: 100px 30px;
     }
 
@@ -25,8 +25,8 @@ $raster: '../images/graphics/raster.png';
 
     &--lg-padding {
       padding: 300px 30px 250px;
-      @media #{$xsmall} {
-        padding: 150px 30px 100px;
+      @media #{$small} {
+        padding: 100px 30px;
       }
     }
   }
@@ -52,7 +52,7 @@ $raster: '../images/graphics/raster.png';
       left: 0;
       right: 0;
       background-image: url($raster);
-      background-color: rgba($darkBlue, 0.2);
+      background-color: rgba($darkBlue, 0.4);
       z-index: 0;
     }
   }
@@ -64,8 +64,11 @@ $raster: '../images/graphics/raster.png';
   }
 
   .intro-header--sub-headline {
-    font-weight: 400;
-    font-size: rem(24);
+
+    font-size: rem(32);
+    @media #{$large} {
+      font-size: rem(24);
+    }
     @media #{$xsmall} {
       font-size: rem(22);
     }
@@ -73,12 +76,37 @@ $raster: '../images/graphics/raster.png';
 
   .intro-splash-image {
     position: absolute;
-    right: rem(63);
-    bottom: 0;
+    right: rem(35);
+    bottom: - rem(63);
     cursor: pointer;
     width: rem(203);
-    @media #{$xsmall} {
+    @media #{$medium} {
       display: none;
+    }
+  }
+
+  &--map-animation {
+    background-color: $darkBlue;
+    transition: background 1000ms;
+    background-position: center;
+    background-size: cover;
+
+    .intro-header--sub-headline {
+
+      font-size: rem(32);
+      @media #{$large} {
+        font-size: rem(24);
+      }
+      @media #{$xsmall} {
+        font-size: rem(22);
+      }
+    }
+
+    .cd-headline {
+      i {
+        font-style: normal;
+
+      }
     }
   }
 }
