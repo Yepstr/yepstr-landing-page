@@ -85,10 +85,11 @@ form:
                   type: text
                   label: Contact title
 
-                .phone:
-                  type: text
-                  label: Contact phone
-
-                .email:
-                  type: text
-                  label: Contact email
+            header.content.hide_footer_cta:
+              type: toggle
+              label: Hide footer CTA
+              highlight: true
+              default: false
+              options:
+                  true: Hide
+                  false: Show

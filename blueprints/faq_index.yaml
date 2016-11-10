@@ -39,6 +39,15 @@ form:
               type: text
               label: Page headline
 
+            header.content.hide_footer_cta:
+              type: toggle
+              label: Hide footer CTA
+              highlight: true
+              default: false
+              options:
+                  true: Hide
+                  false: Show
+
             header.content.faq_index_back.text:
               type: text
               label: Faq index back link text

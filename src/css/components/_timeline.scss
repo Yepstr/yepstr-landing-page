@@ -70,6 +70,11 @@
     width: 150px;
     position: absolute;
     top: - rem(40);
+
+    a {
+      cursor: zoom-in;
+      outline: none;
+    }
     @media #{$medium} {
       display: none;
     }

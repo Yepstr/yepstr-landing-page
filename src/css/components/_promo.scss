@@ -1,4 +1,13 @@
 .promo-small {
+  margin-top: rem(40);
+  @media #{$large} {
+    margin-top: 0;
+  }
+  @media #{$medium} {
+    text-align: center;
+    margin-top: rem(50);
+  }
+
   &--image {
     margin-bottom: rem(15);
     min-height: 100px;
@@ -12,17 +21,18 @@
   &--text {
     margin: 0;
   }
-  @media #{$medium} {
-    text-align: center;
-    margin-top: rem(50);
-  }
+}
+
+.promo-video-btn {
+  display: block;
+  width: 100%;
 }
 
 .promo-big {
   &--content {
     position: relative;
     @media #{$largeMin} {
-      padding-top: rem(100);
+      padding-top: rem(50);
     }
   }
 

@@ -9,15 +9,17 @@
 
   &--link {
     padding: rem(25);
-    min-height: 200px;
+    min-height: 180px;
     width: 31%;
     margin: 1%;
     float: left;
     display: block;
     color: $darkBlue;
-    background: $lightGrey;
+    border: 2px solid $darkBlue;
+    text-align: center;
     transition: background 200ms linear;
-    @media #{$medium} {
+    border-radius: 10px;
+    @media #{$large} {
       width: 48%;
       margin: 1%;
     }
@@ -28,7 +30,20 @@
     }
 
     &:hover {
-      background: darken( $lightGrey, 10% );
+      background: darken( $white, 5% );
+    }
+  }
+
+  &--headline {
+    &::after {
+
+      content: "";
+      display: block;
+      width: 40px;
+      height: 5px;
+      border-radius: 1px;
+      margin: rem(10) auto 0;
+      background: $darkOrange;
     }
   }
 }

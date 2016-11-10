@@ -1,0 +1,66 @@
+title: Download app
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/download-app
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/download-app
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            header.content.right_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Right Image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+                - .svg
+
+            header.content.ios.text:
+              type: text
+              label: iOS text
+              size: medium
+            header.content.ios.link:
+              type: text
+              label: iOS link
+              size: medium
+
+            header.content.android.text:
+              type: text
+              label: Android text
+              size: medium
+            header.content.android.link:
+              type: text
+              label: Android link
+              size: medium
+
+            header.content.web.text:
+              type: text
+              label: Web text
+              size: medium
+            header.content.web.link:
+              type: text
+              label: Web link
+              size: medium

@@ -33,13 +33,24 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
   @extend %btn;
 
   &--white {
+    background: $white;
+    border-color: $white;
+    color: $darkBlue;
+
+    &:focus,
+    &:hover {
+      border-color: darken( $white, 7% );
+      background: darken( $white, 7% );
+    }
+  }
+
+  &--white-ghost {
     border-color: $white;
     color: $white;
 
     &:focus,
     &:hover {
-      background-color: $white;
-      color: $darkBlue;
+      background-color: rgba( $white, .2 );
       outline: none;
     }
   }
@@ -99,7 +110,7 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
 
     &:focus,
     &:hover {
-      background-color: rgba( $white, .1 );
+      background-color: rgba( $white, .4 );
       outline: none;
     }
   }
@@ -110,7 +121,7 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
 
     &:focus,
     &:hover {
-      background-color: rgba( $white, .1 );
+      background-color: rgba( $white, .4 );
       outline: none;
     }
   }

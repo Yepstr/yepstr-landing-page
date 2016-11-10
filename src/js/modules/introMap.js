@@ -10,7 +10,8 @@ var IntroMap = {
       typeAnimationDelay = selectionDuration + 800;
 
     var $typeHeadline = $('.cd-headline');
-    var $introHeaderMap = $('.js-intro-header--map-animation');
+    var $mapBackgroundWrapper = $('.js-map-backgrounds');
+    var $mapBackgrounds = $mapBackgroundWrapper.find('.map-background');
 
     if ($typeHeadline.length == 0) {
       return;
@@ -65,10 +66,12 @@ var IntroMap = {
       }, typeAnimationDelay);
     }
 
-    function showWord($word, $duration, background) {
+    function showWord($word, $duration, backgroundClass) {
       var changeBackgroundDelay = ($word.text().length - 10) * $duration;
+      var $targetBackground = $mapBackgroundWrapper.find(backgroundClass);
       setTimeout(function() {
-        $introHeaderMap.css('background-image', 'url(' + background + ')');
+        $mapBackgrounds.removeClass('is-visible');
+        $targetBackground.addClass('is-visible');
       }, changeBackgroundDelay)
       showLetter($word.find('i').eq(0), $word, $duration);
       $word.addClass('is-visible').removeClass('is-hidden');

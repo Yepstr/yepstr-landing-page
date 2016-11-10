@@ -1,22 +1,26 @@
+{% set phc = page.header.content %}
+
 <footer class="main-footer">
-  <div class="main-footer--top">
-    <div class="container container--no-grid">
-      <div class="promo-image">
-        <figure>
-          <figcaption>
-            <strong>Använd Yepstr vart det passar dig</strong>
-            <br>
-            iPhone, Android eller via webben
-          </figcaption>
-          <img src="{{ url('theme://build/images/graphics/app-screen-splash.png') }}" alt="">
-        </figure>
-      </div>
-      <div class="cta-buttons">
-        <a class="btn btn--orange btn--inline" href="https://app.yepstr.com/userRoleCrossroads">Skapa konto</a>
-        <a class="btn btn--orange-ghost btn--inline" href="{{ base_url }}/bestallare/sa-funkar-det">Hur går det till?</a>
+  {% if not phc.hide_footer_cta %}
+    <div class="main-footer--top background background--green">
+      <div class="container container--no-grid">
+        <div class="promo-image">
+          <figure>
+            <figcaption class="text--white">
+              <strong>Använd Yepstr vart det passar dig</strong>
+              <br>
+              iPhone, Android eller via webben
+            </figcaption>
+            <img src="{{ url('theme://build/images/graphics/app-screen-splash.png') }}" alt="">
+          </figure>
+        </div>
+        <div class="cta-buttons">
+          <a class="btn btn--white text--green btn--inline" href="https://app.yepstr.com/userRoleCrossroads">Skapa konto</a>
+          <a class="btn btn--white-ghost btn--inline" href="{{ base_url }}/bestallare/sa-funkar-det">Så funkar det</a>
+        </div>
       </div>
     </div>
-  </div>
+  {% endif %}
   <div class="main-footer--middle background background--darkblue">
     <div class="container container--no-grid padding-v-md">
       <div class="company-info">
@@ -66,7 +70,7 @@
             </ul>
           </li>
           <li>
-            <strong>Företaget</strong>
+            <strong>Mer om Yepstr</strong>
             <ul class="reset-list">
               <li>
                 <a href="{{ base_url }}/foretaget/om-oss">Om oss</a>
@@ -107,7 +111,6 @@
       <nav class="app-links">
         <a href="https://play.google.com/store/apps/details?id=com.yepstr.android" class="download-app-btn download-app-btn--google-play ga-outbound-link">Get it on Google Play</a>
         <a href="https://itunes.apple.com/se/app/yepstr/id1069311381?mt=8" class="download-app-btn download-app-btn--app-store ga-outbound-link">Availible on the App Store</a>
-        <a href="https://mixpanel.com/f/partner" rel="nofollow" class="ga-outbound-link"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics"/></a>
       </nav>
     </div>
   </div>

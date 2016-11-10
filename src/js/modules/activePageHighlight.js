@@ -16,8 +16,6 @@ var ActivePageHighlight = {
 
       var $t = $(this);
       var pageKey = $t.data('key');
-      console.log(pageId);
-      console.log(pageKey);
       if(pageKey === pageId){
         $t.addClass(isActiveClass);
       }

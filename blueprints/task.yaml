@@ -46,6 +46,15 @@ form:
               type: text
               label: Page headline
 
+            header.content.hide_footer_cta:
+              type: toggle
+              label: Hide footer CTA
+              highlight: true
+              default: false
+              options:
+                  true: Hide
+                  false: Show
+
         module_settings:
           type: tab
           title: Modules

@@ -21,16 +21,6 @@ body {
     overflow: hidden;
   }
 
-  &.map-animation-backgrounds {
-    &::after {
-      position: absolute;
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      z-index: -1;
-      content: url("../images/hero/hero-map-2.jpg") url("../images/hero/hero-map-2.jpg") url("../images/hero/hero-map-3.jpg") url("../images/hero/hero-map-4.jpg");
-    }
-  }
 }
 
 button {

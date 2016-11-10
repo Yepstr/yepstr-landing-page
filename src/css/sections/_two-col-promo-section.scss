@@ -83,9 +83,13 @@ $col-two-icon: '../images/graphics/promo-lock.svg';
       }
     }
 
-    &--content {}
-
-    &--headline {}
+    &--content {
+      padding: rem(50);
+      @media #{$xsmall} {
+        padding-left: rem(25);
+        padding-right: rem(25);
+      }
+    }
 
   }
 

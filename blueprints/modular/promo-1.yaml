@@ -35,6 +35,17 @@ form:
               title: Page content
               underline: true
 
+            header.content.video_button_image:
+                type: filepicker
+                size: medium
+                folder: 'page@:/images'
+                label: Video button backgound image
+                preview_images: true
+                acccept:
+                  - .png
+                  - .jpg
+                  - .svg
+
             header.content.promo_one.image:
                 type: filepicker
                 size: medium
