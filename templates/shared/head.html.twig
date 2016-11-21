@@ -24,13 +24,13 @@
         property="og:description"
         content="På Yepstr kan hushåll få kontakt med drivna ungdomar i grannskapet för enklare uppdrag (gräsklippning, hundpassning etc.). Genom att använda Yepstr är du med och bygger ungdomarnas första riktiga CV. Praktisk erfarenhet utanför skolan leder ofta till det där första sommarjobbet, vilket leder till större chans att få praktik under universitetsstudierna vilket ökar chansen att få det där första riktiga jobbet."/>
       <meta property="og:url" content="http://yepstr.com"/>
-      <meta property="og:image" content=" {{ url('theme://build/images/facebook/fb-image.png') }} "/>
+      <meta property="og:image" content="{{ url('theme://build/images/facebook/fb-image.png') }}"/>
       <meta property="og:type" content="website"/>
       <meta name="msapplication-TileColor" content="">
       <meta name="msapplication-TileImage" content="">
 
       <!-- Safari, Chrome, Firefox, Opera -->
-      <link rel="icon" type="image/png" href=" {{ url('theme://build/images/icons/favicon.png') }} "/>
+      <link rel="icon" type="image/png" href="{{ url('theme://build/images/icons/favicon.png') }}"/>
       <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
       <!-- or, set /favicon.ico for IE10 win -->
       <link rel="canonical" href="{{ page.url(true, true) }}"/>
@@ -48,7 +48,27 @@
 
       <!-- Grav js hock  -->
       {{ assets.js() }}
-
+      <!-- Google Tag Manager -->
+      <script>
+        ( function ( w, d, s, l, i ) {
+          w[l] = w[l] || [ ];
+          w[l].push({
+            'gtm.start': new Date( ).getTime( ),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName( s )[0],
+            j = d.createElement( s ),
+            dl = l != 'dataLayer'
+              ? '&l=' + l
+              : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f
+            .parentNode
+            .insertBefore( j, f );
+        })( window, document, 'script', 'dataLayer', 'GTM-TV3573' );
+      </script>
+      <!-- End Google Tag Manager -->
       <!-- Facebook Pixel Code -->
       <script>
         !function ( f, b, e, v, n, t, s ) {
