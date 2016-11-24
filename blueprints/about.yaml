@@ -1,0 +1,95 @@
+title: About
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.intro.headline:
+              type: text
+              label: Intro headline
+
+            header.content.intro.sub_headline:
+              type: text
+              label: Intro subheadline
+
+            header.content.intro.image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Intro background image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.page_headline:
+              type: text
+              label: Page headline
+
+            header.content.press.headline:
+                type: text
+                label: Press headline
+
+            header.content.press.text:
+                type: editor
+                label: Press text (html inside p tag)
+                size: medium
+                codemirror:
+                  mode: 'html'
+
+            header.content.contact_cards_headline:
+              type: text
+              label: Contact card headline
+
+            header.content.contact_cards:
+              name: contact_cards
+              type: list
+              label: Contact cards
+
+              fields:
+                .image:
+                    type: filepicker
+                    size: medium
+                    folder: 'page@:/images'
+                    label: Choose a contact image
+                    preview_images: true
+                    acccept:
+                      - .png
+                      - .jpg
+
+                .name:
+                  type: text
+                  label: Contact name
+
+                .title:
+                  type: text
+                  label: Contact title
+
+            header.content.hide_footer_cta:
+              type: toggle
+              label: Hide footer CTA
+              highlight: true
+              default: false
+              options:
+                  true: Hide
+                  false: Show

@@ -1,8 +1,7 @@
 /* Font faces */
-$baseFontFamily: 'Helvetica Neue', Helvetica, Arial;
-
-// Colors
+$baseFontFamily: 'Helvetica Neue', Helvetica, Arial; // Colors
 $white: #ffffff;
+$offWhite: #f8f8f8;
 $black: #000000;
 $lightBlue: #58b2d8;
 $darkBlue: #2b2c3d;
@@ -13,16 +12,16 @@ $lightOrange: #f5ad4e;
 $darkOrange: #f59b25;
 $green: #6cb76a;
 $red: #d54544;
-
 /* Break Points */
 $xxsmall: "screen and (max-width: 350px)";
 $xsmall: "screen and (max-width: 640px)";
 $small: "screen and (max-width: 800px)";
-$medium: "screen and (max-width: 1100px)";
+$medium: "screen and (max-width: 970px)";
 $large: "screen and (max-width: 1440px)";
-
+$xlarge: "screen and (max-width: 1700px)";
 $xxsmallMin: "screen and (min-width: 351px)";
 $xsmallMin: "screen and (min-width: 641px)";
 $smallMin: "screen and (min-width: 801px)";
-$mediumMin: "screen and (min-width: 1101px)";
+$mediumMin: "screen and (min-width: 971px)";
 $largeMin: "screen and (min-width: 1441px)";
+$xlargeMin: "screen and (min-width: 1701px)";

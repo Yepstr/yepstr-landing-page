@@ -12,16 +12,15 @@ html {
   @media #{$small} {
     font-size: 11px;
   }
-  @media #{$xsmall} {
-    font-size: 10px;
-  }
 }
 
 body {
   position: relative;
+
   &.no-scroll {
     overflow: hidden;
   }
+
 }
 
 button {
@@ -35,26 +34,9 @@ img {
 }
 
 a {
-  color: $lightBlue;
+  color: $darkOrange;
+  font-weight: 600;
   text-decoration: none;
-}
-
-.bg-container {
-  background: url('../images/bg.jpg') no-repeat;
-  background-size: cover;
-}
-
-.video-disclaimer {
-  color: #9fa0a8;
-}
-
-.success-msg {
-  opacity: 0;
-  margin-top: 10px;
-  transition: opacity 400ms;
-  &.show {
-    opacity: 1;
-  }
 }
 
 hr {

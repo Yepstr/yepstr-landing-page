@@ -1,0 +1,38 @@
+{% set phc = page.header.content %}
+
+<section class="section margin-v-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col col--5 col--md-12">
+        <a class="promo-video-btn js-popup-video-button" href="http://www.youtube.com/watch?v=0EtlUOMbdPk">
+          {{ page.find('/images').media[phc.video_button_image].html('', '', 'img--rounded') }}
+        </a>
+      </div>
+      <div class="col col--7 col--md-12">
+        <div class="row">
+          <div class="col col--4 col--sm-12">
+            <div class="promo-small">
+              <div class="promo-small--image">{{ page.find('/images').media[phc.promo_one.image] }}</div>
+              <h2 class="promo-small--headline">{{ phc.promo_one.headline }}</h2>
+              <p class="promo-small--text">{{ phc.promo_one.text }}</p>
+            </div>
+          </div>
+          <div class="col col--4 col--sm-12">
+            <div class="promo-small">
+              <div class="promo-small--image">{{ page.find('/images').media[phc.promo_two.image] }}</div>
+              <h2 class="promo-small--headline">{{ phc.promo_two.headline }}</h2>
+              <p class="promo-small--text">{{ phc.promo_two.text }}</p>
+            </div>
+          </div>
+          <div class="col col--4 col--sm-12">
+            <div class="promo-small">
+              <div class="promo-small--image">{{ page.find('/images').media[phc.promo_three.image] }}</div>
+              <h2 class="promo-small--headline">{{ phc.promo_three.headline }}</h2>
+              <p class="promo-small--text">{{ phc.promo_three.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

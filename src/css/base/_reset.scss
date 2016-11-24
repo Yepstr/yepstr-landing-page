@@ -3,7 +3,58 @@ html {
   padding: 0;
   border: 0;
 }
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+
+a,
+abbr,
+acronym,
+address,
+article,
+aside,
+blockquote,
+body,
+caption,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+iframe,
+img,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+section,
+span,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +65,15 @@ body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
   vertical-align: baseline;
 }
 
-article, aside, dialog, figure, footer, header, hgroup, nav, section {
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
   display: block;
 }
 
@@ -28,24 +87,27 @@ table {
   border-spacing: 0;
 }
 
-caption, th, td {
+caption,
+td,
+th {
   text-align: left;
   font-weight: normal;
   float: none !important;
 }
 
-table, th, td {
+table,
+td,
+th {
   vertical-align: middle;
 }
 
-blockquote before, blockquote after, q before, q after {
+blockquote after,
+blockquote before,
+q after,
+q before {
   content: '';
 }
 
 a img {
   border: none;
-}
-
-b, i {
-    display: none;
 }

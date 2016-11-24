@@ -1,0 +1,16 @@
+.contact-card {
+  text-align: center;
+  margin: rem(50) rem(25);
+  font-size: rem(20);
+
+  &--image {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  &--name {
+    margin-top: rem(25);
+    font-weight: 600;
+  }
+}

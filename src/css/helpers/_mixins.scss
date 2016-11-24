@@ -1,48 +1,79 @@
 /* Set $img as background-image & give the image dimensions to the element */
-@mixin background-image-fit($img){
-    background-image: url($img);
-    width: image-width($img);
-    height: image-height($img);
+@mixin background-image-fit($img) {
+  background-image: url($img);
+  width: image-width($img);
+  height: image-height($img);
 }
-
 /* Create prefixed keyframes */
-@mixin keyframe ($animation_name) {
-    @-webkit-keyframes $animation_name {
-        @content;
-    }
-
-    @-moz-keyframes $animation_name {
-        @content;
-    }
-
-    @-o-keyframes $animation_name {
-        @content;
-    }
-
-    @keyframes $animation_name {
-        @content;
-    }
+@mixin keyframes ($animation_name) {
+   @-webkit-keyframes $animation_name{
+    @content;
+  }
+  @-moz-keyframes $animation_name {
+     @content;
+  }
+  @-o-keyframes $animation_name {
+     @content;
+  }
+  @keyframes $animation_name {
+     @content;
+  }
+}
+@mixin transform ($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
 }
 
 /* Create prefixed animation */
 @mixin animation ($delay, $duration, $animation) {
-    -webkit-animation-delay: $delay;
-    -webkit-animation-duration: $duration;
-    -webkit-animation-name: $animation;
-    -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-name: $animation;
+  -o-animation-fill-mode: forwards;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: forwards;
+}
+/* Create prefixed animation */
+@mixin clearfix () {
+  &:after,
+  &:before {
+    content: " ";
+    display: table;
+  }
 
-    -moz-animation-delay: $delay;
-    -moz-animation-duration: $duration;
-    -moz-animation-name: $animation;
-    -moz-animation-fill-mode: forwards;
-
-    -o-animation-delay: $delay;
-    -o-animation-duration: $duration;
-    -o-animation-name: $animation;
-    -o-animation-fill-mode: forwards;
-
-    animation-delay: $delay;
-    animation-duration: $duration;
-    animation-name: $animation;
-    animation-fill-mode: forwards;
+  &:after {
+    clear: both;
+  }
+}
+@mixin center($xy:xy) {
+   @if $xy == xy{
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
 }

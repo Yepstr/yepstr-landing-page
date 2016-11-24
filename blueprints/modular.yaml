@@ -1,0 +1,86 @@
+title: Modular
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.intro.headline:
+              type: text
+              label: Intro headline
+
+            header.content.intro.sub_headline:
+              type: text
+              label: Intro subheadline
+
+            header.content.intro.image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Intro background image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+            header.content.page_headline:
+              type: text
+              label: Page headline
+
+            header.content.hide_footer_cta:
+              type: toggle
+              label: Hide footer CTA
+              highlight: true
+              default: false
+              options:
+                  true: Hide
+                  false: Show
+
+        module_settings:
+          type: tab
+          title: Modules
+          fields:
+
+            header.content.items:
+              type: select
+              label: PLUGIN_ADMIN.ITEMS
+              default: '@self.modular'
+              options:
+                '@self.modular': Modular Children
+
+            header.content.order.by:
+              type: select
+              label: PLUGIN_ADMIN.ORDER_BY
+              default: folder
+              options:
+                folder: PLUGIN_ADMIN.FOLDER
+                title: PLUGIN_ADMIN.TITLE
+                date: PLUGIN_ADMIN.DATE
+                default: PLUGIN_ADMIN.DEFAULT
+
+            header.content.order.dir:
+              type: select
+              label: PLUGIN_ADMIN.ORDER
+              default: asc
+              options:
+                asc: PLUGIN_ADMIN.ASCENDING
+                desc: PLUGIN_ADMIN.DESCENDING

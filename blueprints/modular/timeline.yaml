@@ -1,0 +1,87 @@
+title: Timeline
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/timeline
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/timeline
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            header.content.read_more_text:
+              type: text
+              size: medium
+              label: Read more link text
+
+            header.content.steps:
+              name: steps
+              type: list
+              label: Steps
+
+              fields:
+
+                .step:
+                  type: text
+                  label: Step number (Not used on page)
+
+                .header:
+                  type: text
+                  label: Header
+
+                .text:
+                  type: editor
+                  label: Text (html inside p tag)
+                  codemirror:
+                    mode: 'html'
+                    indentUnit: 4
+                    indentWithTabs: true
+                    lineNumbers: true
+                    styleActiveLine: true
+                    gutters: ['CodeMirror-lint-markers']
+                    lint: true
+
+                .read_more_href:
+                  type: pages
+                  size: medium
+                  classes: fancy
+                  label: Read more link (root = don't show)
+                  show_root: true
+                  show_all: false
+                  default: '/'
+
+                .image:
+                    type: filepicker
+                    size: medium
+                    folder: 'page@:/images'
+                    label: Choose a screenshot image
+                    preview_images: true
+                    acccept:
+                      - .png
+                      - .jpg
+                      - .svg

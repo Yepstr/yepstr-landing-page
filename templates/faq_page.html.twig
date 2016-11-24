@@ -1,0 +1,37 @@
+{% extends 'shared/base.html.twig' %}
+
+{% set page_content = page.header.content %}
+{% set faq_index_page = page.parent( ) %}
+
+{% block content %}
+  <!--  -->
+  {{ include('partials/intro-header.html.twig') }}
+  <!--  -->
+  <section class="section margin-v-lg">
+    <div class="container container--md margin-v-sm">
+      <div class="row">
+        <div class="col col--8 col--offset-4 col--sm-12 col--sm-offset-0">
+          <div class="visible-sm nice-type">
+            <a href="{{ faq_index_page.url }}">{{ faq_index_page.header.content.faq_index_back.text }}</a>
+          </div>
+          <h2 class="section-headline">{{ page_content.page_headline }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container container--md">
+      <div class="row">
+        <div class="col col--4 col--sm-12">
+          <!--  -->
+          {{ include('partials/faq-navigation.html.twig') }}
+          <!--  -->
+        </div>
+        <div class="col col--8 col--sm-12">
+          <div class="nice-type">
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

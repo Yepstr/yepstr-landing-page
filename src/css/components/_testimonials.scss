@@ -1,0 +1,94 @@
+$bubble-point-bg-customer: '../images/graphics/bubble-point-customer.svg';
+$bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  @media #{$medium} {
+    flex-direction: column;
+  }
+}
+
+.testimonial {
+  text-align: center;
+  padding: 0 rem(15);
+  width: 100%;
+  max-width: 50%;
+  @media #{$medium} {
+    margin-bottom: rem(50);
+    max-width: 100%;
+  }
+
+  &--bubble {
+    background-color: $lightBlue;
+    border-radius: 10px;
+    color: $white;
+    font-size: rem(20);
+    font-style: italic;
+    position: relative;
+    @media #{$medium} {
+      min-height: auto;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-30px);
+      height: 20px;
+      width: 60px;
+      background-image: url($bubble-point-bg-customer);
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--customer {
+    .testimonial--bubble {
+      background-color: $lightBlue;
+
+      &:after {
+        background-image: url($bubble-point-bg-customer);
+      }
+    }
+  }
+
+  &--yep {
+    .testimonial--bubble {
+      background-color: $darkOrange;
+
+      &:after {
+        background-image: url($bubble-point-bg-yep);
+      }
+
+      span {
+        &:after {
+          content: "&quot;";
+        }
+
+        &:before {
+          content: "&quot;";
+        }
+      }
+    }
+  }
+
+  &--image {
+    margin-top: rem(40);
+    margin-bottom: rem(20);
+
+    img {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  &--name {
+    font-size: rem(24);
+  }
+
+}

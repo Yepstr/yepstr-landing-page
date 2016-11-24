@@ -1,90 +1,111 @@
-.background{
+.background {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   // Helpers (add more as we need them)
-  &--pos-left{
+  &--pos-left {
     background-position: center left;
   }
-  &--pos-right{
+
+  &--pos-right {
     background-position: center right;
   }
-  &--pos-top{
+
+  &--pos-top {
     background-position: center top;
   }
-  &--pos-bottom{
+
+  &--pos-bottom {
     background-position: center bottom;
   }
   // backgrounds
-  &--white{
+  &--white {
     background-color: $white;
   }
-  &--orange{
+
+  &--orange {
     background-color: $darkOrange;
   }
-  &--blue{
+
+  &--blue {
     background-color: $lightBlue;
   }
-  &--darkblue{
+
+  &--darkblue {
     background-color: $darkBlue;
   }
-  &--grey{
+
+  &--grey {
     background-color: $lightGrey;
   }
-  &--dark-grey{
+
+  &--dark-grey {
     background-color: $darkGrey;
   }
-  &--lightest-grey{
+
+  &--lightest-grey {
     background-color: $lightestGrey;
   }
-  &--warm-grey{
+
+  &--warm-grey {
     background-color: $lightGrey;
   }
-  &--green{
+
+  &--green {
     background-color: $green;
   }
-  &--orange-pattern{
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--orange-pattern {
     background-color: $darkOrange;
-    background-image: url("../images/patterns/bg-yellow.png");
+    background-image: url("../images/backgrounds/patterns/bg-yellow.png");
   }
-  &--blue-pattern{
+
+  &--blue-pattern {
     background-color: $lightBlue;
-    background-image: url("../images/patterns/bg-blue.png");
+    background-image: url("../images/backgrounds/patterns/bg-blue.png");
   }
-  &--dark-blue-pattern{
+
+  &--dark-blue-pattern {
     background-color: $darkBlue;
-    background-image: url("../images/patterns/bg-dark.png");
+    background-image: url("../images/backgrounds/patterns/bg-dark.png");
   }
-  &--grey-pattern{
+
+  &--grey-pattern {
     background-color: $lightGrey;
-    background-image: url("../images/patterns/bg-grey.png");
+    background-image: url("../images/backgrounds/patterns/bg-grey.png");
   }
-  &--warm-grey-pattern{
+
+  &--warm-grey-pattern {
     background-color: $lightGrey;
-    background-image: url("../images/patterns/bg-warm-grey.png");
+    background-image: url("../images/backgrounds/patterns/bg-warm-grey.png");
   }
-  &--green-pattern{
+
+  &--green-pattern {
     background-color: $green;
-    background-image: url("../images/patterns/bg-green.png");
+    background-image: url("../images/backgrounds/patterns/bg-green.png");
   }
-  &--gradient-pattern{
+
+  &--gradient-pattern {
     background-color: $lightBlue;
-    background-image: url("../images/patterns/bg-gradient.png");
+    background-image: url("../images/backgrounds/patterns/bg-gradient.png");
   }
-  &--map-pattern{
-    background-color: $lightGrey;
-    background-image: url("../images/bg.jpg");
-  }
-  &--summer-job{
+
+  &--summer-job {
     background-color: $darkBlue;
-    background-image: url("../images/summer-job.jpg");
+    background-image: url("../images/hero/summer-job.jpg");
   }
-  &--customer-hero{
+
+  &--customer-hero {
     background-color: $darkBlue;
-    background-image: url("../images/customer-hero.jpg");
+    background-image: url("../images/hero/customer-hero.jpg");
   }
-  &--yep-hero{
+
+  &--yep-hero {
     background-color: $darkBlue;
-    background-image: url("../images/yep-hero.jpg");
+    background-image: url("../images/hero/yep-hero.jpg");
   }
 }

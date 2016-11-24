@@ -1,0 +1,68 @@
+title: Timeline
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/timeline
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/timeline
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            header.content.testimonials:
+              type: list
+              label: Testimonials
+
+              fields:
+
+                .quote:
+                  type: textarea
+                  label: Quote
+
+                .name:
+                  type: text
+                  label: Name
+
+                .image:
+                    type: filepicker
+                    size: medium
+                    folder: 'page@:/images'
+                    label: Choose a image
+                    preview_images: true
+                    acccept:
+                      - .png
+                      - .jpg
+                      - .svg
+
+                .type:
+                  type: select
+                  label: User type
+                  default: Customer
+                  options:
+                    customer: 'Customer'
+                    yep: 'Yep'

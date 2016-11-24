@@ -1,0 +1,58 @@
+{% extends 'shared/base.html.twig' %}
+{% block content %}
+  <!--  -->
+  {{ include('partials/intro-header.html.twig') }}
+  <!--  -->
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">{{ page.header.content.page_headline }}</h2>
+    </div>
+    <div class="container container--no-grid container--md margin-v-sm">
+      <div class="col col--8 col--md-12">
+        <div class="nice-type">
+          {{ page.content }}
+        </div>
+      </div>
+      <div class="col col--4 col--md-12">
+        <div class="press-info">
+          <div class="press-info--bubble padding-sm center-content">
+            <div class="press-info--content" href="#">
+              <h2 class="press-info--headline">{{ page.header.content.press.headline }}</h2>
+              <div class="press-info--text">
+                <p>
+                  {{ page.header.content.press.text }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">
+        {{ page.header.content.contact_cards_headline }}
+      </h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        {% for card in page.header.content.contact_cards %}
+          <div class="col col--3 col--lg-4 col--md-6 col--xs-12">
+            <div class="contact-card">
+              <div class="contact-card--image">
+                {{ page.find('/images').media[card.image].html('','','img--circle') }}
+              </div>
+              <div class="contact-card--name">{{ card.name }}</div>
+              <div class="contact-card--title">{{ card.title }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  {{ include('partials/in-the-media.html.twig') }}
+  <!--  -->
+{% endblock %}

@@ -1,35 +1,8 @@
 .section {
-	// background-color: $white;
-	text-align: center;
 	position: relative;
-	overflow: hidden;
-	padding: 0 rem(15);
 
 	&--full {
 		min-height: 100vh;
-	}
-
-	&--intro {
-		color: $white;
-	}
-
-	&--how-it-works {
-		padding-top: rem(50);
-		padding-bottom: rem(50);
-
-		@media #{$xsmall} {
-			min-height: auto;
-		}
-	}
-
-	&--subscribe {
-		@media #{$xsmall} {
-			min-height: 930px;
-		}
-	}
-
-	&--promo {
-		padding-bottom: rem(60);
 	}
 
 	&__center-content {
@@ -43,9 +16,9 @@
 		width: 100%;
 		padding: 0 rem(15);
 	}
-	.section-headline{
-		&--light{
-			color: $white;
-		}
-	}
+}
+
+.main--content .section:first-child,
+.main--content .section:first-child div:first-child {
+	margin-top: 0 !important;
 }

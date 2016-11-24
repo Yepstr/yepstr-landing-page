@@ -1,0 +1,202 @@
+.main-header-wrapper {
+  z-index: 100;
+  width: 100%;
+  padding: 20px 30px 15px;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 95%);
+  transition: background-color 0.3s cubic-bezier(.55, 0, .1, 1), opacity 0.3s cubic-bezier(.55, 0, .1, 1);
+  @media #{$small} {
+    padding: 5px 15px 10px;
+    background: $offWhite;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .site-logo {
+    transition: color 0.2s cubic-bezier(.55, 0, .1, 1);
+    color: $white;
+    text-decoration: none;
+    font-size: rem(36);
+    float: left;
+    padding-right: rem(50);
+    font-weight: 600;
+
+    &:hover {
+      color: $lightGrey;
+    }
+    @media #{$small} {
+      float: none;
+      color: $darkBlue;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  .main-header-nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        display: block;
+        position: relative;
+        float: left;
+
+        a {
+          display: inline-block;
+          padding: 15px;
+          text-decoration: none;
+          color: $white;
+          font-size: rem(18);
+          font-weight: 600;
+          position: relative;
+          z-index: 1;
+
+          &:hover {
+            color: $lightGrey;
+          }
+          @media #{$medium} {
+            font-size: rem(15);
+          }
+          @media #{$small} {
+            color: $darkBlue;
+
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+        @media #{$smallMin} {
+          &.highlight-border {
+            overflow: hidden;
+
+            a {
+              border-radius: 10px;
+              border: 2px solid $white;
+              padding: 13px;
+
+              &:hover {
+                background: rgba($white, 0.05);
+              }
+            }
+
+            .highlight-msg {
+              transition: all 150ms ease-in-out;
+              background-color: $white;
+              border-radius: 10px;
+              color: $darkBlue;
+              position: absolute;
+              width: 220px;
+              top: 65px;
+              left: 0;
+              transform: translate(0, 10px);
+              margin: 0 auto;
+              font-size: rem(16);
+              padding: rem(10);
+              z-index: 100;
+              font-weight: 600;
+              opacity: 0;
+            }
+
+            &:hover {
+              overflow: visible;
+
+              .highlight-msg {
+                opacity: 1;
+                transform: translate(0,0);
+              }
+            }
+          }
+        }
+        @media #{$small} {
+          .highlight-msg {
+            display: none;
+          }
+        }
+
+        &.highlight a {
+          color: $darkOrange;
+
+          &:hover {
+            color: darken($darkOrange, 10%);
+          }
+        }
+      }
+    }
+
+    &.main-nav {
+      float: left;
+      @media #{$small} {
+        margin-top: 10px;
+        float: none;
+        width: 100%;
+        background: $white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50px;
+        text-align: center;
+        border-top: 1px solid $lightestGrey;
+        border-bottom: 1px solid $lightestGrey;
+
+        li {
+
+          padding: 0 1%;
+          width: 31%;
+          float: none;
+          display: inline-block;
+
+          a {
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+
+    &.support-nav {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      text-align: right;
+      @media #{$small} {
+        right: 15px;
+        top: 12px;
+      }
+
+      li {
+        a {
+          @media #{$small} {
+            padding: 10px 0 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-nav {
+  position: fixed;
+  bottom: rem(20);
+  right: rem(30);
+  z-index: 100;
+
+  &--list {}
+
+  &--item {
+    margin: rem(10);
+
+    a {
+      box-shadow: 0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16);
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $darkBlue;
+      text-indent: -9999em;
+    }
+  }
+}

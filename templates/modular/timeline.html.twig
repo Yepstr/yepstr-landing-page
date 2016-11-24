@@ -1,0 +1,37 @@
+{% set phc = page.header.content %}
+
+<section class="section margin-v-lg">
+  <div class="container container--no-grid container--sm">
+    <div class="timeline">
+      {% for step in phc.steps %}
+        <div class="timeline--step">
+          <div class="timeline--content">
+            <h3 class="timeline--step-headline">
+              <span class="timeline--step-headline-number">
+                {{ loop.index }}
+              </span>
+              <span class="timeline--step-headline-text">
+                {{ step.header }}
+              </span>
+            </h3>
+            <p class="timeline--step-text">
+              {{ step.text }}
+              {% if step.read_more_href and step.read_more_href != '/' %}
+                <br>
+                <a href="{{ base_url }}{{ step.read_more_href }}">{{ page.header.content.read_more_text }}</a>
+              {% endif %}
+            </p>
+            {% if step.image %}
+              <div class="timeline--step-image">
+                <a class="js-image-zoom" href="{{ page.find('/images').url() }}/{{ step.image }}">
+                  {{ page.find('/images').media[step.image] }}
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

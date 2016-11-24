@@ -1,0 +1,126 @@
+.timeline {
+  position: relative;
+  padding: rem(25) 0;
+
+  &::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: $lightGrey;
+    left: 50%;
+    margin-left: -2px;
+    @media #{$small} {
+      left: 30px;
+    }
+  }
+
+  &--step {
+    @include clearfix ();
+  }
+
+  &--content {
+    position: relative;
+    width: 50%;
+    margin: rem(25) 0;
+    @media #{$medium} {
+      margin: 0;
+    }
+    @media #{$small} {
+      width: 100%;
+      margin: rem(25) 0;
+    }
+  }
+
+  &--step-headline {
+    position: relative;
+    border-bottom: 4px solid $green;
+    font-size: rem(26);
+  }
+
+  &--step-headline-number {
+    position: absolute;
+    bottom: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $green;
+    color: $white;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  &--step-headline-text {
+    display: block;
+    padding-bottom: rem(10);
+    @media #{$small} {
+      padding-left: rem(80);
+    }
+  }
+
+  &--step-text {
+    @media #{$small} {
+      padding-left: rem(80);
+    }
+  }
+
+  &--step-image {
+    width: 150px;
+    position: absolute;
+    top: - rem(40);
+
+    a {
+      cursor: zoom-in;
+      outline: none;
+    }
+    @media #{$medium} {
+      display: none;
+    }
+  }
+  @media #{$smallMin} {
+    &--step:nth-child(odd) &--content {
+      .timeline {
+        &--step-headline-number {
+          right: -30px;
+        }
+
+        &--step-headline-text {
+          padding-right: rem(50);
+        }
+
+        &--step-text {
+          padding-right: rem(50);
+        }
+
+        &--step-image {
+          left: -170px;
+        }
+      }
+    }
+
+    &--step:nth-child(even) &--content {
+      float: right;
+
+      .timeline {
+        &--step-headline-number {
+          left: -30px;
+        }
+
+        &--step-headline-text {
+          padding-left: rem(50);
+        }
+
+        &--step-text {
+          padding-left: rem(50);
+        }
+
+        &--step-image {
+          right: -170px;
+        }
+      }
+    }
+  }
+
+}
