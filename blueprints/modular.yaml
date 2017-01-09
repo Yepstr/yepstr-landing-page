@@ -32,6 +32,14 @@ form:
               type: text
               label: Intro subheadline
 
+            header.content.intro.button_main_text:
+              type: text
+              label: Main button text
+
+            header.content.intro.button_main_href:
+              type: text
+              label: Main button link
+
             header.content.intro.image:
               type: filepicker
               size: medium
