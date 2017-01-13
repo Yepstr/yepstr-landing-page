@@ -1,0 +1,50 @@
+title: Video
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/video
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/video
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.video_button_href:
+              type: text
+              label: Video button Youtube href
+            header.content.video_button_image:
+                type: filepicker
+                size: medium
+                folder: 'page@:/images'
+                label: Video button backgound image
+                preview_images: true
+                acccept:
+                  - .png
+                  - .jpg
+                  - .svg
