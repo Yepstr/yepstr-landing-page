@@ -35,6 +35,9 @@ form:
               title: Page content
               underline: true
 
+            header.content.video_button_href:
+              type: text
+              label: Video button Youtube href
             header.content.video_button_image:
                 type: filepicker
                 size: medium

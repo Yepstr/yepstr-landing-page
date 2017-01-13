@@ -1,0 +1,9 @@
+{% set phc = page.header.content %}
+
+<section class="section margin-v-lg">
+  <div class="container container--no-grid container--sm margin-v-sm">
+    <a class="promo-video-btn js-popup-video-button" href="{{ phc.video_button_href }}">
+      {{ page.find('/images').media[phc.video_button_image].html('', '', 'img--rounded') }}
+    </a>
+  </div>
+</section>
