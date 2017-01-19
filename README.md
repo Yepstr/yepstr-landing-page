@@ -7,7 +7,7 @@ The **Yepstr** Theme is for [Grav CMS](http://github.com/getgrav/grav).  This RE
 ###To upload changes to the Grav theme
 
 1. Run npm run production
-2. Upload the following folders:
+2. Upload the following folders in /user/themes/yepstr-landing-page/:
   * blueprints (Grav admin fields)
   * build (CSS, JS images)
   * templates (html templates)
