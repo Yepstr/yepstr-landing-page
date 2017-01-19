@@ -14,6 +14,13 @@ var PopupVideo = {
         $backgroundVideo[0].pause();
       }
     };
+    
+    var onOpen = function() {
+      if(ytTracker != null) {
+        ytTracker.init();
+      }
+    };
+    
     var beforeClose = function() {
       if (!isMobile && $backgroundVideo.length !== 0) {
         $backgroundVideo[0].play();
@@ -28,6 +35,7 @@ var PopupVideo = {
       fixedContentPos: false,
       callbacks: {
         beforeOpen: beforeOpen,
+        open: onOpen,
         beforeClose: beforeClose,
       },
     });
