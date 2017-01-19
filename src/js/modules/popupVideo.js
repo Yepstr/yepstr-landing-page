@@ -16,7 +16,7 @@ var PopupVideo = {
     };
     
     var onOpen = function() {
-      if(ytTracker != null) {
+      if(ytTracker !== null) {
         ytTracker.init();
       }
     };
