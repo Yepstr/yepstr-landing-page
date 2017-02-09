@@ -6,7 +6,7 @@ require('vendor/magnificPopup.js');
 
 var scrollToTarget = require('modules/scrollToTarget');
 var scrollToNav = require('modules/scrollToNav');
-var popupLinks = require('modules/popupLinks');
+var createYepSearchSignupFlow = require('modules/createYepSearchSignupFlow');
 var popupVideo = require('modules/popupVideo');
 var activePageHighlight = require('modules/activePageHighlight');
 var imageZoom = require('modules/imageZoom');
@@ -20,7 +20,7 @@ var app = {
     popupVideo.init();
     activePageHighlight.init();
     imageZoom.init();
-    popupLinks.init();
+    createYepSearchSignupFlow.init();
   },
   load: function() {
     introMap.init();
