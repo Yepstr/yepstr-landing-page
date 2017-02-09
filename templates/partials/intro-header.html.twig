@@ -11,6 +11,10 @@
         {% if phc.intro.button_main_href %}
           <div class="margin-v-sm intro-header--button-case">
             <a href="{{ phc.intro.button_main_href }}" class="btn btn--orange btn--inline">{{ phc.intro.button_main_text }}</a>
+            {% if phc.intro.button_secondary_href %}
+              &nbsp;
+              <a href="{{ phc.intro.button_secondary_href }}" class="btn btn--orange btn--inline">{{ phc.intro.button_secondary_text }}</a>
+            {% endif %}
           </div>
         {% endif %}
       </div>
