@@ -40,6 +40,14 @@ form:
               type: text
               label: Main button link
 
+            header.content.intro.button_secondary_text:
+              type: text
+              label: Secondary button text
+
+            header.content.intro.button_secondary_href:
+              type: text
+              label: Secondary button link
+
             header.content.intro.image:
               type: filepicker
               size: medium
