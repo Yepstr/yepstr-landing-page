@@ -5,6 +5,10 @@ $map-position-top: 50px;
 $map-position-right: 50px;
 $map-position-bottom: 50px;
 $map-position-left: 50px;
+$phone-position-top: 50px;
+$phone-position-right: 50px;
+$phone-position-bottom: 50px;
+$phone-position-left: 50px;
 
 .section--intro-header {
   height: $section-height;
@@ -81,12 +85,19 @@ $map-position-left: 50px;
     }
   }
 
-  &--phones-wrapper {
+  &--map-animation {
     height: $section-height;
     position: relative;
-  }
 
-  &--map-animation {
+    .phones {
+      background-image: url('');
+      position: absolute;
+      top: $phone-position-top;
+      left: $phone-position-left;
+      right: $phone-position-right;
+      bottom: $phone-position-bottom;
+    }
+
     .map-position {
       position: absolute;
       top: $map-position-top;
