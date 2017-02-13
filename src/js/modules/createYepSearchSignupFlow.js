@@ -44,8 +44,6 @@ var receivedPostMessage = function(event) {
 
 var CreateYepSearchSignupFlow = {
   init: function() {
-    console.log('ininit');
-
     // init button click
     $('.js-modal-toggle').click(function() {
       var isMobile = $(window).width() < globals.breakpoints.medium;
