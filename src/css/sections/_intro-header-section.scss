@@ -1,12 +1,16 @@
 // $raster: '../images/graphics/raster.png';
 
 $section-height: 700px;
+$map-position-top: 50px;
+$map-position-right: 50px;
+$map-position-bottom: 50px;
+$map-position-left: 50px;
 
 .section--intro-header {
   height: $section-height;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $lightGrey;
 
-  background: linear-gradient(to top, rgba(251,243,228,1) 0%, rgba(255, 255, 255, 1) 20%);
+  background: linear-gradient(to top, $lightOrange 0%, rgba(255, 255, 255, 1) 20%);
   .text-wrapper {
     text-align: left;
     padding-right: 50px;
@@ -79,17 +83,16 @@ $section-height: 700px;
 
   &--phones-wrapper {
     height: $section-height;
-    background: #FF0;
     position: relative;
   }
 
   &--map-animation {
     .map-position {
       position: absolute;
-      top: 20px;
-      left: 50px;
-      right: 90px;
-      bottom: 34px;
+      top: $map-position-top;
+      left: $map-position-left;
+      right: $map-position-right;
+      bottom: $map-position-bottom;
     }
 
     .map-backgrounds {
