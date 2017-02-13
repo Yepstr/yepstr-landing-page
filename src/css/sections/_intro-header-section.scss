@@ -1,15 +1,17 @@
-$raster: '../images/graphics/raster.png';
+// $raster: '../images/graphics/raster.png';
+
+$section-height: 700px;
 
 .section--intro-header {
-  position: relative;
+  height: $section-height;
+  border-bottom: 1px solid #e0e0e0;
 
+  background: linear-gradient(to top, rgba(251,243,228,1) 0%, rgba(255, 255, 255, 1) 20%);
   .text-wrapper {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 150px 30px 100px;
+    text-align: left;
+    padding-right: 50px;
+    margin: 150px 0 0 auto;
+    width: 500px;
     @media #{$small} {
       padding: 100px 30px;
     }
@@ -30,130 +32,6 @@ $raster: '../images/graphics/raster.png';
       }
       @media #{$xsmall} {
         padding: 50px 30px;
-      }
-    }
-  }
-
-  &--full {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .text-wrapper {
-      margin: 0;
-    }
-  }
-
-  &--darken,
-  &--raster {
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
-    }
-  }
-
-  &--darken {
-    &:before {
-      background-color: rgba($darkBlue, 0.4);
-    }
-  }
-
-  &--raster {
-    &:before {
-      background-color: rgba($darkBlue, 0.3);
-      background-image: url($raster);
-    }
-  }
-
-  .intro-header--headline {
-    @media #{$xsmall} {
-      font-size: rem(28);
-    }
-  }
-
-  .intro-header--sub-headline {
-
-    font-size: rem(32);
-    @media #{$large} {
-      font-size: rem(24);
-    }
-    @media #{$xsmall} {
-      font-size: rem(20);
-    }
-  }
-
-  .intro-splash-image {
-    position: absolute;
-    right: rem(35);
-    bottom: - rem(63);
-    cursor: pointer;
-    width: rem(203);
-    z-index: 3;
-    @media #{$medium} {
-      display: none;
-    }
-  }
-
-  .intro-header--button-case {
-    .btn {
-      margin: 3px 0;
-    }
-  }
-
-  &--map-animation {
-    background-color: $darkBlue;
-    background-position: center;
-    background-size: cover;
-
-    .map-backgrounds {}
-
-    .map-background {
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      transition: opacity 1000ms;
-      opacity: 0;
-
-      &.is-visible {
-        opacity: 1;
-      }
-
-      &--1 {
-        background-image: url('../images/hero/hero-map-1.jpg');
-      }
-
-      &--2 {
-        background-image: url('../images/hero/hero-map-2.jpg');
-      }
-
-      &--3 {
-        background-image: url('../images/hero/hero-map-3.jpg');
-      }
-
-      &--4 {
-        background-image: url('../images/hero/hero-map-4.jpg');
-      }
-    }
-
-    .intro-header--headline {
-      @media #{$large} {
-        font-size: rem(48);
-      }
-      @media #{$xsmall} {
-        font-size: rem(28);
       }
     }
 
@@ -178,6 +56,77 @@ $raster: '../images/graphics/raster.png';
       i {
         font-style: normal;
 
+      }
+    }
+  }
+
+  .intro-header--headline {
+    @media #{$xsmall} {
+      font-size: rem(28);
+    }
+  }
+
+  .intro-header--sub-headline {
+
+    font-size: rem(32);
+    @media #{$large} {
+      font-size: rem(24);
+    }
+    @media #{$xsmall} {
+      font-size: rem(20);
+    }
+  }
+
+  &--phones-wrapper {
+    height: $section-height;
+    background: #FF0;
+    position: relative;
+  }
+
+  &--map-animation {
+    .map-position {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+      right: 90px;
+      bottom: 34px;
+    }
+
+    .map-backgrounds {
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity 1000ms;
+      opacity: 0;
+
+      &.is-visible {
+        opacity: 1;
+      }
+
+      &--1 {
+        background-image: url('../images/hero/hero-map-1.jpg');
+      }
+
+      &--2 {
+        background-image: url('../images/hero/hero-map-2.jpg');
+      }
+
+      &--3 {
+        background-image: url('../images/hero/hero-map-3.jpg');
+      }
+
+      &--4 {
+        background-image: url('../images/hero/hero-map-4.jpg');
       }
     }
   }
