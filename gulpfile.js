@@ -29,12 +29,9 @@ var paths = {
     input: 'src/js/**/*.js',
     output: 'build/js'
   },
-  templates: {
-    basepath: 'src/templates/',
-    input: 'src/templates/**/*.html',
-    markdownInput: 'src/templates/markdown/*.markdown',
-    output: 'build/'
-  }
+  'gravTemplates': {
+    input: 'templates/**/*.html.twig'
+  },
 };
 
 var gulp = require('gulp');
@@ -96,13 +93,13 @@ var beep = function() {
 };
 
 var handleError = function(task, err) {
-  gutil.beep();
-
-  notify.onError({
-    message: task + ' failed, check the logs..',
-    sound: false
-  })(err);
-
+  // gutil.beep();
+  //
+  // notify.onError({
+  //   message: task + ' failed, check the logs..',
+  //   sound: false
+  // })(err);
+  //
   gutil.log(gutil.colors.bgRed(task + ' error:'), gutil.colors.red(err));
 };
 
@@ -128,25 +125,6 @@ var tasks = {
       .pipe(gulp.dest(paths.fonts.output))
     gulp.src(paths.docs.input)
       .pipe(gulp.dest(paths.docs.output))
-  },
-  // --------------------------
-  // HTML
-  // --------------------------
-  // html templates (when using the connect server)
-  templates: function() {
-    return gulp.src(paths.templates.input)
-      .pipe(fileinclude({
-        prefix: '@@',
-        basepath: paths.templates.basepath,
-        filters: {
-          markdown: markdown.parse,
-        },
-      }))
-      .on('error', function(err) {
-        handleError('HTML', err);
-        this.emit('end');
-      })
-      .pipe(gulp.dest(paths.templates.output));
   },
   // --------------------------
   // SASS (libsass)
@@ -257,13 +235,10 @@ var tasks = {
 
 gulp.task('browser-sync', function() {
   browserSync({
-    server: {
-      baseDir: paths.output
-    },
-    socket: {
-      domain: 'http://localhost:' + port
-    },
-    port: port
+    proxy: '127.0.0.1:4000',
+    port: port,
+    open: true,
+    notify: false,
   });
 });
 
@@ -282,7 +257,7 @@ gulp.task('reload-sass', ['sass'], function() {
 gulp.task('reload-js', ['browserify'], function() {
   browserSync.reload();
 });
-gulp.task('reload-templates', ['templates'], function() {
+gulp.task('reload-grav-templates', function() {
   browserSync.reload();
 });
 
@@ -324,7 +299,7 @@ gulp.task('watch', ['assets', 'templates', 'sass', 'browserify', 'browser-sync']
   // --------------------------
   // watch:html
   // --------------------------
-  gulp.watch([paths.templates.input, paths.templates.markdownInput], ['reload-templates']);
+  gulp.watch(paths.gravTemplates.input, ['reload-templates']);
 
   gutil.log(gutil.colors.bgGreen('Watching for changes...'));
 });
