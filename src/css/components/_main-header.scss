@@ -1,3 +1,8 @@
+$positive-color: $white;
+$positive-color-hover: $lightGrey;
+$negative-color: $darkBlue;
+$negative-color-hover: $lightBlue;
+
 .main-header-wrapper {
   z-index: 100;
   width: 100%;
@@ -14,7 +19,7 @@
 
   .site-logo {
     transition: color 0.2s cubic-bezier(.55, 0, .1, 1);
-    color: $white;
+    color: $positive-color;
     text-decoration: none;
     font-size: rem(36);
     float: left;
@@ -50,7 +55,7 @@
           display: inline-block;
           padding: 15px;
           text-decoration: none;
-          color: $white;
+          color: $positive-color;
           font-size: rem(18);
           font-weight: 600;
           position: relative;
@@ -76,17 +81,17 @@
 
             a {
               border-radius: 10px;
-              border: 2px solid $white;
+              border: 2px solid $positive-color;
               padding: 13px;
 
               &:hover {
-                background: rgba($white, 0.05);
+                background: rgba($positive-color, 0.05);
               }
             }
 
             .highlight-msg {
               transition: all 150ms ease-in-out;
-              background-color: $white;
+              background-color: $positive-color;
               border-radius: 10px;
               color: $darkBlue;
               position: absolute;
@@ -134,7 +139,7 @@
         margin-top: 10px;
         float: none;
         width: 100%;
-        background: $white;
+        background: $positive-color;
         position: absolute;
         left: 0;
         right: 0;
@@ -173,6 +178,16 @@
             padding: 10px 0 10px 20px;
           }
         }
+      }
+    }
+  }
+
+  &--negative {
+    .main-header-nav ul li a {
+      color: $negative-color;
+
+      &:hover {
+        color: $negative-color-hover;
       }
     }
   }
