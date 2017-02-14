@@ -1,7 +1,7 @@
 $positive-color: $white;
 $positive-color-hover: $lightGrey;
 $negative-color: $darkBlue;
-$negative-color-hover: $lightBlue;
+$negative-color-hover: $black;
 
 .main-header-wrapper {
   z-index: 100;
@@ -27,7 +27,7 @@ $negative-color-hover: $lightBlue;
     font-weight: 600;
 
     &:hover {
-      color: $lightGrey;
+      color: $positive-color-hover;
     }
     @media #{$small} {
       float: none;
@@ -62,7 +62,7 @@ $negative-color-hover: $lightBlue;
           z-index: 1;
 
           &:hover {
-            color: $lightGrey;
+            color: $positive-color-hover;
           }
           @media #{$medium} {
             font-size: rem(15);
@@ -93,7 +93,7 @@ $negative-color-hover: $lightBlue;
               transition: all 150ms ease-in-out;
               background-color: $positive-color;
               border-radius: 10px;
-              color: $darkBlue;
+              color: $negative-color;
               position: absolute;
               width: 220px;
               top: 65px;
@@ -183,11 +183,37 @@ $negative-color-hover: $lightBlue;
   }
 
   &--negative {
-    .main-header-nav ul li a {
+    .site-logo {
       color: $negative-color;
 
       &:hover {
         color: $negative-color-hover;
+      }
+    }
+
+    .main-header-nav ul li {
+      a {
+        color: $negative-color;
+
+        &:hover {
+          color: $negative-color-hover;
+        }
+      }
+
+      @media #{$smallMin} {
+        &.highlight-border {
+          a {
+            border-color: $negative-color;
+            &:hover {
+              background: rgba($negative-color, 0.05);
+            }
+          }
+
+          .highlight-msg {
+            background-color: $negative-color;
+            color: $positive-color;
+          }
+        }
       }
     }
   }
