@@ -1,53 +1,29 @@
 // $raster: '../images/graphics/raster.png';
 
 $section-height: 700px;
-$map-position-top: 50px;
-$map-position-right: 50px;
-$map-position-bottom: 50px;
-$map-position-left: 50px;
-$phone-position-top: 50px;
-$phone-position-right: 50px;
-$phone-position-bottom: 50px;
-$phone-position-left: 50px;
+$map-position-top: 152px;
+$map-position-left: 21px;
+$map-width: 179px;
+$map-height: 276px;
+$phone-position-top: 0px;
+$phone-position-right: 0px;
+$phone-position-bottom: 0px;
+$phone-position-left: 0px;
 
 .section--intro-header {
   height: $section-height;
   border-bottom: 1px solid $lightGrey;
+  padding: 100px 0 50px;
+  box-sizing: border-box;
 
-  background: linear-gradient(to top, $lightOrange 0%, rgba(255, 255, 255, 1) 20%);
+  background: linear-gradient(to top, rgba($lightOrange, 1) 0%, rgba($white, 1) 30%);
   .text-wrapper {
     text-align: left;
     padding-right: 50px;
     margin: 150px 0 0 auto;
-    width: 500px;
-    @media #{$small} {
-      padding: 100px 30px;
-    }
-
-    &--lg {
-      max-width: 1700px;
-    }
-
-    &--860 {
-      // Shame shame shame
-      max-width: 860px;
-    }
-
-    &--lg-padding {
-      padding: 300px 30px 250px;
-      @media #{$small} {
-        padding: 100px 30px;
-      }
-      @media #{$xsmall} {
-        padding: 50px 30px;
-      }
-    }
+    width: 600px;
 
     .intro-header--sub-headline {
-      @media #{$mediumMin} {
-        height: 50px;
-      }
-
       span i {
         font-weight: 600;
       }
@@ -75,7 +51,6 @@ $phone-position-left: 50px;
   }
 
   .intro-header--sub-headline {
-
     font-size: rem(32);
     @media #{$large} {
       font-size: rem(24);
@@ -83,14 +58,22 @@ $phone-position-left: 50px;
     @media #{$xsmall} {
       font-size: rem(20);
     }
+
+    .cd-row-1 {
+      white-space: nowrap;
+    }
   }
 
   &--map-animation {
-    height: $section-height;
+    // height: $section-height;
     position: relative;
+    height: 100%;
 
     .phones {
-      background-image: url('');
+      z-index: 100;
+      background-size: contain;
+      background-image: url('../images/graphics/phones-map-mask.png');
+      background-repeat: no-repeat;
       position: absolute;
       top: $phone-position-top;
       left: $phone-position-left;
@@ -99,11 +82,12 @@ $phone-position-left: 50px;
     }
 
     .map-position {
+      z-index: 10;
       position: absolute;
+      width: $map-width;
+      height: $map-height;
       top: $map-position-top;
       left: $map-position-left;
-      right: $map-position-right;
-      bottom: $map-position-bottom;
     }
 
     .map-backgrounds {
@@ -128,19 +112,19 @@ $phone-position-left: 50px;
       }
 
       &--1 {
-        background-image: url('../images/hero/hero-map-1.jpg');
+        background-image: url('../images/intro-header-section/phone-map-1.jpg');
       }
 
       &--2 {
-        background-image: url('../images/hero/hero-map-2.jpg');
+        background-image: url('../images/intro-header-section/phone-map-2.jpg');
       }
 
       &--3 {
-        background-image: url('../images/hero/hero-map-3.jpg');
+        background-image: url('../images/intro-header-section/phone-map-3.jpg');
       }
 
       &--4 {
-        background-image: url('../images/hero/hero-map-4.jpg');
+        background-image: url('../images/intro-header-section/phone-map-4.jpg');
       }
     }
   }
