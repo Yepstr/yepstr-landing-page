@@ -5,11 +5,19 @@ var globals = require('modules/globals');
 var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://yepstr-christmas.herokuapp.com/new-user-create-yep-search/start';
 // var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'http://localhost:3000/new-user-create-yep-search/start';
 
+var beforeOpen = function() {
+  document.body.style.overflow = "hidden";
+};
+
+var beforeClose = function() {
+  document.body.style.overflow = "visible";
+};
+
 var openModal = function() {
   $.magnificPopup.open({
     items: {
       type: 'inline',
-      src: $('<div class="create-task-modal" id="create-task-modal"><iframe src="' + CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH + '" frameborder="0"></iframe></div>')
+      src: $('<div id="create-task-modal"><div class="create-task-modal"><iframe src="' + CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH + '" frameborder="0"></iframe></div></div>')
     },
     fixedContentPos: false,
     fixedBgPos: true,
@@ -21,7 +29,11 @@ var openModal = function() {
     closeOnBgClick: false,
 
     removalDelay: 300,
-    mainClass: 'my-mfp-zoom-in'
+    mainClass: 'my-mfp-zoom-in',
+    callbacks: {
+      beforeOpen: beforeOpen,
+      beforeClose: beforeClose,
+    },
   });
 }
 var redirect = function() {

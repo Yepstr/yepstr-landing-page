@@ -147,20 +147,23 @@ button::-moz-focus-inner {
 }
 
 .mfp-close {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
   text-decoration: none;
   text-align: center;
   opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #FFF;
+  color: $white;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  font-family: 'Glober', Helvetica;
+  font-size: rem(100);
+  opacity: 1;
+  // font-family: Arial, Baskerville, monospace;
 }
 
 .mfp-close:focus,
@@ -168,13 +171,13 @@ button::-moz-focus-inner {
   opacity: 1;
 }
 
-.mfp-close:active {
-  top: 1px;
-}
+// .mfp-close:active {
+//   top: 1px;
+// }
 
-.mfp-close-btn-in .mfp-close {
-  color: #333;
-}
+// .mfp-close-btn-in .mfp-close {
+//   color: #333;
+// }
 
 .mfp-iframe-holder .mfp-close,
 .mfp-image-holder .mfp-close {

@@ -1,0 +1,187 @@
+$padding-top: 140;
+$pedistal-height: 150;
+$phone-position-top: 0;
+$phone-position-left: 0;
+$phone-width: 504;
+$phone-height: 589;
+$section-height: 650;
+$map-position-top: $phone-position-top + 163;
+$map-position-left: $phone-position-left + 21;
+$map-width: 200;
+$map-height: 332;
+
+.section--startpage-header {
+  position: relative;
+  height: #{$section-height}px;
+  background-image: url('../images/backgrounds/patterns/bg-city-pattern.png');
+  margin-bottom: rem(200);
+  border-bottom: 1px solid $lightGrey;
+  @media #{$medium} {
+    height: 100%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba($lightGrey, 1) 0%, rgba($lightGrey, 0) 40%);
+  }
+
+  .container {
+    position: relative;
+    padding-top: rem(150);
+    @media #{$medium} {
+      padding-top: rem(100);
+    }
+    @media #{$small} {
+      padding-top: 0;
+    }
+  }
+
+  .text-wrapper {
+    text-align: left;
+    margin-top: 100px;
+    width: 50%;
+    @media #{$medium} {
+      position: relative;
+      top: 50px;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+
+    }
+
+    .startpage-header--headline {
+      font-size: rem(48);
+      margin-bottom: rem(20);
+      @media #{$large} {
+        font-size: rem(38);
+        padding-right: rem(10);
+      }
+      @media #{$medium} {
+        font-size: rem(36);
+        padding-right: 0;
+      }
+      @media #{$small} {
+        font-size: rem(32);
+      }
+      @media #{$xsmall} {
+        font-size: rem(28);
+      }
+    }
+
+    .startpage-header--sub-headline {
+      font-weight: 400;
+
+      span b {
+        font-weight: 400;
+      }
+      font-size: rem(28);
+      margin-bottom: rem(40);
+      @media #{$large} {
+        font-size: rem(22);
+      }
+      @media #{$xsmall} {
+        font-size: rem(18);
+      }
+
+      .cd-row-1 {
+        white-space: nowrap;
+      }
+    }
+
+    .cd-headline {
+      i {
+        font-style: normal;
+
+      }
+    }
+  }
+
+  .phones-animation {
+    position: absolute;
+    width: #{$phone-width}px;
+    height: #{$phone-height}px;
+    right: 45px;
+    bottom: -150px;
+    @media #{$medium} {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      bottom: -75px;
+      margin: 0 auto;
+    }
+    @media #{$small} {
+      width: 300px;
+      height: 352px;
+    }
+
+    .phones {
+      z-index: 100;
+      background-size: contain;
+      background-image: url('../images/graphics/phones-map-mask.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      top: #{$phone-position-top}px;
+      left: #{$phone-position-left}px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-position {
+      z-index: 10;
+      position: absolute;
+      width: #{$map-width}px;
+      height: #{$map-height}px;
+      top: #{$map-position-top}px;
+      left: #{$map-position-left}px;
+      @media #{$small} {
+        width: 115px;
+        height: 200px;
+        top: 97px;
+        left: 13px;
+      }
+    }
+
+    .map-backgrounds {
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity 1000ms;
+      opacity: 0;
+
+      &.is-visible {
+        opacity: 1;
+      }
+
+      &--1 {
+        background-image: url('../images/startpage-header-section/phone-map-1.jpg');
+      }
+
+      &--2 {
+        background-image: url('../images/startpage-header-section/phone-map-2.jpg');
+      }
+
+      &--3 {
+        background-image: url('../images/startpage-header-section/phone-map-3.jpg');
+      }
+
+      &--4 {
+        background-image: url('../images/startpage-header-section/phone-map-4.jpg');
+      }
+    }
+  }
+}
