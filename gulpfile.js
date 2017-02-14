@@ -235,7 +235,7 @@ var tasks = {
 
 gulp.task('browser-sync', function() {
   browserSync({
-    proxy: '127.0.0.1:4000',
+    proxy: '127.0.0.1:8888',
     port: port,
     open: true,
     notify: false,
@@ -299,7 +299,7 @@ gulp.task('watch', ['assets', 'templates', 'sass', 'browserify', 'browser-sync']
   // --------------------------
   // watch:html
   // --------------------------
-  gulp.watch(paths.gravTemplates.input, ['reload-templates']);
+  gulp.watch(paths.gravTemplates.input, ['reload-grav-templates']);
 
   gutil.log(gutil.colors.bgGreen('Watching for changes...'));
 });
