@@ -1,26 +1,47 @@
-// $raster: '../images/graphics/raster.png';
-
-$section-height: 700px;
-$map-position-top: 152px;
-$map-position-left: 21px;
-$map-width: 179px;
-$map-height: 276px;
-$phone-position-top: 0px;
-$phone-position-right: 0px;
-$phone-position-bottom: 0px;
-$phone-position-left: 0px;
+$padding-top: 140;
+$pedistal-height: 150;
+$phone-position-top: 0;
+$phone-position-left: 0;
+$phone-width: 504;
+$phone-height: 589;
+$section-height: 800;
+$map-position-top: $phone-position-top + 163;
+$map-position-left: $phone-position-left + 21;
+$map-width: 200;
+$map-height: 332;
 
 .section--intro-header {
-  height: $section-height;
-  border-bottom: 1px solid $lightGrey;
-  padding: 100px 0 50px;
-  box-sizing: border-box;
+  position: relative;
+  height: #{$section-height}px;
+  background-image: url('../images/backgrounds/patterns/bg-city-pattern.png');
 
-  background: linear-gradient(to top, rgba($lightOrange, 1) 0%, rgba($white, 1) 30%);
+  &--gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba($offWhite, 1) 0%, rgba($offWhite, 0) 40%);
+  }
+
+  &--column {
+    margin-top: #{$padding-top}px;
+  }
+
+  .pedistal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid $lightGrey;
+    height: #{$pedistal-height}px;
+    background-color: $white;
+  }
+
   .text-wrapper {
     text-align: left;
     padding-right: 50px;
-    margin: 150px 0 0 auto;
+    margin: 114px 0 0 auto;
     width: 600px;
 
     .intro-header--sub-headline {
@@ -75,19 +96,19 @@ $phone-position-left: 0px;
       background-image: url('../images/graphics/phones-map-mask.png');
       background-repeat: no-repeat;
       position: absolute;
-      top: $phone-position-top;
-      left: $phone-position-left;
-      right: $phone-position-right;
-      bottom: $phone-position-bottom;
+      top: #{$phone-position-top}px;
+      left: #{$phone-position-left}px;
+      width: #{$phone-width}px;
+      height: #{$phone-height}px;
     }
 
     .map-position {
       z-index: 10;
       position: absolute;
-      width: $map-width;
-      height: $map-height;
-      top: $map-position-top;
-      left: $map-position-left;
+      width: #{$map-width}px;
+      height: #{$map-height}px;
+      top: #{$map-position-top}px;
+      left: #{$map-position-left}px;
     }
 
     .map-backgrounds {

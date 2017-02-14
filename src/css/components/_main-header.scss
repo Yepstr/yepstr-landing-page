@@ -183,6 +183,8 @@ $negative-color-hover: $black;
   }
 
   &--negative {
+    background: none;
+
     .site-logo {
       color: $negative-color;
 
