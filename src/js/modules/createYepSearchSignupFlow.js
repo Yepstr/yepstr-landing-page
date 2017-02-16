@@ -5,6 +5,8 @@ var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://app.yepstr.com/new-user-create
 // var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://yepstr-christmas.herokuapp.com/new-user-create-yep-search/start';
 // var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'http://localhost:3000/new-user-create-yep-search/start';
 
+const REDIRECT_SIZE_BREAKPOINT = 750;
+
 var beforeOpen = function() {
   document.body.style.overflow = "hidden";
 };
@@ -58,9 +60,9 @@ var CreateYepSearchSignupFlow = {
   init: function() {
     // init button click
     $('.js-modal-toggle').click(function() {
-      var isMobile = $(window).width() < globals.breakpoints.small;
+      var doRedict = $(window).width() < REDIRECT_SIZE_BREAKPOINT;
 
-      if (isMobile) {
+      if (doRedict) {
         redirect();
       } else {
         openModal();
