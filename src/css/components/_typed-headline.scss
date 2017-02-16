@@ -38,7 +38,7 @@ xtype
       overflow: hidden;
 
       &.selected {
-        background-color: $white;
+        background-color: $darkBlue;
 
         &::after {
           visibility: hidden;

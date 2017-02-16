@@ -15,11 +15,17 @@ The **Yepstr** Theme is for [Grav CMS](http://github.com/getgrav/grav).  This RE
 
 ## Gulp Workflow
 
-* npm run watch : for development and livereload (default: localhost:8000)
+* npm run watch : for development and browser-sync (default: localhost:8000)
 * npm run build : for a one off development build
 * npm run production : for a minified production build
 
 * * *
+
+## Running PHP server standalone server
+Execute this from the grav folder
+```
+php -S 127.0.0.1:8888 system/router.php
+```
 
 ## Included packages
 

@@ -1,3 +1,8 @@
+$positive-color: $white;
+$positive-color-hover: $lightGrey;
+$negative-color: $darkBlue;
+$negative-color-hover: $black;
+
 .main-header-wrapper {
   z-index: 100;
   width: 100%;
@@ -6,7 +11,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 95%);
   transition: background-color 0.3s cubic-bezier(.55, 0, .1, 1), opacity 0.3s cubic-bezier(.55, 0, .1, 1);
   @media #{$small} {
-    padding: 5px 15px 10px;
+    padding: 5px 15px 8px;
     background: $offWhite;
     position: relative;
     margin-bottom: 50px;
@@ -14,7 +19,7 @@
 
   .site-logo {
     transition: color 0.2s cubic-bezier(.55, 0, .1, 1);
-    color: $white;
+    color: $positive-color;
     text-decoration: none;
     font-size: rem(36);
     float: left;
@@ -22,7 +27,7 @@
     font-weight: 600;
 
     &:hover {
-      color: $lightGrey;
+      color: $positive-color-hover;
     }
     @media #{$small} {
       float: none;
@@ -50,14 +55,14 @@
           display: inline-block;
           padding: 15px;
           text-decoration: none;
-          color: $white;
+          color: $positive-color;
           font-size: rem(18);
           font-weight: 600;
           position: relative;
           z-index: 1;
 
           &:hover {
-            color: $lightGrey;
+            color: $positive-color-hover;
           }
           @media #{$medium} {
             font-size: rem(15);
@@ -76,19 +81,19 @@
 
             a {
               border-radius: 10px;
-              border: 2px solid $white;
+              border: 2px solid $positive-color;
               padding: 13px;
 
               &:hover {
-                background: rgba($white, 0.05);
+                background: rgba($positive-color, 0.05);
               }
             }
 
             .highlight-msg {
               transition: all 150ms ease-in-out;
-              background-color: $white;
+              background-color: $positive-color;
               border-radius: 10px;
-              color: $darkBlue;
+              color: $negative-color;
               position: absolute;
               width: 220px;
               top: 65px;
@@ -134,7 +139,7 @@
         margin-top: 10px;
         float: none;
         width: 100%;
-        background: $white;
+        background: $positive-color;
         position: absolute;
         left: 0;
         right: 0;
@@ -171,6 +176,44 @@
         a {
           @media #{$small} {
             padding: 10px 0 10px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &--negative {
+    background: none;
+
+    .site-logo {
+      color: $negative-color;
+
+      &:hover {
+        color: $negative-color-hover;
+      }
+    }
+
+    .main-header-nav ul li {
+      a {
+        color: $negative-color;
+
+        &:hover {
+          color: $negative-color-hover;
+        }
+      }
+      @media #{$smallMin} {
+        &.highlight-border {
+          a {
+            border-color: $negative-color;
+
+            &:hover {
+              background: rgba($negative-color, 0.05);
+            }
+          }
+
+          .highlight-msg {
+            background-color: $negative-color;
+            color: $positive-color;
           }
         }
       }
