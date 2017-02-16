@@ -5,7 +5,7 @@ var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://app.yepstr.com/new-user-create
 // var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://yepstr-christmas.herokuapp.com/new-user-create-yep-search/start';
 // var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'http://localhost:3000/new-user-create-yep-search/start';
 
-var REDIRECT_SIZE_BREAKPOINT = 750;
+var REDIRECT_SIZE_BREAKPOINT = 720;
 
 var beforeOpen = function() {
   document.body.style.overflow = "hidden";
