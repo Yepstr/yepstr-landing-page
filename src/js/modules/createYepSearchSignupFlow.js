@@ -58,7 +58,7 @@ var CreateYepSearchSignupFlow = {
   init: function() {
     // init button click
     $('.js-modal-toggle').click(function() {
-      var isMobile = $(window).width() < globals.breakpoints.medium;
+      var isMobile = $(window).width() < globals.breakpoints.small;
 
       if (isMobile) {
         redirect();
