@@ -1,8 +1,8 @@
 var $ = require('jquery');
 var globals = require('modules/globals');
 
-// var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://app.yepstr.com/new-user-create-yep-search/start';
-var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://yepstr-christmas.herokuapp.com/new-user-create-yep-search/start';
+var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://app.yepstr.com/new-user-create-yep-search/start';
+// var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'https://yepstr-christmas.herokuapp.com/new-user-create-yep-search/start';
 // var CREATE_YEP_SEARCH_SIGNUP_FLOW_PATH = 'http://localhost:3000/new-user-create-yep-search/start';
 
 var beforeOpen = function() {
