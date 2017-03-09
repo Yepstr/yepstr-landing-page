@@ -66,3 +66,7 @@ form:
                   options:
                     customer: 'Customer'
                     yep: 'Yep'
+
+                .category:
+                  type: text
+                  label: Kategori
