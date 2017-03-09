@@ -1,4 +1,5 @@
 {% set phc = page.header.content %}
+{% set tmc = config.themes['yepstr-landing-page'].promo_module %}
 
 <section class="section padding-v-lg backgound background--lightest-grey">
   <div class="container">
@@ -11,9 +12,9 @@
       <div class="col col--8 col--xs-12">
         <div class="promo-big">
           <div class="promo-big--content">
-            <h2 class="promo-big--headline">{{ phc.headline }}</h2>
+            <h2 class="promo-big--headline">{{ tmc.saftey_headline }}</h2>
             <div class="promo-big--text nice-type">
-              {{ page.content }}
+              {{ tmc.saftey_markdown|markdown }}
             </div>
             <div class="promo-big--image">
               {{ page.find('/images').media[phc.right_image] }}

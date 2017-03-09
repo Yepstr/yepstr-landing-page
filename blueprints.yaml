@@ -30,24 +30,32 @@ form:
       type: tabs
       active: 1
       fields:
-        cost_security_info:
+        promo_module:
           type: tab
-          title: Cost and security info
+          title: Promo module
           fields:
-            cost_security_info.col_left_headline:
-              label: 'Left col headline'
+            promo_module.cost_headline:
+              label: 'Cost headline'
               type: text
               size: medium
-            cost_security_info.col_left_text:
-              label: 'Left col text'
+            promo_module.cost_markdown:
+              label: 'Cost content'
               type: editor
-            cost_security_info.col_right_headline:
-              label: 'Right col headline'
+            promo_module.saftey_headline:
+              label: 'Saftey headline'
               type: text
               size: medium
-            cost_security_info.col_right_text:
-              label: 'Right col text'
+            promo_module.saftey_markdown:
+              label: 'Saftey content'
               type: editor
-        bla:
+        saftey_insurance_module:
           type: tab
-          title: En annan tab
+          title: Saftey insurance module
+          fields:
+            saftey_insurance_module.headline:
+              label: 'Headline'
+              type: text
+              size: medium
+            saftey_insurance_module.text:
+              label: 'Text'
+              type: editor
