@@ -25,3 +25,29 @@ form:
           0: PLUGIN_ADMIN.DISABLED
         validate:
           type: bool
+
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        cost_security_info:
+          type: tab
+          title: Cost and security info
+          fields:
+            cost_security_info.col_left_headline:
+              label: 'Left col headline'
+              type: text
+              size: medium
+            cost_security_info.col_left_text:
+              label: 'Left col text'
+              type: editor
+            cost_security_info.col_right_headline:
+              label: 'Right col headline'
+              type: text
+              size: medium
+            cost_security_info.col_right_text:
+              label: 'Right col text'
+              type: editor
+        bla:
+          type: tab
+          title: En annan tab
