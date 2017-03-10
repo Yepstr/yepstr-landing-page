@@ -70,3 +70,7 @@ form:
                 .category:
                   type: text
                   label: Kategori
+
+                .image_alt:
+                  type: text
+                  label: image alt

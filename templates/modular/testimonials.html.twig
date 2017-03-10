@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="testimonial--image">
-            {{ page.find('/images').media[testimonial.image].html('', '', 'img--circle') }}
+            {{ page.find('/images').media[testimonial.image].html('', testimonial.image_alt, 'img--circle') }}
           </div>
           <p class="testimonial--name h2">{{ testimonial.name }}</p>
           <h2 class="testimonial--category p">{{ testimonial.category }}</h2>
