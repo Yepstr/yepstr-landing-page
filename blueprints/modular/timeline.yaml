@@ -85,3 +85,6 @@ form:
                       - .png
                       - .jpg
                       - .svg
+                .image_alt:
+                    type: text
+                    label: Image alt
