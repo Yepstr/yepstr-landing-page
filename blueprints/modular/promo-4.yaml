@@ -39,12 +39,15 @@ form:
                 type: filepicker
                 size: medium
                 folder: 'page@:/images'
-                label: Big right image
+                label: Big image
                 preview_images: true
                 acccept:
                   - .png
                   - .jpg
                   - .svg
+            header.content.big_image_alt:
+              type: text
+              label: Big image alt
 
             header.content.promo_one.image:
                 type: filepicker
@@ -56,6 +59,9 @@ form:
                   - .png
                   - .jpg
                   - .svg
+            header.content.promo_one.image_alt:
+              type: text
+              label: Promo 1 image alt
             header.content.promo_one.headline:
               type: text
               label: Promo 1 Headline
@@ -81,6 +87,9 @@ form:
                   - .png
                   - .jpg
                   - .svg
+            header.content.promo_two.image_alt:
+              type: text
+              label: Promo 2 image alt
             header.content.promo_two.headline:
               type: text
               label: Promo 2 Headline
@@ -106,6 +115,9 @@ form:
                   - .png
                   - .jpg
                   - .svg
+            header.content.promo_three.image_alt:
+              type: text
+              label: Promo 3 image alt
             header.content.promo_three.headline:
               type: text
               label: Promo 3 Headline
