@@ -46,6 +46,9 @@ form:
                 - .png
                 - .jpg
                 - .svg
+            header.content.left_image_alt:
+              type: text
+              label: Left image alt
 
             header.content.right_image:
               type: filepicker
@@ -57,3 +60,6 @@ form:
                 - .png
                 - .jpg
                 - .svg
+            header.content.right_image_alt:
+              type: text
+              label: Right image alt
