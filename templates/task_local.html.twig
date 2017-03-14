@@ -1,0 +1,135 @@
+{% extends 'shared/base.html.twig' %}
+{% set phc = page.header.content %}
+{% set city = "Täby" %}
+{% set numberOfTasks = "150" %}
+{% set numberOfYeps = "300" %}
+
+{% block content %}
+  <!--  -->
+  {% if phc.intro.image %}
+    <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ base_url }}/user/pages/images/{{ phc.intro.image }}) ;">
+      <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
+    {% else %}
+    <div class="section--intro-header section--intro-header--raster background background--darkblue">
+      <div class="text-wrapper text-wrapper--lg text--white">
+    {% endif %}
+      <h1 class="intro-header--headline">Barnpassning i {{ city }}</h1>
+      <h2 class="intro-header--sub-headline">Hitta unga och ambitiösa ungdomar för barnpassning i {{ city }}</h2>
+      <div class="margin-v-sm intro-header--button-case">
+        <a href="#" class="btn btn--orange btn--inline">Hitta en barnvakt!</a>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <section class="section margin-v-md">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">Barnvakter i Täby</h2>
+    </div>
+    <div class="container container--no-grid container--sm margin-v-sm">
+      <div class="nice-type">
+        <p>Med över {{ numberOfTasks }} förmedlade uppdrag i {{ city }} vågar vi på Yepstr sticka ut hakan och säga att vi är övertygade om att vi kan hitta en pålitlig och duktig barnvakt i ert område.</p>
+        <p>Du hittar, koordinerar och konverserar med kandidater direkt i appen. Då ni hittat rätt kan ni även använda appen för schemaläggning och betalning.
+        Med Yepstr för barnpassning är arbetet alltid försäkrat och ungdomarna får referenser och arbetsintyg som de kan använda för att hitta jobb i framtiden.</p>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="section margin-v-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col col--5 col--md-12">
+          <a class="promo-video-btn js-popup-video-button" href="{{ phc.video_button_href }}">
+            <img alt="" class="img--rounded" src="http://www.yepstr.com/user/pages/images/video-btn.jpg">
+          </a>
+        </div>
+        <div class="col col--7 col--md-12">
+          <div class="row">
+            <div class="col col--4 col--sm-12">
+              <div class="promo-small">
+                <div class="promo-small--image">
+                  <img src="http://www.yepstr.com/user/pages/images/promo-chatgirl.svg" data-pin-nopin="true">
+                </div>
+                <h2 class="promo-small--headline">Barnvakt i {{ city }}</h2>
+                <p class="promo-small--text">Yepstr matchar dig med närmaste intresserade ungdom först för att främja i grannskapet och skapa optimala förhållanden för ert samarbete</p>
+              </div>
+            </div>
+            <div class="col col--4 col--sm-12">
+              <div class="promo-small">
+                <div class="promo-small--image">
+                  <img src="http://www.yepstr.com/user/pages/images/promo-chatgirl.svg" data-pin-nopin="true">
+                </div>
+                <h2 class="promo-small--headline">Boka intervju</h2>
+                <p class="promo-small--text">Du får svar och ansökningar direkt i appen. Börja konversera och koordinera tillsammans med de sökande som du finner intressant, för att sedan boka en intervju.</p>
+              </div>
+            </div>
+            <div class="col col--4 col--sm-12">
+              <div class="promo-small">
+                <div class="promo-small--image">
+                  <img src="http://www.yepstr.com/user/pages/images/promo-piggybank.svg" data-pin-nopin="true">
+                </div>
+                <h2 class="promo-small--headline">Schemalägg & betala</h2>
+                <p class="promo-small--text">Relationen till er barnvakt sköter ni enkelt direkt i appen. Appen stöder en chatt, schemaläggning och betalning direkt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+
+  <section class="section margin-v-lg">
+    <div class="container no-grid">
+      <div class="testimonials">
+        <div class="testimonial testimonial--customer">
+          <div class="testimonial--bubble padding-sm center-content">
+            <div>
+              "Vilken otroligt fin idé! Barnen frågade efter Sofia så fort hon hade lämnat. Känns skönt att veta att jag har några ungdomar att fråga när jag behöver hjälp. Väldigt smidigt!"
+            </div>
+          </div>
+          <div class="testimonial--image">
+            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-1-anna-soderholm.jpg">
+          </div>
+          <h2 class="testimonial--name">Anna Söderholm</h2>
+        </div>
+        <div class="testimonial testimonial--customer">
+          <div class="testimonial--bubble padding-sm center-content">
+            <div>
+              "Vi tycker att det funkar jättebra med Vendela! Barnen har klickat helt med henne så det känns tryggt och bra. Vi kommer fortsätta att boka henne via appen!"
+            </div>
+          </div>
+          <div class="testimonial--image">
+            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-4-jenny-margareta-uggla.jpg">
+          </div>
+          <h2 class="testimonial--name">Jenny-Margareta Uggla</h2>
+        </div>
+        <div class="testimonial testimonial--customer">
+          <div class="testimonial--bubble padding-sm center-content">
+            <div>
+              "Jag tycker det fungerar riktigt bra. Jag har behövt hjälp med barnvakt och hundpassning där Yeppen Agnes har gjort ett superbra jobb! Betalningen är enkel och smidig vilket underlättar."
+            </div>
+          </div>
+          <div class="testimonial--image">
+            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-5-emeli-haage.jpg">
+          </div>
+          <h2 class="testimonial--name">Emeli Haage</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">{{ phc.page_headline }}</h2>
+    </div>
+    <div class="container container--no-grid container--sm margin-v-sm">
+      <div class="nice-type">
+        {{ page.content }}
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  {% for module in page.collection( ) %}
+    {{ module.content }}
+  {% endfor %}
+{% endblock %}
