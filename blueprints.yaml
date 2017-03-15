@@ -48,14 +48,3 @@ form:
             promo_module.saftey_markdown:
               label: 'Saftey content'
               type: editor
-        saftey_insurance_module:
-          type: tab
-          title: Saftey insurance module
-          fields:
-            saftey_insurance_module.headline:
-              label: 'Headline'
-              type: text
-              size: medium
-            saftey_insurance_module.text:
-              label: 'Text'
-              type: editor
