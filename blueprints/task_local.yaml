@@ -12,6 +12,13 @@ form:
       fields:
         content:
           fields:
+            uploads:
+              type: ignore
+            header.process:
+              type: ignore
+            content:
+              type: ignore
+
             header.content.local.city:
               label: City
               type: select
@@ -25,28 +32,6 @@ form:
               options:
                 barnpassning: Barnpassning
                 tradgard: Trädgård
-
-            uploads:
-              type: ignore
-
-            header.process:
-              type: ignore
-
-            content:
-              type: ignore
-
-            content_vars:
-              type: section
-              title: Page content
-              underline: true
-
-            header.content.intro.headline:
-              type: text
-              label: Intro headline
-
-            header.content.intro.sub_headline:
-              type: text
-              label: Intro subheadline
 
             header.content.intro.image:
               type: filepicker
