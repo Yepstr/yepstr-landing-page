@@ -1,8 +1,70 @@
 {% extends 'shared/base.html.twig' %}
 {% set phc = page.header.content %}
+{% set tmc = config.themes['yepstr-landing-page'].local_pages %}
 {% set city = "Täby" %}
 {% set numberOfTasks = "150" %}
 {% set numberOfYeps = "300" %}
+
+{#
+Find the city and category object
+We would rather that tmc.cities and tmc.categories
+was a hash maps so that we could get the correct
+object directly but this is as good as we can get now
+#}
+{% set cityObj = null %}
+{% for c in tmc.cities if c.identifier == phc.local.city %}
+{% set cityObj = c %}
+{% endfor %}
+{% set categoryObj = null %}
+{% for c in tmc.categories if c.identifier == phc.local.category %}
+{% set categoryObj = c %}
+{% endfor %}
+
+{#
+Create the content strings
+#}
+{% set headerHeadline =
+  categoryObj.headerHeadline
+    |replace({
+      '{{city}}': cityObj.name,
+      '{{cityTasks}}': cityObj.numTasks
+    })
+%}
+{% set headerSubHeadline =
+categoryObj.headerSubHeadline
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set headerCTALabel =
+categoryObj.headerCTALabel
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set pageHeadline =
+categoryObj.pageHeadline
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set pageContent =
+categoryObj.commonText
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set bottomContent =
+cityObj.commonText
+  |replace({
+    '{{category}}': category.name,
+  })
+%}
+
 
 {% block content %}
   <!--  -->
@@ -13,23 +75,23 @@
     <div class="section--intro-header section--intro-header--raster background background--darkblue">
       <div class="text-wrapper text-wrapper--lg text--white">
     {% endif %}
-      <h1 class="intro-header--headline">Barnpassning i {{ city }}</h1>
-      <h2 class="intro-header--sub-headline">Hitta unga och ambitiösa ungdomar för barnpassning i {{ city }}</h2>
+      <h1 class="intro-header--headline">{{ headerHeadline }}</h1>
+      <h2 class="intro-header--sub-headline">{{ headerSubHeadline }}</h2>
       <div class="margin-v-sm intro-header--button-case">
-        <a href="#" class="btn btn--orange btn--inline">Hitta en barnvakt!</a>
+        <a href="#" class="btn btn--orange btn--inline">{{ headerCTALabel }}</a>
       </div>
     </div>
   </div>
   <!--  -->
   <section class="section margin-v-md">
     <div class="container container--no-grid container--lg margin-v-sm">
-      <h2 class="section-headline text--center">Barnvakter i Täby</h2>
+      <h2 class="section-headline text--center">{{ pageHeadline }}</h2>
     </div>
     <div class="container container--no-grid container--sm margin-v-sm">
       <div class="nice-type">
-        <p>Med över {{ numberOfTasks }} förmedlade uppdrag i {{ city }} vågar vi på Yepstr sticka ut hakan och säga att vi är övertygade om att vi kan hitta en pålitlig och duktig barnvakt i ert område.</p>
-        <p>Du hittar, koordinerar och konverserar med kandidater direkt i appen. Då ni hittat rätt kan ni även använda appen för schemaläggning och betalning.
-        Med Yepstr för barnpassning är arbetet alltid försäkrat och ungdomarna får referenser och arbetsintyg som de kan använda för att hitta jobb i framtiden.</p>
+        {{
+        pageContent|markdown
+        }}
       </div>
     </div>
   </section>
@@ -129,6 +191,13 @@
     </div>
   </section>
   <!--  -->
+
+  <div class="container container--no-grid container--sm margin-v-sm">
+    <div class="nice-type">
+      {{ bottomContent|markdown }}
+    </div>
+  </div>
+
   {% for module in page.collection( ) %}
     {{ module.content }}
   {% endfor %}

@@ -12,11 +12,27 @@ form:
       fields:
         content:
           fields:
+            header.content.local.city:
+              label: City
+              type: select
+              options:
+                taby: Täby
+                stockholm: Stockholm
+
+            header.content.local.category:
+              label: Category
+              type: select
+              options:
+                barnpassning: Barnpassning
+                tradgard: Trädgård
 
             uploads:
               type: ignore
 
             header.process:
+              type: ignore
+
+            content:
               type: ignore
 
             content_vars:
