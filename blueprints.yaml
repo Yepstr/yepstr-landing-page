@@ -48,14 +48,70 @@ form:
             promo_module.saftey_markdown:
               label: 'Saftey content'
               type: editor
-        saftey_insurance_module:
+        local_pages:
           type: tab
-          title: Saftey insurance module
+          title: Local pages
+
           fields:
-            saftey_insurance_module.headline:
-              label: 'Headline'
-              type: text
-              size: medium
-            saftey_insurance_module.text:
-              label: 'Text'
-              type: editor
+            tabs:
+              type: tabs
+              active: 1
+
+              fields:
+                local_pages.categoriestab:
+                  type: tab
+                  title: Categories
+
+                  fields:
+                    local_pages.categories:
+                      type: list
+                      label: Categories
+
+                      fields:
+                        .identifier:
+                          label: Identifier
+                          type: text
+                        .name:
+                          label: Name
+                          type: text
+
+                        .headerHeadline:
+                          label: Header Headline
+                          type: text
+                        .headerSubHeadline:
+                          label: Header Sub Headline
+                          type: text
+                        .headerCTALabel:
+                          label: Header CTA label
+                          type: text
+
+                        .pageHeadline:
+                          label: Page Headline
+                          type: text
+
+                        .commonText:
+                          label: Common text
+                          type: editor
+
+                local_pages.citiestab:
+                  type: tab
+                  title: Cities
+
+                  fields:
+                    local_pages.cities:
+                      type: list
+                      label: Cities
+
+                      fields:
+                        .identifier:
+                          label: Identifier
+                          type: text
+                        .name:
+                          label: Name
+                          type: text
+                        .commonText:
+                          label: Common text
+                          type: editor
+                        .numTasks:
+                          label: Tasks
+                          type: text
