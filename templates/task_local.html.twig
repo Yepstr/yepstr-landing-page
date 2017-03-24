@@ -34,6 +34,7 @@ Create the content strings
 categoryObj.headerSubHeadline
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -41,6 +42,7 @@ categoryObj.headerSubHeadline
 categoryObj.headerCTALabel
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -48,6 +50,7 @@ categoryObj.headerCTALabel
 categoryObj.pageHeadline
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -55,6 +58,7 @@ categoryObj.pageHeadline
 categoryObj.commonText
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -63,6 +67,7 @@ categoryObj.commonText
 |replace({
   '{{category}}': categoryObj.name,
   '{{city}}': cityObj.name,
+  '{{cityYeps}}': cityObj.numYeps,
   '{{cityTasks}}': cityObj.numTasks
 })
 %}
@@ -74,6 +79,7 @@ categoryObj.commonText
 categoryObj.howToHeader
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -150,6 +156,7 @@ p.point
   |replace({
     '{{category}}': categoryObj.name,
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -178,6 +185,7 @@ b.title
   |replace({
     '{{category}}': categoryObj.name,
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -186,6 +194,7 @@ b.text
   |replace({
     '{{category}}': categoryObj.name,
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -218,7 +227,7 @@ b.text
       </div>
     </div>
     <div class="container container--md container--no-grid">
-      <img src="/yepstr/user/pages/images/yepstr-appen-i-manga-olika-skarmstorlekar.png" data-pin-nopin="true">
+      <img src="/user/pages/images/yepstr-appen-i-manga-olika-skarmstorlekar.png" data-pin-nopin="true">
     </div>
   </section>
 
