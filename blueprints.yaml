@@ -48,70 +48,60 @@ form:
             promo_module.saftey_markdown:
               label: 'Saftey content'
               type: editor
-        local_pages:
+        cities_tab:
           type: tab
-          title: Local pages
+          title: Cities
 
           fields:
-            tabs:
-              type: tabs
-              active: 1
+            local_pages.cities:
+              type: list
+              label: Cities! Cities we want to use in local task pages. The Identifier should be unique for each city, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{category}}.
 
               fields:
-                local_pages.categoriestab:
-                  type: tab
-                  title: Categories
+                .identifier:
+                  label: Identifier
+                  type: text
+                .name:
+                  label: Name {{city}}
+                  type: text
+                .commonText:
+                  label: Common text
+                  type: editor
+                .tasks:
+                  label: Tasks in city {{cityTasks}}
+                  type: text
 
-                  fields:
-                    local_pages.categories:
-                      type: list
-                      label: Categories
+        categories_tab:
+          type: tab
+          title: Categories
 
-                      fields:
-                        .identifier:
-                          label: Identifier
-                          type: text
-                        .name:
-                          label: Name
-                          type: text
+          fields:
+            local_pages.categories:
+              type: list
+              label: Categories! Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
 
-                        .headerHeadline:
-                          label: Header Headline
-                          type: text
-                        .headerSubHeadline:
-                          label: Header Sub Headline
-                          type: text
-                        .headerCTALabel:
-                          label: Header CTA label
-                          type: text
+              fields:
+                .identifier:
+                  label: Identifier
+                  type: text
+                .name:
+                  label: Name {{category}}
+                  type: text
 
-                        .pageHeadline:
-                          label: Page Headline
-                          type: text
+                .headerHeadline:
+                  label: Local Page Header Headline
+                  type: text
+                .headerSubHeadline:
+                  label: Local Page Header Sub Headline
+                  type: text
+                .headerCTALabel:
+                  label: Local Page Header CTA label
+                  type: text
 
-                        .commonText:
-                          label: Common text
-                          type: editor
+                .pageHeadline:
+                  label: Local Page Page Headline
+                  type: text
 
-                local_pages.citiestab:
-                  type: tab
-                  title: Cities
-
-                  fields:
-                    local_pages.cities:
-                      type: list
-                      label: Cities
-
-                      fields:
-                        .identifier:
-                          label: Identifier
-                          type: text
-                        .name:
-                          label: Name
-                          type: text
-                        .commonText:
-                          label: Common text
-                          type: editor
-                        .numTasks:
-                          label: Tasks
-                          type: text
+                .commonText:
+                  label: Local Page Common text
+                  type: editor
