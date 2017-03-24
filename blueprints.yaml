@@ -50,34 +50,34 @@ form:
               type: editor
         cities_tab:
           type: tab
-	  title: Local pages common
+          title: Local pages common
 
-	  fields:
-	    local_pages.whyHeadline:
-	      label: Why use Yepstr headline
-	      type: text
+          fields:
+            local_pages.whyHeadline:
+              label: Why use Yepstr headline
+              type: text
 
-	    local_pages.whyImage:
-	      label: Why use Yepstr Image
-	      type: filepicker
-	      size: medium
-	      folder: 'page@:/images'
-	      label: Intro background image
-	      preview_images: true
-	      acccept:
-		- .png
-		- .jpg
+            local_pages.whyImage:
+              label: Why use Yepstr Image
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Intro background image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
 
-	    local_pages.whyPoints:
-	      type: list
-	      label: Why use Yepstr points
+            local_pages.whyPoints:
+              type: list
+              label: Why use Yepstr points
 
-	      fields:
-		.point:
-		  type: text
+              fields:
+                .point:
+                  type: text
 
-	localPagesCommon_tab:
-	  type: tab
+        localPagesCommon_tab:
+          type: tab
           title: Cities
 
           fields:
@@ -152,3 +152,31 @@ form:
                   acccept:
                     - .png
                     - .jpg
+                .howToSection:
+                  type: section
+                  title: How to
+
+                .howToHeader:
+                  type: text
+                  label: Header
+
+                .howToBoxes:
+                  type: list
+                  label: How To boxes
+
+                  fields:
+                    .image:
+                      type: filepicker
+                      size: medium
+                      folder: 'page@:/images'
+                      label: Hero image
+                      preview_images: true
+                      acccept:
+                        - .png
+                        - .jpg
+                    .title:
+                      label: Title
+                      type: text
+                    .text:
+                      label: Text
+                      type: text

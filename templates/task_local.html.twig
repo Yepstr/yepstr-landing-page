@@ -69,6 +69,15 @@ categoryObj.commonText
 {% set whyImage =
 "#{ base_url }/user/pages/images/#{ tmc.whyImage }"
 %}
+
+{% set howToHeader =
+categoryObj.howToHeader
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+
 {% set bottomContent =
 cityObj.commonText
   |replace({
@@ -158,35 +167,38 @@ p.point
 
   <section class="section padding-v-lg background--blue">
     <div class="container text--center text--white nice-type">
-      <h2 class="text--center">Hur hjälper Yepstr er med barnpassning?</h2>
+      <h2 class="text--center">{{ howToHeader }}</h2>
       <div class="row">
-        <div class="col col--4 col--sm-12">
-          <div class="padding-sm margin-top-sm">
-            <div class="padding-h-sm hidden-md">
-              <img src="/yepstr/user/pages/images/yepstr-appen-lista-med-svar.png" data-pin-nopin="true">
-            </div>
-            <h3>Barnvakt i {{ city }}</h3>
-            <p>Yepstr matchar dig med närmaste intresserade ungdom först för att främja i grannskapet och skapa optimala förhållanden för ert samarbete</p>
-          </div>
-        </div>
-        <div class="col col--4 col--sm-12">
-          <div class="padding-sm margin-top-sm">
-            <div class="padding-h-sm hidden-md">
-              <img src="/yepstr/user/pages/images/yepstr-appen-profil.png" data-pin-nopin="true">
-            </div>
-            <h3>Boka intervju</h3>
-            <p>Du får svar och ansökningar direkt i appen. Börja konversera och koordinera tillsammans med de sökande som du finner intressant, för att sedan boka en intervju.</p>
-          </div>
-        </div>
-        <div class="col col--4 col--sm-12">
-          <div class="padding-sm margin-top-sm">
-            <div class="padding-h-sm hidden-md">
-              <img src="/yepstr/user/pages/images/yepstr-appen-betala.png" data-pin-nopin="true">
-            </div>
-            <h3>Schemalägg & betala</h3>
-            <p>Relationen till er barnvakt sköter ni enkelt direkt i appen. Appen stöder en chatt, schemaläggning och betalning direkt.</p>
-          </div>
-        </div>
+{% for b in categoryObj.howToBoxes %}
+{% set image =
+"#{ base_url }/user/pages/images/#{ b.image }"
+%}
+{% set title =
+b.title
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set text =
+b.text
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+<div class="col col--4 col--sm-12">
+  <div class="padding-sm margin-top-sm">
+    <div class="padding-h-sm hidden-md">
+      <img src="{{ image }}" data-pin-nopin="true">
+    </div>
+    <h3>{{ title }}</h3>
+    <p>{{ text }}</p>
+  </div>
+</div>
+{% endfor %}
       </div>
     </div>
   </section>
