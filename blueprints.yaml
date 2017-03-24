@@ -67,9 +67,18 @@ form:
                 .commonText:
                   label: Common text
                   type: editor
-                .tasks:
+                .numTasks:
                   label: Tasks in city {{cityTasks}}
                   type: text
+                .rightImage:
+                  type: filepicker
+                  size: medium
+                  folder: 'page@:/images'
+                  label: Intro background image
+                  preview_images: true
+                  acccept:
+                    - .png
+                    - .jpg
 
         categories_tab:
           type: tab
@@ -105,3 +114,13 @@ form:
                 .commonText:
                   label: Local Page Common text
                   type: editor
+
+                .heroImage:
+                  type: filepicker
+                  size: medium
+                  folder: 'page@:/images'
+                  label: Hero image
+                  preview_images: true
+                  acccept:
+                    - .png
+                    - .jpg

@@ -64,12 +64,18 @@ cityObj.commonText
     '{{category}}': categoryObj.name,
   })
 %}
+{% set heroImage =
+"#{ base_url }/user/pages/images/#{ categoryObj.heroImage }"
+%}
+{% set rightCityImage =
+"#{ base_url }/user/pages/images/#{ cityObj.rightImage }"
+%}
 
 
 {% block content %}
   <!--  -->
   {% if phc.intro.image %}
-    <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ base_url }}/user/pages/images/{{ phc.intro.image }}) ;">
+    <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ heroImage }}) ;">
       <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
     {% else %}
     <div class="section--intro-header section--intro-header--raster background background--darkblue">
@@ -98,7 +104,7 @@ cityObj.commonText
         <div class="col col--6 col--lg-6 col--sm-12">
           <div class="margin-xs">
             <figure class="image-w-caption">
-              <img class="img--rounded" src="/yepstr/user/pages/images/nacka.png" data-pin-nopin="true">
+              <img class="img--rounded" src="{{ rightCityImage }}" data-pin-nopin="true">
               <figcaption class="image-w-caption--caption rounded-corners-md">
                 <span class="text-w-icon text-w-icon--map-pin">Täby</span>
               </figcaption>
