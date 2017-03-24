@@ -61,6 +61,20 @@ p {
   margin-bottom: rem(10);
 }
 
+.text {
+  &--sm {
+    font-size: rem(13);
+  }
+
+  &--md {
+    font-size: rem(18);
+  }
+
+  &--lg {
+    font-size: rem(20);
+  }
+}
+
 a {
   font-size: rem(16);
 }
