@@ -1,0 +1,22 @@
+.text-w-icon {
+  position: relative;
+  padding-left: 40px;
+  margin-top: rem(45);
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: rem(20);
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 'top left';
+    background-size: 30px 30px;
+    background-image: url("../images/icons/ic-map-pin.svg");
+  }
+}

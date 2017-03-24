@@ -25,6 +25,7 @@ form:
               options:
                 taby: Täby
                 stockholm: Stockholm
+                nacka: Nacka
 
             header.content.local.category:
               label: Category

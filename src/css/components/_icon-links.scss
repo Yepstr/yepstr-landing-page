@@ -1,0 +1,32 @@
+.icon-link {
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+
+  &::before {
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: 'top left';
+    background-size: 30px 30px;
+    position: relative;
+    top: -2px;
+  }
+
+  &--ios::before {
+    background-image: url("../images/icons/app-icon-ios.svg");
+  }
+
+  &--android::before {
+    background-image: url("../images/icons/app-icon-android.svg");
+  }
+
+  &--web::before {
+    background-image: url("../images/icons/app-icon-web.svg");
+  }
+}
