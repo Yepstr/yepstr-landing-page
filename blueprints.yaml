@@ -93,10 +93,9 @@ form:
                 .point:
                   type: text
 
-            whereToUse:
+            whereSection:
               type: section
               title: Where to use
-
             local_pages.whereHeadline:
               type: text
               label: Where headline
@@ -123,24 +122,31 @@ form:
               label: Cities! Cities we want to use in local task pages. The Identifier should be unique for each city, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{category}}.
 
               fields:
+                .settingsSection:
+                  type: section
+                  title: Settings
                 .identifier:
                   label: Identifier
                   type: text
                 .name:
                   label: Name {{city}}
                   type: text
-                .commonHeadline:
-                  label: Common headline
-                  type: text
-                .commonText:
-                  label: Common text
-                  type: editor
                 .numYeps:
                   label: Tasks in city {{cityYeps}}
                   type: text
                 .numTasks:
                   label: Tasks in city {{cityTasks}}
                   type: text
+
+                .commonSection:
+                  type: section
+                  title: Common
+                .commonHeadline:
+                  label: Common headline
+                  type: text
+                .commonText:
+                  label: Common text
+                  type: editor
                 .rightImage:
                   type: filepicker
                   size: medium
@@ -161,13 +167,28 @@ form:
               label: Categories! Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
 
               fields:
+                .settingsSection:
+                  type: section
+                  title: Settings
                 .identifier:
-                  label: Identifier
+                  label: Unique Identifier
                   type: text
                 .name:
                   label: Name {{category}}
                   type: text
 
+                .headerSection:
+                  type: section
+                  title: Header
+                .heroImage:
+                  type: filepicker
+                  size: medium
+                  folder: 'page@:/images'
+                  label: Hero image
+                  preview_images: true
+                  acccept:
+                    - .png
+                    - .jpg
                 .headerHeadline:
                   label: Local Page Header Headline
                   type: text
@@ -178,35 +199,25 @@ form:
                   label: Local Page Header CTA label
                   type: text
 
+                .commonSection:
+                  type: section
+                  title: Common
                 .pageHeadline:
-                  label: Local Page Page Headline
+                  label: Common Headline
                   type: text
-
                 .commonText:
-                  label: Local Page Common text
+                  label: Common text
                   type: editor
 
-                .heroImage:
-                  type: filepicker
-                  size: medium
-                  folder: 'page@:/images'
-                  label: Hero image
-                  preview_images: true
-                  acccept:
-                    - .png
-                    - .jpg
                 .howToSection:
                   type: section
                   title: How to
-
                 .howToHeader:
                   type: text
                   label: Header
-
                 .howToBoxes:
                   type: list
                   label: How To boxes
-
                   fields:
                     .image:
                       type: filepicker
@@ -229,7 +240,6 @@ form:
                   title: Testimonials
                 .testimonials:
                   type: list
-
                   fields:
                     import@:
                       type: partials/testimonial
