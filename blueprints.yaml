@@ -30,6 +30,20 @@ form:
       type: tabs
       active: 1
       fields:
+        common:
+          type: tab
+          title: Common
+          fields:
+            common.iosUrl:
+              type: text
+              label: ios url
+            common.androidUrl:
+              type: text
+              label: android url
+            common.wwwUrl:
+              type: text
+              label: www url
+
         promo_module:
           type: tab
           title: Promo module
@@ -48,11 +62,15 @@ form:
             promo_module.saftey_markdown:
               label: 'Saftey content'
               type: editor
-        cities_tab:
+        localPagesCommon_tab:
           type: tab
           title: Local pages common
 
           fields:
+            whyUseYepstrSection:
+              type: section
+              title: Why use Yepstr?
+
             local_pages.whyHeadline:
               label: Why use Yepstr headline
               type: text
@@ -62,7 +80,6 @@ form:
               type: filepicker
               size: medium
               folder: 'page@:/images'
-              label: Intro background image
               preview_images: true
               acccept:
                 - .png
@@ -76,7 +93,27 @@ form:
                 .point:
                   type: text
 
-        localPagesCommon_tab:
+            whereToUse:
+              type: section
+              title: Where to use
+
+            local_pages.whereHeadline:
+              type: text
+              label: Where headline
+            local_pages.whereSubHeadline:
+              type: text
+              label: Where sub headline
+            local_pages.whereImage:
+              label: Where to use Yepstr Image
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+        cities_tab:
           type: tab
           title: Cities
 

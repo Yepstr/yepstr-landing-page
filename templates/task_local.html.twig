@@ -1,22 +1,23 @@
 {% extends 'shared/base.html.twig' %}
 {% set phc = page.header.content %}
-{% set tmc = config.themes['yepstr-landing-page'].local_pages %}
+{% set tc = config.themes['yepstr-landing-page'] %}
+{% set lp = tc.local_pages %}
 {% set city = "Täby" %}
 {% set numberOfTasks = "150" %}
 {% set numberOfYeps = "300" %}
 
 {#
 Find the city and category object
-We would rather that tmc.cities and tmc.categories
+We would rather that lp.cities and lp.categories
 was a hash maps so that we could get the correct
 object directly but this is as good as we can get now
 #}
 {% set cityObj = null %}
-{% for c in tmc.cities if c.identifier == phc.local.city %}
+{% for c in lp.cities if c.identifier == phc.local.city %}
 {% set cityObj = c %}
 {% endfor %}
 {% set categoryObj = null %}
-{% for c in tmc.categories if c.identifier == phc.local.category %}
+{% for c in lp.categories if c.identifier == phc.local.category %}
 {% set categoryObj = c %}
 {% endfor %}
 
@@ -63,7 +64,7 @@ categoryObj.commonText
   })
 %}
 {% set whyHeadline
-=tmc.whyHeadline
+=lp.whyHeadline
 |replace({
   '{{category}}': categoryObj.name,
   '{{city}}': cityObj.name,
@@ -72,7 +73,7 @@ categoryObj.commonText
 })
 %}
 {% set whyImage =
-"#{ base_url }/user/pages/images/#{ tmc.whyImage }"
+"#{ base_url }/user/pages/images/#{ lp.whyImage }"
 %}
 
 {% set howToHeader =
@@ -82,6 +83,28 @@ categoryObj.howToHeader
     '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
+%}
+
+{% set whereHeadline =
+lp.whereHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whereSubHeadline =
+lp.whereSubHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whereImage =
+"#{ base_url }/user/pages/images/#{ lp.whereImage }"
 %}
 
 {% set bottomContent =
@@ -150,7 +173,7 @@ cityObj.commonText
           <div class="margin-xs">
             <h3>{{ whyHeadline }}</h3>
             <ul class="feature-list">
-{% for p in tmc.whyPoints %}
+{% for p in lp.whyPoints %}
 {% set point =
 p.point
   |replace({
@@ -217,17 +240,17 @@ b.text
   <section class="section">
     <div class="container container--no-grid text--center">
       <div class="nice-type margin-top-lg margin-bottom-sm">
-        <h2 class="text--center">Boka barnvakt där det passar dig</h2>
-        <p class="p-lg">Genom att använda vår app så kan du boka lokala ungdomar med bara ett par knapptryckningar.</p>
+        <h2 class="text--center">{{ whereHeadline }}</h2>
+        <p class="p-lg">{{ whereSubHeadline }}</p>
         <nav class="app-links-container margin-v-sm">
-          <a class="icon-link icon-link--ios margin-v-xs margin-h-sm" href="{{phc.ios.link}}">iPhone</a>
-          <a class="icon-link icon-link--android margin-v-xs margin-h-sm" href="{{phc.android.link}}">Android</a>
-          <a class="icon-link icon-link--web margin-v-xs margin-h-sm" href="{{phc.web.link}}">Direkt på webben</a>
+          <a class="icon-link icon-link--ios margin-v-xs margin-h-sm" href="{{ tc.common.iosUrl }}">iPhone</a>
+          <a class="icon-link icon-link--android margin-v-xs margin-h-sm" href="{{ tc.common.androidUrl }}">Android</a>
+          <a class="icon-link icon-link--web margin-v-xs margin-h-sm" href="{{ tc.common.wwwUrl }}">Direkt på webben</a>
         </nav>
       </div>
     </div>
     <div class="container container--md container--no-grid">
-      <img src="/user/pages/images/yepstr-appen-i-manga-olika-skarmstorlekar.png" data-pin-nopin="true">
+      <img src="{{ whereImage }}" data-pin-nopin="true">
     </div>
   </section>
 
