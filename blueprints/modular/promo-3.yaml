@@ -1,65 +1,37 @@
-title: Promo 3
-'@extends': default
-
 form:
   fields:
-    tabs:
-      fields:
-        advanced:
-          fields:
-            columns:
-              fields:
-                column1:
-                  fields:
-                    name:
-                      default: modular/promo-3
-                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
-            overrides:
-              fields:
-                header.template:
-                  default: modular/promo-3
-                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
-        content:
-          fields:
-            uploads:
-              type: ignore
+    content_vars:
+      type: section
+      title: Page content
+      underline: true
 
-            header.process:
-              type: ignore
+    header.content.left_image:
+      type: filepicker
+      size: medium
+      folder: 'page@:/images'
+      label: Left image
+      preview_images: true
+      acccept:
+        - .png
+        - .jpg
+        - .svg
+    header.content.left_image_alt:
+      type: text
+      label: Left image alt
 
-            content_vars:
-              type: section
-              title: Page content
-              underline: true
-
-            header.content.headline:
-              type: text
-              label: Headline
-
-            header.content.left_image:
-              type: filepicker
-              size: medium
-              folder: 'page@:/images'
-              label: Left image
-              preview_images: true
-              acccept:
-                - .png
-                - .jpg
-                - .svg
-            header.content.left_image_alt:
-              type: text
-              label: Left image alt
-
-            header.content.right_image:
-              type: filepicker
-              size: medium
-              folder: 'page@:/images'
-              label: Right Image
-              preview_images: true
-              acccept:
-                - .png
-                - .jpg
-                - .svg
-            header.content.right_image_alt:
-              type: text
-              label: Right image alt
+    header.content.right_image:
+      type: filepicker
+      size: medium
+      folder: 'page@:/images'
+      label: Right Image
+      preview_images: true
+      acccept:
+        - .png
+        - .jpg
+        - .svg
+    header.content.right_image_alt:
+      type: text
+      label: Right image alt
+    s:
+      type: section
+      title: Moved to theme config
