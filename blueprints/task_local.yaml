@@ -26,6 +26,8 @@ form:
                 taby: Täby
                 stockholm: Stockholm
                 nacka: Nacka
+                lidingo: Lidingö
+                bromma: Bromma
 
             header.content.local.category:
               label: Category
@@ -33,6 +35,7 @@ form:
               options:
                 barnpassning: Barnpassning
                 tradgard: Trädgård
+                laxhjälp: Läxhjälp
 
             header.content.page_headline:
               type: text
