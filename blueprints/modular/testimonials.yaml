@@ -39,38 +39,6 @@ form:
               label: Testimonials
 
               fields:
-
-                .quote:
-                  type: textarea
-                  label: Quote
-
-                .name:
-                  type: text
-                  label: Name
-
-                .image:
-                    type: filepicker
-                    size: medium
-                    folder: 'page@:/images'
-                    label: Choose a image
-                    preview_images: true
-                    acccept:
-                      - .png
-                      - .jpg
-                      - .svg
-
-                .type:
-                  type: select
-                  label: User type
-                  default: Customer
-                  options:
-                    customer: 'Customer'
-                    yep: 'Yep'
-
-                .category:
-                  type: text
-                  label: Kategori
-
-                .image_alt:
-                  type: text
-                  label: image alt
+                import@:
+                  type: partials/testimonial
+                  context: theme://blueprints
