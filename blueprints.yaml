@@ -129,6 +129,9 @@ form:
                 .name:
                   label: Name {{city}}
                   type: text
+                .commonHeadline:
+                  label: Common headline
+                  type: text
                 .commonText:
                   label: Common text
                   type: editor

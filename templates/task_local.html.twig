@@ -107,6 +107,12 @@ lp.whereSubHeadline
 "#{ base_url }/user/pages/images/#{ lp.whereImage }"
 %}
 
+{% set bottomHeadline =
+cityObj.commonHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+  })
+%}
 {% set bottomContent =
 cityObj.commonText
   |replace({
@@ -276,22 +282,7 @@ b.text
   <section class="section margin-v-lg">
     <div class="container container--no-grid container--sm margin-v-sm">
       <div class="nice-type">
-        <h2>Barnpassning i Täby av Täbybor</h2>
-
-        <p>Yepstr gör mer än att förmedla barnvakter i Täby. Vi arbetar tätt tillsammans med ungdomsorganisationer, gymnasieskolor och unga drivna ambassadörer i området för att bidra till en levande kommun. Via Yepstr möter du ungdomar från Åva Gymnasium såväl som Tibble Gymnasium med olika erfarenhetsgrader av barnpassning.</p>
-
-        <p>Du hittar, koordinerar och konverserar med kandidater direkt i appen. Då ni hittat rätt kan ni även använda appen för schemaläggning och betalning. Varesig du bor i Viggbyholm, Näsbypark eller Täby Kyrkby så kan ni hitta en barnvakt från just ert område. </p>
-
-        <p>Yepstr kan användas för att hitta en långsiktig lösning med återkommande barnpassning där schemaläggning, betalning och försäkring sköts direkt i appen. Vid behov kan ni även hitta lokala gymnasieungdomar som kan hjälpa till på kort varsel. </p>
-
-
-        <h3>Mer om barnpassning i Täby</h3>
-        <ul>
-          <li>Hitta rätt barnvakt för just er familj med vår intervjuguide för barnvakter. </li>
-          <li>Lär känna 3 av våra barnvakter; Tea, Tilda och Alma. I den här intervjun presenterar de sina bästa tips för att komma igång med barnvakten.</li>
-          <li>Genom Yepstr är ni alltid försäkrade, läs mer om säkerhet och försäkringar.</li>
-        </ul>
-
+        <h2>{{ bottomHeadline }}</h2>
         {{ bottomContent|markdown }}
       </div>
     </div>
