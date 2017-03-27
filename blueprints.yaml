@@ -102,9 +102,13 @@ form:
           title: Cities
 
           fields:
+            citiesSection:
+              type: section
+              title: Cities
+              text: Cities we want to use in local task pages. The Identifier should be unique for each city, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{category}}.
+
             local_pages.cities:
               type: list
-              label: Cities! Cities we want to use in local task pages. The Identifier should be unique for each city, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{category}}.
 
               fields:
                 .settingsSection:
@@ -148,10 +152,13 @@ form:
           title: Categories
 
           fields:
+            categoriesSection:
+              type: section
+              title: Categories
+              text: Categories! Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
+
             local_pages.categories:
               type: list
-              label: Categories! Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
-
               fields:
                 .settingsSection:
                   type: section
