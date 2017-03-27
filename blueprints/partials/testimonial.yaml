@@ -8,16 +8,10 @@ form:
     label: Name
 
   .image:
-      type: filepicker
-      size: medium
-      folder: 'page@:/images'
-      label: Choose a image
-      preview_images: true
-      acccept:
-        - .png
-        - .jpg
-        - .svg
-
+    label: Choose a image
+    import@:
+      type: partials/image
+      context: theme://blueprints
   .type:
     type: select
     label: User type
