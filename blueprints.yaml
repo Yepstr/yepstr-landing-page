@@ -70,25 +70,17 @@ form:
             whyUseYepstrSection:
               type: section
               title: Why use Yepstr?
-
             local_pages.whyHeadline:
               label: Why use Yepstr headline
               type: text
-
             local_pages.whyImage:
               label: Why use Yepstr Image
-              type: filepicker
-              size: medium
-              folder: 'page@:/images'
-              preview_images: true
-              acccept:
-                - .png
-                - .jpg
-
+              import@:
+                type: partials/image
+                context: theme://blueprints
             local_pages.whyPoints:
               type: list
               label: Why use Yepstr points
-
               fields:
                 .point:
                   type: text
@@ -104,13 +96,9 @@ form:
               label: Where sub headline
             local_pages.whereImage:
               label: Where to use Yepstr Image
-              type: filepicker
-              size: medium
-              folder: 'page@:/images'
-              preview_images: true
-              acccept:
-                - .png
-                - .jpg
+              import@:
+                type: partials/image
+                context: theme://blueprints
 
         cities_tab:
           type: tab
@@ -148,10 +136,11 @@ form:
                   label: Common text
                   type: editor
                 .rightImage:
-                  type: filepicker
-                  size: medium
-                  folder: 'page@:/images'
                   label: Intro background image
+                  import@:
+                    type: partials/image
+                    context: theme://blueprints
+
                   preview_images: true
                   acccept:
                     - .png
@@ -181,14 +170,10 @@ form:
                   type: section
                   title: Header
                 .heroImage:
-                  type: filepicker
-                  size: medium
-                  folder: 'page@:/images'
-                  label: Hero image
-                  preview_images: true
-                  acccept:
-                    - .png
-                    - .jpg
+                  label: Hero Image
+                  import@:
+                    type: partials/image
+                    context: theme://blueprints
                 .headerHeadline:
                   label: Local Page Header Headline
                   type: text
@@ -220,14 +205,10 @@ form:
                   label: How To boxes
                   fields:
                     .image:
-                      type: filepicker
-                      size: medium
-                      folder: 'page@:/images'
-                      label: Hero image
-                      preview_images: true
-                      acccept:
-                        - .png
-                        - .jpg
+                      label: Image
+                      import@:
+                        type: partials/image
+                        context: theme://blueprints
                     .title:
                       label: Title
                       type: text
