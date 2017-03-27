@@ -262,39 +262,9 @@ b.text
   <section class="section margin-v-lg">
     <div class="container no-grid">
       <div class="testimonials">
-        <div class="testimonial testimonial--customer">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              "Vilken otroligt fin idé! Barnen frågade efter Sofia så fort hon hade lämnat. Känns skönt att veta att jag har några ungdomar att fråga när jag behöver hjälp. Väldigt smidigt!"
-            </div>
-          </div>
-          <div class="testimonial--image">
-            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-1-anna-soderholm.jpg">
-          </div>
-          <h2 class="testimonial--name">Anna Söderholm</h2>
-        </div>
-        <div class="testimonial testimonial--customer">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              "Vi tycker att det funkar jättebra med Vendela! Barnen har klickat helt med henne så det känns tryggt och bra. Vi kommer fortsätta att boka henne via appen!"
-            </div>
-          </div>
-          <div class="testimonial--image">
-            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-4-jenny-margareta-uggla.jpg">
-          </div>
-          <h2 class="testimonial--name">Jenny-Margareta Uggla</h2>
-        </div>
-        <div class="testimonial testimonial--customer">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              "Jag tycker det fungerar riktigt bra. Jag har behövt hjälp med barnvakt och hundpassning där Yeppen Agnes har gjort ett superbra jobb! Betalningen är enkel och smidig vilket underlättar."
-            </div>
-          </div>
-          <div class="testimonial--image">
-            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-5-emeli-haage.jpg">
-          </div>
-          <h2 class="testimonial--name">Emeli Haage</h2>
-        </div>
+{% for t in categoryObj.testimonials %}
+    {% include 'partials/testimonial.html.twig' with { 'testimonial': t } %}
+{% endfor %}
       </div>
     </div>
   </section>

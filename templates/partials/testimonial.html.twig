@@ -1,0 +1,12 @@
+<div class="testimonial testimonial--{{ testimonial.type }}">
+  <div class="testimonial--bubble padding-sm center-content">
+    <div>
+      {{ testimonial.quote }}
+    </div>
+  </div>
+  <div class="testimonial--image">
+    {{ page.find('/images').media[testimonial.image].html('', testimonial.image_alt, 'img--circle') }}
+  </div>
+  <p class="testimonial--name h2">{{ testimonial.name }}</p>
+  <h2 class="testimonial--category p">{{ testimonial.category }}</h2>
+</div>

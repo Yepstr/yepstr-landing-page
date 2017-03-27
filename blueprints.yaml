@@ -220,3 +220,14 @@ form:
                     .text:
                       label: Text
                       type: text
+
+                .testimonialsSection:
+                  type: section
+                  title: Testimonials
+                .testimonials:
+                  type: list
+
+                  fields:
+                    import@:
+                      type: partials/testimonial
+                      context: theme://blueprints
