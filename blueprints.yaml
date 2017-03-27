@@ -64,9 +64,13 @@ form:
               type: text
             local_pages.whyImage:
               label: Why use Yepstr Image
-              import@:
-                type: partials/image
-                context: theme://blueprints
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
             local_pages.whyPoints:
               type: list
               label: Why use Yepstr points
@@ -85,9 +89,13 @@ form:
               label: Where sub headline
             local_pages.whereImage:
               label: Where to use Yepstr Image
-              import@:
-                type: partials/image
-                context: theme://blueprints
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
 
         cities_tab:
           type: tab
