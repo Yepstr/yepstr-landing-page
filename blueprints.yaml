@@ -142,11 +142,6 @@ form:
                     type: partials/image
                     context: theme://blueprints
 
-                  preview_images: true
-                  acccept:
-                    - .png
-                    - .jpg
-
         categories_tab:
           type: tab
           title: Categories
