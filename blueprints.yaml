@@ -121,7 +121,7 @@ form:
                   label: Name {{city}}
                   type: text
                 .numYeps:
-                  label: Tasks in city {{cityYeps}}
+                  label: Yeps in city {{cityYeps}}
                   type: text
                 .numTasks:
                   label: Tasks in city {{cityTasks}}
