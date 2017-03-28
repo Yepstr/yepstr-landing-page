@@ -35,7 +35,7 @@ form:
               options:
                 barnpassning: Barnpassning
                 tradgard: Trädgård
-                laxhjälp: Läxhjälp
+                laxhjalp: Läxhjälp
 
             header.content.page_headline:
               type: text
