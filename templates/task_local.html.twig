@@ -260,7 +260,7 @@ b.text
     <div class="container no-grid">
       <div class="testimonials">
 {% for t in categoryObj.testimonials %}
-  {% include 'partials/testimonial.html.twig' with { 'testimonial': t } %}
+  {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}
 {% endfor %}
       </div>
     </div>

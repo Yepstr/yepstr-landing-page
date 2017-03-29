@@ -1,4 +1,8 @@
 form:
+  .identifier:
+    type: text
+    label: Identifier
+
   .quote:
     type: textarea
     label: Quote

@@ -150,7 +150,7 @@ form:
             categoriesSection:
               type: section
               title: Categories
-              text: Categories! Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
+              text: Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
 
             local_pages.categories:
               type: list
@@ -218,9 +218,27 @@ form:
                 .testimonialsSection:
                   type: section
                   title: Testimonials
+                  text: Pick the identifiers for the testimonials you want to show.
                 .testimonials:
                   type: list
                   fields:
-                    import@:
-                      type: partials/testimonial
-                      context: theme://blueprints
+                    .identifier:
+                      label: Identifier
+                      type: text
+
+        testimonials_tab:
+          type: tab
+          title: Testimonials
+
+          fields:
+            testimonialsSection:
+              type: section
+              title: Testimonials
+              text: Here are all testimonials gatherd. Supply each testimonial with an unique identifier which can be used on the pages for choosing the testimonials to use
+
+            testimonials:
+              type: list
+              fields:
+                import@:
+                  type: partials/testimonial
+                  context: theme://blueprints

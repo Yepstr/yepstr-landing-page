@@ -36,9 +36,8 @@ form:
 
             header.content.testimonials:
               type: list
-              label: Testimonials
-
+              label: Testimonials, check theme config for identifiers
               fields:
-                import@:
-                  type: partials/testimonial
-                  context: theme://blueprints
+                .identifier:
+                  label: Identifier
+                  type: text

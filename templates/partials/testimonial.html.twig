@@ -1,3 +1,9 @@
+{% set tc = config.themes['yepstr-landing-page'] %}
+{% set testimonial = null %}
+{% for t in tc.testimonials if t.identifier == testimonialIdentifier %}
+{% set testimonial = t %}
+{% endfor %}
+
 <div class="testimonial testimonial--{{ testimonial.type }}">
   <div class="testimonial--bubble padding-sm center-content">
     <div>
