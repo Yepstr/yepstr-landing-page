@@ -116,6 +116,15 @@ cityObj.commonText
     '{{category}}': categoryObj.name,
   })
 %}
+{% set categoryBottomContent =
+categoryObj.bottomText
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
 {% set heroImage =
 "#{ base_url }/user/pages/images/#{ categoryObj.heroImage }"
 %}
@@ -275,6 +284,7 @@ b.text
       <div class="nice-type">
         <h2>{{ bottomHeadline }}</h2>
         {{ bottomContent|markdown }}
+        {{ categoryBottomContent|markdown }}
       </div>
     </div>
   </section>

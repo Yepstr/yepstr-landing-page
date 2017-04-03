@@ -192,6 +192,9 @@ form:
                 .commonText:
                   label: Common text
                   type: editor
+                .bottomText:
+                  label: Bottom text
+                  type: editor
 
                 .howToSection:
                   type: section
