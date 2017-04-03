@@ -34,4 +34,8 @@ form:
       label: Right image alt
     s:
       type: section
-      title: Moved to theme config
+      title: If content is empty, the default from the Theme config (saftey) will be used
+    content:
+      type: markdown
+      validate:
+        type: textarea
