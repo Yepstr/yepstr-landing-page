@@ -1,41 +1,72 @@
+title: Promo 3
+'@extends': default
+
 form:
   fields:
-    content_vars:
-      type: section
-      title: Page content
-      underline: true
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/promo-3
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/promo-3
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
 
-    header.content.left_image:
-      type: filepicker
-      size: medium
-      folder: 'page@:/images'
-      label: Left image
-      preview_images: true
-      acccept:
-        - .png
-        - .jpg
-        - .svg
-    header.content.left_image_alt:
-      type: text
-      label: Left image alt
+        content:
+          fields:
+            s:
+              ordering@: 0
+              type: section
+              title: If content is empty, the default from the Theme config (saftey) will be used
 
-    header.content.right_image:
-      type: filepicker
-      size: medium
-      folder: 'page@:/images'
-      label: Right Image
-      preview_images: true
-      acccept:
-        - .png
-        - .jpg
-        - .svg
-    header.content.right_image_alt:
-      type: text
-      label: Right image alt
-    s:
-      type: section
-      title: If content is empty, the default from the Theme config (saftey) will be used
-    content:
-      type: markdown
-      validate:
-        type: textarea
+            uploads:
+              type: ignore
+            header.process:
+              type: ignore
+            header.title:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.headline:
+              type: text
+              label: Headline
+
+            header.content.left_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Left image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+                - .svg
+            header.content.left_image_alt:
+              type: text
+              label: Left image alt
+
+            header.content.right_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Right Image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+                - .svg
+            header.content.right_image_alt:
+              type: text
+              label: Right image alt
