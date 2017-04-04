@@ -3,20 +3,9 @@
 <section class="section margin-v-lg">
   <div class="container no-grid">
     <div class="testimonials">
-      {% for testimonial in phc.testimonials %}
-        <div class="testimonial testimonial--{{ testimonial.type }}">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              {{ testimonial.quote }}
-            </div>
-          </div>
-          <div class="testimonial--image">
-            {{ page.find('/images').media[testimonial.image].html('', testimonial.image_alt, 'img--circle') }}
-          </div>
-          <p class="testimonial--name h2">{{ testimonial.name }}</p>
-          <h2 class="testimonial--category p">{{ testimonial.category }}</h2>
-        </div>
-      {% endfor %}
+{% for t in phc.testimonials %}
+  {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}
+{% endfor %}
     </div>
   </div>
 </section>

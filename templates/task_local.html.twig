@@ -1,22 +1,20 @@
 {% extends 'shared/base.html.twig' %}
 {% set phc = page.header.content %}
-{% set tmc = config.themes['yepstr-landing-page'].local_pages %}
-{% set city = "Täby" %}
-{% set numberOfTasks = "150" %}
-{% set numberOfYeps = "300" %}
+{% set tc = config.themes['yepstr-landing-page'] %}
+{% set lp = tc.local_pages %}
 
 {#
 Find the city and category object
-We would rather that tmc.cities and tmc.categories
+We would rather that lp.cities and lp.categories
 was a hash maps so that we could get the correct
 object directly but this is as good as we can get now
 #}
 {% set cityObj = null %}
-{% for c in tmc.cities if c.identifier == phc.local.city %}
+{% for c in lp.cities if c.identifier == phc.local.city %}
 {% set cityObj = c %}
 {% endfor %}
 {% set categoryObj = null %}
-{% for c in tmc.categories if c.identifier == phc.local.category %}
+{% for c in lp.categories if c.identifier == phc.local.category %}
 {% set categoryObj = c %}
 {% endfor %}
 
@@ -34,6 +32,7 @@ Create the content strings
 categoryObj.headerSubHeadline
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -41,6 +40,7 @@ categoryObj.headerSubHeadline
 categoryObj.headerCTALabel
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -48,6 +48,7 @@ categoryObj.headerCTALabel
 categoryObj.pageHeadline
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
   })
 %}
@@ -55,7 +56,58 @@ categoryObj.pageHeadline
 categoryObj.commonText
   |replace({
     '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
     '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whyHeadline
+=lp.whyHeadline
+|replace({
+  '{{category}}': categoryObj.name,
+  '{{city}}': cityObj.name,
+  '{{cityYeps}}': cityObj.numYeps,
+  '{{cityTasks}}': cityObj.numTasks
+})
+%}
+{% set whyImage =
+"#{ base_url }/user/pages/images/#{ lp.whyImage }"
+%}
+
+{% set howToHeader =
+categoryObj.howToHeader
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+
+{% set whereHeadline =
+lp.whereHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whereSubHeadline =
+lp.whereSubHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whereImage =
+"#{ base_url }/user/pages/images/#{ lp.whereImage }"
+%}
+
+{% set bottomHeadline =
+cityObj.commonHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
   })
 %}
 {% set bottomContent =
@@ -64,21 +116,30 @@ cityObj.commonText
     '{{category}}': categoryObj.name,
   })
 %}
+{% set categoryBottomContent =
+categoryObj.bottomText
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set heroImage =
+"#{ base_url }/user/pages/images/#{ categoryObj.heroImage }"
+%}
+{% set rightCityImage =
+"#{ base_url }/user/pages/images/#{ cityObj.rightImage }"
+%}
 
 
 {% block content %}
-  <!--  -->
-  {% if phc.intro.image %}
-    <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ base_url }}/user/pages/images/{{ phc.intro.image }}) ;">
+    <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ heroImage }}) ;">
       <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
-    {% else %}
-    <div class="section--intro-header section--intro-header--raster background background--darkblue">
-      <div class="text-wrapper text-wrapper--lg text--white">
-    {% endif %}
-      <h1 class="intro-header--headline">Barnpassning i Täby</h1>
-      <h2 class="intro-header--sub-headline">Hitta unga och ambitiösa ungdomar för barnpassning i Täby</h2>
+      <h1 class="intro-header--headline">{{headerHeadline}}</h1>
+      <h2 class="intro-header--sub-headline">{{headerSubHeadline}}</h2>
       <div class="margin-v-sm intro-header--button-case">
-        <a href="#" class="btn btn--orange btn--inline">Hitta en barnvakt!</a>
+        <a href="#" class="btn btn--orange btn--inline">{{headerCTALabel}}</a>
       </div>
     </div>
   </div>
@@ -87,20 +148,16 @@ cityObj.commonText
       <div class="row">
         <div class="col col--6 col--lg-6 col--sm-12">
           <div class="nice-type margin-xs">
-            <h2>Hitta barnvakter i Täby</h2>
-            <p>Med över Y förmedlade uppdrag i er kommun vågar vi på Yepstr sticka ut hakan och säga att vi är övertygade om att vi kan hitta en pålitlig och duktig barnvakt i ert område.</p>
-            <p>Du hittar, koordinerar och konverserar med kandidater direkt i appen. Då ni hittat rätt kan ni även använda appen för schemaläggning och betalning. Med Yepstr för barnpassning är arbetet alltid försäkrat och ungdomarna får referenser och arbetsintyg som de kan använda för att hitta jobb i framtiden.</p>
-            {{
-            pageContent|markdown
-            }}
+            <h2>{{ pageHeadline }}</h2>
+            {{ pageContent|markdown }}
           </div>
         </div>
         <div class="col col--6 col--lg-6 col--sm-12">
           <div class="margin-xs">
             <figure class="image-w-caption">
-              <img class="img--rounded" src="/yepstr/user/pages/images/nacka.png" data-pin-nopin="true">
+              <img class="img--rounded" src="{{ rightCityImage }}" data-pin-nopin="true">
               <figcaption class="image-w-caption--caption rounded-corners-md">
-                <span class="text-w-icon text-w-icon--map-pin">Täby</span>
+                <span class="text-w-icon text-w-icon--map-pin">{{ cityObj.name }}</span>
               </figcaption>
             </figure>
           </div>
@@ -116,19 +173,24 @@ cityObj.commonText
     <div class="container">
       <div class="row">
         <div class="col col--6 col--lg-4 hidden-md">
-          <img class="feature-list--image" src="/yepstr/user/pages/images/smartphone-som-visar-barnvakter-i-taby.png" data-pin-nopin="true">
+          <img class="feature-list--image" src="{{ whyImage }}" data-pin-nopin="true">
         </div>
         <div class="col col--6 col--lg-8 col--md-12">
           <div class="margin-xs">
-            <h3>Varför använda Yepstr för barnpassing i Täby?</h3>
+            <h3>{{ whyHeadline }}</h3>
             <ul class="feature-list">
-              <li class="feature-list--item">Hjälp grannskapets ungdommar ut i arbetslivet</li>
-              <li class="feature-list--item">Vi har över 400 ungdomar i Täby</li>
-              <li class="feature-list--item">Säkert & försäkrat genom If försäkringar</li>
-              <li class="feature-list--item">Kostar ca 75-120kr/tim</li>
-              <li class="feature-list--item">Vi hjälp till med lönesättning och betalning</li>
-              <li class="feature-list--item">Chatta direkt genom appen</li>
-              <li class="feature-list--item">Vi finns alltid tillgängliga och hjälper till om det behövs!</li>
+{% for p in lp.whyPoints %}
+{% set point =
+p.point
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+  <li class="feature-list--item">{{ point }}</li>
+{% endfor %}
             </ul>
           </div>
       </div>
@@ -141,35 +203,40 @@ cityObj.commonText
 
   <section class="section padding-v-lg background--blue">
     <div class="container text--center text--white nice-type">
-      <h2 class="text--center">Hur hjälper Yepstr er med barnpassning?</h2>
+      <h2 class="text--center">{{ howToHeader }}</h2>
       <div class="row">
-        <div class="col col--4 col--sm-12">
-          <div class="padding-sm margin-top-sm">
-            <div class="padding-h-sm hidden-md">
-              <img src="/yepstr/user/pages/images/yepstr-appen-lista-med-svar.png" data-pin-nopin="true">
-            </div>
-            <h3>Barnvakt i {{ city }}</h3>
-            <p>Yepstr matchar dig med närmaste intresserade ungdom först för att främja i grannskapet och skapa optimala förhållanden för ert samarbete</p>
-          </div>
-        </div>
-        <div class="col col--4 col--sm-12">
-          <div class="padding-sm margin-top-sm">
-            <div class="padding-h-sm hidden-md">
-              <img src="/yepstr/user/pages/images/yepstr-appen-profil.png" data-pin-nopin="true">
-            </div>
-            <h3>Boka intervju</h3>
-            <p>Du får svar och ansökningar direkt i appen. Börja konversera och koordinera tillsammans med de sökande som du finner intressant, för att sedan boka en intervju.</p>
-          </div>
-        </div>
-        <div class="col col--4 col--sm-12">
-          <div class="padding-sm margin-top-sm">
-            <div class="padding-h-sm hidden-md">
-              <img src="/yepstr/user/pages/images/yepstr-appen-betala.png" data-pin-nopin="true">
-            </div>
-            <h3>Schemalägg & betala</h3>
-            <p>Relationen till er barnvakt sköter ni enkelt direkt i appen. Appen stöder en chatt, schemaläggning och betalning direkt.</p>
-          </div>
-        </div>
+{% for b in categoryObj.howToBoxes %}
+{% set image =
+"#{ base_url }/user/pages/images/#{ b.image }"
+%}
+{% set title =
+b.title
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set text =
+b.text
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+<div class="col col--4 col--sm-12">
+  <div class="padding-sm margin-top-sm">
+    <div class="padding-h-sm hidden-md">
+      <img src="{{ image }}" data-pin-nopin="true">
+    </div>
+    <h3>{{ title }}</h3>
+    <p>{{ text }}</p>
+  </div>
+</div>
+{% endfor %}
       </div>
     </div>
   </section>
@@ -179,17 +246,17 @@ cityObj.commonText
   <section class="section">
     <div class="container container--no-grid text--center">
       <div class="nice-type margin-top-lg margin-bottom-sm">
-        <h2 class="text--center">Boka barnvakt där det passar dig</h2>
-        <p class="p-lg">Genom att använda vår app så kan du boka lokala ungdomar med bara ett par knapptryckningar.</p>
+        <h2 class="text--center">{{ whereHeadline }}</h2>
+        <p class="p-lg">{{ whereSubHeadline }}</p>
         <nav class="app-links-container margin-v-sm">
-          <a class="icon-link icon-link--ios margin-v-xs margin-h-sm" href="{{phc.ios.link}}">iPhone</a>
-          <a class="icon-link icon-link--android margin-v-xs margin-h-sm" href="{{phc.android.link}}">Android</a>
-          <a class="icon-link icon-link--web margin-v-xs margin-h-sm" href="{{phc.web.link}}">Direkt på webben</a>
+          <a class="icon-link icon-link--ios margin-v-xs margin-h-sm" href="{{ tc.common.iosUrl }}">iPhone</a>
+          <a class="icon-link icon-link--android margin-v-xs margin-h-sm" href="{{ tc.common.androidUrl }}">Android</a>
+          <a class="icon-link icon-link--web margin-v-xs margin-h-sm" href="{{ tc.common.wwwUrl }}">Direkt på webben</a>
         </nav>
       </div>
     </div>
     <div class="container container--md container--no-grid">
-      <img src="/yepstr/user/pages/images/yepstr-appen-i-manga-olika-skarmstorlekar.png" data-pin-nopin="true">
+      <img src="{{ whereImage }}" data-pin-nopin="true">
     </div>
   </section>
 
@@ -201,39 +268,9 @@ cityObj.commonText
   <section class="section margin-v-lg">
     <div class="container no-grid">
       <div class="testimonials">
-        <div class="testimonial testimonial--customer">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              "Vilken otroligt fin idé! Barnen frågade efter Sofia så fort hon hade lämnat. Känns skönt att veta att jag har några ungdomar att fråga när jag behöver hjälp. Väldigt smidigt!"
-            </div>
-          </div>
-          <div class="testimonial--image">
-            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-1-anna-soderholm.jpg">
-          </div>
-          <h2 class="testimonial--name">Anna Söderholm</h2>
-        </div>
-        <div class="testimonial testimonial--customer">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              "Vi tycker att det funkar jättebra med Vendela! Barnen har klickat helt med henne så det känns tryggt och bra. Vi kommer fortsätta att boka henne via appen!"
-            </div>
-          </div>
-          <div class="testimonial--image">
-            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-4-jenny-margareta-uggla.jpg">
-          </div>
-          <h2 class="testimonial--name">Jenny-Margareta Uggla</h2>
-        </div>
-        <div class="testimonial testimonial--customer">
-          <div class="testimonial--bubble padding-sm center-content">
-            <div>
-              "Jag tycker det fungerar riktigt bra. Jag har behövt hjälp med barnvakt och hundpassning där Yeppen Agnes har gjort ett superbra jobb! Betalningen är enkel och smidig vilket underlättar."
-            </div>
-          </div>
-          <div class="testimonial--image">
-            <img alt="" class="img--circle" src="http://www.yepstr.com/user/pages/images/testimonial-c-5-emeli-haage.jpg">
-          </div>
-          <h2 class="testimonial--name">Emeli Haage</h2>
-        </div>
+{% for t in categoryObj.testimonials %}
+  {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}
+{% endfor %}
       </div>
     </div>
   </section>
@@ -245,23 +282,9 @@ cityObj.commonText
   <section class="section margin-v-lg">
     <div class="container container--no-grid container--sm margin-v-sm">
       <div class="nice-type">
-        <h2>Barnpassning i Täby av Täbybor</h2>
-
-        <p>Yepstr gör mer än att förmedla barnvakter i Täby. Vi arbetar tätt tillsammans med ungdomsorganisationer, gymnasieskolor och unga drivna ambassadörer i området för att bidra till en levande kommun. Via Yepstr möter du ungdomar från Åva Gymnasium såväl som Tibble Gymnasium med olika erfarenhetsgrader av barnpassning.</p>
-
-        <p>Du hittar, koordinerar och konverserar med kandidater direkt i appen. Då ni hittat rätt kan ni även använda appen för schemaläggning och betalning. Varesig du bor i Viggbyholm, Näsbypark eller Täby Kyrkby så kan ni hitta en barnvakt från just ert område. </p>
-
-        <p>Yepstr kan användas för att hitta en långsiktig lösning med återkommande barnpassning där schemaläggning, betalning och försäkring sköts direkt i appen. Vid behov kan ni även hitta lokala gymnasieungdomar som kan hjälpa till på kort varsel. </p>
-
-
-        <h3>Mer om barnpassning i Täby</h3>
-        <ul>
-          <li>Hitta rätt barnvakt för just er familj med vår intervjuguide för barnvakter. </li>
-          <li>Lär känna 3 av våra barnvakter; Tea, Tilda och Alma. I den här intervjun presenterar de sina bästa tips för att komma igång med barnvakten.</li>
-          <li>Genom Yepstr är ni alltid försäkrade, läs mer om säkerhet och försäkringar.</li>
-        </ul>
-
+        <h2>{{ bottomHeadline }}</h2>
         {{ bottomContent|markdown }}
+        {{ categoryBottomContent|markdown }}
       </div>
     </div>
   </section>
