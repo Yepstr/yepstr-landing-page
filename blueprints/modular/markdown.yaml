@@ -1,0 +1,38 @@
+title: Markdown
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/markdown
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/markdown
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.align_class:
+              type: radio
+              label: Align text
+              default: text--left
+              options:
+                text--left: Left
+                text--center: Center
