@@ -1,29 +1,19 @@
 {% set phc = page.header.content %}
 
-<section class="section margin-v-lg">
-  <div class="container">
-    <div class="row">
-      <div class="col col--4 col--md-12">
-        <div class="app-links-container">
-          <div class="nice-type">
-            {{ page.content }}
-          </div>
-          <ul class="app-links reset-list">
-            <li class="app-links--item app-links--item--ios">
-              <a href="{{phc.ios.link}}">{{ phc.ios.text }}</a>
-            </li>
-            <li class="app-links--item app-links--item--android">
-              <a href="{{phc.android.link}}">{{ phc.android.text }}</a>
-            </li>
-            <li class="app-links--item app-links--item--web">
-              <a href="{{phc.web.link}}">{{ phc.web.text }}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col col--8 col--md-12">
-        {{ page.find('/images').media['download-app-large.png'].html('', 'Ladda ner Yepstr appen') }}
-      </div>
+
+<section class="section">
+  <div class="container container--no-grid text--center">
+    <div class="nice-type margin-top-lg margin-bottom-sm">
+      <h2 class="text--center">Använd Yepstr där det passar dig</h2>
+      <p class="p-lg">{{ page.content }}</p>
+      <nav class="app-links-container margin-v-sm">
+        <a class="icon-link icon-link--ios margin-v-xs margin-h-sm" href="{{phc.ios.link}}">{{ phc.ios.text }}</a>
+        <a class="icon-link icon-link--android margin-v-xs margin-h-sm" href="{{phc.android.link}}">{{ phc.android.text }}</a>
+        <a class="icon-link icon-link--web margin-v-xs margin-h-sm" href="{{phc.web.link}}">{{ phc.web.text }}</a>
+      </nav>
     </div>
+  </div>
+  <div class="container container--md container--no-grid">
+    {{ page.find('/images').media['download-app-large.png'].html('', 'Ladda ner Yepstr appen') }}
   </div>
 </section>
