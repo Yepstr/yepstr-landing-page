@@ -1,24 +1,28 @@
-{% set phc = page.header.content %}
+{% set tmc = config.themes['yepstr-landing-page'].promo_module %}
 
 <section class="section section--two-col-promo margin-v-lg">
   <div class="container container--xl container--no-grid">
     <div class="section--two-col-promo--wrapper">
       <div class="promo-col promo-col--left background background--green">
         <div class="promo-col--content text--white">
-          <h2 class="promo-col--headline">{{ phc.col_left.headline }}</h2>
+          <h2 class="promo-col--headline">
+            {{ tmc.cost_headline }}
+          </h2>
           <div class="promo-col--text nice-type">
-            {{ phc.col_left.text }}
+            {{ tmc.cost_markdown|markdown }}
           </div>
         </div>
       </div>
       <div class="promo-col promo-col--right background background--lightest-grey">
         <div class="promo-col--content">
-          <h2 class="promo-col--headline">{{ phc.col_right.headline }}</h2>
+          <h2 class="promo-col--headline">
+            {{ tmc.saftey_headline }}
+          </h2>
           <div class="promo-col--text nice-type">
-            {{ phc.col_right.text }}
+            {{ tmc.saftey_markdown|markdown }}
           </div>
           <div class="promo-col--image">
-            {{ page.find('/images').media['promo-if-iphone.png'] }}
+            {{ page.find('/images').media['promo-if-iphone.png'].html('', 'IF försäkring') }}
           </div>
         </div>
       </div>

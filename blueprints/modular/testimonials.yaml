@@ -36,33 +36,8 @@ form:
 
             header.content.testimonials:
               type: list
-              label: Testimonials
-
+              label: Testimonials, check theme config for identifiers
               fields:
-
-                .quote:
-                  type: textarea
-                  label: Quote
-
-                .name:
+                .identifier:
+                  label: Identifier
                   type: text
-                  label: Name
-
-                .image:
-                    type: filepicker
-                    size: medium
-                    folder: 'page@:/images'
-                    label: Choose a image
-                    preview_images: true
-                    acccept:
-                      - .png
-                      - .jpg
-                      - .svg
-
-                .type:
-                  type: select
-                  label: User type
-                  default: Customer
-                  options:
-                    customer: 'Customer'
-                    yep: 'Yep'

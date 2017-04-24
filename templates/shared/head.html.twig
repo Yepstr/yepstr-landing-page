@@ -9,26 +9,16 @@
           |
         {% endif %}{{ site.title|e('html') }}
       </title>
+
+      <!-- Create page meta stuff -->
+      {% include 'shared/metadata.html.twig' %}
+      <!-- theme meta things (hooray!) -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- meta things (hooray!) -->
       <meta name="HandheldFriendly" content="True">
       <meta name="MobileOptimized" content="320">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="google-site-verification" content="i4OjwUPWD7mUyPaeMLEWo7xFVUTdqLRav5Hj8diBAsU"/>
-      <meta name="description" content="Yepstr är här för att ge dig mer fritid, samtidigt som du hjälper ungdomar in i arbetslivet">
-      <meta name="keywords" content="barnpassning, hundpassning, gräsklippning, billig hemhjälp, extrajobb, tonårsjobb, sommarjobb, extraknäck, fönsterputs, fönstertvätt, yepstr, yeppster, jeppster, jepster, yepster, jeppstr">
-      <meta property="og:title" content="{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}"/>
-      <meta property="og:site_name" content="Yepstr"/>
-      <meta
-        property="og:description"
-        content="På Yepstr kan hushåll få kontakt med drivna ungdomar i grannskapet för enklare uppdrag (gräsklippning, hundpassning etc.). Genom att använda Yepstr är du med och bygger ungdomarnas första riktiga CV. Praktisk erfarenhet utanför skolan leder ofta till det där första sommarjobbet, vilket leder till större chans att få praktik under universitetsstudierna vilket ökar chansen att få det där första riktiga jobbet."/>
-      <meta property="og:url" content="{{ uri.route(true, true) }}"/>
-      <meta property="og:image" content="{{ base_url_absolute }}{{ url('theme://build/images/facebook/fb-image.png') }}"/>
-      <meta property="og:image:height" content="400"/>
-      <meta property="og:image:width" content="400"/>
-      <meta property="og:type" content="website"/>
-      <meta property="fb:app_id" content="1592292351020292" />
       <meta name="msapplication-TileColor" content="">
       <meta name="msapplication-TileImage" content="">
 

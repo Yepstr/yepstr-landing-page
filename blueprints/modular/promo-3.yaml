@@ -19,12 +19,19 @@ form:
                 header.template:
                   default: modular/promo-3
                   '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+
         content:
           fields:
+            s:
+              ordering@: 0
+              type: section
+              title: If content is empty, the default from the Theme config (saftey) will be used
+
             uploads:
               type: ignore
-
             header.process:
+              type: ignore
+            header.title:
               type: ignore
 
             content_vars:
@@ -46,6 +53,9 @@ form:
                 - .png
                 - .jpg
                 - .svg
+            header.content.left_image_alt:
+              type: text
+              label: Left image alt
 
             header.content.right_image:
               type: filepicker
@@ -57,3 +67,6 @@ form:
                 - .png
                 - .jpg
                 - .svg
+            header.content.right_image_alt:
+              type: text
+              label: Right image alt

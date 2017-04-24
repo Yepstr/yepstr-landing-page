@@ -1,0 +1,52 @@
+{% for meta in page.metadata %}
+    <meta
+        {% if meta.name %}
+        name="{{ meta.name }}"
+        {% endif %}
+        {% if meta.http_equiv %}
+        http-equiv="{{ meta.http_equiv }}"
+        {% endif %}
+        {% if meta.charset %}
+        charset="{{ meta.charset }}"
+        {% endif %}
+        {% if meta.property %}
+        property="{{ meta.property }}"
+        {% endif %}
+        {% if meta.content %}
+        content="{{ meta.content }}"
+        {% endif %}/>
+{% endfor %}
+
+{% if not page.metadata["description"] %}
+    <meta name="og:description" property="description" content="{{ page.summary|e }}"/>
+{% endif %}
+{% if page.metadata["og:title"] %}
+    <meta name="og:title" property="og:title" content="{{ page.metadata[" og:title"].content }} | {{ site.title }}"/>
+{% else %}
+    <meta name="og:title" property="og:title" content="{{ page.title }} | {{ site.title }}"/>
+{% endif %}
+{% if not page.metadata["og:sitename"] %}
+    <meta name="og:site_name" property="og:site_name" content="{{ site.title }}"/>
+{% endif %}
+{% if not page.metadata["og:description"] %}
+    {% if page.metadata["description"] %}
+        <meta name="og:description" property="og:description" content="{{ page.metadata["description"].content }}"/>
+    {% else %}
+        <meta name="og:description" property="og:description" content="{{ page.summary|e }}"/>
+    {% endif %}
+{% endif %}
+{% if not page.metadata["og:type"] %}
+    <meta name="og:type" property="og:type" content="website"/>
+{% endif %}
+{% if not page.metadata["og:url"] %}
+    <meta name="og:url" property="og:url" content="{{ page.url(true) }}"/>
+{% endif %}
+{% if not page.metadata["og:image"] %}
+    <meta name="og:image" property="og:image" content="{{ uri.base ~ (page.header.header_image ? page.media.images[page.header.header_image_file].url : url('theme://build/images/facebook/fb-image.png')) }}"/>
+{% endif %}
+{% if not page.metadata["og:image:height"] %}
+    <meta property="og:image:height" content="400"/>
+{% endif %}
+{% if not page.metadata["og:image:width"] %}
+    <meta property="og:image:width" content="400"/>
+{% endif %}

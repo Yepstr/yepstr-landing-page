@@ -100,6 +100,70 @@
   margin-right: rem(12.5);
 }
 
+.margin-top-lg {
+  margin-top: rem(100);
+}
+
+.margin-top-md {
+  margin-top: rem(50);
+}
+
+.margin-top-sm {
+  margin-top: rem(25);
+}
+
+.margin-top-xs {
+  margin-top: rem(12.5);
+}
+
+.margin-bottom-lg {
+  margin-bottom: rem(100);
+}
+
+.margin-bottom-md {
+  margin-bottom: rem(50);
+}
+
+.margin-bottom-sm {
+  margin-bottom: rem(25);
+}
+
+.margin-bottom-xs {
+  margin-bottom: rem(12.5);
+}
+
+.margin-left-lg {
+  margin-left: rem(100);
+}
+
+.margin-left-md {
+  margin-left: rem(50);
+}
+
+.margin-left-sm {
+  margin-left: rem(25);
+}
+
+.margin-left-xs {
+  margin-left: rem(12.5);
+}
+
+.margin-right-lg {
+  margin-right: rem(100);
+}
+
+.margin-right-md {
+  margin-right: rem(50);
+}
+
+.margin-right-sm {
+  margin-right: rem(25);
+}
+
+.margin-right-xs {
+  margin-top: rem(12.5);
+}
+
 .no-margin {
   margin: 0;
 }
@@ -158,6 +222,70 @@
 .padding-h-sm {
   padding-left: rem(25);
   padding-right: rem(25);
+}
+
+.padding-top-lg {
+  margin-top: rem(100);
+}
+
+.padding-top-md {
+  margin-top: rem(50);
+}
+
+.padding-top-sm {
+  margin-top: rem(25);
+}
+
+.padding-top-xs {
+  margin-top: rem(12.5);
+}
+
+.padding-bottom-lg {
+  margin-bottom: rem(100);
+}
+
+.padding-bottom-md {
+  margin-bottom: rem(50);
+}
+
+.padding-bottom-sm {
+  margin-bottom: rem(25);
+}
+
+.padding-bottom-xs {
+  margin-bottom: rem(12.5);
+}
+
+.padding-left-lg {
+  margin-left: rem(100);
+}
+
+.padding-left-md {
+  margin-left: rem(50);
+}
+
+.padding-left-sm {
+  margin-left: rem(25);
+}
+
+.padding-left-xs {
+  margin-left: rem(12.5);
+}
+
+.padding-right-lg {
+  margin-right: rem(100);
+}
+
+.padding-right-md {
+  margin-right: rem(50);
+}
+
+.padding-right-sm {
+  margin-right: rem(25);
+}
+
+.padding-right-xs {
+  margin-top: rem(12.5);
 }
 
 .no-padding {
@@ -288,6 +416,20 @@
 .img--circle {
   border-radius: 50%;
 }
+
+// Rounded corners
+.rounded-corners-lg {
+  border-radius: 20px;
+}
+
+.rounded-corners-md {
+  border-radius: 10px;
+}
+
+.rounded-corners-sm {
+  border-radius: 5px;
+}
+
 // responsive hide and show
 .hidden-xs {
   @media #{ $xsmall } {

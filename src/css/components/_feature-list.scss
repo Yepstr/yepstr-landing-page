@@ -1,0 +1,42 @@
+.feature-list {
+  list-style: none outside none;
+
+  &--item {
+    position: relative;
+    padding-left: 45px;
+    margin-top: rem(45);
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: rem(20);
+    @media #{$large} {
+      display: inline-block;
+      font-size: rem(16);
+      margin-top: rem(30);
+      margin-right: rem(30);
+    }
+    @media #{$xsmall} {
+      display: block;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: 'top left';
+      background-size: 30px 30px;
+      background-image: url("../images/icons/ic-checkmark-circle.svg");
+    }
+  }
+
+  &--image {
+    padding: 0 rem(50);
+    @media #{$large} {
+      padding: 0;
+    }
+  }
+}

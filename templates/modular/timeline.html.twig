@@ -24,7 +24,7 @@
             {% if step.image %}
               <div class="timeline--step-image">
                 <a class="js-image-zoom" href="{{ page.find('/images').url() }}/{{ step.image }}">
-                  {{ page.find('/images').media[step.image] }}
+                  {{ page.find('/images').media[step.image].html('', step.image_alt) }}
                 </a>
               </div>
             {% endif %}

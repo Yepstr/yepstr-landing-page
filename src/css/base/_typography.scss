@@ -54,9 +54,25 @@ h6 {
   text-transform: uppercase;
 }
 
+.p,
 p {
   font-size: rem(16);
+  font-weight: 400;
   margin-bottom: rem(10);
+}
+
+.text {
+  &--sm {
+    font-size: rem(13);
+  }
+
+  &--md {
+    font-size: rem(18);
+  }
+
+  &--lg {
+    font-size: rem(20);
+  }
 }
 
 a {
@@ -79,13 +95,18 @@ a {
   }
 
   p {
+    font-size: rem(18);
     margin-bottom: rem(10);
+  }
+
+  p a {
+    font-size: rem(18);
   }
 
   ol,
   ul {
     li {
-      font-size: rem(16);
+      font-size: rem(18);
       margin-bottom: rem(15);
       margin-left: 1.5em;
 

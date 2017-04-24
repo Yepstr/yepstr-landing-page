@@ -1,22 +1,33 @@
 {% set phc = page.header.content %}
+{% set tmc = config.themes['yepstr-landing-page'].promo_module %}
 
 <section class="section padding-v-lg backgound background--lightest-grey">
   <div class="container">
     <div class="row">
       <div class="col col--4 col--xs-12">
         <div class="margin-sm">
-          {{ page.find('/images').media[phc.left_image].html('', '', 'img--circle') }}
+          {{ page.find('/images').media[phc.left_image].html('', phc.left_image_alt, 'img--circle') }}
         </div>
       </div>
       <div class="col col--8 col--xs-12">
         <div class="promo-big">
           <div class="promo-big--content">
-            <h2 class="promo-big--headline">{{ phc.headline }}</h2>
+            <h2 class="promo-big--headline">
+{% if phc.headline %}
+  {{ phc.headline }}
+{% else %}
+  {{ tmc.saftey_headline }}
+{% endif %}
+            </h2>
             <div class="promo-big--text nice-type">
-              {{ page.content }}
+{% if page.content %}
+  {{ page.content }}
+{% else %}
+  {{ tmc.saftey_markdown|markdown }}
+{% endif %}
             </div>
             <div class="promo-big--image">
-              {{ page.find('/images').media[phc.right_image] }}
+              {{ page.find('/images').media[phc.right_image].html('', phc.right_image_alt) }}
             </div>
           </div>
         </div>

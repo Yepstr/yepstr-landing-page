@@ -1,5 +1,5 @@
 name: Yepstr
-version: 0.1.0
+version: 1.0.0
 description: A theme for yepstr
 icon: rebel
 author:
@@ -15,13 +15,233 @@ license: MIT
 form:
   validation: loose
   fields:
-    dropdown.enabled:
-        type: toggle
-        label: Dropdown in Menu
-        highlight: 1
-        default: 1
-        options:
-          1: PLUGIN_ADMIN.ENABLED
-          0: PLUGIN_ADMIN.DISABLED
-        validate:
-          type: bool
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        common:
+          type: tab
+          title: Common
+          fields:
+            common.iosUrl:
+              type: text
+              label: ios url
+            common.androidUrl:
+              type: text
+              label: android url
+            common.wwwUrl:
+              type: text
+              label: www url
+
+        promo_module:
+          type: tab
+          title: Promo module
+          fields:
+            promo_module.cost_headline:
+              label: 'Cost headline'
+              type: text
+              size: medium
+            promo_module.cost_markdown:
+              label: 'Cost content'
+              type: editor
+            promo_module.saftey_headline:
+              label: 'Saftey headline'
+              type: text
+              size: medium
+            promo_module.saftey_markdown:
+              label: 'Saftey content'
+              type: editor
+        localPagesCommon_tab:
+          type: tab
+          title: Local pages common
+
+          fields:
+            whyUseYepstrSection:
+              type: section
+              title: Why use Yepstr?
+            local_pages.whyHeadline:
+              label: Why use Yepstr headline
+              type: text
+            local_pages.whyImage:
+              label: Why use Yepstr Image
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+            local_pages.whyPoints:
+              type: list
+              label: Why use Yepstr points
+              fields:
+                .point:
+                  type: text
+
+            whereSection:
+              type: section
+              title: Where to use
+            local_pages.whereHeadline:
+              type: text
+              label: Where headline
+            local_pages.whereSubHeadline:
+              type: text
+              label: Where sub headline
+            local_pages.whereImage:
+              label: Where to use Yepstr Image
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg
+
+        cities_tab:
+          type: tab
+          title: Cities
+
+          fields:
+            citiesSection:
+              type: section
+              title: Cities
+              text: Cities we want to use in local task pages. The Identifier should be unique for each city, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{category}}.
+
+            local_pages.cities:
+              type: list
+
+              fields:
+                .settingsSection:
+                  type: section
+                  title: Settings
+                .identifier:
+                  label: Identifier
+                  type: text
+                .name:
+                  label: Name {{city}}
+                  type: text
+                .numYeps:
+                  label: Yeps in city {{cityYeps}}
+                  type: text
+                .numTasks:
+                  label: Tasks in city {{cityTasks}}
+                  type: text
+
+                .commonSection:
+                  type: section
+                  title: Common
+                .commonHeadline:
+                  label: Common headline
+                  type: text
+                .commonText:
+                  label: Common text
+                  type: editor
+                .rightImage:
+                  label: Intro background image
+                  import@:
+                    type: partials/image
+                    context: theme://blueprints
+
+        categories_tab:
+          type: tab
+          title: Categories
+
+          fields:
+            categoriesSection:
+              type: section
+              title: Categories
+              text: Categories we want to use in local task pages. The Identifier should be unique for each category, it will be used as the key. In the text fields you can use replacement tags for getting City data in the texts. You can use {{city}} and {{cityTasks}}
+
+            local_pages.categories:
+              type: list
+              fields:
+                .settingsSection:
+                  type: section
+                  title: Settings
+                .identifier:
+                  label: Unique Identifier
+                  type: text
+                .name:
+                  label: Name {{category}}
+                  type: text
+
+                .headerSection:
+                  type: section
+                  title: Header
+                .heroImage:
+                  label: Hero Image
+                  import@:
+                    type: partials/image
+                    context: theme://blueprints
+                .headerHeadline:
+                  label: Local Page Header Headline
+                  type: text
+                .headerSubHeadline:
+                  label: Local Page Header Sub Headline
+                  type: text
+                .headerCTALabel:
+                  label: Local Page Header CTA label
+                  type: text
+
+                .commonSection:
+                  type: section
+                  title: Common
+                .pageHeadline:
+                  label: Common Headline
+                  type: text
+                .commonText:
+                  label: Common text
+                  type: editor
+                .bottomText:
+                  label: Bottom text
+                  type: editor
+
+                .howToSection:
+                  type: section
+                  title: How to
+                .howToHeader:
+                  type: text
+                  label: Header
+                .howToBoxes:
+                  type: list
+                  label: How To boxes
+                  fields:
+                    .image:
+                      label: Image
+                      import@:
+                        type: partials/image
+                        context: theme://blueprints
+                    .title:
+                      label: Title
+                      type: text
+                    .text:
+                      label: Text
+                      type: text
+
+                .testimonialsSection:
+                  type: section
+                  title: Testimonials
+                  text: Pick the identifiers for the testimonials you want to show.
+                .testimonials:
+                  type: list
+                  fields:
+                    .identifier:
+                      label: Identifier
+                      type: text
+
+        testimonials_tab:
+          type: tab
+          title: Testimonials
+
+          fields:
+            testimonialsSection:
+              type: section
+              title: Testimonials
+              text: Here are all testimonials gatherd. Supply each testimonial with an unique identifier which can be used on the pages for choosing the testimonials to use
+
+            testimonials:
+              type: list
+              fields:
+                import@:
+                  type: partials/testimonial
+                  context: theme://blueprints

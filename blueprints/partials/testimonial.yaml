@@ -1,0 +1,33 @@
+form:
+  .identifier:
+    type: text
+    label: Identifier
+
+  .quote:
+    type: textarea
+    label: Quote
+
+  .name:
+    type: text
+    label: Name
+
+  .image:
+    label: Choose a image
+    import@:
+      type: partials/image
+      context: theme://blueprints
+  .type:
+    type: select
+    label: User type
+    default: Customer
+    options:
+      customer: 'Customer'
+      yep: 'Yep'
+
+  .category:
+    type: text
+    label: Kategori
+
+  .image_alt:
+    type: text
+    label: image alt

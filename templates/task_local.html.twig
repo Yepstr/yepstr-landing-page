@@ -1,0 +1,306 @@
+{% extends 'shared/base.html.twig' %}
+{% set phc = page.header.content %}
+{% set tc = config.themes['yepstr-landing-page'] %}
+{% set lp = tc.local_pages %}
+
+{#
+Find the city and category object
+We would rather that lp.cities and lp.categories
+was a hash maps so that we could get the correct
+object directly but this is as good as we can get now
+#}
+{% set cityObj = null %}
+{% for c in lp.cities if c.identifier == phc.local.city %}
+{% set cityObj = c %}
+{% endfor %}
+{% set categoryObj = null %}
+{% for c in lp.categories if c.identifier == phc.local.category %}
+{% set categoryObj = c %}
+{% endfor %}
+
+{#
+Create the content strings
+#}
+{% set headerHeadline =
+  categoryObj.headerHeadline
+    |replace({
+      '{{city}}': cityObj.name,
+      '{{cityTasks}}': cityObj.numTasks
+    })
+%}
+{% set headerSubHeadline =
+categoryObj.headerSubHeadline
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set headerCTALabel =
+categoryObj.headerCTALabel
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set headerCTAHref =
+  "https://app.yepstr.com/signup"
+%}
+{% set pageHeadline =
+categoryObj.pageHeadline
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set pageContent =
+categoryObj.commonText
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whyHeadline
+=lp.whyHeadline
+|replace({
+  '{{category}}': categoryObj.name,
+  '{{city}}': cityObj.name,
+  '{{cityYeps}}': cityObj.numYeps,
+  '{{cityTasks}}': cityObj.numTasks
+})
+%}
+{% set whyImage =
+"#{ base_url }/user/pages/images/#{ lp.whyImage }"
+%}
+
+{% set howToHeader =
+categoryObj.howToHeader
+  |replace({
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+
+{% set whereHeadline =
+lp.whereHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whereSubHeadline =
+lp.whereSubHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set whereImage =
+"#{ base_url }/user/pages/images/#{ lp.whereImage }"
+%}
+
+{% set bottomHeadline =
+cityObj.commonHeadline
+  |replace({
+    '{{category}}': categoryObj.name,
+  })
+%}
+{% set bottomContent =
+cityObj.commonText
+  |replace({
+    '{{category}}': categoryObj.name,
+  })
+%}
+{% set categoryBottomContent =
+categoryObj.bottomText
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set heroImage =
+"#{ base_url }/user/pages/images/#{ categoryObj.heroImage }"
+%}
+{% set rightCityImage =
+"#{ base_url }/user/pages/images/#{ cityObj.rightImage }"
+%}
+
+
+{% block content %}
+    <div class="section--intro-header section--intro-header--raster background background--darkblue background--pos-center" style="background-image: url({{ heroImage }}) ;">
+      <div class="text-wrapper text-wrapper--lg text-wrapper--lg-padding text--white">
+      <h1 class="intro-header--headline">{{headerHeadline}}</h1>
+      <h2 class="intro-header--sub-headline">{{headerSubHeadline}}</h2>
+      <div class="margin-v-sm intro-header--button-case">
+        <a href="{{ headerCTAHref }}" class="btn btn--orange btn--inline">{{headerCTALabel}}</a>
+      </div>
+    </div>
+  </div>
+  <section class="section padding-v-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col col--6 col--lg-6 col--sm-12">
+          <div class="nice-type margin-xs">
+            <h2>{{ pageHeadline }}</h2>
+            {{ pageContent|markdown }}
+          </div>
+        </div>
+        <div class="col col--6 col--lg-6 col--sm-12">
+          <div class="margin-xs">
+            <figure class="image-w-caption">
+              <img class="img--rounded" src="{{ rightCityImage }}" data-pin-nopin="true">
+              <figcaption class="image-w-caption--caption rounded-corners-md">
+                <span class="text-w-icon text-w-icon--map-pin">{{ cityObj.name }}</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <hr>
+  <!--  -->
+
+  <section class="section padding-v-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col col--6 col--lg-4 hidden-md">
+          <img class="feature-list--image" src="{{ whyImage }}" data-pin-nopin="true">
+        </div>
+        <div class="col col--6 col--lg-8 col--md-12">
+          <div class="margin-xs">
+            <h3>{{ whyHeadline }}</h3>
+            <ul class="feature-list">
+{% for p in lp.whyPoints %}
+{% set point =
+p.point
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+  <li class="feature-list--item">{{ point }}</li>
+{% endfor %}
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <hr>
+  <!--  -->
+
+  <section class="section padding-v-lg background--blue">
+    <div class="container text--center text--white nice-type">
+      <h2 class="text--center">{{ howToHeader }}</h2>
+      <div class="row">
+{% for b in categoryObj.howToBoxes %}
+{% set image =
+"#{ base_url }/user/pages/images/#{ b.image }"
+%}
+{% set title =
+b.title
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+{% set text =
+b.text
+  |replace({
+    '{{category}}': categoryObj.name,
+    '{{city}}': cityObj.name,
+    '{{cityYeps}}': cityObj.numYeps,
+    '{{cityTasks}}': cityObj.numTasks
+  })
+%}
+<div class="col col--4 col--sm-12">
+  <div class="padding-sm margin-top-sm">
+    <div class="padding-h-sm hidden-md">
+      <img src="{{ image }}" data-pin-nopin="true">
+    </div>
+    <h3>{{ title }}</h3>
+    <p>{{ text }}</p>
+  </div>
+</div>
+{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+
+  <section class="section">
+    <div class="container container--no-grid text--center">
+      <div class="nice-type margin-top-lg margin-bottom-sm">
+        <h2 class="text--center">{{ whereHeadline }}</h2>
+        <p class="p-lg">{{ whereSubHeadline }}</p>
+        <nav class="app-links-container margin-v-sm">
+          <a class="icon-link icon-link--ios margin-v-xs margin-h-sm" href="{{ tc.common.iosUrl }}">iPhone</a>
+          <a class="icon-link icon-link--android margin-v-xs margin-h-sm" href="{{ tc.common.androidUrl }}">Android</a>
+          <a class="icon-link icon-link--web margin-v-xs margin-h-sm" href="{{ tc.common.wwwUrl }}">Direkt på webben</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container container--md container--no-grid">
+      <img src="{{ whereImage }}" data-pin-nopin="true">
+    </div>
+  </section>
+
+  <!--  -->
+  <hr>
+  <!--  -->
+
+
+  <section class="section margin-v-lg">
+    <div class="container no-grid">
+      <div class="testimonials">
+{% for t in categoryObj.testimonials %}
+  {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}
+{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <hr>
+  <!--  -->
+
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--sm margin-v-sm">
+      <div class="nice-type">
+        <h2>{{ bottomHeadline }}</h2>
+        {{ bottomContent|markdown }}
+        {{ categoryBottomContent|markdown }}
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <hr>
+  <!--  -->
+
+  <!--  -->
+  {{ include('partials/in-the-media.html.twig') }}
+  <!--  -->
+
+  {% for module in page.collection( ) %}
+    {{ module.content }}
+  {% endfor %}
+{% endblock %}
