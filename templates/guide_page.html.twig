@@ -1,5 +1,8 @@
 {% extends 'shared/base.html.twig' %}
+
 {% set phc = page.header.content %}
+{% set guide_index_page = page.parent( ) %}
+
 {% block content %}
   <!--  -->
   {{ include('partials/intro-header.html.twig') }}
@@ -8,6 +11,9 @@
     <section class="section margin-v-lg">
       {% if phc.page_headline %}
         <div class="container container--no-grid container--lg margin-v-sm">
+          <div class="visible-sm nice-type text--center">
+            <a href="{{ guide_index_page.url }}">{{ guide_index_page.header.content.index_back }}</a>
+          </div>
           <h2 class="section-headline text--center">{{ phc.page_headline }}</h2>
         </div>
       {% endif %}
@@ -20,7 +26,5 @@
       {% endif %}
     </section>
   {% endif %}
-  {% for module in page.collection( ) %}
-    {{ module.content }}
-  {% endfor %}
+
 {% endblock %}

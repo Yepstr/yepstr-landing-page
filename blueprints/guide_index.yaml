@@ -1,0 +1,53 @@
+title: Guide Index
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.intro.headline:
+              type: text
+              label: Intro headline
+
+            header.content.intro.sub_headline:
+              type: text
+              label: Intro subheadline
+
+            header.content.page_headline:
+              type: text
+              label: Page headline
+
+            header.content.hide_footer_cta:
+              type: toggle
+              label: Hide footer CTA
+              highlight: true
+              default: false
+              options:
+                  true: Hide
+                  false: Show
+
+            header.content.index_back:
+              type: text
+              label: Guide index back link text
