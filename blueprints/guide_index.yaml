@@ -51,3 +51,13 @@ form:
             header.content.index_back:
               type: text
               label: Guide index back link text
+
+            header.content.cta_left_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Guide pages bottom cta left image
+              preview_images: true
+              acccept:
+                - .png
+                - .jpg

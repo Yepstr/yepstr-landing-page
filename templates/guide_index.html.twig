@@ -23,7 +23,7 @@
           {% set sphc = subPage.header.content %}
             <li class="guide-index--item">
               <a class="guide-index--link" href="{{ subPage.url }}">
-                {{ page.find('/images').media[sphc.intro.image].resize(600) }}
+                {{ page.find('/images').media[sphc.intro.image].cropZoom(1000, 500) }}
                 <div class="guide-index--text">
                   <h4 class="guide-index--category">{{ sphc.guide_category }}</h4>
                   <h3 class="guide-index--headline">{{ subPage.menu }}</h3>
