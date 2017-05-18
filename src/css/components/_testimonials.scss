@@ -6,6 +6,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
+  margin-bottom: rem(125);
   @media #{$medium} {
     flex-direction: column;
   }
@@ -18,7 +19,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   width: 100%;
   max-width: 50%;
   @media #{$medium} {
-    margin-bottom: rem(50);
+    margin-bottom: rem(100);
     max-width: 100%;
   }
 
