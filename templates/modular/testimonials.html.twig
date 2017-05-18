@@ -3,9 +3,9 @@
 <section class="section margin-v-lg">
   <div class="container no-grid">
     <div class="testimonials">
-{% for t in phc.testimonials %}
-  {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}
-{% endfor %}
+    {% for t in phc.testimonials %}
+      {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}
+    {% endfor %}
     </div>
   </div>
 </section>

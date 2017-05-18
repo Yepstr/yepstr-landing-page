@@ -12,6 +12,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
 }
 
 .testimonial {
+  position: relative;
   text-align: center;
   padding: 0 rem(15);
   width: 100%;
@@ -99,9 +100,10 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   }
 
   &--video-link {
+    position: absolute;
     font-size: rem(20);
-    margin: 0;
-    padding: 0;
+    left: 0;
+    right: 0;
   }
 
 }
