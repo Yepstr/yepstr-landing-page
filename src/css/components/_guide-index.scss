@@ -1,0 +1,53 @@
+.guide-index {
+  &--list {
+    @include clearfix();
+  }
+
+  &--item {
+    margin: rem(15);
+  }
+
+  &--link {
+    min-height: 400px;
+    width: 31%;
+    margin: 1% 1% rem(75);
+    float: left;
+    display: block;
+    color: $darkBlue;
+    text-align: center;
+    transition: background 200ms linear;
+    overflow: hidden;
+    border-radius: 10px;
+    @media #{$medium} {
+      width: 48%;
+    }
+    @media #{$xsmall} {
+      width: 100%;
+      margin: rem(25) 0;
+      min-height: auto;
+      height: auto;
+    }
+
+    &:hover {
+      background: darken( $white, 5% );
+    }
+  }
+
+  &--text {
+    padding: rem(10) rem(25) rem(25);
+  }
+
+  &--category {
+    margin: rem(10) 0;
+    font-size: rem(14);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $darkGrey;
+  }
+
+  &--headline {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

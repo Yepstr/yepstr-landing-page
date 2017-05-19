@@ -1,0 +1,39 @@
+{% extends 'shared/base.html.twig' %}
+{% set phc = page.header.content %}
+{% block content %}
+  <!--  -->
+  {{ include('partials/intro-header.html.twig') }}
+  <!--  -->
+
+  <section class="section margin-v-lg">
+    <div class="container container--no-grid container--lg margin-v-sm">
+      <h2 class="section-headline text--center">{{ phc.page_headline }}</h2>
+    </div>
+    {% if page.content %}
+      <div class="container container--no-grid container--sm margin-v-sm">
+        <div class="nice-type">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="container container--no-grid">
+      <nav role="navigation" class="guide-index">
+        <ul class="guide-index--list reset-list">
+          {% for subPage in page.children() %}
+          {% set sphc = subPage.header.content %}
+            <li class="guide-index--item">
+              <a class="guide-index--link" href="{{ subPage.url }}">
+                {{ page.find('/images').media[sphc.intro.image].cropZoom(1000, 500) }}
+                <div class="guide-index--text">
+                  <h4 class="guide-index--category">{{ sphc.guide_category }}</h4>
+                  <h3 class="guide-index--headline">{{ subPage.menu }}</h3>
+                  <p>{{ sphc.index_slug }}</p>
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </section>
+{% endblock %}

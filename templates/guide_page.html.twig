@@ -1,0 +1,58 @@
+{% extends 'shared/base.html.twig' %}
+
+{% set phc = page.header.content %}
+{% set guide_index_page = page.parent( ) %}
+
+{% block content %}
+  <!--  -->
+  {{ include('partials/intro-header.html.twig') }}
+  <!--  -->
+  {% if phc.page_headline or page.content %}
+    <section class="section margin-v-lg">
+      {% if phc.page_headline %}
+        <div class="container container--no-grid container--lg margin-v-sm">
+          <div class="visible-sm nice-type text--center">
+            <a href="{{ guide_index_page.url }}">{{ guide_index_page.header.content.index_back }}</a>
+          </div>
+          <h2 class="section-headline text--center">{{ phc.page_headline }}</h2>
+        </div>
+      {% endif %}
+      {% if page.content %}
+        <div class="container container--no-grid container--sm margin-v-sm">
+          <div class="nice-type">
+            {{ page.content }}
+          </div>
+        </div>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  {% for module in page.collection( ) %}
+    {{ module.content }}
+  {% endfor %}
+
+  <section class="call-to-action">
+    <div class="container container--no-grid background background--lightest-grey call-to-action--container">
+      <div class="call-to-action__image">
+        {{ page.find('/images').media[guide_index_page.header.content.cta_left_image] }}
+      </div>
+      <div class="call-to-action__main">
+        <div class="call-to-action__text-wrapper">
+          <h3 class="call-to-action__subheadline">Ladda ner vår app</h3>
+          <h2 class="call-to-action__headline">Hur kan våra drivna ungdomar hjälpa dig? </h2>
+          <p class="call-to-action__text">Vi har över 4 000 ungdomar i Sverige som vill hjälpa sina grannar!</p>
+        </div>
+        <ul class="feature-list">
+          <li class="feature-list--item">Hjälp grannskapets ungdommar ut i arbetslivet!</li>
+          <li class="feature-list--item">Säkert & försäkrat genom If försäkringar</li>
+          <li class="feature-list--item">Kostar ca 75-120kr/tim</li>
+        </ul>
+        <div class="call-to-action__buttons">
+          <a href="https://itunes.apple.com/se/app/yepstr/id1069311381?mt=8" class="download-app-btn download-app-btn--app-store">Hämta i App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.yepstr.android" class="download-app-btn download-app-btn--google-play">Ladda ner på på Google Play</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
