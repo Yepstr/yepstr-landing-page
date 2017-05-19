@@ -231,3 +231,32 @@ form:
               acccept:
                 - .png
                 - .jpg
+
+        collaborators_logos:
+          type: tab
+          title: Collaborators logos
+          fields:
+
+            header.content.collaborators_logos:
+              name: collaborators_logos
+              type: list
+              label: Collaborators logos
+
+              fields:
+                .href:
+                  type: text
+                  label: Logo href
+
+                .alt_text:
+                  type: text
+                  label: Image alt text
+
+                .path:
+                  type: filepicker
+                  size: medium
+                  folder: 'page@:/images'
+                  label: Logo image path
+                  preview_images: true
+                  acccept:
+                    - .png
+                    - .jpg

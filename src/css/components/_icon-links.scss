@@ -29,4 +29,8 @@
   &--web::before {
     background-image: url("../images/icons/app-icon-web.svg");
   }
+
+  &--play::before {
+    background-image: url("../images/icons/ic-play.svg");
+  }
 }

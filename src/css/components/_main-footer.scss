@@ -1,4 +1,27 @@
 .main-footer {
+  &--collaborators {
+    .logo-list {
+      text-align: center;
+
+      &__item {
+        display: inline-block;
+        padding: rem(5) rem(60) rem(5) 0;
+        @media #{$medium} {
+          display: block;
+          padding: rem(5);
+          text-align: center;
+        }
+
+        img {
+          max-height: 100px;
+          @media #{$xlarge} {
+            max-height: 80px;
+          }
+        }
+      }
+    }
+  }
+
   &--top {
     .container {
       padding-top: 60px;
@@ -77,6 +100,7 @@
     .footer-copy {
       color: $white;
       font-size: rem(16);
+
     }
   }
 

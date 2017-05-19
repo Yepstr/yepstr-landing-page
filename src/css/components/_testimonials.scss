@@ -6,18 +6,20 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
+  margin-bottom: rem(125);
   @media #{$medium} {
     flex-direction: column;
   }
 }
 
 .testimonial {
+  position: relative;
   text-align: center;
   padding: 0 rem(15);
   width: 100%;
   max-width: 50%;
   @media #{$medium} {
-    margin-bottom: rem(50);
+    margin-bottom: rem(100);
     max-width: 100%;
   }
 
@@ -96,6 +98,13 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
     font-size: rem(20);
     margin: 0;
     padding: 0;
+  }
+
+  &--video-link {
+    position: absolute;
+    font-size: rem(20);
+    left: 0;
+    right: 0;
   }
 
 }
