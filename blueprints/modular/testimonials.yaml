@@ -34,6 +34,30 @@ form:
             header.process:
               type: ignore
 
+            header.content.show_trustpilot:
+              type: toggle
+              label: Show trustpilot reviews
+              highlight: true
+              default: false
+              options:
+                  true: Show
+                  false: Hide
+
+            header.content.trustpilot_headline:
+              type: text
+              label: Rubrik
+              default: Våra kunder gillar oss...
+
+            header.content.trustpilot_subheadline:
+              type: text
+              label: Underrubrik
+              default: ...och vi älskar dom! Läs alla våra kundrekommendationer från Trustpilot
+
+            header.content.trustpilot_loadingtext:
+              type: text
+              label: Laddningstext
+              default: Laddar...
+
             header.content.testimonials:
               type: list
               label: Testimonials, check theme config for identifiers
