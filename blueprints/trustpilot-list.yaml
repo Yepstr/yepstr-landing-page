@@ -1,0 +1,48 @@
+title: Trustpilot list
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/trustpilot-list
+                      '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/trustpilot-list
+                  '@data-options': '\Grav\Common\Page\Pages::modularTypes'
+        content:
+          fields:
+            uploads:
+              type: ignore
+
+            content:
+              type: ignore
+
+            header.process:
+              type: ignore
+
+            content_vars:
+              type: section
+              title: Page content
+              underline: true
+
+            header.content.trustpilot_headline:
+              type: text
+              label: Rubrik
+
+            header.content.trustpilot_subheadline:
+              type: text
+              label: Underrubrik
+
+            header.content.trustpilot_loadingtext:
+              type: text
+              label: Laddningstext
