@@ -28,6 +28,29 @@ form:
                 nacka: Nacka
                 lidingo: Lidingö
                 bromma: Bromma
+                uppsala: Uppsala
+                vasteras: Västerås
+                orebro: Örebro
+                sodertalje: Södertälje
+                nynashamn: Nynäshamn
+                kristianstad: Kristianstad
+                karlskrona: Karlskrona
+                falun: Falun
+                savedalen: Sävedalen
+                valbo: Valbo
+                hindas: Hindås
+                as: Ås
+                klagshamn: Klagshamn
+                enhorna: Enhörna
+                harmanger: Harmånger
+                gusum: Gusum
+                linkoping: Linköping
+                boras: Borås
+                saro: Särö
+                skokloster: Skokloster
+                vastra Frölunda : Västra Frölunda
+                marsta : Märsta
+                bjuraker: Bjuråker
 
             header.content.local.category:
               label: Category
