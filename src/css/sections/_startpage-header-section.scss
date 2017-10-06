@@ -184,4 +184,20 @@ $map-height: 332;
       }
     }
   }
+
+  .app-links {
+
+    .download-app-btn,
+    a {
+      width: 220px;
+      height: 74px;
+      @media #{$medium} {
+        width: 170px;
+        height: 57px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
 }
