@@ -44,6 +44,9 @@
     </div>
   </div>
 </div>
+<!--  -->
+{{ include('partials/in-the-media.html.twig') }}
+<!--  -->
 <section class="section section--task-nav margin-v-md">
   <div class="container container--no-grid container--md">
     <h3 class="section-headline text--center">{{ phc.task_nav_headline }}</h3>
@@ -63,7 +66,4 @@
 {% for module in page.collection( ) %}
   {{ module.content }}
 {% endfor %}
-<!--  -->
-{{ include('partials/in-the-media.html.twig') }}
-<!--  -->
 {% endblock %}
