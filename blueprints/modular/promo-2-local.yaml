@@ -42,14 +42,6 @@ form:
             header.content.col_left.text:
               type: editor
               label: Left block text
-              codemirror:
-                mode: 'html'
-                indentUnit: 4
-                indentWithTabs: true
-                lineNumbers: true
-                styleActiveLine: true
-                gutters: ['CodeMirror-lint-markers']
-                lint: true
 
             header.content.col_right.headline:
               type: text
@@ -58,11 +50,3 @@ form:
             header.content.col_right.text:
               type: editor
               label: Right block text
-              codemirror:
-                mode: 'html'
-                indentUnit: 4
-                indentWithTabs: true
-                lineNumbers: true
-                styleActiveLine: true
-                gutters: ['CodeMirror-lint-markers']
-                lint: true
