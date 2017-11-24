@@ -7,7 +7,7 @@
         <div class="promo-col--content text--white">
           <h2 class="promo-col--headline">{{ phc.col_left.headline }}</h2>
           <div class="promo-col--text nice-type">
-            {{ phc.col_left.text }}
+            {{ phc.col_left.text|markdown }}
           </div>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <div class="promo-col--content">
           <h2 class="promo-col--headline">{{ phc.col_right.headline }}</h2>
           <div class="promo-col--text nice-type">
-            {{ phc.col_right.text }}
+            {{ phc.col_right.text|markdown }}
           </div>
           <div class="promo-col--image">
             {{ page.find('/images').media['promo-if-iphone.png'] }}
