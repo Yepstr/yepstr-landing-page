@@ -2,23 +2,25 @@ $padding-top: 140;
 $pedistal-height: 150;
 $phone-position-top: 0;
 $phone-position-left: 0;
-$phone-width: 504;
-$phone-height: 589;
-$section-height: 650;
-$map-position-top: $phone-position-top + 163;
-$map-position-left: $phone-position-left + 21;
-$map-width: 200;
-$map-height: 332;
+$phone-width: 378;
+$phone-height: 506;
+$section-height: 600;
+$map-position-top: $phone-position-top + 112;
+$map-position-left: $phone-position-left + 16;
+$map-width: 150;
+$map-height: 249;
 
 .section--startpage-header {
   position: relative;
   height: #{$section-height}px;
   background-image: url('../images/backgrounds/patterns/bg-city-pattern.png');
-  margin-bottom: rem(200);
+  margin-bottom: rem(50);
   border-bottom: 1px solid $lightGrey;
   @media #{$medium} {
     height: 100%;
+    margin-bottom: rem(100);
   }
+
 
   &::before {
     content: '';
@@ -34,7 +36,7 @@ $map-height: 332;
     position: relative;
     padding-top: rem(150);
     @media #{$medium} {
-      padding-top: rem(100);
+      padding-top: rem(75);
     }
     @media #{$small} {
       padding-top: 0;
@@ -43,7 +45,7 @@ $map-height: 332;
 
   .text-wrapper {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 50%;
     @media #{$medium} {
       position: relative;

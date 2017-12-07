@@ -1,15 +1,14 @@
-$positive-color: $white;
-$positive-color-hover: $lightGrey;
-$negative-color: $darkBlue;
-$negative-color-hover: $black;
+$color: $darkBlue;
+$color-hover: $black;
 
 .main-header-wrapper {
   z-index: 100;
   width: 100%;
   padding: 20px 30px 15px;
-  position: absolute;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 95%);
-  transition: background-color 0.3s cubic-bezier(.55, 0, .1, 1), opacity 0.3s cubic-bezier(.55, 0, .1, 1);
+  position: fixed;
+  background-color: $lightestGrey;
+  z-index: 1000;
+
   @media #{$small} {
     padding: 5px 15px 8px;
     background: $offWhite;
@@ -19,7 +18,7 @@ $negative-color-hover: $black;
 
   .site-logo {
     transition: color 0.2s cubic-bezier(.55, 0, .1, 1);
-    color: $positive-color;
+    color: $color;
     text-decoration: none;
     font-size: rem(36);
     float: left;
@@ -27,7 +26,7 @@ $negative-color-hover: $black;
     font-weight: 600;
 
     &:hover {
-      color: $positive-color-hover;
+      color: $color-hover;
     }
     @media #{$small} {
       float: none;
@@ -55,14 +54,14 @@ $negative-color-hover: $black;
           display: inline-block;
           padding: 15px;
           text-decoration: none;
-          color: $positive-color;
+          color: $color;
           font-size: rem(18);
           font-weight: 600;
           position: relative;
           z-index: 1;
 
           &:hover {
-            color: $positive-color-hover;
+            color: $color-hover;
           }
           @media #{$medium} {
             font-size: rem(15);
@@ -81,19 +80,20 @@ $negative-color-hover: $black;
 
             a {
               border-radius: 10px;
-              border: 2px solid $positive-color;
+              border: 2px solid $black;
               padding: 13px;
 
               &:hover {
-                background: rgba($positive-color, 0.05);
+                background: rgba($color, 0.05);
               }
             }
 
             .highlight-msg {
               transition: all 150ms ease-in-out;
-              background-color: $positive-color;
+              background-color: $lightestGrey;
               border-radius: 10px;
-              color: $negative-color;
+              border: 1px solid $black;
+              color: $color;
               position: absolute;
               width: 220px;
               top: 65px;
@@ -139,7 +139,7 @@ $negative-color-hover: $black;
         margin-top: 10px;
         float: none;
         width: 100%;
-        background: $positive-color;
+        background: $lightestGrey;
         position: absolute;
         left: 0;
         right: 0;
@@ -176,44 +176,6 @@ $negative-color-hover: $black;
         a {
           @media #{$small} {
             padding: 10px 0 10px 20px;
-          }
-        }
-      }
-    }
-  }
-
-  &--negative {
-    background: none;
-
-    .site-logo {
-      color: $negative-color;
-
-      &:hover {
-        color: $negative-color-hover;
-      }
-    }
-
-    .main-header-nav ul li {
-      a {
-        color: $negative-color;
-
-        &:hover {
-          color: $negative-color-hover;
-        }
-      }
-      @media #{$smallMin} {
-        &.highlight-border {
-          a {
-            border-color: $negative-color;
-
-            &:hover {
-              background: rgba($negative-color, 0.05);
-            }
-          }
-
-          .highlight-msg {
-            background-color: $negative-color;
-            color: $positive-color;
           }
         }
       }
