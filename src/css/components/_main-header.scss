@@ -2,14 +2,13 @@ $color: $darkBlue;
 $color-hover: $black;
 
 .main-header-wrapper {
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   padding: 20px 30px 15px;
   position: fixed;
   background-color: $lightestGrey;
-  z-index: 1000;
 
-  @media #{$small} {
+  @media #{$medium} {
     padding: 5px 15px 8px;
     background: $offWhite;
     position: relative;
@@ -28,7 +27,7 @@ $color-hover: $black;
     &:hover {
       color: $color-hover;
     }
-    @media #{$small} {
+    @media #{$medium} {
       float: none;
       color: $darkBlue;
 
@@ -74,7 +73,7 @@ $color-hover: $black;
             }
           }
         }
-        @media #{$smallMin} {
+        @media #{$mediumMin} {
           &.highlight-border {
             overflow: hidden;
 
@@ -117,7 +116,7 @@ $color-hover: $black;
             }
           }
         }
-        @media #{$small} {
+        @media #{$medium} {
           .highlight-msg {
             display: none;
           }
@@ -135,7 +134,7 @@ $color-hover: $black;
 
     &.main-nav {
       float: left;
-      @media #{$small} {
+      @media #{$medium} {
         margin-top: 10px;
         float: none;
         width: 100%;
@@ -151,12 +150,20 @@ $color-hover: $black;
         li {
 
           padding: 0 1%;
-          width: 31%;
+          width: 24%;
           float: none;
           display: inline-block;
 
           a {
             padding: 15px 0;
+          }
+        }
+        @media #{$xsmall} {
+          li {
+            width: 31%;
+          }
+          li:nth-child(4) {
+            display: none;
           }
         }
       }
@@ -167,14 +174,14 @@ $color-hover: $black;
       right: 30px;
       top: 20px;
       text-align: right;
-      @media #{$small} {
+      @media #{$medium} {
         right: 15px;
         top: 12px;
       }
 
       li {
         a {
-          @media #{$small} {
+          @media #{$medium} {
             padding: 10px 0 10px 20px;
           }
         }
