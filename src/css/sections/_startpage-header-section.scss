@@ -57,12 +57,9 @@ $map-height: 249;
     }
 
     .startpage-header--headline {
-      font-size: rem(48);
+      font-size: rem(38);
       margin-bottom: rem(20);
-      @media #{$large} {
-        font-size: rem(38);
-        padding-right: rem(10);
-      }
+      padding-right: rem(10);
       @media #{$medium} {
         font-size: rem(36);
         padding-right: 0;
@@ -81,11 +78,9 @@ $map-height: 249;
       span b {
         font-weight: 400;
       }
-      font-size: rem(28);
+      font-size: rem(22);
       margin-bottom: rem(40);
-      @media #{$large} {
-        font-size: rem(22);
-      }
+      font-size: rem(22);
       @media #{$xsmall} {
         font-size: rem(18);
       }
