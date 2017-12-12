@@ -1,0 +1,19 @@
+{% set home_page = page.find( '/home' ) %}
+{% set collaborators_logos = home_page.header.content.collaborators_logos %}
+
+<section class="section main-footer--collaborators background background--lightest-grey padding-v-xs">
+  <div class="container container--no-grid container--lg ">
+    <ul class="logo-list reset-list margin-v-sm">
+      <li class="logo-list__item">
+        <h3 class="h5">Vi samarbetar med:</h3>
+      </li>
+      {% for logo in collaborators_logos %}
+      <li class="logo-list__item">
+        <a class="ga-outbound-link" target="_blank" href="{{ logo.href }}">
+          {{ page.find('/images').media[logo.path].html('', logo.alt_text) }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
