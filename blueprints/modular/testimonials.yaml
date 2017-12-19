@@ -51,7 +51,7 @@ form:
             header.content.trustpilot_subheadline:
               type: text
               label: Underrubrik
-              default: ...och vi älskar dom! Läs alla våra kundrekommendationer från Trustpilot
+              default: ...och vi älskar dem! Läs alla våra kundrekommendationer på Trustpilot
 
             header.content.trustpilot_loadingtext:
               type: text
