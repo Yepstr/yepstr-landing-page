@@ -6,6 +6,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
+  margin-top: rem(75);
   margin-bottom: rem(125);
   @media #{$medium} {
     flex-direction: column;

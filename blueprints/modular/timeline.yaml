@@ -39,6 +39,14 @@ form:
               size: medium
               label: Read more link text
 
+            header.content.testimonials:
+              type: list
+              label: Testimonials, check theme config for identifiers
+              fields:
+                .identifier:
+                  label: Identifier
+                  type: text
+
             header.content.steps:
               name: steps
               type: list
