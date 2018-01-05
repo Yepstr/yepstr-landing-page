@@ -193,3 +193,20 @@
   })( )
 </script>
 <!-- Intercoms END-->
+
+<!-- link texting START-->
+<script type="text/javascript">
+  /* Default Country Off, if set to false will use linkTextingDefaultCountry to decide default country, otherwise will determine the visiting user's country via their location */
+  var linkTextingDefaultCountryOff = true;
+  /* All Country data is lowercase ISO2 standard http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 */
+  /* Default Country, if set to "auto" will determine the visiting user's country via their location */
+  var linkTextingDefaultCountry = "us";
+  /* If using automatic country detection with https or over 1,000 visits/day go to http://ipinfo.io, get a token, and place it here */
+  var linkTextingIpinfoToken = "";
+  /* Preferred Countries in Dropdown */
+  var linkTextingPreferredCountries = [];
+  /* Countries available in dropdown */
+  var linkTextingOnlyCountries = ["se"];
+</script>
+<script type="text/javascript" src="//s3.amazonaws.com/linktexting-cdn/1.7/js/link_texting_gz.min.js"></script>
+<!-- link texting END-->
