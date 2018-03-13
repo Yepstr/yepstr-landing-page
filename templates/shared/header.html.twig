@@ -1,7 +1,7 @@
 <header class="main-header-wrapper">
   <a class="site-logo" href="/">yepstr</a>
-  <nav role="navigation" class="main-header-nav main-nav">
-    <ul class="clearfix">
+  <nav role="navigation" class="main-header-nav">
+    <ul class="main-nav">
       <li class="highlight-border">
         <a href="{{ base_url }}/ungdomar/jag-vill-jobba">Jag vill jobba</a>
         <div class="highlight-msg">Du kan tjäna
@@ -19,15 +19,48 @@
         <a href="{{ base_url }}/bestallare/foretag">För företag</a>
       </li>
     </ul>
-  </nav>
-  <nav role="navigation" class="main-header-nav support-nav">
-    <ul class="clearfix">
+    <ul class="support-nav">
       <li>
-        <a href="http://m.onelink.me/28c45e17">Skapa konto</a>
+        <a href="{{ base_url }}/ladda-ner-appen">Skapa konto</a>
       </li>
       <li>
         <a href="https://app.yepstr.com/signin">Logga in</a>
       </li>
     </ul>
   </nav>
+  <div class="hamburger-container">
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span>Meny</span>
+    </div>
+  </div>
 </header>
+<div class="hamburger-menu">
+  <ul>
+    <li>
+      <a href="{{ base_url }}">Start</a>
+    </li>
+    <li>
+      <a href="{{ base_url }}/bestallare/sa-funkar-det">Så funkar det</a>
+    </li>
+    <li>
+      <a href="http://support.yepstr.com/">Vanliga frågor</a>
+    </li>
+    <li>
+      <a href="{{ base_url }}/bestallare/foretag">För företag</a>
+    </li>
+    <li>
+      <a href="{{ base_url }}/blog">Blogg</a>
+    </li>
+    <li>
+      <a href="{{ base_url }}/foretaget/om-oss">Om oss</a>
+    </li>
+    <br />
+    <li>
+      <a href="http://m.onelink.me/28c45e17"><h3 class="text--orange">Ladda ner appen</h3></a>
+    </li>
+  </ul>
+</div>

@@ -1,30 +1,57 @@
 {% set tmc = config.themes['yepstr-landing-page'].promo_module %}
 
-<section class="section section--two-col-promo margin-v-lg">
-  <div class="container container--xl container--no-grid">
-    <div class="section--two-col-promo--wrapper">
-      <div class="promo-col promo-col--left background background--green">
-        <div class="promo-col--content text--white">
+<section>
+  <div class="badgeContainer badge-2 center-content">
+    <h4 class="text--center">Testa du också!</h4>
+      <div class="linkTextingWidgetWrapper hidden-md" style="">
+        <div class="text--center hidden-md" style="font-size: 16px;">Skriv in ditt telefonnummer så SMS:ar vi en länk för att ladda ner appen</div>
+        <div class="linkTextingWidget center-content" style="">
+          <div class="promptContent" style=""></div>
+          <div class="linkTextingInner">
+            <input type="hidden" class="linkID" value="76940c6f-3906-4043-bb55-1e2ab6282084">
+            <div class="linkTextingInputWrapper">
+              <input class="linkTextingInput linkTextingInputFlagAdjust" type="tel" id="numberToText_linkTexting">
+            </div>
+            <button class="linkTextingButton" type="button" id="sendButton_linkTexting" style="background-color: #f59b25;color : #F7F7F7">SMS:a länk till app</button>
+            <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+          </div>
+        </div>
+        <a class="center-content hidden-md" href="/ladda-ner-appen">Läs mer och ladda ner appen</a>
+      </div>
+      <div class="badgeRow badge-2 padding-v-sm visible-md">
+        <a class='badge-app-store lt-badge' href='http://m.onelink.me/28c45e17'>
+          <img alt='Get it on App Store' src='https://d22hhoe037sl7u.cloudfront.net/img/app-store-badges/Download_on_the_App_Store_Badge_US-UK_135x40.svg' style='margin-bottom: 10px;'/>
+        </a>
+        <a class='badge-google-play lt-badge' href='http://m.onelink.me/28c45e17'>
+          <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style='width: 150px;  margin-top: -10px;'/>
+        </a>
+      </div>
+    </div>
+  <div class="container">
+    <div class="new-promo">
+      <div class="text">
           <h2 class="promo-col--headline">
             {{ tmc.cost_headline }}
           </h2>
           <div class="promo-col--text nice-type">
             {{ tmc.cost_markdown|markdown }}
           </div>
+      </div>
+      <div class="image">
+          {{ page.find('/images').media['laxhjalp.jpg'] }}
+      </div>
+    </div>
+    <div class="new-promo">
+      <div class="text">
+        <h2 class="promo-col--headline">
+          {{ tmc.saftey_headline }}
+        </h2>
+        <div class="promo-col--text nice-type">
+          {{ tmc.saftey_markdown|markdown }}
         </div>
       </div>
-      <div class="promo-col promo-col--right background background--lightest-grey">
-        <div class="promo-col--content">
-          <h2 class="promo-col--headline">
-            {{ tmc.saftey_headline }}
-          </h2>
-          <div class="promo-col--text nice-type">
-            {{ tmc.saftey_markdown|markdown }}
-          </div>
-          <div class="promo-col--image">
-            {{ page.find('/images').media['promo-if-iphone.png'].html('', 'IF försäkring') }}
-          </div>
-        </div>
+      <div class="image">
+          {{ page.find('/images').media['hundpassning.jpg'] }}
       </div>
     </div>
   </div>

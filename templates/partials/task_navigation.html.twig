@@ -1,17 +1,16 @@
 {% set home_page = page.find( '/home' ) %}
 
-<section class="section section--task-nav margin-v-md">
-  <div class="container container--no-grid container--md">
+<section class="section section--task-nav">
     <nav role="navigation">
       <ul class="task-list reset-list">
         {% for link in home_page.header.content.task_links %}
           <li class="task-list__item">
-            <a data-key="{{ base_url }}{{link.href}}" class="js-highlight task-list__link task-list__link--{{ link.icon }}" href="{{ base_url }}{{ link.href }}">
-              {{ link.text }}
+            <a data-key="{{link.href}}" class="js-highlight" href="{{ base_url }}{{ link.href }}">
+              <div class="task-list__link--{{ link.icon }}"></div>
+              <div class="task-list__link">{{ link.text }}</div>
             </a>
           </li>
         {% endfor %}
       </ul>
     </nav>
-  </div>
 </section>

@@ -31,6 +31,17 @@
   }
 
   &--play::before {
-    background-image: url("../images/icons/ic-play.svg");
+    background-image: url("../images/icons/ic-play2.svg");
+    background-position: center;
+  }
+  
+  &--play {
+    border-radius: 50%;
+    padding: 20px;
+    background-color: $lightOrange;
+
+    &:hover {
+      background-color: $darkOrange;
+    }
   }
 }

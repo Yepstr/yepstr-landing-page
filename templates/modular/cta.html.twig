@@ -1,0 +1,13 @@
+{% set phc = page.header.content %}
+
+<section class="section section-cta">
+  <div class="container padding-v-md padding-h-sm text--center">
+    <div class="star-rating">
+      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    </div>
+    <h2>{{ phc.headline }}</h2>
+    <h4>{{ phc.sub_headline }}</h2>
+    <br />
+    <a href="{{ phc.button_main_href }}" class="btn btn--white btn--inline">{{ phc.button_main_text }}</a>
+  </div>
+</section>

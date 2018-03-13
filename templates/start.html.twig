@@ -2,82 +2,81 @@
 {% set phc = page.header.content %}
 {% block content %}
 
-  <div class="section--startpage-header">
-    <div class="container container--md container--no-grid">
-      <div class="text-wrapper">
-        <h1 class="startpage-header--headline">{{ phc.intro.headline }}</h1>
-        <div class="startpage-header--sub-headline cd-headline js-type-headline letters type">
-          <div class="cd-row-1">
-            <span>{{ phc.intro.sub_headline_start }}</span>
-            <span class="cd-words-wrapper">
-              <b data-background=".map-background--1" data-animationdelay="{{ phc.intro.animation_duration_long }}" class="is-visible">{{ phc.intro.sub_headline_middle_area_1 }}</b>
-              <b data-background=".map-background--2" data-animationdelay="{{ phc.intro.animation_duration }}">{{ phc.intro.sub_headline_middle_area_2 }}</b>
-              <b data-background=".map-background--3" data-animationdelay="{{ phc.intro.animation_duration }}">{{ phc.intro.sub_headline_middle_area_3 }}</b>
-              <b data-background=".map-background--4" data-animationdelay="{{ phc.intro.animation_duration }}">{{ phc.intro.sub_headline_middle_area_4 }}</b>
-            </span>
-          </div>
-          <div>
-            <span>{{ phc.intro.sub_headline_end }}</span>
-          </div>
+<div class="section--startpage-header">
+  <div class="container container--md container--no-grid">
+    <div class="text-wrapper">
+      <h1 class="startpage-header--headline">{{ phc.intro.headline }}</h1>
+      <div class="startpage-header--sub-headline cd-headline js-type-headline letters type">
+        <div class="cd-row-1">
+          <span>{{ phc.intro.sub_headline_start }}</span>
+          <span class="cd-words-wrapper">
+            <b data-background=".map-background--1" data-animationdelay="{{ phc.intro.animation_duration_long }}" class="is-visible">{{ phc.intro.sub_headline_middle_area_1 }}</b>
+            <b data-background=".map-background--2" data-animationdelay="{{ phc.intro.animation_duration }}">{{ phc.intro.sub_headline_middle_area_2 }}</b>
+            <b data-background=".map-background--3" data-animationdelay="{{ phc.intro.animation_duration }}">{{ phc.intro.sub_headline_middle_area_3 }}</b>
+            <b data-background=".map-background--4" data-animationdelay="{{ phc.intro.animation_duration }}">{{ phc.intro.sub_headline_middle_area_4 }}</b>
+          </span>
         </div>
+        <div>
+          <span>{{ phc.intro.sub_headline_end }}</span>
+        </div>
+      </div>
 
-        <div class="badgeContainer badge-2">
-          <div class="linkTextingWidgetWrapper" style="">
-            <div class="linkTextingWidget" style="">
-              <div class="promptContent" style=""></div>
-              <div class="linkTextingInner">
-                <input type="hidden" class="linkID" value="76940c6f-3906-4043-bb55-1e2ab6282084">
-                <div class="linkTextingInputWrapper">
-                  <input class="linkTextingInput linkTextingInputFlagAdjust" type="tel" id="numberToText_linkTexting">
-                </div>
-                <button class="linkTextingButton" type="button" id="sendButton_linkTexting" style="background-color: #f59b25;color : #F7F7F7">SMS:a länk till app</button>
-                <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+      <div class="badgeContainer badge-2">
+        <div class="linkTextingWidgetWrapper" style="">
+          <div class="linkTextingWidget" style="">
+            <div class="promptContent" style=""></div>
+            <div class="linkTextingInner">
+              <input type="hidden" class="linkID" value="76940c6f-3906-4043-bb55-1e2ab6282084">
+              <div class="linkTextingInputWrapper">
+                <input class="linkTextingInput linkTextingInputFlagAdjust" type="tel" id="numberToText_linkTexting">
               </div>
+              <button class="linkTextingButton" type="button" id="sendButton_linkTexting" style="background-color: #f59b25;color : #F7F7F7">SMS:a länk till app</button>
+              <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
             </div>
           </div>
-          <div class="badgeRow badge-2">
-            <a class='badge-app-store lt-badge' href='https://itunes.apple.com/se/app/yepstr/id1069311381?mt=8' target='_blank'>
-              <img alt='Get it on App Store' src='https://d22hhoe037sl7u.cloudfront.net/img/app-store-badges/Download_on_the_App_Store_Badge_US-UK_135x40.svg' style='margin-bottom: 10px;'/>
-            </a>
-            <a class='badge-google-play lt-badge' href='https://play.google.com/store/apps/details?id=com.yepstr.android&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target='_blank'>
-              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style='width: 233px;  margin-top: -14px;'/>
-            </a>
-          </div>
         </div>
-
+        <div class="badgeRow badge-2">
+          <a class='badge-app-store lt-badge' href='https://go.onelink.me/Deuc?pid=Hemsida&af_dp=None&af_web_dp=https%3A%2F%2Fwww.yepstr.com%2Fladda-ner-appen'>
+            <img alt='Get it on App Store' src='https://d22hhoe037sl7u.cloudfront.net/img/app-store-badges/Download_on_the_App_Store_Badge_US-UK_135x40.svg' style='margin-bottom: 10px;'/>
+          </a>
+          <a class='badge-google-play lt-badge' href='https://go.onelink.me/Deuc?pid=Hemsida&af_dp=None&af_web_dp=https%3A%2F%2Fwww.yepstr.com%2Fladda-ner-appen'>
+            <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style='width: 150px;  margin-top: -10px;'/>
+          </a>
+        </div>
       </div>
-      <div class="phones-animation">
-        <div class="phones"></div>
-        <div class="map-position">
-          <div class="js-map-backgrounds map-backgrounds">
-            <div class="map-background--1 map-background is-visible"></div>
-            <div class="map-background--2 map-background"></div>
-            <div class="map-background--3 map-background"></div>
-            <div class="map-background--4 map-background"></div>
-          </div>
+
+    </div>
+    <div class="phones-animation">
+      <div class="phones"></div>
+      <div class="map-position">
+        <div class="js-map-backgrounds map-backgrounds">
+          <div class="map-background--1 map-background is-visible"></div>
+          <div class="map-background--2 map-background"></div>
+          <div class="map-background--3 map-background"></div>
+          <div class="map-background--4 map-background"></div>
         </div>
       </div>
     </div>
+    {{ include('partials/in-the-media.html.twig') }}
   </div>
 </div>
-<!--  -->
-{{ include('partials/in-the-media.html.twig') }}
-<!--  -->
-<section class="section section--task-nav margin-v-md">
-  <div class="container container--no-grid container--md">
+
+<section class="section section--task-nav">
     <h3 class="section-headline text--center">{{ phc.task_nav_headline }}</h3>
     <nav role="navigation">
       <ul class="task-list reset-list">
         {% for link in phc.task_links %}
           <li class="task-list__item">
-            <a data-key="{{link.href}}" class="js-highlight task-list__link task-list__link--{{ link.icon }}" href="{{ base_url }}{{ link.href }}">
-              {{ link.text }}
+            <a data-key="{{link.href}}" class="js-highlight" href="{{ base_url }}{{ link.href }}">
+              <div class="task-list__link--{{ link.icon }}"></div>
+              <div class="task-list__link">{{ link.text }}</div>
             </a>
           </li>
         {% endfor %}
       </ul>
+      <a href="{{ base_url }}{{ '/bestallare/sa-funkar-det' }}"><h5 class="task-list__button text--center">Så funkar det</h3></a>
     </nav>
-  </div>
+
 </section>
 {% for module in page.collection( ) %}
   {{ module.content }}

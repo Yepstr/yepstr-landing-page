@@ -28,6 +28,10 @@ form:
     type: text
     label: Kategori
 
+  .company:
+    type: text
+    label: Företag
+
   .image_alt:
     type: text
     label: image alt
