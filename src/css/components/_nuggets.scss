@@ -19,6 +19,9 @@
 .display--inline-block {
   display: inline-block;
 }
+.display--flex {
+  display: flex;
+}
 //Margins and padding
 .center-content {
   //Need ONE child div in a container with height
@@ -360,7 +363,7 @@
   }
 }
 
-.background-color {  
+.background-color {
   &--grey {
     background-color: $backgroundGrey
   }

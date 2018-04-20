@@ -166,6 +166,28 @@ form:
                   label: Href
                   show_all: true
                   default: '/'
+        task_company_nav:
+          type: tab
+          title: Task company nav
+          fields:
+
+            header.content.task_company_links:
+              name: Task nav links
+              type: list
+              label: Task links
+
+              fields:
+                .icon:
+                  type: filepicker
+                  size: small
+                  folder: 'page@:/images'
+                  acccept:
+                    - .png
+                    - .jpg
+
+                .text:
+                  type: text
+                  label: text
 
         media_logos:
           type: tab
