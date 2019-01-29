@@ -38,7 +38,11 @@
           </div>
       </div>
       <div class="image">
-          {{ page.find('/images').media['laxhjalp.jpg'] }}
+        <picture>
+          <source srcset="{{ page.find('/images').media['laxhjalp.webp'].url }}" type="image/webp">
+          <source srcset="{{ page.find('/images').media['laxhjalp.jpg'].url }}" type="image/jpeg">
+          {{ page.find('/images').media['laxhjalp.jpg'].html() }}
+        </picture>
       </div>
     </div>
     <div class="new-promo">
@@ -51,7 +55,11 @@
         </div>
       </div>
       <div class="image">
-          {{ page.find('/images').media['hundpassning.jpg'] }}
+        <picture>
+            <source srcset="{{ page.find('/images').media['hundpassning.webp'].url }}" type="image/webp">
+            <source srcset="{{ page.find('/images').media['hundpassning.jpg'].url }}" type="image/jpeg">
+            {{ page.find('/images').media['hundpassning.jpg'].html() }}
+          </picture>
       </div>
     </div>
   </div>
