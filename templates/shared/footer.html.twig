@@ -182,6 +182,8 @@
 </script>
 <script>
   ( function ( ) {
+    var intercomDelay = 5000;
+
     var w = window;
     var ic = w.Intercom;
     if ( typeof ic === "function" ) {
@@ -200,14 +202,17 @@
       };
       w.Intercom = i;
       function l( ) {
-        var s = d.createElement( 'script' );
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://widget.intercom.io/widget/q4512h2t';
-        var x = d.getElementsByTagName( 'script' )[ 0 ];
-        x
-          .parentNode
-          .insertBefore( s, x );
+        // Wait intercomDelay before loading intercom to make the page more responsive
+        setTimeout(function() {
+          var s = d.createElement( 'script' );
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://widget.intercom.io/widget/q4512h2t';
+          var x = d.getElementsByTagName( 'script' )[ 0 ];
+          x
+            .parentNode
+            .insertBefore( s, x );
+        }, intercomDelay);
       }
       if ( w.attachEvent ) {
         w.attachEvent( 'onload', l );
