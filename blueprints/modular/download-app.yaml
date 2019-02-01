@@ -55,12 +55,3 @@ form:
               type: text
               label: Android link
               size: medium
-
-            header.content.web.text:
-              type: text
-              label: Web text
-              size: medium
-            header.content.web.link:
-              type: text
-              label: Web link
-              size: medium

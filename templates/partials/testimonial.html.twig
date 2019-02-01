@@ -13,17 +13,20 @@
   {% if testimonial.image %}
   <div class="testimonial--image">
     {{ page.find('/images').media[testimonial.image].html('', testimonial.image_alt, 'img--circle') }}
+    {% if testimonial.video_href %}
+    <div class="testimonial--video-link">
+      <a class="icon-link icon-link--play js-popup-video-button" href="{{ testimonial.video_href }}"></a>
+    </div>
+    {% endif %}
   </div>
   {% endif %}
   {% if testimonial.name %}
   <p class="testimonial--name h2">{{ testimonial.name }}</p>
   {% endif %}
+  {% if testimonial.company %}
+  <h2 class="testimonial--company p">{{ testimonial.company }}</h2>
+  {% endif %}
   {% if testimonial.category %}
   <h2 class="testimonial--category p">{{ testimonial.category }}</h2>
-  {% endif %}
-  {% if testimonial.video_href %}
-  <div class="margin-v-xs testimonial--video-link">
-    <a class="icon-link icon-link--play js-popup-video-button" href="{{ testimonial.video_href }}">Spela video</a>
-  </div>
   {% endif %}
 </div>

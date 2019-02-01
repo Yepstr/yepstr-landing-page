@@ -1,0 +1,18 @@
+{% set home_page = page.find( '/home' ) %}
+
+<section class="section section--task-company-nav padding-v-sm">
+  <div class="container container--no-grid container--sm">
+    <h4 class="task-company--header">Bara fantasin sätter gränser</h4>
+    <nav role="navigation">
+      <ul class="task-company--list reset-list">
+        {% for link in home_page.header.content.task_company_links %}
+          <li class="task-company--item">
+            {{ page.find('/images').media[link.icon].html('', link.text, 'task-company--item-image') }}
+            <h4 class="task-company--item-text">{{ link.text }}</h4>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
+

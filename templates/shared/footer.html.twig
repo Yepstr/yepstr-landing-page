@@ -3,12 +3,10 @@
 {% set collaborators_logos = home_page.header.content.collaborators_logos %}
 
 <footer class="main-footer">
-  <section class="section main-footer--collaborators background background--lightest-grey padding-v-xs">
-    <div class="container container--no-grid container--lg ">
+  <section class="section main-footer--collaborators padding-v-sm">
+    <div class="container container--no-grid container--lg">
+      <h3 class="margin-v-sm h5 text--center">Vi samarbetar med:</h3>
       <ul class="logo-list reset-list margin-v-sm">
-        <li class="logo-list__item">
-          <h3 class="h5">Vi samarbetar med:</h3>
-        </li>
         {% for logo in collaborators_logos %}
         <li class="logo-list__item">
           <a class="ga-outbound-link" target="_blank" href="{{ logo.href }}">
@@ -21,23 +19,42 @@
   </section>
   {% if not phc.hide_footer_cta %}
     <div class="main-footer--top background background--green">
-      <div class="container container--no-grid">
-        <div class="promo-image">
-          <figure>
-            <figcaption class="text--white">
-              <strong>Använd Yepstr vart det passar dig</strong>
-              <br>
-              iPhone, Android eller via webben
-            </figcaption>
-            <a href="/ladda-ner-appen">
-              <img src="{{ url('theme://build/images/graphics/app-screen-splash.png') }}" alt="Yepstr i webbläsaren och mobilen">
-            </a>
-          </figure>
+      <div class="footer-cta footer-cta--small">
+        <div class="mock-cta center-v-content">
+          <div class="center-h-content">
+            <h3 class="text--white">Kom igång direkt!</h3>
+            <div class="badgeRow badge-2 padding-v-sm center-v-content visible-md" style="padding-top: 0; width: 150px;">
+              <a class='badge-app-store lt-badge'href='http://m.onelink.me/28c45e17'>
+                <img alt='Get it on App Store' src='https://d22hhoe037sl7u.cloudfront.net/img/app-store-badges/Download_on_the_App_Store_Badge_US-UK_135x40.svg' style='margin-bottom: 10px;'/>
+              </a>
+              <a class='badge-google-play lt-badge' style="margin-left: -10px;" href='http://m.onelink.me/28c45e17'>
+                <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style='width: 150px;  margin-top: -10px;'/>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="cta-buttons">
-          <a class="btn btn--white text--green btn--inline" href="http://m.onelink.me/28c45e17">Skapa konto</a>
-          <a class="btn btn--white-ghost btn--inline" href="{{ base_url }}/bestallare/sa-funkar-det">Så funkar det</a>
+        <div class="mock-image"></div>
+      </div>
+
+      <div class="footer-cta footer-cta--large padding-v-lg">
+        <div class="mock-image"></div>
+        <div class="badgeContainer badge-2 center-content" style="z-index: 100;">
+          <h3 class="text--center text--white">Kom igång direkt!</h3>
+          <div class="linkTextingWidgetWrapper hidden-md" style="">
+            <div class="linkTextingWidget center-content" style="">
+              <div class="promptContent" style=""></div>
+              <div class="linkTextingInner">
+                <input type="hidden" class="linkID" value="76940c6f-3906-4043-bb55-1e2ab6282084">
+                <div class="linkTextingInputWrapper">
+                  <input class="linkTextingInput linkTextingInputFlagAdjust" type="tel" id="numberToText_linkTexting">
+                </div>
+                <button class="linkTextingButton" type="button" id="sendButton_linkTexting" style="background-color: #f59b25;color : #F7F7F7">SMS:a länk till app</button>
+                <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   {% endif %}
@@ -122,6 +139,12 @@
               <li>
                 <a href="https://app.yepstr.com/termsOfUse">Allmänna Villkor</a>
               </li>
+              <li>
+                <a href="{{ base_url }}/integritetspolicy">Integritetspolicy</a>
+              </li>
+              <li>
+                <a href="{{ base_url }}/cookiepolicy">Cookies</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -138,11 +161,13 @@
         <a href="tel:0851519000" class="phone ga-contact-footer-link" data-type="Phone">08 - 5151 9000</a>
       </nav>
       <nav class="app-links">
-        <a href="https://play.google.com/store/apps/details?id=com.yepstr.android" class="download-app-btn download-app-btn--google-play ga-outbound-link">Get it on Google Play</a>
-        <a href="https://itunes.apple.com/se/app/yepstr/id1069311381?mt=8" class="download-app-btn download-app-btn--app-store ga-outbound-link">Availible on the App Store</a>
+        <a href="https://go.onelink.me/Deuc?pid=Hemsida&af_dp=None&af_web_dp=https%3A%2F%2Fwww.yepstr.com%2Fladda-ner-appen" class="download-app-btn download-app-btn--google-play ga-outbound-link">Get it on Google Play</a>
+        <a href="https://go.onelink.me/Deuc?pid=Hemsida&af_dp=None&af_web_dp=https%3A%2F%2Fwww.yepstr.com%2Fladda-ner-appen" class="download-app-btn download-app-btn--app-store ga-outbound-link">Availible on the App Store</a>
       </nav>
     </div>
   </div>
+  <!-- Apple Smart Banner -->
+  <img src="https://app.appsflyer.com/id1069311381?pid=Hemsida" height="1" width="1" border ="0" />
 </footer>
 <!-- Yepstr footer JS -->
 <script src=" {{ url('theme://build/js/build.js') }} "></script>
@@ -154,6 +179,8 @@
 </script>
 <script>
   ( function ( ) {
+    var intercomDelay = 5000;
+
     var w = window;
     var ic = w.Intercom;
     if ( typeof ic === "function" ) {
@@ -172,14 +199,17 @@
       };
       w.Intercom = i;
       function l( ) {
-        var s = d.createElement( 'script' );
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://widget.intercom.io/widget/q4512h2t';
-        var x = d.getElementsByTagName( 'script' )[ 0 ];
-        x
-          .parentNode
-          .insertBefore( s, x );
+        // Wait intercomDelay before loading intercom to make the page more responsive
+        setTimeout(function() {
+          var s = d.createElement( 'script' );
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://widget.intercom.io/widget/q4512h2t';
+          var x = d.getElementsByTagName( 'script' )[ 0 ];
+          x
+            .parentNode
+            .insertBefore( s, x );
+        }, intercomDelay);
       }
       if ( w.attachEvent ) {
         w.attachEvent( 'onload', l );

@@ -1,0 +1,39 @@
+title: Company Contact banner
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            header.content.left_image:
+              type: filepicker
+              size: medium
+              folder: 'page@:/images'
+              label: Left Image
+              acccept:
+                - .png
+                - .jpg
+                - .svg
+
+            header.content.title:
+              type: text
+              label: Title
+              size: medium
+            header.content.contact.name:
+              type: text
+              label: Name
+              size: medium
+            header.content.contact.position:
+              type: text
+              label: Title
+              size: medium
+            header.content.contact.email:
+              type: text
+              label: Email
+              size: medium
+            header.content.contact.phone:
+              type: text
+              label: Phone
+              size: medium

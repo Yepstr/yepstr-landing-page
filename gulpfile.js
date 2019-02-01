@@ -58,6 +58,9 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 // image optimization
 var imagemin = require('gulp-imagemin');
+var imageminPngquant = require('imagemin-pngquant');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+var webp = require('gulp-webp');
 // linting
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
@@ -118,8 +121,26 @@ var tasks = {
   // --------------------------
   assets: function() {
     gulp.src(paths.images.input)
+      .pipe(imagemin([
+        imagemin.svgo({
+          plugins: [
+            { removeViewBox: true },
+          ]
+        }),
+        imageminMozjpeg({
+          progressive: true,
+          quality: 85,
+        }),
+        imageminPngquant(),
+      ]))
       .pipe(gulp.dest(paths.images.output))
-    gulp.src(paths.videos.input)
+
+    // create webp files for all images
+    gulp.src(paths.images.input)
+      .pipe(webp())
+      .pipe(gulp.dest(paths.images.output))
+
+      gulp.src(paths.videos.input)
       .pipe(gulp.dest(paths.videos.output))
     gulp.src(paths.fonts.input)
       .pipe(gulp.dest(paths.fonts.output))

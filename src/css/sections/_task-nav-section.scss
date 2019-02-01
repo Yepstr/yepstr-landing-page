@@ -1,105 +1,97 @@
 .section--task-nav {
+  padding: 50px 12px;
+  background-color: #F5F5F7;
   .task-list {
     display: flex;
-    flex: 0 1 auto;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 
-    &__item {
-      flex: 1 1 14.285%;
-      font-size: rem(18);
-      @media #{$medium} {
-        flex-basis: 33.333333%;
+    &__button {
+      margin: 30px;
+
+      &:hover {
+        color: #E27A18;
       }
-      @media #{$xxsmall} {
-        flex-basis: 50%;
+    }
+
+    &__item {
+      background-color: 'white';
+      box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.03);
+
+
+      overflow: 'hidden';
+      margin: 7.5px;
+      width: 100%;
+      font-size: rem(18);
+      width: 160px;
+      transition: color 0.006s;
+
+      &:hover {
+        box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.15);
+      }
+
+      .is-active,
+      a:hover {
+        color: #E27A18;
       }
     }
 
     &__link {
       font-weight: 600;
       text-align: center;
-      display: block;
-      color: $darkBlue;
-      transition: color 0.3s;
+      background-color: white;
+      padding: 10px 0;
 
-      &:before {
-        display: block;
-        content: "";
-        margin: 0 auto;
-        width: 100px;
-        height: 80px;
-        background-image: url("../images/icons/task-icon-sprite.svg");
-        background-repeat: no-repeat;
-        background-size: 800px 200px;
+
+      font-size: rem(20);
+
+
+      &--babysitting {
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image: url("../images/buttons/babysitting.jpg");
       }
 
-      &--how-to:before {
-        background-position: 0 0;
+      &--event-helper{
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image: url("../images/buttons/event-helper.jpg");
       }
 
-      &--babysitting:before {
-        background-position: -100px 0;
+      &--dog-walking{
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image: url("../images/buttons/dog-walking.jpg");
       }
 
-      &--event-helper:before {
-        background-position: -200px 0;
+      &--gardening{
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image: url("../images/buttons/gardening.jpg");
       }
 
-      &--dog-walking:before {
-        background-position: -300px 0;
+      &--tutoring{
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image: url("../images/buttons/tutoring.jpg");
       }
-
-      &--gardening:before {
-        background-position: -400px 0;
-      }
-
-      &--household:before {
-        background-position: -500px 0;
-      }
-
-      &--tutoring:before {
-        background-position: -600px 0;
-      }
-      &--business:before {
-        background-position: -700px 0;
+      &--business{
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image: url("../images/buttons/business.jpg");
       }
       //Active states
-      &.is-active,
-      &:hover {
-        color: $darkOrange;
+      &.is-active {
+        color: #E27A18;
       }
 
-      &--how-to.is-active:before {
-        background-position: 0 -100px;
-      }
-
-      &--babysitting.is-active:before {
-        background-position: -100px -100px;
-      }
-
-      &--event-helper.is-active:before {
-        background-position: -200px -100px;
-      }
-
-      &--dog-walking.is-active:before {
-        background-position: -300px -100px;
-      }
-
-      &--gardening.is-active:before {
-        background-position: -400px -100px;
-      }
-
-      &--household.is-active:before {
-        background-position: -500px -100px;
-      }
-
-      &--tutoring.is-active:before {
-        background-position: -600px -100px;
-      }
-      &--business.is-active:before {
-        background-position: -700px -100px;
-      }
     }
   }
 }

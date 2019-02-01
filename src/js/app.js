@@ -11,6 +11,8 @@ var popupVideo = require('modules/popupVideo');
 var activePageHighlight = require('modules/activePageHighlight');
 var imageZoom = require('modules/imageZoom');
 var introMap = require('modules/introMap');
+var toggleHamburger = require('modules/toggleHamburger');
+var stopBackgroundScroll = require('modules/stopBackgroundScroll');
 
 
 var app = {
@@ -21,6 +23,8 @@ var app = {
     activePageHighlight.init();
     imageZoom.init();
     createYepSearchSignupFlow.init();
+    toggleHamburger.init();
+    stopBackgroundScroll.init();
   },
   load: function() {
     introMap.init();
