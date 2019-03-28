@@ -19,6 +19,9 @@
 .display--inline-block {
   display: inline-block;
 }
+.display--flex {
+  display: flex;
+}
 //Margins and padding
 .center-content {
   //Need ONE child div in a container with height
@@ -357,6 +360,12 @@
 
   &--regular {
     font-weight: 400;
+  }
+}
+
+.background-color {
+  &--grey {
+    background-color: $backgroundGrey
   }
 }
 

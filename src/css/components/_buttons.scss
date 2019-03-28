@@ -13,14 +13,16 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
 %btn {
   border-style: solid;
   border-width: 2px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: block;
   font-size: rem(20);
   font-weight: 600;
   margin: 0 auto;
-  padding: rem(15) rem(30);
+  padding: rem(10) rem(45);
   position: relative;
   transition: background 200ms linear;
+  box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.25);
+
 
   &:focus,
   &:hover {
@@ -35,7 +37,7 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
   &--white {
     background: $white;
     border-color: $white;
-    color: $darkBlue;
+    color: $darkOrange;
 
     &:focus,
     &:hover {
@@ -78,6 +80,7 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
 
     &:focus,
     &:hover {
+      color: white;
       border-color: darken( $darkOrange, 7% );
       background: darken( $darkOrange, 7% );
     }
@@ -154,5 +157,62 @@ $btn-web-browser: '../images/buttons/use-app-in-browser-btn.svg';
   &--web-browser {
     width: 293px;
     background-image: url("#{$btn-web-browser}");
+  }
+}
+
+.badgeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+
+  @media #{$medium} {
+    align-items: center;
+  }
+
+  .linkTextingInner {
+    position: relative;
+  }
+
+  .linkTextingInput {
+    border: 1px solid white;
+    border-radius: 0;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.15);
+    width: 400px;
+    height: 50px;
+  }
+
+  .linkTextingButton {
+    position: absolute;
+    right: 17px;
+    top: 7px;
+
+    &:hover {
+      background-color: #E27A18;
+    }
+  }
+
+}
+
+.linkTextingWidgetWrapper {
+  @media #{$xsmall} {
+    display: none,
+  }
+}
+
+.badgeRow {
+  display: flex;
+  width: 310px;
+
+  img {
+    width: 130px;
+  }
+
+  .badge-google-play {
+    margin-right: -10px;
+  }
+
+  @media #{$medium} {
+    justify-content: center;
   }
 }

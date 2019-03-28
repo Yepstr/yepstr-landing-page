@@ -8,6 +8,7 @@ html {
   font-family: 'Glober', Helvetica;
   font-size: 12px;
   font-weight: 400;
+  background-color: $lightGrey;
   color: $darkBlue;
   @media #{$small} {
     font-size: 11px;
@@ -16,7 +17,8 @@ html {
 
 body {
   position: relative;
-
+  max-width: 1500px;
+  margin: 0 auto;
   &.no-scroll {
     overflow: hidden;
   }
@@ -37,6 +39,10 @@ a {
   color: $darkOrange;
   font-weight: 600;
   text-decoration: none;
+
+  &:hover {
+    color: #E27A18;
+  }
 }
 
 hr {

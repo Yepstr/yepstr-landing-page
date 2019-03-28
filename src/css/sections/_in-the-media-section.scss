@@ -1,16 +1,21 @@
 .section--in-the-media {
   .logo-list {
     text-align: center;
+    display: flex;
+    justify-content: center;
 
+    @media #{$medium} {
+      flex-wrap: wrap;
+    }
+    
     &__item {
-      display: inline-block;
-      padding: rem(5);
+      padding-top: rem(15);
 
       img {
-        max-height: 100px;
+        max-height: 70px;
         opacity: 0.6;
-        @media #{$xlarge} {
-          max-height: 80px;
+        @media #{$small} {
+          max-height: 35px;
         }
       }
 

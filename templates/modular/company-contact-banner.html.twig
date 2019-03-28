@@ -1,0 +1,28 @@
+{% set phc = page.header.content %}
+
+<section class="section section--contact-banner">
+  <div class="container padding-v-md padding-h-sm contact-banner">
+    <div class="contact-banner--image">
+      {{ page.find('/images').media[phc.left_image].html('', 'contact person') }}
+    </div>
+
+    <div>
+      <h2>{{ phc.title }}</h2>
+      <span>
+        <h4>{{ phc.contact.name }}, <span style="font-weight: 500">{{ phc.contact.position }}</span></h4>
+      </span>
+      <br />
+      <div class="contact">
+        <div class="contact--details">
+          <h4 class="contact--type">Telefon</h4>
+          <h5 class="contact--value"><a href="tel:{{ phc.contact.phone }}">{{ phc.contact.phone }}</a></h5>
+        </div>
+        <div class="contact--details">
+          <h4 class="contact--type">Email</h4>
+          <h5 class="contact--value"><a href="mailto:{{ phc.contact.email }}?subject=Yepstr%20för%20företag">{{ phc.contact.email }}</a></h5>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</section>

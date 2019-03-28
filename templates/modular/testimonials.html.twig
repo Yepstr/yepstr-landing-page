@@ -1,6 +1,6 @@
 {% set phc = page.header.content %}
-<section class="section margin-v-lg">
-  <div class="container no-grid">
+<section class="section">
+  <div class="container no-grid background-color--grey">
     <div class="testimonials">
     {% for t in phc.testimonials %}
       {% include 'partials/testimonial.html.twig' with { 'testimonialIdentifier': t.identifier } %}

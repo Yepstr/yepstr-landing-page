@@ -6,10 +6,11 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  margin-top: rem(75);
-  margin-bottom: rem(125);
+  padding-top: rem(60);
+  padding-bottom: rem(100);
   @media #{$medium} {
     flex-direction: column;
+    padding-bottom: 0;
   }
 }
 
@@ -39,7 +40,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
       display: block;
       content: "";
       position: absolute;
-      bottom: -20px;
+      bottom: -19px;
       left: 50%;
       transform: translateX(-30px);
       height: 20px;
@@ -81,9 +82,10 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   }
 
   &--image {
+    display: inline-block;
+    position: relative;
     margin-top: rem(40);
     margin-bottom: rem(20);
-
     img {
       max-width: 200px;
       margin: 0 auto;
@@ -95,6 +97,13 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
     margin: 0;
   }
 
+  &--company {
+    font-size: rem(16);
+    font-style: italic;
+    margin-bottom: rem(10);
+    padding: 0;
+  }
+
   &--category {
     font-size: rem(20);
     margin: 0;
@@ -104,7 +113,7 @@ $bubble-point-bg-yep: '../images/graphics/bubble-point-yep.svg';
   &--video-link {
     position: absolute;
     font-size: rem(20);
-    left: 0;
+    bottom: 0;
     right: 0;
   }
 

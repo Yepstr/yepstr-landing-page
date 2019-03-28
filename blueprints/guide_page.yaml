@@ -70,6 +70,31 @@ form:
               type: text
               label: Page headline
 
+            header.content.cta_subHeadline:
+              type: text
+              label: CTA subheadline
+
+            header.content.cta_headline:
+              type: text
+              label: CTA headline
+
+            header.content.cta_text:
+              type: text
+              label: CTA text
+
+            header.content.featureList_item1:
+              type: text
+              label: Feature list item 1
+
+            header.content.featureList_item2:
+              type: text
+              label: Feature list item 2
+
+            header.content.featureList_item3:
+              type: text
+              label: Feature list item 3
+
+
             header.content.hide_footer_cta:
               type: toggle
               label: Hide footer CTA

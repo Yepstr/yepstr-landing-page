@@ -1,0 +1,37 @@
+.section--task-company-nav {
+  background-color: $almostWhite;
+  .task-company--list {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$xsmallMin} {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+  .task-company--header {
+    margin-bottom: 10px;
+  }
+
+  .task-company--item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+
+    @media #{$xsmallMin} {
+      width: 45%;
+    }
+    @media #{$mediumMin} {
+      width: 30%;
+    }
+  }
+  .task-company--item-image {
+    margin-right: 10px;
+    max-width: 50px;
+    height: 50px;
+  }
+  .task-company--item-text {
+    font-weight: 300;
+  }
+}

@@ -21,8 +21,8 @@
     bottom: 50px;
     left: 0;
     @media #{$large} {
-      top: 100px;
-      bottom: 100px;
+      top: 50px;
+      bottom: 50px;
     }
     @media #{$medium} {
       position: static;
